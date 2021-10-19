@@ -48,8 +48,6 @@ public class Bag {
     }
 
 
-    //discard pebble into chosen bag method
-    //public discardPebble(WhiteBags thisBag)
 
 
 }

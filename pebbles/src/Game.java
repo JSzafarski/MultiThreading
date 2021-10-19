@@ -37,7 +37,7 @@ public class Game {
             String player_input = System.console().readLine();//verify data type
             try {
                 @SuppressWarnings("unused")//
-                int numPlayers = Integer.parseInt(player_input);
+                numPlayers = Integer.parseInt(player_input);
                 if (numPlayers > 0) {
                     String file_input;
                     for (int i = 1; i < 4; i++) {
@@ -68,11 +68,10 @@ public class Game {
         }
 
 
-
-        public void read_csv () {
-        }
+    }
 
 
+    public void read_csv () {
     }
 
 }
