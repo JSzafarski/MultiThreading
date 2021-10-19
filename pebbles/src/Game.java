@@ -1,10 +1,15 @@
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import java.util.*;
+import java.io.FileWriter;
 
 public class Game {
-    int numPlayers;
-    ArrayList<Integer> pebbles = new ArrayList<Integer>();
+    int numPlayers;//number of players
+    ArrayList<Integer> pebbles = new ArrayList<Integer>();//don't we need 3 arrays for 3 csv files???
     //instantiating black bags
     Bag bagX = new Bag(pebbles, "BLACK");
     Bag bagY = new Bag(pebbles, "BLACK");
@@ -47,7 +52,7 @@ public class Game {
                             break;//exit the loop
                         } else { //check if the input is valid using try catch block
                             try () {//reading a file
-
+                                pebbles = read_csv(file_input);
                             } catch () {
                                 System.out.println("invalid input ,we will ask you to repeat your input.");
                                 //if the file read is invalid then repeat the for loop
@@ -62,7 +67,7 @@ public class Game {
                 } else {
                     System.out.println("invalid input ,enter again!");//shows error
                 }
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException | IOException e) {
                 System.out.println("invalid input ,enter again!");//shows error
             }
         }
@@ -70,8 +75,53 @@ public class Game {
 
     }
 
+    public Integer[] read_csv (String filename) throws IOException {//validate file name when calling the method
+        String StringOfNumbers;
+        Scanner scanner;
+        ArrayList<Integer> integers = new ArrayList<Integer>();
+        int temporaryint  = 0;
+        String text = "";
+        try {
+            File file = new File(filename); // java.io.File(source file with text)
+            scanner = new Scanner(file);    // java.util.Scanner
+            while (scanner.hasNextLine()){//this loop is going to be used to read a text file (each line)
+                StringOfNumbers = scanner.nextLine();
+                int x = 0;
+                StringBuilder CurrentString = new StringBuilder();
+                while(x < StringOfNumbers.length() + 1) {//might need fixing
+                    int y= 0;
+                    int value = 0;
+                    if(!StringOfNumbers.charAt(x).equals(",")){//fix
+                        if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
+                            CurrentString.append(StringOfNumbers.charAt(x));
+                        }else{
+                            //throw error as it's not a character
+                        }
+                    }else{
+                        if(CurrentString.toString().equals("")){
+                            //throw error as it means there as an empty space like so: ,,
+                        }else{
+                            //offload the string into an array and clear the string builder, so it can build a new number
+                            //verify if the integer is positive
+                            temporaryint= Integer.parseInt(CurrentString.toString());
+                            if(temporaryint>0){
+                                integers.add(temporaryint);//adds the item to the list
+                            }else{
 
-    public void read_csv () {
+                                //throw error
+                            }
+                            CurrentString.setLength(0);//
+                        }
+                        //save the number into an array and proceed gathering more numbers
+                    }
+                    CurrentString.append(StringOfNumbers.charAt(x));
+                    x++;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("error: " + e);
+        }
+        System.out.println(text);
     }
-
+    }
 }
