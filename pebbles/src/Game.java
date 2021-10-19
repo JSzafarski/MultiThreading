@@ -75,7 +75,7 @@ public class Game {
 
     }
 
-    public Integer[] read_csv (String filename) throws IOException {//validate file name when calling the method
+    public ArrayList<Integer> read_csv (String filename) throws IOException {//validate file name when calling the method
         String StringOfNumbers;
         Scanner scanner;
         ArrayList<Integer> integers = new ArrayList<Integer>();
@@ -101,13 +101,10 @@ public class Game {
                         if(CurrentString.toString().equals("")){
                             //throw error as it means there as an empty space like so: ,,
                         }else{
-                            //offload the string into an array and clear the string builder, so it can build a new number
-                            //verify if the integer is positive
-                            temporaryint= Integer.parseInt(CurrentString.toString());
+                            temporaryint = Integer.parseInt(CurrentString.toString());
                             if(temporaryint>0){
                                 integers.add(temporaryint);//adds the item to the list
                             }else{
-
                                 //throw error
                             }
                             CurrentString.setLength(0);//
