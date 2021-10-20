@@ -1,5 +1,6 @@
 public class InvalidfileExeption extends Exception {
     public InvalidfileExeption(String errormsg) {
+        super(errormsg);
     }
 
 

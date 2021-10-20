@@ -51,10 +51,10 @@ public class Game {
                         if (Objects.equals(file_input, "X")) {
                             break;//exit the loop
                         } else { //check if the input is valid using try catch block
-                            try () {//reading a file
+                            try{//reading a file
                                 pebbles = read_csv(file_input);
-                            } catch () {
-                                System.out.println("invalid input ,we will ask you to repeat your input.");
+                            } catch (InvalidfileExeption e) {
+                                System.out.println(e);
                                 //if the file read is invalid then repeat the for loop
                             }
                         }
