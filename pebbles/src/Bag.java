@@ -41,6 +41,12 @@ public class Bag {
         }
     }
 
+    //discarding pebble function
+    public void discardPebble(Player thisPlayer, int replacementPebble) {
+        int discarded = thisPlayer.discardPebble(replacementPebble);
+        this.getPebbles().add(discarded);
+    }
+
     //method to empty a white bag into an empty black bag
     public void refillBag() {
         this.setPebbles(this.getBagPair().getPebbles());

@@ -1,15 +1,13 @@
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Random;
+import java.util.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.Scanner;
-import java.util.*;
-import java.io.FileWriter;
 
 public class Game {
     int numPlayers;//number of players
     ArrayList<Integer> pebbles = new ArrayList<Integer>();//don't we need 3 arrays for 3 csv files???
+    Player[] playerList;
+    LinkedList<Bag> discardQueue = new LinkedList<>();
+    Random rand = new Random();
     //instantiating black bags
     Bag bagX = new Bag(pebbles, "BLACK");
     Bag bagY = new Bag(pebbles, "BLACK");
@@ -29,6 +27,37 @@ public class Game {
         bagC.setBagPair(bagZ);
     }
 
+    public void draw(Player thisPlayer) {
+        int num = rand.nextInt(3);
+        if (num == 0) {
+            int replacementpebble = bagX.drawPebble();
+            if (replacementpebble == -1) {
+                bagX.refillBag();
+                draw();
+            } else {
+                discardQueue.add(bagX.getBagPair());
+            }
+        } else if (num == 1)  {
+            int replacementpebble = bagY.drawPebble();
+            if (replacementpebble == -1) {
+                bagY.refillBag();
+                draw();
+            } else {
+                discardQueue.add(bagY.getBagPair());
+            }
+        } else if (num == 2) {
+            int replacementpebble = bagZ.drawPebble();
+            if (replacementpebble == -1) {
+                bagZ.refillBag();
+                draw();
+            } else {
+                discardQueue.add(bagZ.getBagPair());
+            }
+        }
+        //here call the discard pebble function on from the bag class
+        //take the top element of the linked list do that.function(thisPlayer, replacementPebble)
+    }
+
     public void start_game() {
         setBagPairs();
         System.out.println("you will be asked to enter the number of players and then for the location");
@@ -40,9 +69,8 @@ public class Game {
         while (true) {//loops until use exits or enters correct information so the program can proceed
             System.out.println("Please enter the number of players:");
             String player_input = System.console().readLine();//verify data type
+            numPlayers = Integer.parseInt(player_input);
             try {
-                @SuppressWarnings("unused")//
-                numPlayers = Integer.parseInt(player_input);
                 if (numPlayers > 0) {
                     String file_input;
                     for (int i = 1; i < 4; i++) {
@@ -52,7 +80,18 @@ public class Game {
                             break;//exit the loop
                         } else { //check if the input is valid using try catch block
                             try{//reading a file
-                                pebbles = read_csv(file_input);
+                                read_csv(file_input);
+                                playerList = new Player[numPlayers];
+                                for (int j = 1; j <= numPlayers; j++) {
+                                    pebbles.addAll(pebbles);
+                                    Player nextPlayer = new Player(j);
+                                    playerList[j-1] = nextPlayer;
+                                }
+                                switch (i) {
+                                    case 1 -> bagX.setPebbles(pebbles);
+                                    case 2 -> bagY.setPebbles(pebbles);
+                                    case 3 -> bagZ.setPebbles(pebbles);
+                                    default -> pebbles.clear();}
                             } catch (InvalidfileExeption e) {
                                 System.out.println(e);
                                 //if the file read is invalid then repeat the for loop
@@ -75,7 +114,7 @@ public class Game {
 
     }
 
-    public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
+    public void read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
         String StringOfNumbers;
         Scanner scanner;
         ArrayList<Integer> integers = new ArrayList<Integer>();
@@ -122,8 +161,6 @@ public class Game {
             if(errorCount>0){
                 //throw an exception
                 throw new InvalidfileExeption(ErrorString.concat("total errors:" + errorCount));
-            }else{
-                return integers;
             }
         } catch (IOException e) {
             System.out.println("We Could not find the file and : " + e);
