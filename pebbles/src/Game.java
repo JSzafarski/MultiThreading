@@ -61,7 +61,8 @@ public class Game {
                         // validate
                     }
                     //calculate the necessary amounts of pebbles for the players
-                    if (!Objects.equals(file_input, "X")) {//if X was pressed then the program should repeat everything as the user requested to change inputs
+                    if (!Objects.equals(file_input, "X")) {
+                        //if X was pressed then the program should repeat everything as the user requested to change inputs
                         break;
                     }
                 } else {
@@ -72,42 +73,45 @@ public class Game {
             }
         }
 
-
     }
 
-    public ArrayList<Integer> read_csv (String filename) throws IOException {//validate file name when calling the method
+    public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
         String StringOfNumbers;
         Scanner scanner;
         ArrayList<Integer> integers = new ArrayList<Integer>();
+        int errorCount = 0;
         int temporaryint  = 0;
         String text = "";
+        String ErrorString ="We have detected problems inside the file as follows: ";
         try {
             File file = new File(filename); // java.io.File(source file with text)
             scanner = new Scanner(file);    // java.util.Scanner
-            while (scanner.hasNextLine()){//this loop is going to be used to read a text file (each line)
+            while(scanner.hasNextLine()){//this loop is going to be used to read a text file (each line)
                 StringOfNumbers = scanner.nextLine();
                 int x = 0;
                 StringBuilder CurrentString = new StringBuilder();
                 while(x < StringOfNumbers.length() + 1) {//might need fixing
-                    int y= 0;
-                    int value = 0;
                     if(!StringOfNumbers.charAt(x).equals(",")){//fix
                         if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
                             CurrentString.append(StringOfNumbers.charAt(x));
                         }else{
+                            errorCount++;
+                            ErrorString=ErrorString.concat("type error on line: " + x +" ," );
                             //throw error as it's not a character
                         }
                     }else{
                         if(CurrentString.toString().equals("")){
-                            //throw error as it means there as an empty space like so: ,,
+                            ErrorString=ErrorString.concat("empty entry on line: " + x +" ," );
+                            errorCount++;
                         }else{
                             temporaryint = Integer.parseInt(CurrentString.toString());
                             if(temporaryint>0){
                                 integers.add(temporaryint);//adds the item to the list
                             }else{
-                                //throw error
+                                ErrorString=ErrorString.concat("range error on line : " + x +" ," );
+                                errorCount++;
                             }
-                            CurrentString.setLength(0);//
+                            CurrentString.setLength(0);
                         }
                         //save the number into an array and proceed gathering more numbers
                     }
@@ -115,10 +119,15 @@ public class Game {
                     x++;
                 }
             }
-        } catch (Exception e) {
-            System.out.println("error: " + e);
+            if(errorCount>0){
+                //throw an exception
+                throw new InvalidfileExeption(ErrorString.concat("total errors:" + errorCount));
+            }else{
+                return integers;
+            }
+        } catch (IOException e) {
+            System.out.println("We Could not find the file and : " + e);
+            throw new InvalidfileExeption("we could not find the file at this file path");
         }
-        System.out.println(text);
     }
     }
-}
