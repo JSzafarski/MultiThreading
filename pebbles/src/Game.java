@@ -91,7 +91,7 @@ public class Game {
                 int x = 0;
                 StringBuilder CurrentString = new StringBuilder();
                 while(x < StringOfNumbers.length() + 1) {//might need fixing
-                    if(!StringOfNumbers.charAt(x).equals(",")){//fix
+                    if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",")){//fix
                         if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
                             CurrentString.append(StringOfNumbers.charAt(x));
                         }else{
