@@ -59,6 +59,7 @@ public class Game {
     }
 
     public void start_game() {
+
         setBagPairs();
         System.out.println("you will be asked to enter the number of players and then for the location");
         System.out.println("of three files in turn containing comma separated inger values for the pebble weights.");
@@ -68,13 +69,13 @@ public class Game {
         System.out.println("");
         while (true) {//loops until use exits or enters correct information so the program can proceed
             System.out.println("Please enter the number of players:");
-            String player_input = System.console().readLine();//verify data type
-            numPlayers = Integer.parseInt(player_input);
+            numPlayers = Integer.parseInt(System.console().readLine());
+            int totalPebbles = 0;
             try {
                 if (numPlayers > 0) {
                     String file_input;
-                    for (int i = 1; i < 4; i++) {
-                        System.out.println("Please enter location of bag number " + i + " to load:");
+                    for (int i = 1; i <= 3; i++) {
+                        System.out.println("Please enter location of bag number " + i + " to load:");//do we want to allow th user to enter same csv file 3 times?
                         file_input = System.console().readLine();//verify data type
                         if (Objects.equals(file_input, "X")) {
                             break;//exit the loop
@@ -88,16 +89,44 @@ public class Game {
                                     playerList[j-1] = nextPlayer;
                                 }
                                 switch (i) {
-                                    case 1 -> bagX.setPebbles(pebbles);
-                                    case 2 -> bagY.setPebbles(pebbles);
-                                    case 3 -> bagZ.setPebbles(pebbles);
-                                    default -> pebbles.clear();}
+                                    case 1 -> {
+                                        if(pebbles.size() <10) {
+                                            totalPebbles = totalPebbles + pebbles.size();
+                                            bagX.setPebbles(pebbles);
+                                            pebbles.clear();
+                                        }else{
+                                            //say that the file i has got not enougth pebbles for the game to run
+                                        }
+                                    }
+                                    case 2 -> {
+                                        if(pebbles.size() <10) {
+                                            totalPebbles = totalPebbles + pebbles.size();
+                                            bagY.setPebbles(pebbles);
+                                            pebbles.clear();
+                                        }else{
+
+                                        }
+                                    }
+                                    case 3 -> {
+                                        if(pebbles.size() <10) {
+                                            totalPebbles = totalPebbles + pebbles.size();
+                                            bagZ.setPebbles(pebbles);
+                                            pebbles.clear();
+                                        }else{
+
+                                        }
+                                    }
+                                }
                             } catch (InvalidfileExeption e) {
-                                System.out.println(e);
+                                throw new InvalidfileExeption(e);
                                 //if the file read is invalid then repeat the for loop
                             }
                         }
                         // validate
+                    }
+
+                    if(totalPebbles<calculate_minPebbles(numPlayers)){
+                        //throw error
                     }
                     //calculate the necessary amounts of pebbles for the players
                     if (!Objects.equals(file_input, "X")) {
@@ -117,7 +146,6 @@ public class Game {
     public void read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
         String StringOfNumbers;
         Scanner scanner;
-        ArrayList<Integer> integers = new ArrayList<Integer>();
         int errorCount = 0;
         int temporaryint  = 0;
         String text = "";
@@ -145,7 +173,7 @@ public class Game {
                         }else{
                             temporaryint = Integer.parseInt(CurrentString.toString());
                             if(temporaryint>0){
-                                integers.add(temporaryint);//adds the item to the list
+                                pebbles.add(temporaryint);//adds the item to the list
                             }else{
                                 ErrorString=ErrorString.concat("range error on line : " + x +" ," );
                                 errorCount++;
@@ -167,4 +195,11 @@ public class Game {
             throw new InvalidfileExeption("we could not find the file at this file path");
         }
     }
+
+    public int calculate_minPebbles(int players){//simple lol
+        return 11*players;
+    }
+
+    public int
+
     }
