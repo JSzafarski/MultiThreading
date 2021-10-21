@@ -90,7 +90,7 @@ public class Game {
                                 }
                                 switch (i) {
                                     case 1 -> {
-                                        if(pebbles.size() <10) {
+                                        if(pebbles.size() <10) {//the program has to have at least 10 pebbles per bag but also at least 11X the pebbles of players in the game
                                             totalPebbles = totalPebbles + pebbles.size();
                                             bagX.setPebbles(pebbles);
                                             pebbles.clear();
