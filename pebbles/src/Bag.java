@@ -41,7 +41,7 @@ public class Bag {
         }
     }
 
-    //discarding pebble function
+    //method for discarding pebble into selected bag from a selected player
     public void discardPebble(Player thisPlayer, int replacementPebble) {
         int discarded = thisPlayer.discardPebble(replacementPebble);
         this.getPebbles().add(discarded);

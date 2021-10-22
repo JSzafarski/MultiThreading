@@ -38,6 +38,7 @@ public class Player {
     }
 
 
+    //takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
     public int discardPebble(int replacementPebble) {
         int index = rand.nextInt(this.getPebbles().length);
         int pebbleWeight = this.getPebbles()[index];
@@ -45,7 +46,14 @@ public class Player {
         return pebbleWeight;
     }
 
-    public int calculateTotalWeight(){}
+    //calculates the total weight of a player's hand
+    public int calculateTotalWeight(){
+        int totalWeight = 0;
+        for (int i : this.getPebbles()) {
+            totalWeight = totalWeight + i;
+        }
+        return totalWeight;
+    }
 
 
 }

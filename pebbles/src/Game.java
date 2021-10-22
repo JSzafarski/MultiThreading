@@ -27,7 +27,7 @@ public class Game {
         bagC.setBagPair(bagZ);
     }
 
-    public void draw(Player thisPlayer) {//function that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
+    public void draw_discard(Player thisPlayer) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         int num = rand.nextInt(3);
         int replacementpebble = -1;
         switch (num) {//num randomly generates a number to randomly enter a case which represent randomly picking a bag
@@ -35,8 +35,8 @@ public class Game {
                 replacementpebble = bagX.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagX.refillBag();
-                    draw(thisPlayer);
-                } else {//the drawPebble function was successful and a pointer to a bag that is in line to be discarded into is added to the queue
+                    draw_discard(thisPlayer);
+                } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     discardQueue.add(bagX.getBagPair());
                 }
             }
@@ -44,8 +44,8 @@ public class Game {
                 replacementpebble = bagY.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagY.refillBag();
-                    draw(thisPlayer);
-                } else {//the drawPebble function was successful and a pointer to a bag that is in line to be discarded into is added to the queue
+                    draw_discard(thisPlayer);
+                } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     discardQueue.add(bagY.getBagPair());
                 }
             }
@@ -53,8 +53,8 @@ public class Game {
                 replacementpebble = bagZ.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagZ.refillBag();
-                    draw(thisPlayer);
-                } else {//the drawPebble function was successful and a pointer to a bag that is in line to be discarded into is added to the queue
+                    draw_discard(thisPlayer);
+                } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     discardQueue.add(bagZ.getBagPair());
                 }
             }
