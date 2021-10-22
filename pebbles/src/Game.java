@@ -27,36 +27,42 @@ public class Game {
         bagC.setBagPair(bagZ);
     }
 
-    public void draw(Player thisPlayer) {
+    public void draw(Player thisPlayer) {//function that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         int num = rand.nextInt(3);
-        if (num == 0) {
-            int replacementpebble = bagX.drawPebble();
-            if (replacementpebble == -1) {
-                bagX.refillBag();
-                draw();
-            } else {
-                discardQueue.add(bagX.getBagPair());
+        int replacementpebble = -1;
+        switch (num) {//num randomly generates a number to randomly enter a case which represent randomly picking a bag
+            case 0 -> {
+                replacementpebble = bagX.drawPebble();
+                if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
+                    bagX.refillBag();
+                    draw(thisPlayer);
+                } else {//the drawPebble function was successful and a pointer to a bag that is in line to be discarded into is added to the queue
+                    discardQueue.add(bagX.getBagPair());
+                }
             }
-        } else if (num == 1)  {
-            int replacementpebble = bagY.drawPebble();
-            if (replacementpebble == -1) {
-                bagY.refillBag();
-                draw();
-            } else {
-                discardQueue.add(bagY.getBagPair());
+            case 1 -> {
+                replacementpebble = bagY.drawPebble();
+                if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
+                    bagY.refillBag();
+                    draw(thisPlayer);
+                } else {//the drawPebble function was successful and a pointer to a bag that is in line to be discarded into is added to the queue
+                    discardQueue.add(bagY.getBagPair());
+                }
             }
-        } else if (num == 2) {
-            int replacementpebble = bagZ.drawPebble();
-            if (replacementpebble == -1) {
-                bagZ.refillBag();
-                draw();
-            } else {
-                discardQueue.add(bagZ.getBagPair());
+            case 2 -> {
+                replacementpebble = bagZ.drawPebble();
+                if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
+                    bagZ.refillBag();
+                    draw(thisPlayer);
+                } else {//the drawPebble function was successful and a pointer to a bag that is in line to be discarded into is added to the queue
+                    discardQueue.add(bagZ.getBagPair());
+                }
             }
         }
-        //here call the discard pebble function on from the bag class
-        //take the top element of the linked list do that.function(thisPlayer, replacementPebble)
+        //here call the discard pebble function on the next bag in line to be discarded into from the bag class, ensures each player holds no more than 10 pebbles
+        discardQueue.removeFirst().discardPebble(thisPlayer, replacementpebble);
     }
+
 
     public void start_game() {
 
@@ -82,39 +88,39 @@ public class Game {
                         } else { //check if the input is valid using try catch block
                             try{//reading a file
                                 read_csv(file_input);
+                                //creating copy of pebbles for use of adding
+                                ArrayList<Integer> pebblesCopy = pebbles;
+                                while (pebbles.size() < 11) {//ensures that the there is at least 11 pebbles while maintaining the same distribution of the file the weights are loaded from
+                                    pebbles.addAll(pebblesCopy);
+                                }
+                                //makes pebbles copy for the new greater than or equal to pebbles list to be used for adding
+                                ArrayList<Integer> pebblesCopy2 = pebbles;
+                                //creates the list of players
                                 playerList = new Player[numPlayers];
-                                for (int j = 1; j <= numPlayers; j++) {
-                                    pebbles.addAll(pebbles);
+                                for (int j = 1; j <= numPlayers; j++) {//ensures that there is at least 11* the number of players of pebbles in each bag
+                                    pebbles.addAll(pebblesCopy2);
+                                    //creates the next player
                                     Player nextPlayer = new Player(j);
+                                    //adds the next player to the list of players
                                     playerList[j-1] = nextPlayer;
                                 }
-                                switch (i) {
+                                switch (i) {//uses the for loop to identify which bag is being added to
                                     case 1 -> {
-                                        if(pebbles.size() <10) {//the program has to have at least 10 pebbles per bag but also at least 11X the pebbles of players in the game
-                                            totalPebbles = totalPebbles + pebbles.size();
-                                            bagX.setPebbles(pebbles);
-                                            pebbles.clear();
-                                        }else{
-                                            //say that the file i has got not enougth pebbles for the game to run
+                                        totalPebbles = totalPebbles + pebbles.size();
+                                        bagX.setPebbles(pebbles);
                                         }
-                                    }
                                     case 2 -> {
-                                        if(pebbles.size() <10) {
-                                            totalPebbles = totalPebbles + pebbles.size();
-                                            bagY.setPebbles(pebbles);
-                                            pebbles.clear();
-                                        }else{
-
+                                        totalPebbles = totalPebbles + pebbles.size();
+                                        bagY.setPebbles(pebbles);
                                         }
-                                    }
                                     case 3 -> {
-                                        if(pebbles.size() <10) {
-                                            totalPebbles = totalPebbles + pebbles.size();
-                                            bagZ.setPebbles(pebbles);
-                                            pebbles.clear();
-                                        }else{
-
-                                        }
+                                        totalPebbles = totalPebbles + pebbles.size();
+                                        bagZ.setPebbles(pebbles);
+                                    }
+                                    default -> {//clearing arraylists for next iteration default always happens
+                                        pebbles.clear();
+                                        pebblesCopy.clear();
+                                        pebblesCopy2.clear();
                                     }
                                 }
                             } catch (InvalidfileExeption e) {
@@ -125,7 +131,7 @@ public class Game {
                         // validate
                     }
 
-                    if(totalPebbles<calculate_minPebbles(numPlayers)){
+                    if(totalPebbles<calculate_minPebbles(numPlayers)){//not sure we need this if we always ensure that there is always at least 11* pebbles as players?
                         //throw error
                     }
                     //calculate the necessary amounts of pebbles for the players
@@ -200,6 +206,5 @@ public class Game {
         return 11*players;
     }
 
-    public int
 
     }

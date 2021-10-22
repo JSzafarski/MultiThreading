@@ -45,5 +45,7 @@ public class Player {
         return pebbleWeight;
     }
 
+    public int calculateTotalWeight(){}
+
 
 }
