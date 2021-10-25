@@ -2,12 +2,13 @@ import java.util.*;
 import java.io.File;
 import java.io.IOException;
 
-public class Game {
+
+
+public class Game implements Runnable{ //NOT SURE LOL
     int numPlayers;//number of players
     ArrayList<Integer> pebbles = new ArrayList<Integer>();//don't we need 3 arrays for 3 csv files???
     Player[] playerList;
     LinkedList<Bag> discardQueue = new LinkedList<>();
-    Random rand = new Random();
     //instantiating black bags
     Bag bagX = new Bag(pebbles, "BLACK");
     Bag bagY = new Bag(pebbles, "BLACK");
@@ -64,8 +65,7 @@ public class Game {
     }
 
 
-    public void start_game() {
-
+    public void start_game() {//if the undwser eneters e then the program must exit.
         setBagPairs();
         System.out.println("you will be asked to enter the number of players and then for the location");
         System.out.println("of three files in turn containing comma separated inger values for the pebble weights.");
@@ -83,7 +83,7 @@ public class Game {
                     for (int i = 1; i <= 3; i++) {
                         System.out.println("Please enter location of bag number " + i + " to load:");//do we want to allow th user to enter same csv file 3 times?
                         file_input = System.console().readLine();//verify data type
-                        if (Objects.equals(file_input, "X")) {
+                        if (Objects.equals(file_input, "X")||(Objects.equals(file_input, "E"))) {
                             break;//exit the loop
                         } else { //check if the input is valid using try catch block
                             try{//reading a file
@@ -130,14 +130,16 @@ public class Game {
                         }
                         // validate
                     }
-
-                    if(totalPebbles<calculate_minPebbles(numPlayers)){//not sure we need this if we always ensure that there is always at least 11* pebbles as players?
-                        //throw error
+                    if(totalPebbles<calculate_minPebbles(numPlayers)){//not enough total pebbles to execute the game
+                        System.out.println("there is not enough pebbles in total form each csv file,please increase that amount");
+                        //break;
                     }
                     //calculate the necessary amounts of pebbles for the players
                     if (!Objects.equals(file_input, "X")) {
                         //if X was pressed then the program should repeat everything as the user requested to change inputs
-                        break;
+                        //break;
+                    }else if (!Objects.equals(file_input, "E")){
+
                     }
                 } else {
                     System.out.println("invalid input ,enter again!");//shows error
@@ -146,7 +148,6 @@ public class Game {
                 System.out.println("invalid input ,enter again!");//shows error
             }
         }
-
     }
 
     public void read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
@@ -202,9 +203,24 @@ public class Game {
         }
     }
 
-    public int calculate_minPebbles(int players){//simple lol
+    public int calculate_minPebbles(int players){
         return 11*players;
     }
 
+    public void RunPlayers(int numPlayers){
+        //"int" defines the amount of players
+        //player id starts from 1001 (we can change this idk not important tbh.
+        for(int i = 1; i <= numPlayers; i++){
+            playerList[i] = new Player(1000+i);
+        }
+    }
+
+    @Override
+    public void run() {//how can you run threads in a list??? not  fesable implentation
+
+
+
 
     }
+
+}

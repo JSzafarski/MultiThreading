@@ -3,10 +3,11 @@ import java.util.Random;
 
 
 public class Player {
-    int playerID;
+    int  playerID;
     int[] pebbles = new int[10];
     int weight;
     Random rand = new Random();
+    Boolean Won = false;
 
 
     public int getPlayerID() {
@@ -37,7 +38,9 @@ public class Player {
         this.playerID = playerID;
     }
 
-
+    public void UpdateWinner(){
+        Won = true;
+    }
     //takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
     public int discardPebble(int replacementPebble) {
         int index = rand.nextInt(this.getPebbles().length);
@@ -45,7 +48,6 @@ public class Player {
         this.getPebbles()[index] = replacementPebble;
         return pebbleWeight;
     }
-
     //calculates the total weight of a player's hand
     public int calculateTotalWeight(){
         int totalWeight = 0;
