@@ -87,14 +87,14 @@ public class Game implements Runnable{ //NOT SURE LOL
                             break;//exit the loop
                         } else { //check if the input is valid using try catch block
                             try{//reading a file
-                                read_csv(file_input);
+                                read_csv(file_input);//populates the pebbles temp array
                                 //creating copy of pebbles for use of adding
                                 ArrayList<Integer> pebblesCopy = pebbles;
                                 while (pebbles.size() < 11) {//ensures that the there is at least 11 pebbles while maintaining the same distribution of the file the weights are loaded from
                                     pebbles.addAll(pebblesCopy);
                                 }
                                 //makes pebbles copy for the new greater than or equal to pebbles list to be used for adding
-                                ArrayList<Integer> pebblesCopy2 = pebbles;
+                                ArrayList<Integer> pebblesCopy2 = pebbles;//what is this (totally in effeicient)
                                 //creates the list of players
                                 playerList = new Player[numPlayers];
                                 for (int j = 1; j <= numPlayers; j++) {//ensures that there is at least 11* the number of players of pebbles in each bag
@@ -207,17 +207,17 @@ public class Game implements Runnable{ //NOT SURE LOL
         return 11*players;
     }
 
-    public void RunPlayers(int numPlayers){
-        //"int" defines the amount of players
-        //player id starts from 1001 (we can change this idk not important tbh.
-        for(int i = 1; i <= numPlayers; i++){
-            playerList[i] = new Player(1000+i);
-        }
-    }
+//    public void RunPlayers(int numPlayers){
+//        //"int" defines the amount of players
+//        //player id starts from 1001 (we can change this idk not important tbh.
+//        for(int i = 1; i <= numPlayers; i++){
+//            playerList[i] = new Player(1000+i);
+//        }
+//    }
 
     @Override
     public void run() {//how can you run threads in a list??? not  fesable implentation
-
+        
 
 
 
