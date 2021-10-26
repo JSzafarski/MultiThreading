@@ -1,21 +1,13 @@
-import java.util.ArrayList;
 import java.util.Random;
-
 
 public class Player implements Runnable {
     int  playerID;
     int[] pebbles = new int[10];
     int weight;
     Random rand = new Random();
-    Boolean Won = false;
-
 
     public int getPlayerID() {
         return playerID;
-    }
-
-    public void setPlayerID(int playerID) {
-        this.playerID = playerID;
     }
 
     public int[] getPebbles() {
@@ -38,9 +30,6 @@ public class Player implements Runnable {
         this.playerID = playerID;
     }
 
-    public void UpdateWinner(){
-        Won = true;
-    }
     //takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
     public int discardPebble(int replacementPebble) {
         int index = rand.nextInt(this.getPebbles().length);
@@ -58,8 +47,7 @@ public class Player implements Runnable {
     }
 
     @Override
-    public void run() {//how can you run threads in a list??? not  fesable implentation
-
+    public void run() {//this will run each player
 
 
 

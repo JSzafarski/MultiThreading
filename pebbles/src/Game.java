@@ -1,9 +1,9 @@
 import java.util.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 
-public class Game implements Runnable{ //NOT SURE LOL
-    int numPlayers;//number of players
+public class Game {
     Player[] playerList;
     LinkedList<Bag> discardQueue = new LinkedList<>();
     //instantiating black bags
@@ -26,8 +26,9 @@ public class Game implements Runnable{ //NOT SURE LOL
     }
 
     public void draw_discard(Player thisPlayer) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
+        Random rand = new Random();
         int num = rand.nextInt(3);
-        int replacementpebble = -1;
+        int replacementpebble;//no need to assign it -1 as this is done by the drawPebble function
         switch (num) {//num randomly generates a number to randomly enter a case which represent randomly picking a bag
             case 0 -> {
                 replacementpebble = bagX.drawPebble();
@@ -62,7 +63,8 @@ public class Game implements Runnable{ //NOT SURE LOL
     }
 
 
-    public void start_game() {//if the undwser eneters e then the program must exit.
+    public void start_game(){//if the undwser eneters e then the program must exit.
+        int numPlayers;//number of players
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         setBagPairs();
         System.out.println("you will be asked to enter the number of players and then for the location");
@@ -190,20 +192,14 @@ public class Game implements Runnable{ //NOT SURE LOL
     }
 
     public void RunPlayers(int numPlayers){
-        //"int" defines the amount of players
-        //player id starts from 1001 (we can change this idk not important tbh.
+        //creates each player object for the specified number of players
         for(int i = 1; i <= numPlayers; i++){
            playerList[i] = new Player(1000+i);
+//           Thread playerList[i] = new Thread(Player ());
+//           playerList[i].run();
+
         }
+
     }
-
-
-//    playerList = new Player[numPlayers];
-//                                for (int j = 0; j <= numPlayers-1; j++) {//ensures that there is at least 11* the number of players of pebbles
-//        //creates the next player
-//        Player nextPlayer = new Player(1000+j);//make the id start from 1001 ? idk nto improtant
-//        //adds the next player to the list of players
-//        playerList[j] = nextPlayer;
-//    }
 
 }

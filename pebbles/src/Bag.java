@@ -18,7 +18,7 @@ public class Bag {
 
     //get and set methods for the bag pairs of each bag
     public Bag getBagPair() {return bagPair;}
-    public void setBagPair(Bag bagPair) {this.bagPair = bagPair;}
+    public void setBagPair(Bag bagPair) {this.bagPair = bagPair;}//not sure if this will work
 
     //get and set methods for the bag colours of each bag
     public String getBagColour() {return bagColour;}
