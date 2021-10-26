@@ -10,8 +10,7 @@ public class Bag {
 
     //constructors
     Bag(Bag bagPair, ArrayList<Integer> pebbles, String bagColour) {this.bagPair = bagPair; this.pebbles = pebbles; this.bagColour = bagColour;}
-    Bag(ArrayList<Integer> pebbles, String bagColour) {this.pebbles = pebbles; this.bagColour = bagColour;}
-    Bag() {}
+    Bag(String bagColour) {this.bagColour = bagColour;}
 
     //get and set methods for the list of pebbles in the bags
     public ArrayList<Integer> getPebbles() {return this.pebbles;}

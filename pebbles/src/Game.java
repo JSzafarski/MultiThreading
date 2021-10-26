@@ -2,21 +2,18 @@ import java.util.*;
 import java.io.File;
 import java.io.IOException;
 
-
-
 public class Game implements Runnable{ //NOT SURE LOL
     int numPlayers;//number of players
-    ArrayList<Integer> pebbles = new ArrayList<Integer>();//don't we need 3 arrays for 3 csv files???
     Player[] playerList;
     LinkedList<Bag> discardQueue = new LinkedList<>();
     //instantiating black bags
-    Bag bagX = new Bag(pebbles, "BLACK");
-    Bag bagY = new Bag(pebbles, "BLACK");
-    Bag bagZ = new Bag(pebbles, "BLACK");
+    Bag bagX = new Bag("BLACK");
+    Bag bagY = new Bag("BLACK");
+    Bag bagZ = new Bag("BLACK");
     //instantiating white bags
-    Bag bagA = new Bag(pebbles, "WHITE");
-    Bag bagB = new Bag(pebbles, "WHITE");
-    Bag bagC = new Bag(pebbles, "WHITE");
+    Bag bagA = new Bag("WHITE");
+    Bag bagB = new Bag("WHITE");
+    Bag bagC = new Bag("WHITE");
 
     //method for setting bag pairs of bags
     public void setBagPairs() {
@@ -66,6 +63,7 @@ public class Game implements Runnable{ //NOT SURE LOL
 
 
     public void start_game() {//if the undwser eneters e then the program must exit.
+        ArrayList<Integer> pebbles = new ArrayList<Integer>();
         setBagPairs();
         System.out.println("you will be asked to enter the number of players and then for the location");
         System.out.println("of three files in turn containing comma separated inger values for the pebble weights.");
@@ -73,7 +71,7 @@ public class Game implements Runnable{ //NOT SURE LOL
         System.out.println("the game will then be simulated,and output written to file in the directory.");
         System.out.println("type: X to exit and start over.");
         System.out.println("");
-        while (true) {//loops until use exits or enters correct information so the program can proceed
+        while (true){//loops until use exits or enters correct information so the program can proceed
             System.out.println("Please enter the number of players:");
             numPlayers = Integer.parseInt(System.console().readLine());
             int totalPebbles = 0;
@@ -81,76 +79,58 @@ public class Game implements Runnable{ //NOT SURE LOL
                 if (numPlayers > 0) {
                     String file_input;
                     for (int i = 1; i <= 3; i++) {
-                        System.out.println("Please enter location of bag number " + i + " to load:");//do we want to allow th user to enter same csv file 3 times?
+                        System.out.println("Please enter location of bag number " + i + " to load:");
                         file_input = System.console().readLine();//verify data type
-                        if (Objects.equals(file_input, "X")||(Objects.equals(file_input, "E"))) {
+                        if (Objects.equals(file_input, "X")||(Objects.equals(file_input, "E"))){
+                            if((Objects.equals(file_input, "E"))){
+                                System.exit(0);
+                            }
                             break;//exit the loop
                         } else { //check if the input is valid using try catch block
-                            try{//reading a file
-                                read_csv(file_input);//populates the pebbles temp array
-                                //creating copy of pebbles for use of adding
-                                ArrayList<Integer> pebblesCopy = pebbles;
-                                while (pebbles.size() < 11) {//ensures that the there is at least 11 pebbles while maintaining the same distribution of the file the weights are loaded from
-                                    pebbles.addAll(pebblesCopy);
-                                }
-                                //makes pebbles copy for the new greater than or equal to pebbles list to be used for adding
-                                ArrayList<Integer> pebblesCopy2 = pebbles;//what is this (totally in effeicient)
-                                //creates the list of players
-                                playerList = new Player[numPlayers];
-                                for (int j = 1; j <= numPlayers; j++) {//ensures that there is at least 11* the number of players of pebbles in each bag
-                                    pebbles.addAll(pebblesCopy2);
-                                    //creates the next player
-                                    Player nextPlayer = new Player(j);
-                                    //adds the next player to the list of players
-                                    playerList[j-1] = nextPlayer;
-                                }
-                                switch (i) {//uses the for loop to identify which bag is being added to
-                                    case 1 -> {
-                                        totalPebbles = totalPebbles + pebbles.size();
-                                        bagX.setPebbles(pebbles);
+                            try{
+                                pebbles.addAll(read_csv(file_input));//populates the pebbles temp array
+                                if(pebbles.size()<10){//if some files contains less than 10 pebbles each then throw error as its below spec
+                                    throw new InvalidfileExeption("file number" + i + " has to have at least 10 pebbles");
+                                }else{
+                                    switch (i) {//uses the for loop to identify which bag is being added to
+                                        case 1 -> {
+                                            totalPebbles = totalPebbles + pebbles.size();
+                                            bagX.setPebbles(pebbles);
+                                            }
+                                        case 2 -> {
+                                            totalPebbles = totalPebbles + pebbles.size();
+                                            bagY.setPebbles(pebbles);
+                                            }
+                                        case 3 -> {
+                                            totalPebbles = totalPebbles + pebbles.size();
+                                            bagZ.setPebbles(pebbles);
                                         }
-                                    case 2 -> {
-                                        totalPebbles = totalPebbles + pebbles.size();
-                                        bagY.setPebbles(pebbles);
+                                        default -> {
+                                            pebbles.clear();
                                         }
-                                    case 3 -> {
-                                        totalPebbles = totalPebbles + pebbles.size();
-                                        bagZ.setPebbles(pebbles);
-                                    }
-                                    default -> {//clearing arraylists for next iteration default always happens
-                                        pebbles.clear();
-                                        pebblesCopy.clear();
-                                        pebblesCopy2.clear();
                                     }
                                 }
                             } catch (InvalidfileExeption e) {
-                                throw new InvalidfileExeption(e);
-                                //if the file read is invalid then repeat the for loop
+                                System.out.println(e.getMessage());
                             }
                         }
-                        // validate
                     }
-                    if(totalPebbles<calculate_minPebbles(numPlayers)){//not enough total pebbles to execute the game
+                    if (totalPebbles < calculate_minPebbles(numPlayers)) {//not enough total pebbles to execute the game
                         System.out.println("there is not enough pebbles in total form each csv file,please increase that amount");
-                        //break;
-                    }
-                    //calculate the necessary amounts of pebbles for the players
-                    if (!Objects.equals(file_input, "X")) {
-                        //if X was pressed then the program should repeat everything as the user requested to change inputs
-                        //break;
-                    }else if (!Objects.equals(file_input, "E")){
-
+                    } else {
+                        RunPlayers(numPlayers);//creates players for the game to execute
+                        break;//all conditions have been met so the program my proceed
                     }
                 } else {
                     System.out.println("invalid input ,enter again!");//shows error
                 }
             } catch (NumberFormatException | IOException e) {
-                System.out.println("invalid input ,enter again!");//shows error
+                System.out.println(e.getMessage());//shows error
             }
         }
     }
-
-    public void read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
+    public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
+        ArrayList<Integer> pebbles = new ArrayList<Integer>();
         String StringOfNumbers;
         Scanner scanner;
         int errorCount = 0;
@@ -196,6 +176,8 @@ public class Game implements Runnable{ //NOT SURE LOL
             if(errorCount>0){
                 //throw an exception
                 throw new InvalidfileExeption(ErrorString.concat("total errors:" + errorCount));
+            }else{
+                return pebbles;
             }
         } catch (IOException e) {
             System.out.println("We Could not find the file and : " + e);
@@ -207,20 +189,21 @@ public class Game implements Runnable{ //NOT SURE LOL
         return 11*players;
     }
 
-//    public void RunPlayers(int numPlayers){
-//        //"int" defines the amount of players
-//        //player id starts from 1001 (we can change this idk not important tbh.
-//        for(int i = 1; i <= numPlayers; i++){
-//            playerList[i] = new Player(1000+i);
-//        }
-//    }
-
-    @Override
-    public void run() {//how can you run threads in a list??? not  fesable implentation
-        
-
-
-
+    public void RunPlayers(int numPlayers){
+        //"int" defines the amount of players
+        //player id starts from 1001 (we can change this idk not important tbh.
+        for(int i = 1; i <= numPlayers; i++){
+           playerList[i] = new Player(1000+i);
+        }
     }
+
+
+//    playerList = new Player[numPlayers];
+//                                for (int j = 0; j <= numPlayers-1; j++) {//ensures that there is at least 11* the number of players of pebbles
+//        //creates the next player
+//        Player nextPlayer = new Player(1000+j);//make the id start from 1001 ? idk nto improtant
+//        //adds the next player to the list of players
+//        playerList[j] = nextPlayer;
+//    }
 
 }

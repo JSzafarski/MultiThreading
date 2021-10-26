@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 
-public class Player {
+public class Player implements Runnable {
     int  playerID;
     int[] pebbles = new int[10];
     int weight;
@@ -55,6 +55,14 @@ public class Player {
             totalWeight = totalWeight + i;
         }
         return totalWeight;
+    }
+
+    @Override
+    public void run() {//how can you run threads in a list??? not  fesable implentation
+
+
+
+
     }
 
 
