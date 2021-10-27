@@ -3,8 +3,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
-public class Game {
+public class Game implements Runnable{
+    Boolean hasWon = false;
     Player[] playerList;
+    Thread[] threadList;
     LinkedList<Bag> discardQueue = new LinkedList<>();
     //instantiating black bags
     Bag bagX = new Bag("BLACK");
@@ -25,16 +27,16 @@ public class Game {
         bagC.setBagPair(bagZ);
     }
 
-    public void draw_discard(Player thisPlayer) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
+    public int draw(Player thisPlayer) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         Random rand = new Random();
         int num = rand.nextInt(3);
-        int replacementpebble;//no need to assign it -1 as this is done by the drawPebble function
+        int replacementpebble = -1;
         switch (num) {//num randomly generates a number to randomly enter a case which represent randomly picking a bag
             case 0 -> {
                 replacementpebble = bagX.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagX.refillBag();
-                    draw_discard(thisPlayer);
+                    draw(thisPlayer);
                 } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     discardQueue.add(bagX.getBagPair());
                 }
@@ -43,7 +45,7 @@ public class Game {
                 replacementpebble = bagY.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagY.refillBag();
-                    draw_discard(thisPlayer);
+                    draw(thisPlayer);
                 } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     discardQueue.add(bagY.getBagPair());
                 }
@@ -52,12 +54,25 @@ public class Game {
                 replacementpebble = bagZ.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagZ.refillBag();
-                    draw_discard(thisPlayer);
+                    draw(thisPlayer);
                 } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     discardQueue.add(bagZ.getBagPair());
                 }
             }
         }
+        return replacementpebble;
+    }
+
+    public void draw10(Player thisPlayer) {//function for drawing a player's first 10 pebbles
+        int[] playerHand = new int[10];
+        for (int i = 0; i < 10; i++) {
+            playerHand[i] = draw(thisPlayer);
+        }
+        thisPlayer.setPebbles(playerHand);
+    }
+
+    public void draw_discard(Player thisPlayer) {
+        int replacementpebble = draw(thisPlayer);
         //here call the discard pebble function on the next bag in line to be discarded into from the bag class, ensures each player holds no more than 10 pebbles
         discardQueue.removeFirst().discardPebble(thisPlayer, replacementpebble);
     }
@@ -192,18 +207,39 @@ public class Game {
     }
 
     public void RunPlayers(int numPlayers){
-        //creates each player object for the specified number of players
-//        for(int i = 1; i <= numPlayers; i++){
-//           playerList[i] = new Player(1000+i);
-////           Thread playerList[i] = new Thread(Player ());
-////           playerList[i].run();
-//
-//        }
-        //i will just do one for one player to see how this works
-        Player Player1 = new Player(1);
-        Player Player2 = new Player(2);
-
-
+        playerList = new Player[numPlayers];
+        threadList = new Thread[numPlayers];
+        //creates each player object and thread for the specified number of players
+        for(int i = 1; i <= numPlayers; i++){
+            playerList[i-1] = new Player(1000+i);
+            draw10(playerList[i-1]);
+            playerList[i-1].calculateTotalWeight();
+            threadList[i-1] = new Thread();
+        }
+        for (Thread t : threadList) {
+            t.start();
+        }
     }
+
+    @Override
+    public void run() {//this will run each player
+        int index = 0;
+        Player thisPlayer = new Player(-1);
+        for (Thread t : threadList) {
+            if (Thread.currentThread() == t) {
+                thisPlayer = playerList[index];
+                break;
+            }
+            index++;
+        }
+        while (!hasWon) {
+            if (thisPlayer.getTotalWeight() == 100){
+                hasWon = true;
+                System.out.println("");//print the player has won announcment
+            }
+            draw_discard(thisPlayer);
+        }
+    }
+
 
 }

@@ -1,10 +1,14 @@
 import java.util.Random;
 
-public class Player implements Runnable {
+public class Player {
     int  playerID;
     int[] pebbles = new int[10];
     Random rand = new Random();
-    int Weight;
+    int totalWeight;
+
+    public int getTotalWeight() {return totalWeight;}
+
+    public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
 
     public int getPlayerID() {
         return playerID;
@@ -18,20 +22,8 @@ public class Player implements Runnable {
         this.pebbles = pebbles;
     }//
 
-    public void initialWeight(){
-        int i = 1;
-        while(i <=pebbles.length){
-            Weight=Weight+pebbles[i];
-            i++;
-        }
-    }
-
-    public void UpdateWeight(int PebbleWeight ,boolean AddRemove){//true = add,false = remove
-        if(!AddRemove){
-            Weight -=PebbleWeight;
-        }else{//ADD
-            Weight +=PebbleWeight;
-        }
+    public void updateWeight(int newPebble, int oldPebble){//true = add,false = remove
+        this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
     }
 
     public Player(int playerID) {
@@ -42,27 +34,20 @@ public class Player implements Runnable {
 
     public int discardPebble(int replacementPebble) {
         int index = rand.nextInt(this.getPebbles().length);
-        int pebbleWeight = this.getPebbles()[index];
+        int discardPebble = this.getPebbles()[index];
         this.getPebbles()[index] = replacementPebble;
-        return pebbleWeight;
+        this.updateWeight(replacementPebble, discardPebble);
+        return discardPebble;
     }
     //calculates the total weight of a player's hand
-    public int calculateTotalWeight(){
+    public void calculateTotalWeight(){
         int totalWeight = 0;
         for (int i : this.getPebbles()) {
             totalWeight = totalWeight + i;
         }
-        return totalWeight;
+        this.setTotalWeight(totalWeight);
     }
 
-
-
-    @Override
-    public void run() {//this will run each player
-
-
-
-    }
 
 
 }
