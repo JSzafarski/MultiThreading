@@ -193,12 +193,16 @@ public class Game {
 
     public void RunPlayers(int numPlayers){
         //creates each player object for the specified number of players
-        for(int i = 1; i <= numPlayers; i++){
-           playerList[i] = new Player(1000+i);
-//           Thread playerList[i] = new Thread(Player ());
-//           playerList[i].run();
+//        for(int i = 1; i <= numPlayers; i++){
+//           playerList[i] = new Player(1000+i);
+////           Thread playerList[i] = new Thread(Player ());
+////           playerList[i].run();
+//
+//        }
+        //i will just do one for one player to see how this works
+        Player Player1 = new Player(1);
+        Player Player2 = new Player(2);
 
-        }
 
     }
 
