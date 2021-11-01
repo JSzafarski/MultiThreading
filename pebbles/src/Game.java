@@ -28,7 +28,7 @@ public class Game {
         bagC.setBagPair(bagZ);
     }
 
-    public void start_game(){//if the undwser eneters e then the program must exit.
+    public void start_game(){//if the under eneters e then the program must exit.
         int numPlayers;//number of players
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         setBagPairs();
@@ -157,60 +157,32 @@ public class Game {
         return 11*players;
     }
 
-    public synchronized void drawAndDiscard(Player thisPlayer,boolean JustDraw) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
+    public synchronized void drawAndDiscard(Player thisPlayer,boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         //has to be atomic
+        //made th fucntion also draw out
         Random rand = new Random();
-        int num = rand.nextInt(3);
+        int num = rand.nextInt(3);//if it picks 10 it will pick 10 frm the same bag 10 times othwise its a random bag each time its called
         int replacementpebble = -1;
-        switch (num) {//num randomly generates a number to randomly enter a case which represent randomly picking a bag
-            case 0 -> {
-                replacementpebble = bagX.drawPebble();
-                if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
-                    bagX.refillBag();
-                    drawAndDiscard(thisPlayer);
-                } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
-                    bagX.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
-                    //make the user pick up a replacement pebble from black bag
-                    //discard a pebble from player into the right white bag
-                    //update the new pebble array in player
-                }
-            }
-            case 1 -> {
-                replacementpebble = bagY.drawPebble();
-                if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
-                    bagY.refillBag();
-                    drawAndDiscard(thisPlayer);
-                } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
-                    bagY.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
-                }
-            }
-            case 2 -> {
-                replacementpebble = bagZ.drawPebble();
-                if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
-                    bagZ.refillBag();
-                    drawAndDiscard(thisPlayer);
-                } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
-                    bagZ.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
-                }
-            }
+        int NumberOfIterations = 0;
+        int[] TenPebbles = new int[10];
+        if (JustDrawTen) {
+            NumberOfIterations = 10;
+        } else {
+            NumberOfIterations = 1;
         }
-    }
-
-    public synchronized void draw10(Player thisPlayer) {//function for drawing a player's first 10 pebbles
-        int[] playerHand = new int[10];
-        Random rand = new Random();
-        int num = rand.nextInt(3);
-        int pebble;
-
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i <= NumberOfIterations; i++) {
             switch (num) {//num randomly generates a number to randomly enter a case which represent randomly picking a bag
                 case 0 -> {
-                     = bagX.drawPebble();
+                    replacementpebble = bagX.drawPebble();
                     if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                         bagX.refillBag();
-                        drawAndDiscard(thisPlayer);
+                        drawAndDiscard(thisPlayer,false);
                     } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
-                        bagX.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                        if(JustDrawTen){
+                            TenPebbles[i] = bagX.drawPebble();
+                        }else{
+                            bagX.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                        }
                         //make the user pick up a replacement pebble from black bag
                         //discard a pebble from player into the right white bag
                         //update the new pebble array in player
@@ -220,24 +192,37 @@ public class Game {
                     replacementpebble = bagY.drawPebble();
                     if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                         bagY.refillBag();
-                        drawAndDiscard(thisPlayer);
+                        drawAndDiscard(thisPlayer,false);
                     } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
-                        bagY.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                        if(JustDrawTen){
+                            TenPebbles[i] = bagX.drawPebble();
+                        }else{
+                            bagY.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                        }
                     }
                 }
                 case 2 -> {
                     replacementpebble = bagZ.drawPebble();
                     if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                         bagZ.refillBag();
-                        drawAndDiscard(thisPlayer);
+                        drawAndDiscard(thisPlayer,false);
                     } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
-                        bagZ.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                        if(JustDrawTen){
+                            TenPebbles[i] = bagX.drawPebble();
+                        }else{
+                            bagZ.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                        }
                     }
                 }
             }
+         }
+        if(JustDrawTen){
+            thisPlayer.setPebbles(TenPebbles);
         }
+    }
 
-        thisPlayer.setPebbles(playerHand);
+    public synchronized void draw10(Player thisPlayer){//function for drawing a player's first 10 pebbles
+        drawAndDiscard(thisPlayer,true);
     }
 
 
@@ -247,7 +232,7 @@ public class Game {
         //creates each player object and thread for the specified number of players
         for(int i = 0; i <= numPlayers-1; i++){
             playerList[i] = new Player(1000+i);
-            threadList[i] = new Thread(playerList[i]);
+            threadList[i] = new Playerthread(playerList[i]);//pass aparamater (a player)
             threadList[i].start();
         }
 
