@@ -19,8 +19,8 @@ public class Bag {
     public void setBagPair(Bag bagPair) {this.bagPair = bagPair;}//not sure if this will work
 
     //get and set methods for the bag colours of each bag
-    public String getBagColour() {return bagColour;}
-    public void setBagColour(String bagColour) {this.bagColour = bagColour;}
+    //    public String getBagColour() {return bagColour;}
+    //    public void setBagColour(String bagColour) {this.bagColour = bagColour;}
 
     //draw pebble from a chosen bag method
     public int drawPebble() {
@@ -39,9 +39,8 @@ public class Bag {
     }
 
     //method for discarding pebble into selected bag from a selected player
-    public void discardPebble(Player thisPlayer, int replacementPebble) {
-        int discarded = thisPlayer.discardPebble(replacementPebble);
-        this.getPebbles().add(discarded);
+    public void discardPebble(int replacementPebble) {
+        this.getPebbles().add(replacementPebble);
     }
 
     //method to empty a white bag into an empty black bag

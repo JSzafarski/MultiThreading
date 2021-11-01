@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pebbles/src/Playerthread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles/src/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Bag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,6 +43,18 @@
       <updated>1635427253286</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
