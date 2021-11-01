@@ -5,21 +5,20 @@ import java.util.Random;
 
 //we need to counteract starvation
 public class Game {
-    Boolean hasWon = false;
-    Player[] playerList;
-    Thread[] threadList;
+    static Player[] playerList;
+    static Thread[] threadList;
 
     //instantiating black bags
-    Bag bagX = new Bag("BLACK");
-    Bag bagY = new Bag("BLACK");
-    Bag bagZ = new Bag("BLACK");
+    static Bag bagX = new Bag("BLACK");
+    static Bag bagY = new Bag("BLACK");
+    static Bag bagZ = new Bag("BLACK");
     //instantiating white bags
-    Bag bagA = new Bag("WHITE");
-    Bag bagB = new Bag("WHITE");
-    Bag bagC = new Bag("WHITE");
+    static Bag bagA = new Bag("WHITE");
+    static Bag bagB = new Bag("WHITE");
+    static Bag bagC = new Bag("WHITE");
 
     //method for setting bag pairs of bags
-    public void setBagPairs() {
+    public static void setBagPairs() {
         bagX.setBagPair(bagA);
         bagY.setBagPair(bagB);
         bagZ.setBagPair(bagC);
@@ -28,7 +27,7 @@ public class Game {
         bagC.setBagPair(bagZ);
     }
 
-    public void start_game(){//if the under eneters e then the program must exit.
+    public static void  start_game(){//if the under eneters e then the program must exit.
         int numPlayers;//number of players
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         setBagPairs();
@@ -97,7 +96,7 @@ public class Game {
         }
     }
 
-    public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
+    public static ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         String StringOfNumbers;
         Scanner scanner;
@@ -157,7 +156,7 @@ public class Game {
         return 11*players;
     }
 
-    public synchronized void drawAndDiscard(Player thisPlayer,boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
+    public static synchronized void drawAndDiscard(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         //has to be atomic
         //made th fucntion also draw out
         Random rand = new Random();
@@ -221,13 +220,12 @@ public class Game {
         }
     }
 
-    public synchronized void draw10(Player thisPlayer){//function for drawing a player's first 10 pebbles
+    public static synchronized void draw10(Player thisPlayer){//function for drawing a player's first 10 pebbles
         drawAndDiscard(thisPlayer,true);
     }
 
 
     public void RunPlayers(int numPlayers){
-        playerList = new Player[numPlayers-1];
         threadList = new Thread[numPlayers-1];
         //creates each player object and thread for the specified number of players
         for(int i = 0; i <= numPlayers-1; i++){
@@ -235,9 +233,8 @@ public class Game {
             threadList[i] = new Playerthread(playerList[i]);//pass aparamater (a player)
             threadList[i].start();
         }
-
     }
-    public void WriteMetadata(){//used to write player choices into a txt file
+    public static void WriteMetadata(){//used to write player choices into a txt file
 
 
     }

@@ -5,9 +5,8 @@ public class Playerthread extends Thread {
     }
     @Override
     public void run() {//this will run each player
-        Game.drawAndDiscard(ThisPlayer,true);//draws first 10 pebbeles
         ThisPlayer.calculateTotalWeight();
-        Game.draw10(ThisPlayer);
+        Game.draw10(ThisPlayer);//draws first 10 pebbeles
         boolean hasWon = false;
         while (!hasWon) {
             if (ThisPlayer.getTotalWeight() == 100){
