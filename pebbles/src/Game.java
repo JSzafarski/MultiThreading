@@ -153,7 +153,7 @@ public class Game {
         }
     }
 
-    public int calculate_minPebbles(int players){
+    public static int calculate_minPebbles(int players){
         return 11*players;
     }
 
@@ -274,11 +274,17 @@ public class Game {
             }
     }
 
-    public static synchronized void draw10(Player thisPlayer){//function for drawing a player's first 10 pebbles
-        drawAndDiscard(thisPlayer,true);
+    public static synchronized void draw10(Player thisPlayer,int Bag){
+        if(thisPlayer.RandomBag==1){//then go to X
+            Game.drawAndDiscardFromBagX(thisPlayer,true);
+        }else if(thisPlayer.RandomBag==2){//GO TO Y
+            Game.drawAndDiscardFromBagY(thisPlayer,true);
+        }else{//GO TO Z
+            Game.drawAndDiscardFromBagZ(thisPlayer,true);
+        }
     }
 
-    public void RunPlayers(int numPlayers){
+    public static void RunPlayers(int numPlayers){
         threadList = new Thread[numPlayers-1];
         //creates each player object and thread for the specified number of players
         for(int i = 0; i <= numPlayers-1; i++){
