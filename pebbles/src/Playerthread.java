@@ -47,7 +47,13 @@ public class Playerthread extends Thread {
             //compare two arrays before and after to see what pebble has been discarded and drawn!
             TempPebbleArray= ThisPlayer.getPebbles();
             ThisPlayer.GenerateRandomChoice();
-            Game.drawAndDiscard(ThisPlayer,false);//return the bag chosen and the pebble weight from the bag
+            if(ThisPlayer.RandomBag==1){//then go to X
+                Game.drawAndDiscardFromBagX(ThisPlayer,false);
+            }else if(ThisPlayer.RandomBag==2){//GO TO Y
+                Game.drawAndDiscardFromBagY(ThisPlayer,false);
+            }else{//GO TO Z
+                Game.drawAndDiscardFromBagZ(ThisPlayer,false);
+            }
             int NewPebble = 0;
             int OldPebble = 0;
             String LastBagDrawn;
@@ -68,10 +74,10 @@ public class Playerthread extends Thread {
                 LastBagDiscarded = "C";
             }
             //output this into some texts files
-            String String1=("player "+ThisPlayer.playerID+" has drawn a " + NewPebble + "from bag " + LastBagDrawn);
-            String String2=("player "+ThisPlayer.playerID+" hand is "+ Arrays.toString(TempPebbleArray));
-            String String3=("player "+ThisPlayer.playerID+" has drawn a " + OldPebble + "from bag " + LastBagDiscarded);
-            String String4=("player "+ThisPlayer.playerID+" hand is "+ Arrays.toString(ThisPlayer.getPebbles()));
+            String String1=("player "+ThisPlayer.getPlayerID()+" has drawn a " + NewPebble + "from bag " + LastBagDrawn);
+            String String2=("player "+ThisPlayer.getPlayerID()+" hand is "+ Arrays.toString(TempPebbleArray));
+            String String3=("player "+ThisPlayer.getPlayerID()+" has drawn a " + OldPebble + "from bag " + LastBagDiscarded);
+            String String4=("player "+ThisPlayer.getPlayerID()+" hand is "+ Arrays.toString(ThisPlayer.getPebbles()));
             try {
                 assert WriteToPlayerFile != null;
                 WriteToPlayerFile.write(String1);
@@ -83,7 +89,6 @@ public class Playerthread extends Thread {
                 System.out.println("error");
                 e.printStackTrace();
             }
-
         }
     }
 }

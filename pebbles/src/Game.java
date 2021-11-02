@@ -7,6 +7,7 @@ import java.util.Random;
 public class Game {
     static Player[] playerList;
     static Thread[] threadList;
+    Random rand = new Random();
 
     //instantiating black bags
     static Bag bagX = new Bag("BLACK");
@@ -156,11 +157,7 @@ public class Game {
         return 11*players;
     }
 
-    public static void drawAndDiscard(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
-        //has to be atomic(MAKE IT NEXT)
-        //made th function also draw out
-        Random rand = new Random();
-        int num = rand.nextInt(3);//if it picks 10 it will pick 10 frm the same bag 10 times othwise its a random bag each time its called
+    public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         int replacementpebble = -1;
         int NumberOfIterations = 0;
         int[] TenPebbles = new int[10];
@@ -169,12 +166,19 @@ public class Game {
         } else {
             NumberOfIterations = 1;
         }
-        if (thisPlayer.RandomBag == 1) {
             for (int i = 1; i <= NumberOfIterations; i++) {
                 replacementpebble = bagX.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagX.refillBag();
-                    drawAndDiscard(thisPlayer, false);
+                    thisPlayer.GenerateRandomChoice();//picks a new bag again
+                    //choose a random value and update that random value in the player
+                    if(thisPlayer.RandomBag==1){//then go to X
+                        Game.drawAndDiscardFromBagX(thisPlayer,false);
+                    }else if(thisPlayer.RandomBag==2){//GO TO Y
+                        Game.drawAndDiscardFromBagY(thisPlayer,false);
+                    }else{//GO TO Z
+                        Game.drawAndDiscardFromBagZ(thisPlayer,false);
+                    }
                 } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     if (JustDrawTen) {
                         TenPebbles[i] = bagX.drawPebble();
@@ -190,13 +194,30 @@ public class Game {
             if(JustDrawTen){
                 thisPlayer.setPebbles(TenPebbles);
             }
+    }
+
+    public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean JustDrawTen){
+        int replacementpebble = -1;
+        int NumberOfIterations = 0;
+        int[] TenPebbles = new int[10];
+        if (JustDrawTen) {
+            NumberOfIterations = 10;
+        } else {
+            NumberOfIterations = 1;
         }
-        if(thisPlayer.RandomBag == 2) {
             for (int i = 1; i <= NumberOfIterations; i++) {
                 replacementpebble = bagY.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagY.refillBag();
-                    drawAndDiscard(thisPlayer, false);
+                    thisPlayer.GenerateRandomChoice();//picks a new bag again
+                    //choose a random value and update that random value in the player
+                    if(thisPlayer.RandomBag==1){//then go to X
+                        Game.drawAndDiscardFromBagX(thisPlayer,false);
+                    }else if(thisPlayer.RandomBag==2){//GO TO Y
+                        Game.drawAndDiscardFromBagY(thisPlayer,false);
+                    }else{//GO TO Z
+                        Game.drawAndDiscardFromBagZ(thisPlayer,false);
+                    }
                 } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     if (JustDrawTen) {
                         TenPebbles[i] = bagX.drawPebble();
@@ -212,13 +233,30 @@ public class Game {
             if(JustDrawTen){
                 thisPlayer.setPebbles(TenPebbles);
             }
+    }
+    public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean JustDrawTen){
+        int replacementpebble = -1;
+        int NumberOfIterations = 0;
+        int[] TenPebbles = new int[10];
+
+        if (JustDrawTen) {
+            NumberOfIterations = 10;
+        } else {
+            NumberOfIterations = 1;
         }
-        if (thisPlayer.RandomBag == 3) {
             for (int i = 1; i <= NumberOfIterations; i++) {
                 replacementpebble = bagZ.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty refill and can call this function recursively to continue the process of attempting to draw from a random bag
                     bagZ.refillBag();
-                    drawAndDiscard(thisPlayer, false);
+                    thisPlayer.GenerateRandomChoice();//picks a new bag again
+                    //choose a random value and update that random value in the player
+                    if(thisPlayer.RandomBag==1){//then go to X
+                        Game.drawAndDiscardFromBagX(thisPlayer,false);
+                    }else if(thisPlayer.RandomBag==2){//GO TO Y
+                        Game.drawAndDiscardFromBagY(thisPlayer,false);
+                    }else{//GO TO Z
+                        Game.drawAndDiscardFromBagZ(thisPlayer,false);
+                    }
                 } else {//the drawPebble method was successful and a pointer to a bag that is in line to be discarded into is added to the queue
                     if (JustDrawTen) {
                         TenPebbles[i] = bagX.drawPebble();
@@ -234,8 +272,6 @@ public class Game {
             if(JustDrawTen){
                 thisPlayer.setPebbles(TenPebbles);
             }
-        }
-
     }
 
     public static synchronized void draw10(Player thisPlayer){//function for drawing a player's first 10 pebbles
