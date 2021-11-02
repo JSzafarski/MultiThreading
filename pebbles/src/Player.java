@@ -76,7 +76,4 @@ public class Player{
         return LastBagDrawn;
     }
 
-    public void setLastBagDrawn(String lastBagDrawn) {
-        LastBagDrawn = lastBagDrawn;
-    }
 }
