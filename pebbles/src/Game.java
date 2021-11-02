@@ -274,7 +274,7 @@ public class Game {
             }
     }
 
-    public static synchronized void draw10(Player thisPlayer,int Bag){
+    public static synchronized void draw10(Player thisPlayer){
         if(thisPlayer.RandomBag==1){//then go to X
             Game.drawAndDiscardFromBagX(thisPlayer,true);
         }else if(thisPlayer.RandomBag==2){//GO TO Y

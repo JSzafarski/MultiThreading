@@ -24,6 +24,7 @@ public class Playerthread extends Thread {
     @Override
     public void run() {//this will run each player
         ThisPlayer.calculateTotalWeight();
+        ThisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         Game.draw10(ThisPlayer);//draws first 10 pebbeles
         boolean hasWon = false;
         FileWriter WriteToPlayerFile = null;
