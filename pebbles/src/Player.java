@@ -6,6 +6,7 @@ public class Player{
     int[] pebbles = new int[10];
     Random rand = new Random();
     int totalWeight;
+    String LastBagDrawn;
 
     public int getTotalWeight() {return totalWeight;}
 
@@ -17,6 +18,10 @@ public class Player{
 
     public int[] getPebbles() {
         return pebbles;
+    }
+
+    public void lastBagDrawn(String Bag){
+        this.LastBagDrawn = Bag;
     }
 
     public void setPebbles(int[] pebbles) {
@@ -33,7 +38,7 @@ public class Player{
 
     //takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
 
-    public int discardPebble(int replacementPebble) {
+    public int replacePebble(int replacementPebble) {
         int index = rand.nextInt(this.getPebbles().length-1);
         int discardPebble = this.getPebbles()[index];
         this.getPebbles()[index] = replacementPebble;

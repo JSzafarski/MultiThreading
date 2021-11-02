@@ -157,7 +157,7 @@ public class Game {
     }
 
     public static synchronized void drawAndDiscard(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
-        //has to be atomic
+        //has to be atomic(MAKE IT NEXT)
         //made th fucntion also draw out
         Random rand = new Random();
         int num = rand.nextInt(3);//if it picks 10 it will pick 10 frm the same bag 10 times othwise its a random bag each time its called
@@ -180,7 +180,8 @@ public class Game {
                         if(JustDrawTen){
                             TenPebbles[i] = bagX.drawPebble();
                         }else{
-                            bagX.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                            bagX.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
+                            thisPlayer.lastBagDrawn("X");
                         }
                         //make the user pick up a replacement pebble from black bag
                         //discard a pebble from player into the right white bag
@@ -196,7 +197,8 @@ public class Game {
                         if(JustDrawTen){
                             TenPebbles[i] = bagX.drawPebble();
                         }else{
-                            bagY.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                            bagY.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
+                            thisPlayer.lastBagDrawn("Y");
                         }
                     }
                 }
@@ -209,7 +211,8 @@ public class Game {
                         if(JustDrawTen){
                             TenPebbles[i] = bagX.drawPebble();
                         }else{
-                            bagZ.getBagPair().discardPebble(thisPlayer.discardPebble(replacementpebble));
+                            bagZ.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
+                            thisPlayer.lastBagDrawn("Z");
                         }
                     }
                 }
@@ -218,12 +221,12 @@ public class Game {
         if(JustDrawTen){
             thisPlayer.setPebbles(TenPebbles);
         }
+
     }
 
     public static synchronized void draw10(Player thisPlayer){//function for drawing a player's first 10 pebbles
         drawAndDiscard(thisPlayer,true);
     }
-
 
     public void RunPlayers(int numPlayers){
         threadList = new Thread[numPlayers-1];
@@ -233,10 +236,6 @@ public class Game {
             threadList[i] = new Playerthread(playerList[i]);//pass aparamater (a player)
             threadList[i].start();
         }
-    }
-    public static void WriteMetadata(){//used to write player choices into a txt file
-
-
     }
 
 }

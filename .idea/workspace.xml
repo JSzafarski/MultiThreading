@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ECM2414_Concurrency1.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/Playerthread.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Playerthread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +22,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-17/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectId" id="208XaYpVSPtEMwX0rOfOXM50V0j" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,6 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
