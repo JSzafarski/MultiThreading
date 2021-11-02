@@ -10,10 +10,19 @@ public class Player{
     int totalWeight;
     String LastBagDrawn;
 
+    public int getRandomBag() {
+        return RandomBag;
+    }
+
+
+    public void setPlayerID(int playerID) {
+        this.playerID = playerID;
+    }
+
     public int getTotalWeight() {return totalWeight;}
 
     public void GenerateRandomChoice(){
-        RandomBag = rand.nextInt(3);
+        this.RandomBag = rand.nextInt(3);
     }
 
     public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
@@ -32,7 +41,7 @@ public class Player{
 
     public void setPebbles(int[] pebbles) {
         this.pebbles = pebbles;
-    }//
+    }
 
     public void updateWeight(int newPebble, int oldPebble){//true = add,false = remove
         this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
@@ -59,5 +68,15 @@ public class Player{
             totalWeight = totalWeight + i;
         }
         this.setTotalWeight(totalWeight);
+
+    }
+
+
+    public String getLastBagDrawn() {
+        return LastBagDrawn;
+    }
+
+    public void setLastBagDrawn(String lastBagDrawn) {
+        LastBagDrawn = lastBagDrawn;
     }
 }

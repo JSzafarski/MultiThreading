@@ -25,7 +25,7 @@ public class Playerthread extends Thread {
     public void run() {//this will run each player
         ThisPlayer.calculateTotalWeight();
         ThisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
-        Game.draw10(ThisPlayer);//draws first 10 pebbeles
+        PebbleGame.draw10(ThisPlayer);//draws first 10 pebbeles
         boolean hasWon = false;
         FileWriter WriteToPlayerFile = null;
         try {
@@ -48,12 +48,12 @@ public class Playerthread extends Thread {
             //compare two arrays before and after to see what pebble has been discarded and drawn!
             TempPebbleArray= ThisPlayer.getPebbles();
             ThisPlayer.GenerateRandomChoice();
-            if(ThisPlayer.RandomBag==1){//then go to X
-                Game.drawAndDiscardFromBagX(ThisPlayer,false);
-            }else if(ThisPlayer.RandomBag==2){//GO TO Y
-                Game.drawAndDiscardFromBagY(ThisPlayer,false);
+            if(ThisPlayer.getRandomBag()==0){//then go to X
+                PebbleGame.drawAndDiscardFromBagX(ThisPlayer,false);
+            }else if(ThisPlayer.getRandomBag()==1){//GO TO Y
+                PebbleGame.drawAndDiscardFromBagY(ThisPlayer,false);
             }else{//GO TO Z
-                Game.drawAndDiscardFromBagZ(ThisPlayer,false);
+                PebbleGame.drawAndDiscardFromBagZ(ThisPlayer,false);
             }
             int NewPebble = 0;
             int OldPebble = 0;
@@ -66,7 +66,7 @@ public class Playerthread extends Thread {
                     break;//as there can only be one change in the array in a given iteration.
                 }
             }
-            LastBagDrawn = ThisPlayer.LastBagDrawn;
+            LastBagDrawn = ThisPlayer.getLastBagDrawn();
             if(Objects.equals(LastBagDrawn, "X")){
                 LastBagDiscarded = "A";
             }else if(Objects.equals(LastBagDrawn, "Y")){
