@@ -33,7 +33,6 @@ public class Playerthread extends Thread {
             e.printStackTrace();
         }
         while (!hasWon) {
-            String outputText;
             int[] TempPebbleArray = new int[10];
             if (ThisPlayer.getTotalWeight() == 100){
                 hasWon = true;
@@ -47,6 +46,7 @@ public class Playerthread extends Thread {
 
             //compare two arrays before and after to see what pebble has been discarded and drawn!
             TempPebbleArray= ThisPlayer.getPebbles();
+            ThisPlayer.GenerateRandomChoice();
             Game.drawAndDiscard(ThisPlayer,false);//return the bag chosen and the pebble weight from the bag
             int NewPebble = 0;
             int OldPebble = 0;

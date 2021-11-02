@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Player{
+
+    int RandomBag;
     int  playerID;
     int[] pebbles = new int[10];
     Random rand = new Random();
@@ -9,6 +11,10 @@ public class Player{
     String LastBagDrawn;
 
     public int getTotalWeight() {return totalWeight;}
+
+    public void GenerateRandomChoice(){
+        RandomBag = rand.nextInt(3);
+    }
 
     public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
 
