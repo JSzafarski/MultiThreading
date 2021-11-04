@@ -63,8 +63,8 @@ public class Playerthread extends Thread {
             }
             int NewPebble = 0;
             int OldPebble = 0;
-            String LastBagDrawn;
-            String LastBagDiscarded;
+            String LastBagDrawn = "";
+            String LastBagDiscarded = "" ;
             for (int i = 0 ;i<=10;i++){
                 if(TempPebbleArray[i]!=ThisPlayer.getPebbles()[i]){
                     NewPebble = ThisPlayer.getPebbles()[i];
@@ -73,10 +73,13 @@ public class Playerthread extends Thread {
                 }
             }
             if(Objects.equals(ThisPlayer.getLastBagDrawn(), "X")){
+                LastBagDrawn = "X";
                 LastBagDiscarded = "A";
             }else if(Objects.equals(ThisPlayer.getLastBagDrawn(), "Y")){
+                LastBagDrawn = "Y";
                 LastBagDiscarded = "B";
             }else{//MUST BE Z THEN
+                LastBagDrawn = "Z";
                 LastBagDiscarded = "C";
             }
             //output this into some texts files

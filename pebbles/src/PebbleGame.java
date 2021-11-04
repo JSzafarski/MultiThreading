@@ -40,14 +40,15 @@ public class PebbleGame {
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         setBagPairs();
         System.out.println("you will be asked to enter the number of players and then for the location");
-        System.out.println("of three files in turn containing comma separated inger values for the pebble weights.");
+        System.out.println("of three files in turn containing comma separated integer values for the pebble weights.");
         System.out.println("the integer must be strictly positive.");
         System.out.println("the game will then be simulated,and output written to file in the directory.");
-        System.out.println("type: X to exit and start over.");
+        System.out.println("type: X to exit and start over or E to to exit the system completely");
         System.out.println("");
         while (true){//loops until use exits or enters correct information so the program can proceed
             System.out.println("Please enter the number of players:");
-            numPlayers = Integer.parseInt(System.console().readLine());
+            String input = System.console().readLine();
+            numPlayers = Integer.parseInt(input);
             int totalPebbles = 0;
             try {
                 if (numPlayers > 0) {
