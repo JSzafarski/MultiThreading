@@ -159,7 +159,7 @@ public class PebbleGame {
         return 11*players;
     }
 
-    //add a queuue for threads to avoid starvation.
+    //add a queue for threads to avoid starvation.(or idk something to avoid starvation issues)
 
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         int replacementpebble = -1;
@@ -299,7 +299,7 @@ public class PebbleGame {
         public int getRandomBag() {
             return RandomBag;
         }
-        
+
         public int getTotalWeight() {return totalWeight;}
 
         public void GenerateRandomChoice(){

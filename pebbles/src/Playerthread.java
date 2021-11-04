@@ -54,9 +54,9 @@ public class Playerthread extends Thread {
             //compare two arrays before and after to see what pebble has been discarded and drawn!
             int[] TempPebbleArray = ThisPlayer.getPebbles();
             ThisPlayer.GenerateRandomChoice();
-            if(ThisPlayer.RandomBag==1){//then go to X
+            if(ThisPlayer.getRandomBag()==1){//then go to X
                 PebbleGame.drawAndDiscardFromBagX(ThisPlayer,false);
-            }else if(ThisPlayer.RandomBag==2){//GO TO Y
+            }else if(ThisPlayer.getRandomBag()==2){//GO TO Y
                 PebbleGame.drawAndDiscardFromBagY(ThisPlayer,false);
             }else{//GO TO Z
                 PebbleGame.drawAndDiscardFromBagZ(ThisPlayer,false);
@@ -72,10 +72,9 @@ public class Playerthread extends Thread {
                     break;//as there can only be one change in the array in a given iteration.
                 }
             }
-            LastBagDrawn = ThisPlayer.LastBagDrawn;
-            if(Objects.equals(LastBagDrawn, "X")){
+            if(Objects.equals(ThisPlayer.getLastBagDrawn(), "X")){
                 LastBagDiscarded = "A";
-            }else if(Objects.equals(LastBagDrawn, "Y")){
+            }else if(Objects.equals(ThisPlayer.getLastBagDrawn(), "Y")){
                 LastBagDiscarded = "B";
             }else{//MUST BE Z THEN
                 LastBagDiscarded = "C";
