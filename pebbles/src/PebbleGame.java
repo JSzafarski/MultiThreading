@@ -6,8 +6,13 @@ import java.util.Random;
 //we need to counteract starvation
 public class PebbleGame {
 
-        Player[] playerList;
-        Thread[] threadList;
+    public static void main(String[] args){//this can be confsuing as its instance of a instance of pebble game that creates instance of players
+        PebbleGame game = new PebbleGame();
+        game.start_game();
+    }
+
+     Player[] playerList;
+     Thread[] threadList;
 
     //instantiating black bags
     static Bag bagX = new Bag("BLACK");
@@ -30,7 +35,7 @@ public class PebbleGame {
         bagC.setBagPair(bagZ);
     }
 
-    public static void  start_game(){//if the under eneters e then the program must exit.
+    public void start_game(){//if the under eneters e then the program must exit.
         int numPlayers;//number of players
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         setBagPairs();
@@ -99,7 +104,7 @@ public class PebbleGame {
         }
     }
 
-    public static ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
+    public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         String StringOfNumbers;
         Scanner scanner;
