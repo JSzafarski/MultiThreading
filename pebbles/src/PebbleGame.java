@@ -5,15 +5,17 @@ import java.util.Random;
 
 //we need to counteract starvation
 public class PebbleGame {
-    static Player[] playerList;
-    static Thread[] threadList;
-    Random rand = new Random();
+
+        Player[] playerList;
+        Thread[] threadList;
 
     //instantiating black bags
     static Bag bagX = new Bag("BLACK");
     static Bag bagY = new Bag("BLACK");
     static Bag bagZ = new Bag("BLACK");
+
     //instantiating white bags
+
     static Bag bagA = new Bag("WHITE");
     static Bag bagB = new Bag("WHITE");
     static Bag bagC = new Bag("WHITE");
@@ -157,6 +159,8 @@ public class PebbleGame {
         return 11*players;
     }
 
+    //add a queuue for threads to avoid starvation.
+
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         int replacementpebble = -1;
         int NumberOfIterations = 0;
@@ -272,32 +276,18 @@ public class PebbleGame {
         }
     }
 
-    public static void RunPlayers(int numPlayers){
+    public void RunPlayers(int numPlayers){
         threadList = new Thread[numPlayers-1];
         //creates each player object and thread for the specified number of players
+        PebbleGame DeafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
         for(int i = 0; i <= numPlayers-1; i++){
-            playerList[i] = new Player(1000+i);
-            threadList[i] = new Playerthread(playerList[i]);//pass a paramater (a player)
-            threadList[i].start();
+            DeafultPebblegame.playerList[i] = new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
+            threadList[i] = new Playerthread(DeafultPebblegame.playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
+            threadList[i].start();//pass the whole
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    static class Player{
+     class Player {
 
         int RandomBag;
         int  playerID;
@@ -309,12 +299,7 @@ public class PebbleGame {
         public int getRandomBag() {
             return RandomBag;
         }
-
-
-        public void setPlayerID(int playerID) {
-            this.playerID = playerID;
-        }
-
+        
         public int getTotalWeight() {return totalWeight;}
 
         public void GenerateRandomChoice(){
@@ -367,15 +352,9 @@ public class PebbleGame {
 
         }
 
-
         public String getLastBagDrawn() {
             return LastBagDrawn;
         }
 
     }
-
-
-
-
-
 }

@@ -7,20 +7,20 @@ import java.io.IOException;
 import java.io.FileWriter;
 
 public class Playerthread extends Thread {
-    PebbleGame.Player ThisPlayer;
-    boolean hasWon = false;
+    PebbleGame.Player ThisPlayer;//we need to pass instanc eof player from game into thread
 
-    public PebbleGame.Player getThisPlayer() {
-        return this.ThisPlayer;
-    }
-
-
-    public Playerthread(PebbleGame.Player PlayerfromGame) { this.ThisPlayer = PlayerfromGame;
-    }
+    public Playerthread(PebbleGame.Player PlayerfromGame) {
+        ThisPlayer = PlayerfromGame;
+    }//passes instance eof player into the thread
 
     public void CreateFile() {
         try {
-            File PlayerFile = new File("Player "+ this.getThisPlayer().getPlayerID()+".txt");
+            File PlayerFile = new File("Player "+ThisPlayer.playerID+".txt");
+           if(PlayerFile.createNewFile()){
+               System.out.println("File created!");
+           }else{
+               System.out.println("File does already exist!");
+           }
         } catch(IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
@@ -28,21 +28,23 @@ public class Playerthread extends Thread {
     }
     @Override
     public void run() {//this will run each player
-        PebbleGame.Player thisThreadsPlayer = this.getThisPlayer();
-        thisThreadsPlayer.calculateTotalWeight();
-        thisThreadsPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
-        PebbleGame.draw10(thisThreadsPlayer);//draws first 10 pebbeles
+        CreateFile();//generate a text file for each player
+        ThisPlayer.calculateTotalWeight();
+        ThisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
+        PebbleGame.draw10(ThisPlayer);//draws first 10 pebbeles
+        boolean hasWon = false;
         FileWriter WriteToPlayerFile = null;
         try {
-            WriteToPlayerFile = new FileWriter("Player "+thisThreadsPlayer.getPlayerID()+".txt");
+            WriteToPlayerFile = new FileWriter("Player "+ThisPlayer.playerID+".txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
-        while (hasWon) {
-            if (thisThreadsPlayer.getTotalWeight() == 100){
+        while (!hasWon) {
+
+            if (ThisPlayer.getTotalWeight() == 100){
                 hasWon = true;
-                System.out.println("player: "+ thisThreadsPlayer.getPlayerID()+" has won");
-                break;
+                System.out.println("player: "+ ThisPlayer.playerID+" has won");
+                //have each thread if one stopped it did then stop all(maybe use a local variable in the Game class (boolean)
             }
             //player discards a pebble to a white bag
             //player chooses a black bag at random
@@ -50,27 +52,27 @@ public class Playerthread extends Thread {
             //cycle repeats until a winner is announced
 
             //compare two arrays before and after to see what pebble has been discarded and drawn!
-            int[] TempPebbleArray= thisThreadsPlayer.getPebbles();
-            thisThreadsPlayer.GenerateRandomChoice();
-            if(thisThreadsPlayer.getRandomBag()==0){//attempts to draw from bag X
-                PebbleGame.drawAndDiscardFromBagX(thisThreadsPlayer,false);
-            }else if(thisThreadsPlayer.getRandomBag()==1){//attempts to draw from bag Y
-                PebbleGame.drawAndDiscardFromBagY(thisThreadsPlayer,false);
-            }else{//attempts to draw from bag Z
-                PebbleGame.drawAndDiscardFromBagZ(thisThreadsPlayer,false);
+            int[] TempPebbleArray = ThisPlayer.getPebbles();
+            ThisPlayer.GenerateRandomChoice();
+            if(ThisPlayer.RandomBag==1){//then go to X
+                PebbleGame.drawAndDiscardFromBagX(ThisPlayer,false);
+            }else if(ThisPlayer.RandomBag==2){//GO TO Y
+                PebbleGame.drawAndDiscardFromBagY(ThisPlayer,false);
+            }else{//GO TO Z
+                PebbleGame.drawAndDiscardFromBagZ(ThisPlayer,false);
             }
             int NewPebble = 0;
             int OldPebble = 0;
             String LastBagDrawn;
             String LastBagDiscarded;
             for (int i = 0 ;i<=10;i++){
-                if(TempPebbleArray[i]!=thisThreadsPlayer.getPebbles()[i]){
-                    NewPebble = thisThreadsPlayer.getPebbles()[i];
+                if(TempPebbleArray[i]!=ThisPlayer.getPebbles()[i]){
+                    NewPebble = ThisPlayer.getPebbles()[i];
                     OldPebble = TempPebbleArray[i];
                     break;//as there can only be one change in the array in a given iteration.
                 }
             }
-            LastBagDrawn = thisThreadsPlayer.getLastBagDrawn();
+            LastBagDrawn = ThisPlayer.LastBagDrawn;
             if(Objects.equals(LastBagDrawn, "X")){
                 LastBagDiscarded = "A";
             }else if(Objects.equals(LastBagDrawn, "Y")){
@@ -79,10 +81,10 @@ public class Playerthread extends Thread {
                 LastBagDiscarded = "C";
             }
             //output this into some texts files
-            String String1=("player "+thisThreadsPlayer.getPlayerID()+" has drawn a " + NewPebble + "from bag " + LastBagDrawn);
-            String String2=("player "+thisThreadsPlayer.getPlayerID()+" hand is "+ Arrays.toString(TempPebbleArray));
-            String String3=("player "+thisThreadsPlayer.getPlayerID()+" has drawn a " + OldPebble + "from bag " + LastBagDiscarded);
-            String String4=("player "+thisThreadsPlayer.getPlayerID()+" hand is "+ Arrays.toString(thisThreadsPlayer.getPebbles()));
+            String String1=("player "+ThisPlayer.getPlayerID()+" has drawn a " + NewPebble + "from bag " + LastBagDrawn);
+            String String2=("player "+ThisPlayer.getPlayerID()+" hand is "+ Arrays.toString(TempPebbleArray));
+            String String3=("player "+ThisPlayer.getPlayerID()+" has drawn a " + OldPebble + "from bag " + LastBagDiscarded);
+            String String4=("player "+ThisPlayer.getPlayerID()+" hand is "+ Arrays.toString(ThisPlayer.getPebbles()));
             try {
                 assert WriteToPlayerFile != null;
                 WriteToPlayerFile.write(String1);
