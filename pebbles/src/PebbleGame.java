@@ -39,6 +39,7 @@ public class PebbleGame {
         int numPlayers;//number of players
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         setBagPairs();
+        Scanner Scanner1 = new Scanner(System.in);
         System.out.println("you will be asked to enter the number of players and then for the location");
         System.out.println("of three files in turn containing comma separated integer values for the pebble weights.");
         System.out.println("the integer must be strictly positive.");
@@ -47,7 +48,7 @@ public class PebbleGame {
         System.out.println("");
         while (true){//loops until use exits or enters correct information so the program can proceed
             System.out.println("Please enter the number of players:");
-            String input = System.console().readLine();
+            String input = Scanner1.nextLine();
             numPlayers = Integer.parseInt(input);
             int totalPebbles = 0;
             try {
@@ -55,7 +56,7 @@ public class PebbleGame {
                     String file_input;
                     for (int i = 1; i <= 3; i++) {
                         System.out.println("Please enter location of bag number " + i + " to load:");
-                        file_input = System.console().readLine();//verify data type
+                        file_input = Scanner1.nextLine();
                         if (Objects.equals(file_input, "X")||(Objects.equals(file_input, "E"))){
                             if((Objects.equals(file_input, "E"))){
                                 System.exit(0);
@@ -156,8 +157,7 @@ public class PebbleGame {
                 return pebbles;
             }
         } catch (IOException e) {
-            System.out.println("We Could not find the file and : " + e);
-            throw new InvalidfileExeption("we could not find the file at this file path");
+            throw new InvalidfileExeption("We Could not find the file and : " + e);
         }
     }
 
