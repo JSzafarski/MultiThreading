@@ -31,34 +31,29 @@ public class Playerthread extends Thread {
         ThisPlayer.calculateTotalWeight();
         ThisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         PebbleGame.draw10(ThisPlayer);//draws first 10 pebbeles
-        boolean hasWon = false;
+        boolean Won = false;
         FileWriter WriteToPlayerFile = null;
         try {
             WriteToPlayerFile = new FileWriter("Player "+ThisPlayer.getPlayerID()+".txt");
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
-        while (!hasWon) {
-
+        while (!Won) {
             if (ThisPlayer.getTotalWeight() == 100){
-                hasWon = true;
-                System.out.println("player: "+ ThisPlayer.getPlayerID()+" has won");
+                Won = true;
+                System.out.println("player: "+ ThisPlayer.getPlayerID()+" Has won!");
+                break;
                 //have each thread if one stopped it did then stop all(maybe use a local variable in the Game class (boolean)
             }
-
             //player discards a pebble to a white bag
             //player chooses a black bag at random
             //player selects a pebble and if its empty then the player chooses another random back that's refilled
             //cycle repeats until a winner is announced
-
             //compare two arrays before and after to see what pebble has been discarded and drawn!
-
             int[] TempPebbleArray = new int[10];
-
-            for (int i = 0;i<=9;i++){
+            for (int i = 0;i<=9;i++) {
                 TempPebbleArray[i] = ThisPlayer.getPebbles()[i];
             }
-
             ThisPlayer.GenerateRandomChoice();
             if(ThisPlayer.getRandomBag()==0){//then go to X
                 PebbleGame.drawAndDiscardFromBagX(ThisPlayer,false);
