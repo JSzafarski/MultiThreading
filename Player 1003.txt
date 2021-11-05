@@ -1,1 +1,184 @@
-player 1003 has drawn a 0from bag Xplayer 1003 hand is [83, 84, 68, 74, 41, 43, 13, 77, 90, 76]player 1003 has drawn a 0from bag Aplayer 1003 hand is [83, 84, 68, 74, 41, 43, 13, 77, 90, 76]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [27, 28, 73, 47, 22, 32, 89, 98, 17, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [27, 28, 73, 47, 22, 32, 89, 98, 17, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [27, 28, 73, 47, 22, 32, 89, 98, 85, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [27, 28, 73, 47, 22, 32, 89, 98, 85, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [11, 28, 73, 47, 22, 32, 89, 98, 85, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [11, 28, 73, 47, 22, 32, 89, 98, 85, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [11, 28, 73, 47, 22, 32, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [11, 28, 73, 47, 22, 32, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [11, 28, 73, 47, 22, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [11, 28, 73, 47, 22, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [11, 28, 73, 47, 51, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [11, 28, 73, 47, 51, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [11, 28, 13, 47, 51, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [11, 28, 13, 47, 51, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [11, 28, 13, 47, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [11, 28, 13, 47, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [57, 28, 13, 47, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [57, 28, 13, 47, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [51, 28, 13, 47, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [51, 28, 13, 47, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [51, 28, 13, 30, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [51, 28, 13, 30, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [49, 28, 13, 30, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [49, 28, 13, 30, 18, 25, 89, 98, 39, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [49, 28, 13, 30, 18, 25, 90, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [49, 28, 13, 30, 18, 25, 90, 98, 39, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [29, 28, 13, 30, 18, 25, 90, 98, 39, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [29, 28, 13, 30, 18, 25, 90, 98, 39, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [29, 28, 13, 30, 18, 25, 90, 98, 63, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [29, 28, 13, 30, 18, 25, 90, 98, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [29, 28, 13, 30, 18, 25, 90, 15, 63, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [29, 28, 13, 30, 18, 25, 90, 15, 63, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [29, 28, 74, 30, 18, 25, 90, 15, 63, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [29, 28, 74, 30, 18, 25, 90, 15, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [29, 28, 74, 30, 18, 25, 90, 91, 63, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [29, 28, 74, 30, 18, 25, 90, 91, 63, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [29, 28, 74, 30, 18, 25, 88, 91, 63, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [29, 28, 74, 30, 18, 25, 88, 91, 63, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [41, 28, 74, 30, 18, 25, 88, 91, 63, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [41, 28, 74, 30, 18, 25, 88, 91, 63, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [41, 28, 74, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [41, 28, 74, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [41, 28, 97, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [41, 28, 97, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [41, 28, 57, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [41, 28, 57, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [19, 28, 57, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [19, 28, 57, 30, 18, 25, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [19, 28, 57, 30, 18, 50, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [19, 28, 57, 30, 18, 50, 88, 31, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [19, 28, 57, 30, 18, 50, 88, 29, 63, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [19, 28, 57, 30, 18, 50, 88, 29, 63, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [19, 28, 57, 30, 18, 35, 88, 29, 63, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [19, 28, 57, 30, 18, 35, 88, 29, 63, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [19, 28, 57, 30, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [19, 28, 57, 30, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [19, 78, 57, 30, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [19, 78, 57, 30, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [19, 78, 57, 52, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [19, 78, 57, 52, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [19, 78, 57, 91, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [19, 78, 57, 91, 18, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [19, 78, 57, 91, 11, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [19, 78, 57, 91, 11, 35, 88, 29, 92, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [19, 78, 57, 91, 11, 35, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [19, 78, 57, 91, 11, 35, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [19, 78, 22, 91, 11, 35, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [19, 78, 22, 91, 11, 35, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [19, 78, 22, 91, 11, 59, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [19, 78, 22, 91, 11, 59, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [19, 78, 94, 91, 11, 59, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [19, 78, 94, 91, 11, 59, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [96, 78, 94, 91, 11, 59, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [96, 78, 94, 91, 11, 59, 43, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [96, 78, 94, 91, 11, 59, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [96, 78, 94, 91, 11, 59, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [96, 78, 94, 31, 11, 59, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [96, 78, 94, 31, 11, 59, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [96, 78, 94, 31, 11, 68, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [96, 78, 94, 31, 11, 68, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [96, 78, 94, 31, 11, 35, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [96, 78, 94, 31, 11, 35, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [30, 78, 94, 31, 11, 35, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [30, 78, 94, 31, 11, 35, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [30, 78, 94, 89, 11, 35, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [30, 78, 94, 89, 11, 35, 20, 29, 92, 94]
+player 1003 has drawn a 0from bag Z
+player 1003 hand is [30, 78, 94, 89, 11, 35, 20, 71, 92, 94]
+player 1003 has drawn a 0from bag C
+player 1003 hand is [30, 78, 94, 89, 11, 35, 20, 71, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [30, 37, 94, 89, 11, 35, 20, 71, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [30, 37, 94, 89, 11, 35, 20, 71, 92, 94]
+player 1003 has drawn a 0from bag X
+player 1003 hand is [30, 21, 94, 89, 11, 35, 20, 71, 92, 94]
+player 1003 has drawn a 0from bag A
+player 1003 hand is [30, 21, 94, 89, 11, 35, 20, 71, 92, 94]

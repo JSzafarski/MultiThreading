@@ -1,1 +1,212 @@
-player 1001 has drawn a 0from bag Yplayer 1001 hand is [40, 89, 46, 2, 67, 58, 33, 94, 26, 62]player 1001 has drawn a 0from bag Bplayer 1001 hand is [40, 89, 46, 2, 67, 58, 33, 94, 26, 62]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [46, 63, 38, 7, 35, 74, 12, 14, 1, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [46, 63, 38, 7, 35, 74, 12, 14, 1, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [46, 63, 58, 7, 35, 74, 12, 14, 1, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [46, 63, 58, 7, 35, 74, 12, 14, 1, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [8, 63, 58, 7, 35, 74, 12, 14, 1, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [8, 63, 58, 7, 35, 74, 12, 14, 1, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [8, 63, 58, 7, 35, 74, 12, 71, 1, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [8, 63, 58, 7, 35, 74, 12, 71, 1, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [8, 63, 58, 7, 35, 74, 56, 71, 1, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [8, 63, 58, 7, 35, 74, 56, 71, 1, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [8, 63, 58, 7, 35, 74, 62, 71, 1, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [8, 63, 58, 7, 35, 74, 62, 71, 1, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [8, 63, 58, 7, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [8, 63, 58, 7, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [8, 81, 58, 7, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [8, 81, 58, 7, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [38, 81, 58, 7, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [38, 81, 58, 7, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [38, 81, 58, 45, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [38, 81, 58, 45, 35, 74, 62, 71, 45, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [38, 81, 58, 45, 35, 74, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [38, 81, 58, 45, 35, 74, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [38, 81, 58, 45, 35, 17, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [38, 81, 58, 45, 35, 17, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [38, 81, 90, 45, 35, 17, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [38, 81, 90, 45, 35, 17, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [38, 81, 90, 45, 13, 17, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [38, 81, 90, 45, 13, 17, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [38, 81, 90, 45, 13, 83, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [38, 81, 90, 45, 13, 83, 62, 71, 10, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [38, 81, 90, 45, 13, 83, 62, 71, 3, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [38, 81, 90, 45, 13, 83, 62, 71, 3, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [38, 81, 89, 45, 13, 83, 62, 71, 3, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [38, 81, 89, 45, 13, 83, 62, 71, 3, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 81, 89, 45, 13, 83, 62, 71, 3, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 81, 89, 45, 13, 83, 62, 71, 3, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 81, 89, 45, 13, 83, 62, 48, 3, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 81, 89, 45, 13, 83, 62, 48, 3, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 81, 89, 45, 29, 83, 62, 48, 3, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 81, 89, 45, 29, 83, 62, 48, 3, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 81, 89, 45, 29, 83, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 81, 89, 45, 29, 83, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 81, 89, 57, 29, 83, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 81, 89, 57, 29, 83, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 81, 89, 57, 29, 23, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 81, 89, 57, 29, 23, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 81, 49, 57, 29, 23, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 81, 49, 57, 29, 23, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 49, 57, 29, 23, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 49, 57, 29, 23, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 49, 57, 29, 39, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 49, 57, 29, 39, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 76, 79, 57, 29, 39, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 76, 79, 57, 29, 39, 62, 48, 81, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 57, 29, 39, 2, 48, 81, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 57, 29, 39, 2, 48, 81, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 57, 29, 39, 2, 48, 89, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 57, 29, 39, 2, 48, 89, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 10, 29, 39, 2, 48, 89, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 10, 29, 39, 2, 48, 89, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 10, 29, 39, 96, 48, 89, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 10, 29, 39, 96, 48, 89, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 30, 29, 39, 96, 48, 89, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 30, 29, 39, 96, 48, 89, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 30, 29, 5, 96, 48, 89, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 30, 29, 5, 96, 48, 89, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 30, 29, 5, 96, 48, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 30, 29, 5, 96, 48, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 76, 79, 30, 80, 5, 96, 48, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 76, 79, 30, 80, 5, 96, 48, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 76, 79, 30, 80, 5, 96, 86, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 76, 79, 30, 80, 5, 96, 86, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 74, 79, 30, 80, 5, 96, 86, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 74, 79, 30, 80, 5, 96, 86, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 74, 79, 30, 80, 5, 88, 86, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 74, 79, 30, 80, 5, 88, 86, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 74, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 74, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 75, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 75, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 67, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 67, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 65, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 65, 79, 30, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 65, 79, 39, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 65, 79, 39, 80, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 65, 79, 39, 61, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 65, 79, 39, 61, 5, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 65, 79, 39, 61, 62, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 65, 79, 39, 61, 62, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 91, 79, 39, 61, 62, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 91, 79, 39, 61, 62, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 91, 79, 39, 92, 62, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 91, 79, 39, 92, 62, 88, 21, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 91, 79, 39, 92, 62, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 91, 79, 39, 92, 62, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 91, 79, 39, 92, 58, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 91, 79, 39, 92, 58, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag Y
+player 1001 hand is [74, 91, 79, 39, 92, 58, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag B
+player 1001 hand is [74, 91, 79, 39, 92, 58, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 91, 79, 39, 92, 32, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 91, 79, 39, 92, 32, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 91, 16, 39, 92, 32, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 91, 16, 39, 92, 32, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag X
+player 1001 hand is [74, 91, 16, 94, 92, 32, 88, 62, 40, 29]
+player 1001 has drawn a 0from bag A
+player 1001 hand is [74, 91, 16, 94, 92, 32, 88, 62, 40, 29]

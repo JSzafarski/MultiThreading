@@ -1,1 +1,428 @@
-player 1000 has drawn a 0from bag Zplayer 1000 hand is [43, 95, 85, 72, 27, 20, 52, 7, 60, 92]player 1000 has drawn a 0from bag Cplayer 1000 hand is [43, 95, 85, 72, 27, 20, 52, 7, 60, 92]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 17, 35, 42, 60, 64, 32, 69, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 17, 35, 42, 60, 64, 32, 69, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 17, 73, 42, 60, 64, 32, 69, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 17, 73, 42, 60, 64, 32, 69, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 17, 73, 42, 60, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 17, 73, 42, 60, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [53, 43, 75, 73, 42, 60, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [53, 43, 75, 73, 42, 60, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [53, 43, 60, 73, 42, 60, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [53, 43, 60, 73, 42, 60, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 60, 73, 42, 81, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 60, 73, 42, 81, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 60, 73, 42, 89, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 60, 73, 42, 89, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 60, 44, 42, 89, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 60, 44, 42, 89, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [53, 43, 60, 44, 42, 55, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [53, 43, 60, 44, 42, 55, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 12, 44, 42, 55, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 12, 44, 42, 55, 64, 65, 69, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 12, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 12, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [53, 43, 38, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [53, 43, 38, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 43, 6, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 43, 6, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 65, 59, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 65, 31, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 65, 31, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 53, 31, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 53, 31, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 53, 88, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [53, 22, 6, 44, 42, 55, 64, 53, 88, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [2, 22, 6, 44, 42, 55, 64, 53, 88, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [2, 22, 6, 44, 42, 55, 64, 53, 88, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [2, 22, 6, 44, 42, 55, 64, 53, 56, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [2, 22, 6, 44, 42, 55, 64, 53, 56, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 22, 6, 44, 42, 55, 64, 53, 56, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 22, 6, 44, 42, 55, 64, 53, 56, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 6, 88, 42, 55, 64, 53, 56, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 6, 88, 42, 55, 64, 53, 56, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 6, 88, 42, 55, 64, 53, 25, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 6, 88, 42, 55, 64, 53, 25, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 22, 6, 88, 77, 55, 64, 53, 25, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 22, 6, 88, 77, 55, 64, 53, 25, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 22, 6, 88, 77, 55, 64, 25, 25, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 22, 6, 88, 77, 55, 64, 25, 25, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 87, 88, 77, 55, 64, 25, 25, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 87, 88, 77, 55, 64, 25, 25, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 16, 88, 77, 55, 64, 25, 25, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 16, 88, 77, 55, 64, 25, 25, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 16, 88, 77, 55, 28, 25, 25, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 16, 88, 77, 55, 28, 25, 25, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 22, 16, 88, 77, 55, 28, 25, 37, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 22, 16, 88, 77, 55, 28, 25, 37, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 16, 88, 77, 55, 99, 25, 37, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 16, 88, 77, 55, 99, 25, 37, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 16, 88, 77, 55, 99, 25, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 16, 88, 77, 55, 99, 25, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 22, 16, 88, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 22, 16, 88, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [79, 58, 16, 88, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [79, 58, 16, 88, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 58, 16, 45, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 58, 16, 45, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 58, 16, 13, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 58, 16, 13, 77, 55, 86, 25, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 58, 16, 13, 77, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 58, 16, 13, 77, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 58, 16, 9, 77, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 58, 16, 9, 77, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [79, 58, 16, 9, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [79, 58, 16, 9, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [4, 58, 16, 9, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [4, 58, 16, 9, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [4, 58, 47, 9, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [4, 58, 47, 9, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [4, 58, 47, 84, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [4, 58, 47, 84, 14, 55, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [4, 58, 47, 84, 14, 61, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [4, 58, 47, 84, 14, 61, 86, 67, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [4, 58, 47, 84, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [4, 58, 47, 84, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [4, 58, 47, 33, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [4, 58, 47, 33, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [70, 58, 47, 33, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [70, 58, 47, 33, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [97, 58, 47, 33, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [97, 58, 47, 33, 14, 61, 80, 67, 22, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [97, 58, 47, 33, 14, 61, 80, 67, 53, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [97, 58, 47, 33, 14, 61, 80, 67, 53, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [97, 58, 47, 33, 14, 61, 80, 67, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [97, 58, 47, 33, 14, 61, 80, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [97, 58, 47, 33, 14, 61, 87, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [97, 58, 47, 33, 14, 61, 87, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [97, 58, 47, 33, 14, 54, 87, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [97, 58, 47, 33, 14, 54, 87, 67, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [20, 58, 47, 33, 14, 54, 87, 67, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [20, 58, 47, 33, 14, 54, 87, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [20, 58, 47, 33, 14, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [20, 58, 47, 33, 14, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [20, 46, 47, 33, 14, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [20, 46, 47, 33, 14, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [66, 46, 47, 33, 14, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [66, 46, 47, 33, 14, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [66, 46, 47, 33, 76, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [66, 46, 47, 33, 76, 54, 69, 67, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [66, 46, 47, 33, 76, 54, 82, 67, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [66, 46, 47, 33, 76, 54, 82, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [66, 46, 47, 33, 76, 54, 82, 96, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [66, 46, 47, 33, 76, 54, 82, 96, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [66, 41, 47, 33, 76, 54, 82, 96, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [66, 41, 47, 33, 76, 54, 82, 96, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [66, 41, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [66, 41, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [66, 8, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [66, 8, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [27, 8, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [27, 8, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [42, 8, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [42, 8, 47, 33, 76, 54, 21, 96, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [42, 8, 47, 33, 76, 54, 21, 91, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [42, 8, 47, 33, 76, 54, 21, 91, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [47, 8, 47, 33, 76, 54, 21, 91, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [47, 8, 47, 33, 76, 54, 21, 91, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [47, 36, 47, 33, 76, 54, 21, 91, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [47, 36, 47, 33, 76, 54, 21, 91, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [47, 36, 47, 33, 76, 54, 21, 1, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [47, 36, 47, 33, 76, 54, 21, 1, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [47, 36, 47, 33, 76, 12, 21, 1, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [47, 36, 47, 33, 76, 12, 21, 1, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [47, 36, 47, 33, 76, 12, 21, 32, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [47, 36, 47, 33, 76, 12, 21, 32, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [47, 36, 47, 33, 76, 12, 21, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [47, 36, 47, 33, 76, 12, 21, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [47, 36, 47, 27, 76, 12, 21, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [47, 36, 47, 27, 76, 12, 21, 67, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [83, 36, 47, 27, 76, 12, 21, 67, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [83, 36, 47, 27, 76, 12, 21, 67, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [83, 36, 47, 27, 76, 12, 2, 67, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [83, 36, 47, 27, 76, 12, 2, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [83, 18, 47, 27, 76, 12, 2, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [83, 18, 47, 27, 76, 12, 2, 67, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [83, 18, 47, 27, 76, 99, 2, 67, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [83, 18, 47, 27, 76, 99, 2, 67, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [83, 18, 47, 27, 76, 99, 2, 25, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [83, 18, 47, 27, 76, 99, 2, 25, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [83, 18, 47, 27, 76, 99, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [83, 18, 47, 27, 76, 99, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [83, 18, 47, 97, 76, 99, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [83, 18, 47, 97, 76, 99, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [83, 78, 47, 97, 76, 99, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [83, 78, 47, 97, 76, 99, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [83, 78, 47, 97, 76, 82, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [83, 78, 47, 97, 76, 82, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [83, 78, 47, 97, 57, 82, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [83, 78, 47, 97, 57, 82, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [83, 78, 47, 97, 57, 72, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [83, 78, 47, 97, 57, 72, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [40, 78, 47, 97, 57, 72, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [40, 78, 47, 97, 57, 72, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [40, 78, 47, 37, 57, 72, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [40, 78, 47, 37, 57, 72, 2, 48, 18, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [40, 78, 47, 37, 57, 72, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [40, 78, 47, 37, 57, 72, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [64, 78, 47, 37, 57, 72, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [64, 78, 47, 37, 57, 72, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [64, 78, 47, 71, 57, 72, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [64, 78, 47, 71, 57, 72, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [64, 78, 47, 71, 57, 95, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [64, 78, 47, 71, 57, 95, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [64, 78, 66, 71, 57, 95, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [64, 78, 66, 71, 57, 95, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [64, 78, 41, 71, 57, 95, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [64, 78, 41, 71, 57, 95, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [64, 78, 41, 71, 57, 73, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [64, 78, 41, 71, 57, 73, 2, 48, 43, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [64, 78, 41, 71, 57, 73, 34, 48, 43, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [64, 78, 41, 71, 57, 73, 34, 48, 43, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [64, 44, 41, 71, 57, 73, 34, 48, 43, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [64, 44, 41, 71, 57, 73, 34, 48, 43, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [64, 44, 41, 71, 57, 68, 34, 48, 43, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [64, 44, 41, 71, 57, 68, 34, 48, 43, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [64, 44, 41, 71, 57, 68, 34, 48, 11, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [64, 44, 41, 71, 57, 68, 34, 48, 11, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [64, 44, 41, 78, 57, 68, 34, 48, 11, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [64, 44, 41, 78, 57, 68, 34, 48, 11, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [64, 44, 41, 78, 57, 68, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [64, 44, 41, 78, 57, 68, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [90, 44, 41, 78, 57, 68, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [90, 44, 41, 78, 57, 68, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [90, 44, 41, 78, 57, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [90, 44, 41, 78, 57, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [90, 44, 86, 78, 57, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [90, 44, 86, 78, 57, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [90, 44, 86, 78, 4, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [90, 44, 86, 78, 4, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [90, 44, 86, 55, 4, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [90, 44, 86, 55, 4, 49, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [90, 44, 86, 55, 4, 57, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [90, 44, 86, 55, 4, 57, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [46, 44, 86, 55, 4, 57, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [46, 44, 86, 55, 4, 57, 34, 28, 11, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [46, 44, 86, 55, 4, 57, 34, 28, 7, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [46, 44, 86, 55, 4, 57, 34, 28, 7, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [46, 44, 86, 37, 4, 57, 34, 28, 7, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [46, 44, 86, 37, 4, 57, 34, 28, 7, 26]
+player 1000 has drawn a 0from bag X
+player 1000 hand is [46, 44, 86, 37, 4, 57, 34, 28, 20, 26]
+player 1000 has drawn a 0from bag A
+player 1000 hand is [46, 44, 86, 37, 4, 57, 34, 28, 20, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [46, 44, 86, 90, 4, 57, 34, 28, 20, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [46, 44, 86, 90, 4, 57, 34, 28, 20, 26]
+player 1000 has drawn a 0from bag Y
+player 1000 hand is [46, 44, 86, 30, 4, 57, 34, 28, 20, 26]
+player 1000 has drawn a 0from bag B
+player 1000 hand is [46, 44, 86, 30, 4, 57, 34, 28, 20, 26]

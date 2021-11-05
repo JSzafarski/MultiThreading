@@ -54,9 +54,9 @@ public class Playerthread extends Thread {
             //compare two arrays before and after to see what pebble has been discarded and drawn!
             int[] TempPebbleArray = ThisPlayer.getPebbles();
             ThisPlayer.GenerateRandomChoice();
-            if(ThisPlayer.getRandomBag()==1){//then go to X
+            if(ThisPlayer.getRandomBag()==0){//then go to X
                 PebbleGame.drawAndDiscardFromBagX(ThisPlayer,false);
-            }else if(ThisPlayer.getRandomBag()==2){//GO TO Y
+            }else if(ThisPlayer.getRandomBag()==1){//GO TO Y
                 PebbleGame.drawAndDiscardFromBagY(ThisPlayer,false);
             }else{//GO TO Z
                 PebbleGame.drawAndDiscardFromBagZ(ThisPlayer,false);
@@ -89,14 +89,17 @@ public class Playerthread extends Thread {
             String String4=("player "+ThisPlayer.getPlayerID()+" hand is "+ Arrays.toString(ThisPlayer.getPebbles()));
             try {
                 assert WriteToPlayerFile != null;
-                WriteToPlayerFile.write(String1);
-                WriteToPlayerFile.write(String2);
-                WriteToPlayerFile.write(String3);
-                WriteToPlayerFile.write(String4);
-                WriteToPlayerFile.close();
+                WriteToPlayerFile.write(String1 + "\n");
+                WriteToPlayerFile.write(String2+ "\n");
+                WriteToPlayerFile.write(String3+ "\n");
+                WriteToPlayerFile.write(String4+ "\n");
+                System.out.println(String1);
+                System.out.println(String2);
+                System.out.println(String3);
+                System.out.println(String4);
+                WriteToPlayerFile.flush();
             } catch (IOException e) {
-                System.out.println("error");
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
     }

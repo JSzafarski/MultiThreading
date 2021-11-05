@@ -319,7 +319,7 @@ public class PebbleGame {
         public int getTotalWeight() {return totalWeight;}
 
         public void GenerateRandomChoice(){
-            this.RandomBag = rand.nextInt(3);
+            this.RandomBag = rand.nextInt(2);
         }
 
         public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
