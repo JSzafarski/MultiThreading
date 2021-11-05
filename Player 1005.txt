@@ -1,0 +1,540 @@
+player 1005 has drawn a 48 from bag Z
+player 1005 hand is [28, 78, 0, 35, 72, 59, 10, 80, 17, 16]
+player 1005 has discarded a 17 from bag C
+player 1005 hand is [28, 78, 0, 35, 72, 59, 10, 80, 48, 16]
+player 1005 has drawn a 97 from bag Z
+player 1005 hand is [28, 78, 0, 35, 72, 59, 10, 80, 48, 16]
+player 1005 has discarded a 78 from bag C
+player 1005 hand is [28, 97, 0, 35, 72, 59, 10, 80, 48, 16]
+player 1005 has drawn a 64 from bag X
+player 1005 hand is [28, 97, 0, 35, 72, 59, 10, 80, 48, 16]
+player 1005 has discarded a 10 from bag A
+player 1005 hand is [28, 97, 0, 35, 72, 59, 64, 80, 48, 16]
+player 1005 has drawn a 11 from bag Y
+player 1005 hand is [28, 97, 0, 35, 72, 59, 64, 80, 48, 16]
+player 1005 has discarded a 28 from bag B
+player 1005 hand is [11, 97, 0, 35, 72, 59, 64, 80, 48, 16]
+player 1005 has drawn a 36 from bag Y
+player 1005 hand is [11, 97, 0, 35, 72, 59, 64, 80, 48, 16]
+player 1005 has discarded a 48 from bag B
+player 1005 hand is [11, 97, 0, 35, 72, 59, 64, 80, 36, 16]
+player 1005 has drawn a 66 from bag Z
+player 1005 hand is [11, 97, 0, 35, 72, 59, 64, 80, 36, 16]
+player 1005 has discarded a 59 from bag C
+player 1005 hand is [11, 97, 0, 35, 72, 66, 64, 80, 36, 16]
+player 1005 has drawn a 67 from bag X
+player 1005 hand is [11, 97, 0, 35, 72, 66, 64, 80, 36, 16]
+player 1005 has discarded a 72 from bag A
+player 1005 hand is [11, 97, 0, 35, 67, 66, 64, 80, 36, 16]
+player 1005 has drawn a 47 from bag X
+player 1005 hand is [11, 97, 0, 35, 67, 66, 64, 80, 36, 16]
+player 1005 has discarded a 67 from bag A
+player 1005 hand is [11, 97, 0, 35, 47, 66, 64, 80, 36, 16]
+player 1005 has drawn a 61 from bag Z
+player 1005 hand is [11, 97, 0, 35, 47, 66, 64, 80, 36, 16]
+player 1005 has discarded a 80 from bag C
+player 1005 hand is [11, 97, 0, 35, 47, 66, 64, 61, 36, 16]
+player 1005 has drawn a 72 from bag Y
+player 1005 hand is [11, 97, 0, 35, 47, 66, 64, 61, 36, 16]
+player 1005 has discarded a 66 from bag B
+player 1005 hand is [11, 97, 0, 35, 47, 72, 64, 61, 36, 16]
+player 1005 has drawn a 95 from bag Y
+player 1005 hand is [11, 97, 0, 35, 47, 72, 64, 61, 36, 16]
+player 1005 has discarded a 35 from bag B
+player 1005 hand is [11, 97, 0, 95, 47, 72, 64, 61, 36, 16]
+player 1005 has drawn a 10 from bag X
+player 1005 hand is [11, 97, 0, 95, 47, 72, 64, 61, 36, 16]
+player 1005 has discarded a 36 from bag A
+player 1005 hand is [11, 97, 0, 95, 47, 72, 64, 61, 10, 16]
+player 1005 has drawn a 66 from bag Y
+player 1005 hand is [11, 97, 0, 95, 47, 72, 64, 61, 10, 16]
+player 1005 has discarded a 47 from bag B
+player 1005 hand is [11, 97, 0, 95, 66, 72, 64, 61, 10, 16]
+player 1005 has drawn a 87 from bag Y
+player 1005 hand is [11, 97, 0, 95, 66, 72, 64, 61, 10, 16]
+player 1005 has discarded a 66 from bag B
+player 1005 hand is [11, 97, 0, 95, 87, 72, 64, 61, 10, 16]
+player 1005 has drawn a 14 from bag Z
+player 1005 hand is [11, 97, 0, 95, 87, 72, 64, 61, 10, 16]
+player 1005 has discarded a 95 from bag C
+player 1005 hand is [11, 97, 0, 14, 87, 72, 64, 61, 10, 16]
+player 1005 has drawn a 30 from bag Y
+player 1005 hand is [11, 97, 0, 14, 87, 72, 64, 61, 10, 16]
+player 1005 has discarded a 0 from bag B
+player 1005 hand is [11, 97, 30, 14, 87, 72, 64, 61, 10, 16]
+player 1005 has drawn a 2 from bag Y
+player 1005 hand is [11, 97, 30, 14, 87, 72, 64, 61, 10, 16]
+player 1005 has discarded a 64 from bag B
+player 1005 hand is [11, 97, 30, 14, 87, 72, 2, 61, 10, 16]
+player 1005 has drawn a 51 from bag X
+player 1005 hand is [11, 97, 30, 14, 87, 72, 2, 61, 10, 16]
+player 1005 has discarded a 97 from bag A
+player 1005 hand is [11, 51, 30, 14, 87, 72, 2, 61, 10, 16]
+player 1005 has drawn a 19 from bag Y
+player 1005 hand is [11, 51, 30, 14, 87, 72, 2, 61, 10, 16]
+player 1005 has discarded a 30 from bag B
+player 1005 hand is [11, 51, 19, 14, 87, 72, 2, 61, 10, 16]
+player 1005 has drawn a 67 from bag Z
+player 1005 hand is [11, 51, 19, 14, 87, 72, 2, 61, 10, 16]
+player 1005 has discarded a 87 from bag C
+player 1005 hand is [11, 51, 19, 14, 67, 72, 2, 61, 10, 16]
+player 1005 has drawn a 60 from bag Y
+player 1005 hand is [11, 51, 19, 14, 67, 72, 2, 61, 10, 16]
+player 1005 has discarded a 11 from bag B
+player 1005 hand is [60, 51, 19, 14, 67, 72, 2, 61, 10, 16]
+player 1005 has drawn a 30 from bag Y
+player 1005 hand is [60, 51, 19, 14, 67, 72, 2, 61, 10, 16]
+player 1005 has discarded a 61 from bag B
+player 1005 hand is [60, 51, 19, 14, 67, 72, 2, 30, 10, 16]
+player 1005 has drawn a 99 from bag Z
+player 1005 hand is [60, 51, 19, 14, 67, 72, 2, 30, 10, 16]
+player 1005 has discarded a 30 from bag C
+player 1005 hand is [60, 51, 19, 14, 67, 72, 2, 99, 10, 16]
+player 1005 has drawn a 50 from bag X
+player 1005 hand is [60, 51, 19, 14, 67, 72, 2, 99, 10, 16]
+player 1005 has discarded a 67 from bag A
+player 1005 hand is [60, 51, 19, 14, 50, 72, 2, 99, 10, 16]
+player 1005 has drawn a 1 from bag X
+player 1005 hand is [60, 51, 19, 14, 50, 72, 2, 99, 10, 16]
+player 1005 has discarded a 72 from bag A
+player 1005 hand is [60, 51, 19, 14, 50, 1, 2, 99, 10, 16]
+player 1005 has drawn a 97 from bag X
+player 1005 hand is [60, 51, 19, 14, 50, 1, 2, 99, 10, 16]
+player 1005 has discarded a 1 from bag A
+player 1005 hand is [60, 51, 19, 14, 50, 97, 2, 99, 10, 16]
+player 1005 has drawn a 0 from bag Z
+player 1005 hand is [60, 51, 19, 14, 50, 97, 2, 99, 10, 16]
+player 1005 has discarded a 0 from bag C
+player 1005 hand is [60, 51, 19, 14, 50, 97, 2, 99, 10, 16]
+player 1005 has drawn a 64 from bag X
+player 1005 hand is [60, 51, 19, 14, 50, 97, 2, 99, 10, 16]
+player 1005 has discarded a 50 from bag A
+player 1005 hand is [60, 51, 19, 14, 64, 97, 2, 99, 10, 16]
+player 1005 has drawn a 94 from bag Z
+player 1005 hand is [60, 51, 19, 14, 64, 97, 2, 99, 10, 16]
+player 1005 has discarded a 64 from bag C
+player 1005 hand is [60, 51, 19, 14, 94, 97, 2, 99, 10, 16]
+player 1005 has drawn a 55 from bag X
+player 1005 hand is [60, 51, 19, 14, 94, 97, 2, 99, 10, 16]
+player 1005 has discarded a 94 from bag A
+player 1005 hand is [60, 51, 19, 14, 55, 97, 2, 99, 10, 16]
+player 1005 has drawn a 46 from bag X
+player 1005 hand is [60, 51, 19, 14, 55, 97, 2, 99, 10, 16]
+player 1005 has discarded a 10 from bag A
+player 1005 hand is [60, 51, 19, 14, 55, 97, 2, 99, 46, 16]
+player 1005 has drawn a 85 from bag Y
+player 1005 hand is [60, 51, 19, 14, 55, 97, 2, 99, 46, 16]
+player 1005 has discarded a 2 from bag B
+player 1005 hand is [60, 51, 19, 14, 55, 97, 85, 99, 46, 16]
+player 1005 has drawn a 9 from bag Z
+player 1005 hand is [60, 51, 19, 14, 55, 97, 85, 99, 46, 16]
+player 1005 has discarded a 55 from bag C
+player 1005 hand is [60, 51, 19, 14, 9, 97, 85, 99, 46, 16]
+player 1005 has drawn a 8 from bag Z
+player 1005 hand is [60, 51, 19, 14, 9, 97, 85, 99, 46, 16]
+player 1005 has discarded a 60 from bag C
+player 1005 hand is [8, 51, 19, 14, 9, 97, 85, 99, 46, 16]
+player 1005 has drawn a 71 from bag Z
+player 1005 hand is [8, 51, 19, 14, 9, 97, 85, 99, 46, 16]
+player 1005 has discarded a 85 from bag C
+player 1005 hand is [8, 51, 19, 14, 9, 97, 71, 99, 46, 16]
+player 1005 has drawn a 11 from bag Y
+player 1005 hand is [8, 51, 19, 14, 9, 97, 71, 99, 46, 16]
+player 1005 has discarded a 97 from bag B
+player 1005 hand is [8, 51, 19, 14, 9, 11, 71, 99, 46, 16]
+player 1005 has drawn a 20 from bag X
+player 1005 hand is [8, 51, 19, 14, 9, 11, 71, 99, 46, 16]
+player 1005 has discarded a 19 from bag A
+player 1005 hand is [8, 51, 20, 14, 9, 11, 71, 99, 46, 16]
+player 1005 has drawn a 44 from bag Y
+player 1005 hand is [8, 51, 20, 14, 9, 11, 71, 99, 46, 16]
+player 1005 has discarded a 46 from bag B
+player 1005 hand is [8, 51, 20, 14, 9, 11, 71, 99, 44, 16]
+player 1005 has drawn a 60 from bag Z
+player 1005 hand is [8, 51, 20, 14, 9, 11, 71, 99, 44, 16]
+player 1005 has discarded a 9 from bag C
+player 1005 hand is [8, 51, 20, 14, 60, 11, 71, 99, 44, 16]
+player 1005 has drawn a 51 from bag X
+player 1005 hand is [8, 51, 20, 14, 60, 11, 71, 99, 44, 16]
+player 1005 has discarded a 14 from bag A
+player 1005 hand is [8, 51, 20, 51, 60, 11, 71, 99, 44, 16]
+player 1005 has drawn a 88 from bag X
+player 1005 hand is [8, 51, 20, 51, 60, 11, 71, 99, 44, 16]
+player 1005 has discarded a 51 from bag A
+player 1005 hand is [8, 51, 20, 88, 60, 11, 71, 99, 44, 16]
+player 1005 has drawn a 90 from bag X
+player 1005 hand is [8, 51, 20, 88, 60, 11, 71, 99, 44, 16]
+player 1005 has discarded a 20 from bag A
+player 1005 hand is [8, 51, 90, 88, 60, 11, 71, 99, 44, 16]
+player 1005 has drawn a 91 from bag X
+player 1005 hand is [8, 51, 90, 88, 60, 11, 71, 99, 44, 16]
+player 1005 has discarded a 90 from bag A
+player 1005 hand is [8, 51, 91, 88, 60, 11, 71, 99, 44, 16]
+player 1005 has drawn a 23 from bag X
+player 1005 hand is [8, 51, 91, 88, 60, 11, 71, 99, 44, 16]
+player 1005 has discarded a 11 from bag A
+player 1005 hand is [8, 51, 91, 88, 60, 23, 71, 99, 44, 16]
+player 1005 has drawn a 12 from bag Z
+player 1005 hand is [8, 51, 91, 88, 60, 23, 71, 99, 44, 16]
+player 1005 has discarded a 60 from bag C
+player 1005 hand is [8, 51, 91, 88, 12, 23, 71, 99, 44, 16]
+player 1005 has drawn a 96 from bag Y
+player 1005 hand is [8, 51, 91, 88, 12, 23, 71, 99, 44, 16]
+player 1005 has discarded a 51 from bag B
+player 1005 hand is [8, 96, 91, 88, 12, 23, 71, 99, 44, 16]
+player 1005 has drawn a 97 from bag Y
+player 1005 hand is [8, 96, 91, 88, 12, 23, 71, 99, 44, 16]
+player 1005 has discarded a 96 from bag B
+player 1005 hand is [8, 97, 91, 88, 12, 23, 71, 99, 44, 16]
+player 1005 has drawn a 20 from bag Z
+player 1005 hand is [8, 97, 91, 88, 12, 23, 71, 99, 44, 16]
+player 1005 has discarded a 44 from bag C
+player 1005 hand is [8, 97, 91, 88, 12, 23, 71, 99, 20, 16]
+player 1005 has drawn a 13 from bag Y
+player 1005 hand is [8, 97, 91, 88, 12, 23, 71, 99, 20, 16]
+player 1005 has discarded a 88 from bag B
+player 1005 hand is [8, 97, 91, 13, 12, 23, 71, 99, 20, 16]
+player 1005 has drawn a 93 from bag Y
+player 1005 hand is [8, 97, 91, 13, 12, 23, 71, 99, 20, 16]
+player 1005 has discarded a 99 from bag B
+player 1005 hand is [8, 97, 91, 13, 12, 23, 71, 93, 20, 16]
+player 1005 has drawn a 21 from bag Y
+player 1005 hand is [8, 97, 91, 13, 12, 23, 71, 93, 20, 16]
+player 1005 has discarded a 13 from bag B
+player 1005 hand is [8, 97, 91, 21, 12, 23, 71, 93, 20, 16]
+player 1005 has drawn a 83 from bag Z
+player 1005 hand is [8, 97, 91, 21, 12, 23, 71, 93, 20, 16]
+player 1005 has discarded a 8 from bag C
+player 1005 hand is [83, 97, 91, 21, 12, 23, 71, 93, 20, 16]
+player 1005 has drawn a 72 from bag Y
+player 1005 hand is [83, 97, 91, 21, 12, 23, 71, 93, 20, 16]
+player 1005 has discarded a 91 from bag B
+player 1005 hand is [83, 97, 72, 21, 12, 23, 71, 93, 20, 16]
+player 1005 has drawn a 45 from bag X
+player 1005 hand is [83, 97, 72, 21, 12, 23, 71, 93, 20, 16]
+player 1005 has discarded a 71 from bag A
+player 1005 hand is [83, 97, 72, 21, 12, 23, 45, 93, 20, 16]
+player 1005 has drawn a 2 from bag Z
+player 1005 hand is [83, 97, 72, 21, 12, 23, 45, 93, 20, 16]
+player 1005 has discarded a 97 from bag C
+player 1005 hand is [83, 2, 72, 21, 12, 23, 45, 93, 20, 16]
+player 1005 has drawn a 29 from bag Z
+player 1005 hand is [83, 2, 72, 21, 12, 23, 45, 93, 20, 16]
+player 1005 has discarded a 12 from bag C
+player 1005 hand is [83, 2, 72, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has drawn a 39 from bag X
+player 1005 hand is [83, 2, 72, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has discarded a 2 from bag A
+player 1005 hand is [83, 39, 72, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has drawn a 17 from bag Z
+player 1005 hand is [83, 39, 72, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has discarded a 39 from bag C
+player 1005 hand is [83, 17, 72, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has drawn a 3 from bag X
+player 1005 hand is [83, 17, 72, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has discarded a 72 from bag A
+player 1005 hand is [83, 17, 3, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has drawn a 19 from bag Z
+player 1005 hand is [83, 17, 3, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has discarded a 83 from bag C
+player 1005 hand is [19, 17, 3, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has drawn a 87 from bag Z
+player 1005 hand is [19, 17, 3, 21, 29, 23, 45, 93, 20, 16]
+player 1005 has discarded a 20 from bag C
+player 1005 hand is [19, 17, 3, 21, 29, 23, 45, 93, 87, 16]
+player 1005 has drawn a 34 from bag X
+player 1005 hand is [19, 17, 3, 21, 29, 23, 45, 93, 87, 16]
+player 1005 has discarded a 19 from bag A
+player 1005 hand is [34, 17, 3, 21, 29, 23, 45, 93, 87, 16]
+player 1005 has drawn a 28 from bag Z
+player 1005 hand is [34, 17, 3, 21, 29, 23, 45, 93, 87, 16]
+player 1005 has discarded a 45 from bag C
+player 1005 hand is [34, 17, 3, 21, 29, 23, 28, 93, 87, 16]
+player 1005 has drawn a 64 from bag Y
+player 1005 hand is [34, 17, 3, 21, 29, 23, 28, 93, 87, 16]
+player 1005 has discarded a 29 from bag B
+player 1005 hand is [34, 17, 3, 21, 64, 23, 28, 93, 87, 16]
+player 1005 has drawn a 73 from bag X
+player 1005 hand is [34, 17, 3, 21, 64, 23, 28, 93, 87, 16]
+player 1005 has discarded a 34 from bag A
+player 1005 hand is [73, 17, 3, 21, 64, 23, 28, 93, 87, 16]
+player 1005 has drawn a 18 from bag Z
+player 1005 hand is [73, 17, 3, 21, 64, 23, 28, 93, 87, 16]
+player 1005 has discarded a 23 from bag C
+player 1005 hand is [73, 17, 3, 21, 64, 18, 28, 93, 87, 16]
+player 1005 has drawn a 25 from bag X
+player 1005 hand is [73, 17, 3, 21, 64, 18, 28, 93, 87, 16]
+player 1005 has discarded a 93 from bag A
+player 1005 hand is [73, 17, 3, 21, 64, 18, 28, 25, 87, 16]
+player 1005 has drawn a 88 from bag X
+player 1005 hand is [73, 17, 3, 21, 64, 18, 28, 25, 87, 16]
+player 1005 has discarded a 3 from bag A
+player 1005 hand is [73, 17, 88, 21, 64, 18, 28, 25, 87, 16]
+player 1005 has drawn a 30 from bag X
+player 1005 hand is [73, 17, 88, 21, 64, 18, 28, 25, 87, 16]
+player 1005 has discarded a 25 from bag A
+player 1005 hand is [73, 17, 88, 21, 64, 18, 28, 30, 87, 16]
+player 1005 has drawn a 90 from bag X
+player 1005 hand is [73, 17, 88, 21, 64, 18, 28, 30, 87, 16]
+player 1005 has discarded a 21 from bag A
+player 1005 hand is [73, 17, 88, 90, 64, 18, 28, 30, 87, 16]
+player 1005 has drawn a 38 from bag Y
+player 1005 hand is [73, 17, 88, 90, 64, 18, 28, 30, 87, 16]
+player 1005 has discarded a 73 from bag B
+player 1005 hand is [38, 17, 88, 90, 64, 18, 28, 30, 87, 16]
+player 1005 has drawn a 85 from bag Y
+player 1005 hand is [38, 17, 88, 90, 64, 18, 28, 30, 87, 16]
+player 1005 has discarded a 18 from bag B
+player 1005 hand is [38, 17, 88, 90, 64, 85, 28, 30, 87, 16]
+player 1005 has drawn a 33 from bag Y
+player 1005 hand is [38, 17, 88, 90, 64, 85, 28, 30, 87, 16]
+player 1005 has discarded a 64 from bag B
+player 1005 hand is [38, 17, 88, 90, 33, 85, 28, 30, 87, 16]
+player 1005 has drawn a 56 from bag Z
+player 1005 hand is [38, 17, 88, 90, 33, 85, 28, 30, 87, 16]
+player 1005 has discarded a 88 from bag C
+player 1005 hand is [38, 17, 56, 90, 33, 85, 28, 30, 87, 16]
+player 1005 has drawn a 97 from bag Y
+player 1005 hand is [38, 17, 56, 90, 33, 85, 28, 30, 87, 16]
+player 1005 has discarded a 38 from bag B
+player 1005 hand is [97, 17, 56, 90, 33, 85, 28, 30, 87, 16]
+player 1005 has drawn a 53 from bag Z
+player 1005 hand is [97, 17, 56, 90, 33, 85, 28, 30, 87, 16]
+player 1005 has discarded a 85 from bag C
+player 1005 hand is [97, 17, 56, 90, 33, 53, 28, 30, 87, 16]
+player 1005 has drawn a 55 from bag Y
+player 1005 hand is [97, 17, 56, 90, 33, 53, 28, 30, 87, 16]
+player 1005 has discarded a 53 from bag B
+player 1005 hand is [97, 17, 56, 90, 33, 55, 28, 30, 87, 16]
+player 1005 has drawn a 32 from bag X
+player 1005 hand is [97, 17, 56, 90, 33, 55, 28, 30, 87, 16]
+player 1005 has discarded a 17 from bag A
+player 1005 hand is [97, 32, 56, 90, 33, 55, 28, 30, 87, 16]
+player 1005 has drawn a 94 from bag X
+player 1005 hand is [97, 32, 56, 90, 33, 55, 28, 30, 87, 16]
+player 1005 has discarded a 32 from bag A
+player 1005 hand is [97, 94, 56, 90, 33, 55, 28, 30, 87, 16]
+player 1005 has drawn a 70 from bag Y
+player 1005 hand is [97, 94, 56, 90, 33, 55, 28, 30, 87, 16]
+player 1005 has discarded a 90 from bag B
+player 1005 hand is [97, 94, 56, 70, 33, 55, 28, 30, 87, 16]
+player 1005 has drawn a 0 from bag Z
+player 1005 hand is [97, 94, 56, 70, 33, 55, 28, 30, 87, 16]
+player 1005 has discarded a 0 from bag C
+player 1005 hand is [97, 94, 56, 70, 33, 55, 28, 30, 87, 16]
+player 1005 has drawn a 66 from bag Y
+player 1005 hand is [97, 94, 56, 70, 33, 55, 28, 30, 87, 16]
+player 1005 has discarded a 87 from bag B
+player 1005 hand is [97, 94, 56, 70, 33, 55, 28, 30, 66, 16]
+player 1005 has drawn a 75 from bag Y
+player 1005 hand is [97, 94, 56, 70, 33, 55, 28, 30, 66, 16]
+player 1005 has discarded a 28 from bag B
+player 1005 hand is [97, 94, 56, 70, 33, 55, 75, 30, 66, 16]
+player 1005 has drawn a 65 from bag Y
+player 1005 hand is [97, 94, 56, 70, 33, 55, 75, 30, 66, 16]
+player 1005 has discarded a 33 from bag B
+player 1005 hand is [97, 94, 56, 70, 65, 55, 75, 30, 66, 16]
+player 1005 has drawn a 45 from bag X
+player 1005 hand is [97, 94, 56, 70, 65, 55, 75, 30, 66, 16]
+player 1005 has discarded a 66 from bag A
+player 1005 hand is [97, 94, 56, 70, 65, 55, 75, 30, 45, 16]
+player 1005 has drawn a 42 from bag Y
+player 1005 hand is [97, 94, 56, 70, 65, 55, 75, 30, 45, 16]
+player 1005 has discarded a 30 from bag B
+player 1005 hand is [97, 94, 56, 70, 65, 55, 75, 42, 45, 16]
+player 1005 has drawn a 21 from bag X
+player 1005 hand is [97, 94, 56, 70, 65, 55, 75, 42, 45, 16]
+player 1005 has discarded a 70 from bag A
+player 1005 hand is [97, 94, 56, 21, 65, 55, 75, 42, 45, 16]
+player 1005 has drawn a 14 from bag Z
+player 1005 hand is [97, 94, 56, 21, 65, 55, 75, 42, 45, 16]
+player 1005 has discarded a 42 from bag C
+player 1005 hand is [97, 94, 56, 21, 65, 55, 75, 14, 45, 16]
+player 1005 has drawn a 7 from bag Y
+player 1005 hand is [97, 94, 56, 21, 65, 55, 75, 14, 45, 16]
+player 1005 has discarded a 75 from bag B
+player 1005 hand is [97, 94, 56, 21, 65, 55, 7, 14, 45, 16]
+player 1005 has drawn a 61 from bag Z
+player 1005 hand is [97, 94, 56, 21, 65, 55, 7, 14, 45, 16]
+player 1005 has discarded a 97 from bag C
+player 1005 hand is [61, 94, 56, 21, 65, 55, 7, 14, 45, 16]
+player 1005 has drawn a 43 from bag Y
+player 1005 hand is [61, 94, 56, 21, 65, 55, 7, 14, 45, 16]
+player 1005 has discarded a 55 from bag B
+player 1005 hand is [61, 94, 56, 21, 65, 43, 7, 14, 45, 16]
+player 1005 has drawn a 31 from bag Y
+player 1005 hand is [61, 94, 56, 21, 65, 43, 7, 14, 45, 16]
+player 1005 has discarded a 7 from bag B
+player 1005 hand is [61, 94, 56, 21, 65, 43, 31, 14, 45, 16]
+player 1005 has drawn a 67 from bag Z
+player 1005 hand is [61, 94, 56, 21, 65, 43, 31, 14, 45, 16]
+player 1005 has discarded a 43 from bag C
+player 1005 hand is [61, 94, 56, 21, 65, 67, 31, 14, 45, 16]
+player 1005 has drawn a 67 from bag X
+player 1005 hand is [61, 94, 56, 21, 65, 67, 31, 14, 45, 16]
+player 1005 has discarded a 61 from bag A
+player 1005 hand is [67, 94, 56, 21, 65, 67, 31, 14, 45, 16]
+player 1005 has drawn a 51 from bag X
+player 1005 hand is [67, 94, 56, 21, 65, 67, 31, 14, 45, 16]
+player 1005 has discarded a 65 from bag A
+player 1005 hand is [67, 94, 56, 21, 51, 67, 31, 14, 45, 16]
+player 1005 has drawn a 96 from bag Z
+player 1005 hand is [67, 94, 56, 21, 51, 67, 31, 14, 45, 16]
+player 1005 has discarded a 45 from bag C
+player 1005 hand is [67, 94, 56, 21, 51, 67, 31, 14, 96, 16]
+player 1005 has drawn a 79 from bag Z
+player 1005 hand is [67, 94, 56, 21, 51, 67, 31, 14, 96, 16]
+player 1005 has discarded a 56 from bag C
+player 1005 hand is [67, 94, 79, 21, 51, 67, 31, 14, 96, 16]
+player 1005 has drawn a 47 from bag Y
+player 1005 hand is [67, 94, 79, 21, 51, 67, 31, 14, 96, 16]
+player 1005 has discarded a 51 from bag B
+player 1005 hand is [67, 94, 79, 21, 47, 67, 31, 14, 96, 16]
+player 1005 has drawn a 4 from bag Y
+player 1005 hand is [67, 94, 79, 21, 47, 67, 31, 14, 96, 16]
+player 1005 has discarded a 79 from bag B
+player 1005 hand is [67, 94, 4, 21, 47, 67, 31, 14, 96, 16]
+player 1005 has drawn a 66 from bag X
+player 1005 hand is [67, 94, 4, 21, 47, 67, 31, 14, 96, 16]
+player 1005 has discarded a 67 from bag A
+player 1005 hand is [67, 94, 4, 21, 47, 66, 31, 14, 96, 16]
+player 1005 has drawn a 51 from bag Y
+player 1005 hand is [67, 94, 4, 21, 47, 66, 31, 14, 96, 16]
+player 1005 has discarded a 31 from bag B
+player 1005 hand is [67, 94, 4, 21, 47, 66, 51, 14, 96, 16]
+player 1005 has drawn a 66 from bag Y
+player 1005 hand is [67, 94, 4, 21, 47, 66, 51, 14, 96, 16]
+player 1005 has discarded a 21 from bag B
+player 1005 hand is [67, 94, 4, 66, 47, 66, 51, 14, 96, 16]
+player 1005 has drawn a 32 from bag X
+player 1005 hand is [67, 94, 4, 66, 47, 66, 51, 14, 96, 16]
+player 1005 has discarded a 67 from bag A
+player 1005 hand is [32, 94, 4, 66, 47, 66, 51, 14, 96, 16]
+player 1005 has drawn a 81 from bag Y
+player 1005 hand is [32, 94, 4, 66, 47, 66, 51, 14, 96, 16]
+player 1005 has discarded a 47 from bag B
+player 1005 hand is [32, 94, 4, 66, 81, 66, 51, 14, 96, 16]
+player 1005 has drawn a 47 from bag Y
+player 1005 hand is [32, 94, 4, 66, 81, 66, 51, 14, 96, 16]
+player 1005 has discarded a 81 from bag B
+player 1005 hand is [32, 94, 4, 66, 47, 66, 51, 14, 96, 16]
+player 1005 has drawn a 63 from bag Z
+player 1005 hand is [32, 94, 4, 66, 47, 66, 51, 14, 96, 16]
+player 1005 has discarded a 66 from bag C
+player 1005 hand is [32, 94, 4, 66, 47, 63, 51, 14, 96, 16]
+player 1005 has drawn a 92 from bag X
+player 1005 hand is [32, 94, 4, 66, 47, 63, 51, 14, 96, 16]
+player 1005 has discarded a 66 from bag A
+player 1005 hand is [32, 94, 4, 92, 47, 63, 51, 14, 96, 16]
+player 1005 has drawn a 53 from bag Y
+player 1005 hand is [32, 94, 4, 92, 47, 63, 51, 14, 96, 16]
+player 1005 has discarded a 4 from bag B
+player 1005 hand is [32, 94, 53, 92, 47, 63, 51, 14, 96, 16]
+player 1005 has drawn a 25 from bag X
+player 1005 hand is [32, 94, 53, 92, 47, 63, 51, 14, 96, 16]
+player 1005 has discarded a 14 from bag A
+player 1005 hand is [32, 94, 53, 92, 47, 63, 51, 25, 96, 16]
+player 1005 has drawn a 12 from bag Z
+player 1005 hand is [32, 94, 53, 92, 47, 63, 51, 25, 96, 16]
+player 1005 has discarded a 96 from bag C
+player 1005 hand is [32, 94, 53, 92, 47, 63, 51, 25, 12, 16]
+player 1005 has drawn a 86 from bag X
+player 1005 hand is [32, 94, 53, 92, 47, 63, 51, 25, 12, 16]
+player 1005 has discarded a 47 from bag A
+player 1005 hand is [32, 94, 53, 92, 86, 63, 51, 25, 12, 16]
+player 1005 has drawn a 50 from bag X
+player 1005 hand is [32, 94, 53, 92, 86, 63, 51, 25, 12, 16]
+player 1005 has discarded a 92 from bag A
+player 1005 hand is [32, 94, 53, 50, 86, 63, 51, 25, 12, 16]
+player 1005 has drawn a 64 from bag Y
+player 1005 hand is [32, 94, 53, 50, 86, 63, 51, 25, 12, 16]
+player 1005 has discarded a 32 from bag B
+player 1005 hand is [64, 94, 53, 50, 86, 63, 51, 25, 12, 16]
+player 1005 has drawn a 43 from bag Y
+player 1005 hand is [64, 94, 53, 50, 86, 63, 51, 25, 12, 16]
+player 1005 has discarded a 12 from bag B
+player 1005 hand is [64, 94, 53, 50, 86, 63, 51, 25, 43, 16]
+player 1005 has drawn a 84 from bag Z
+player 1005 hand is [64, 94, 53, 50, 86, 63, 51, 25, 43, 16]
+player 1005 has discarded a 51 from bag C
+player 1005 hand is [64, 94, 53, 50, 86, 63, 84, 25, 43, 16]
+player 1005 has drawn a 69 from bag Y
+player 1005 hand is [64, 94, 53, 50, 86, 63, 84, 25, 43, 16]
+player 1005 has discarded a 63 from bag B
+player 1005 hand is [64, 94, 53, 50, 86, 69, 84, 25, 43, 16]
+player 1005 has drawn a 97 from bag Z
+player 1005 hand is [64, 94, 53, 50, 86, 69, 84, 25, 43, 16]
+player 1005 has discarded a 86 from bag C
+player 1005 hand is [64, 94, 53, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has drawn a 59 from bag X
+player 1005 hand is [64, 94, 53, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has discarded a 53 from bag A
+player 1005 hand is [64, 94, 59, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has drawn a 5 from bag Y
+player 1005 hand is [64, 94, 59, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has discarded a 64 from bag B
+player 1005 hand is [5, 94, 59, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has drawn a 3 from bag Z
+player 1005 hand is [5, 94, 59, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has discarded a 5 from bag C
+player 1005 hand is [3, 94, 59, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has drawn a 54 from bag Y
+player 1005 hand is [3, 94, 59, 50, 97, 69, 84, 25, 43, 16]
+player 1005 has discarded a 50 from bag B
+player 1005 hand is [3, 94, 59, 54, 97, 69, 84, 25, 43, 16]
+player 1005 has drawn a 66 from bag X
+player 1005 hand is [3, 94, 59, 54, 97, 69, 84, 25, 43, 16]
+player 1005 has discarded a 54 from bag A
+player 1005 hand is [3, 94, 59, 66, 97, 69, 84, 25, 43, 16]
+player 1005 has drawn a 60 from bag Y
+player 1005 hand is [3, 94, 59, 66, 97, 69, 84, 25, 43, 16]
+player 1005 has discarded a 59 from bag B
+player 1005 hand is [3, 94, 60, 66, 97, 69, 84, 25, 43, 16]
+player 1005 has drawn a 63 from bag Z
+player 1005 hand is [3, 94, 60, 66, 97, 69, 84, 25, 43, 16]
+player 1005 has discarded a 97 from bag C
+player 1005 hand is [3, 94, 60, 66, 63, 69, 84, 25, 43, 16]
+player 1005 has drawn a 51 from bag Y
+player 1005 hand is [3, 94, 60, 66, 63, 69, 84, 25, 43, 16]
+player 1005 has discarded a 3 from bag B
+player 1005 hand is [51, 94, 60, 66, 63, 69, 84, 25, 43, 16]
+player 1005 has drawn a 58 from bag Y
+player 1005 hand is [51, 94, 60, 66, 63, 69, 84, 25, 43, 16]
+player 1005 has discarded a 25 from bag B
+player 1005 hand is [51, 94, 60, 66, 63, 69, 84, 58, 43, 16]
+player 1005 has drawn a 38 from bag Y
+player 1005 hand is [51, 94, 60, 66, 63, 69, 84, 58, 43, 16]
+player 1005 has discarded a 69 from bag B
+player 1005 hand is [51, 94, 60, 66, 63, 38, 84, 58, 43, 16]
+player 1005 has drawn a 0 from bag X
+player 1005 hand is [51, 94, 60, 66, 63, 38, 84, 58, 43, 16]
+player 1005 has discarded a 0 from bag A
+player 1005 hand is [51, 94, 60, 66, 63, 38, 84, 58, 43, 16]
+player 1005 has drawn a 0 from bag Y
+player 1005 hand is [51, 94, 60, 66, 63, 38, 84, 58, 43, 16]
+player 1005 has discarded a 66 from bag B
+player 1005 hand is [51, 94, 60, 0, 63, 38, 84, 58, 43, 16]
+player 1005 has drawn a 40 from bag Y
+player 1005 hand is [51, 94, 60, 0, 63, 38, 84, 58, 43, 16]
+player 1005 has discarded a 58 from bag B
+player 1005 hand is [51, 94, 60, 0, 63, 38, 84, 40, 43, 16]
+player 1005 has drawn a 12 from bag Z
+player 1005 hand is [51, 94, 60, 0, 63, 38, 84, 40, 43, 16]
+player 1005 has discarded a 84 from bag C
+player 1005 hand is [51, 94, 60, 0, 63, 38, 12, 40, 43, 16]
+player 1005 has drawn a 91 from bag X
+player 1005 hand is [51, 94, 60, 0, 63, 38, 12, 40, 43, 16]
+player 1005 has discarded a 0 from bag A
+player 1005 hand is [51, 94, 60, 91, 63, 38, 12, 40, 43, 16]
+player 1005 has drawn a 45 from bag X
+player 1005 hand is [51, 94, 60, 91, 63, 38, 12, 40, 43, 16]
+player 1005 has discarded a 91 from bag A
+player 1005 hand is [51, 94, 60, 45, 63, 38, 12, 40, 43, 16]
+player 1005 has drawn a 19 from bag X
+player 1005 hand is [51, 94, 60, 45, 63, 38, 12, 40, 43, 16]
+player 1005 has discarded a 38 from bag A
+player 1005 hand is [51, 94, 60, 45, 63, 19, 12, 40, 43, 16]
+player 1005 has drawn a 89 from bag Z
+player 1005 hand is [51, 94, 60, 45, 63, 19, 12, 40, 43, 16]
+player 1005 has discarded a 40 from bag C
+player 1005 hand is [51, 94, 60, 45, 63, 19, 12, 89, 43, 16]

@@ -1,0 +1,164 @@
+player 1006 has drawn a 99 from bag Y
+player 1006 hand is [20, 0, 98, 19, 71, 3, 90, 92, 49, 3]
+player 1006 has discarded a 19 from bag B
+player 1006 hand is [20, 0, 98, 99, 71, 3, 90, 92, 49, 3]
+player 1006 has drawn a 90 from bag Y
+player 1006 hand is [20, 0, 98, 99, 71, 3, 90, 92, 49, 3]
+player 1006 has discarded a 49 from bag B
+player 1006 hand is [20, 0, 98, 99, 71, 3, 90, 92, 90, 3]
+player 1006 has drawn a 78 from bag X
+player 1006 hand is [20, 0, 98, 99, 71, 3, 90, 92, 90, 3]
+player 1006 has discarded a 99 from bag A
+player 1006 hand is [20, 0, 98, 78, 71, 3, 90, 92, 90, 3]
+player 1006 has drawn a 76 from bag Y
+player 1006 hand is [20, 0, 98, 78, 71, 3, 90, 92, 90, 3]
+player 1006 has discarded a 0 from bag B
+player 1006 hand is [20, 76, 98, 78, 71, 3, 90, 92, 90, 3]
+player 1006 has drawn a 30 from bag Y
+player 1006 hand is [20, 76, 98, 78, 71, 3, 90, 92, 90, 3]
+player 1006 has discarded a 76 from bag B
+player 1006 hand is [20, 30, 98, 78, 71, 3, 90, 92, 90, 3]
+player 1006 has drawn a 60 from bag Y
+player 1006 hand is [20, 30, 98, 78, 71, 3, 90, 92, 90, 3]
+player 1006 has discarded a 3 from bag B
+player 1006 hand is [20, 30, 98, 78, 71, 60, 90, 92, 90, 3]
+player 1006 has drawn a 97 from bag X
+player 1006 hand is [20, 30, 98, 78, 71, 60, 90, 92, 90, 3]
+player 1006 has discarded a 98 from bag A
+player 1006 hand is [20, 30, 97, 78, 71, 60, 90, 92, 90, 3]
+player 1006 has drawn a 8 from bag Y
+player 1006 hand is [20, 30, 97, 78, 71, 60, 90, 92, 90, 3]
+player 1006 has discarded a 78 from bag B
+player 1006 hand is [20, 30, 97, 8, 71, 60, 90, 92, 90, 3]
+player 1006 has drawn a 51 from bag Y
+player 1006 hand is [20, 30, 97, 8, 71, 60, 90, 92, 90, 3]
+player 1006 has discarded a 92 from bag B
+player 1006 hand is [20, 30, 97, 8, 71, 60, 90, 51, 90, 3]
+player 1006 has drawn a 65 from bag Z
+player 1006 hand is [20, 30, 97, 8, 71, 60, 90, 51, 90, 3]
+player 1006 has discarded a 8 from bag C
+player 1006 hand is [20, 30, 97, 65, 71, 60, 90, 51, 90, 3]
+player 1006 has drawn a 24 from bag Y
+player 1006 hand is [20, 30, 97, 65, 71, 60, 90, 51, 90, 3]
+player 1006 has discarded a 71 from bag B
+player 1006 hand is [20, 30, 97, 65, 24, 60, 90, 51, 90, 3]
+player 1006 has drawn a 88 from bag Y
+player 1006 hand is [20, 30, 97, 65, 24, 60, 90, 51, 90, 3]
+player 1006 has discarded a 65 from bag B
+player 1006 hand is [20, 30, 97, 88, 24, 60, 90, 51, 90, 3]
+player 1006 has drawn a 22 from bag X
+player 1006 hand is [20, 30, 97, 88, 24, 60, 90, 51, 90, 3]
+player 1006 has discarded a 90 from bag A
+player 1006 hand is [20, 30, 97, 88, 24, 60, 22, 51, 90, 3]
+player 1006 has drawn a 0 from bag Y
+player 1006 hand is [20, 30, 97, 88, 24, 60, 22, 51, 90, 3]
+player 1006 has discarded a 60 from bag B
+player 1006 hand is [20, 30, 97, 88, 24, 0, 22, 51, 90, 3]
+player 1006 has drawn a 45 from bag Z
+player 1006 hand is [20, 30, 97, 88, 24, 0, 22, 51, 90, 3]
+player 1006 has discarded a 51 from bag C
+player 1006 hand is [20, 30, 97, 88, 24, 0, 22, 45, 90, 3]
+player 1006 has drawn a 21 from bag X
+player 1006 hand is [20, 30, 97, 88, 24, 0, 22, 45, 90, 3]
+player 1006 has discarded a 30 from bag A
+player 1006 hand is [20, 21, 97, 88, 24, 0, 22, 45, 90, 3]
+player 1006 has drawn a 5 from bag Z
+player 1006 hand is [20, 21, 97, 88, 24, 0, 22, 45, 90, 3]
+player 1006 has discarded a 21 from bag C
+player 1006 hand is [20, 5, 97, 88, 24, 0, 22, 45, 90, 3]
+player 1006 has drawn a 42 from bag Z
+player 1006 hand is [20, 5, 97, 88, 24, 0, 22, 45, 90, 3]
+player 1006 has discarded a 24 from bag C
+player 1006 hand is [20, 5, 97, 88, 42, 0, 22, 45, 90, 3]
+player 1006 has drawn a 56 from bag Y
+player 1006 hand is [20, 5, 97, 88, 42, 0, 22, 45, 90, 3]
+player 1006 has discarded a 45 from bag B
+player 1006 hand is [20, 5, 97, 88, 42, 0, 22, 56, 90, 3]
+player 1006 has drawn a 44 from bag Z
+player 1006 hand is [20, 5, 97, 88, 42, 0, 22, 56, 90, 3]
+player 1006 has discarded a 22 from bag C
+player 1006 hand is [20, 5, 97, 88, 42, 0, 44, 56, 90, 3]
+player 1006 has drawn a 14 from bag Z
+player 1006 hand is [20, 5, 97, 88, 42, 0, 44, 56, 90, 3]
+player 1006 has discarded a 90 from bag C
+player 1006 hand is [20, 5, 97, 88, 42, 0, 44, 56, 14, 3]
+player 1006 has drawn a 73 from bag Z
+player 1006 hand is [20, 5, 97, 88, 42, 0, 44, 56, 14, 3]
+player 1006 has discarded a 14 from bag C
+player 1006 hand is [20, 5, 97, 88, 42, 0, 44, 56, 73, 3]
+player 1006 has drawn a 25 from bag Y
+player 1006 hand is [20, 5, 97, 88, 42, 0, 44, 56, 73, 3]
+player 1006 has discarded a 44 from bag B
+player 1006 hand is [20, 5, 97, 88, 42, 0, 25, 56, 73, 3]
+player 1006 has drawn a 56 from bag X
+player 1006 hand is [20, 5, 97, 88, 42, 0, 25, 56, 73, 3]
+player 1006 has discarded a 42 from bag A
+player 1006 hand is [20, 5, 97, 88, 56, 0, 25, 56, 73, 3]
+player 1006 has drawn a 18 from bag Z
+player 1006 hand is [20, 5, 97, 88, 56, 0, 25, 56, 73, 3]
+player 1006 has discarded a 97 from bag C
+player 1006 hand is [20, 5, 18, 88, 56, 0, 25, 56, 73, 3]
+player 1006 has drawn a 86 from bag Y
+player 1006 hand is [20, 5, 18, 88, 56, 0, 25, 56, 73, 3]
+player 1006 has discarded a 88 from bag B
+player 1006 hand is [20, 5, 18, 86, 56, 0, 25, 56, 73, 3]
+player 1006 has drawn a 54 from bag Y
+player 1006 hand is [20, 5, 18, 86, 56, 0, 25, 56, 73, 3]
+player 1006 has discarded a 86 from bag B
+player 1006 hand is [20, 5, 18, 54, 56, 0, 25, 56, 73, 3]
+player 1006 has drawn a 19 from bag Z
+player 1006 hand is [20, 5, 18, 54, 56, 0, 25, 56, 73, 3]
+player 1006 has discarded a 56 from bag C
+player 1006 hand is [20, 5, 18, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has drawn a 58 from bag X
+player 1006 hand is [20, 5, 18, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has discarded a 20 from bag A
+player 1006 hand is [58, 5, 18, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has drawn a 1 from bag Y
+player 1006 hand is [58, 5, 18, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has discarded a 58 from bag B
+player 1006 hand is [1, 5, 18, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has drawn a 59 from bag X
+player 1006 hand is [1, 5, 18, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has discarded a 18 from bag A
+player 1006 hand is [1, 5, 59, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has drawn a 27 from bag X
+player 1006 hand is [1, 5, 59, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has discarded a 59 from bag A
+player 1006 hand is [1, 5, 27, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has drawn a 44 from bag Z
+player 1006 hand is [1, 5, 27, 54, 19, 0, 25, 56, 73, 3]
+player 1006 has discarded a 56 from bag C
+player 1006 hand is [1, 5, 27, 54, 19, 0, 25, 44, 73, 3]
+player 1006 has drawn a 80 from bag Y
+player 1006 hand is [1, 5, 27, 54, 19, 0, 25, 44, 73, 3]
+player 1006 has discarded a 73 from bag B
+player 1006 hand is [1, 5, 27, 54, 19, 0, 25, 44, 80, 3]
+player 1006 has drawn a 67 from bag Y
+player 1006 hand is [1, 5, 27, 54, 19, 0, 25, 44, 80, 3]
+player 1006 has discarded a 1 from bag B
+player 1006 hand is [67, 5, 27, 54, 19, 0, 25, 44, 80, 3]
+player 1006 has drawn a 44 from bag Y
+player 1006 hand is [67, 5, 27, 54, 19, 0, 25, 44, 80, 3]
+player 1006 has discarded a 80 from bag B
+player 1006 hand is [67, 5, 27, 54, 19, 0, 25, 44, 44, 3]
+player 1006 has drawn a 84 from bag Z
+player 1006 hand is [67, 5, 27, 54, 19, 0, 25, 44, 44, 3]
+player 1006 has discarded a 54 from bag C
+player 1006 hand is [67, 5, 27, 84, 19, 0, 25, 44, 44, 3]
+player 1006 has drawn a 85 from bag Z
+player 1006 hand is [67, 5, 27, 84, 19, 0, 25, 44, 44, 3]
+player 1006 has discarded a 0 from bag C
+player 1006 hand is [67, 5, 27, 84, 19, 85, 25, 44, 44, 3]
+player 1006 has drawn a 94 from bag X
+player 1006 hand is [67, 5, 27, 84, 19, 85, 25, 44, 44, 3]
+player 1006 has discarded a 85 from bag A
+player 1006 hand is [67, 5, 27, 84, 19, 94, 25, 44, 44, 3]
+player 1006 has drawn a 46 from bag X
+player 1006 hand is [67, 5, 27, 84, 19, 94, 25, 44, 44, 3]
+player 1006 has discarded a 5 from bag A
+player 1006 hand is [67, 46, 27, 84, 19, 94, 25, 44, 44, 3]
+player 1006 has drawn a 36 from bag Z
+player 1006 hand is [67, 46, 27, 84, 19, 94, 25, 44, 44, 3]
+player 1006 has discarded a 94 from bag C
+player 1006 hand is [67, 46, 27, 84, 19, 36, 25, 44, 44, 3]

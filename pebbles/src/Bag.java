@@ -12,7 +12,13 @@ public class Bag {
 
     //get and set methods for the list of pebbles in the bags
     public ArrayList<Integer> getPebbles() {return this.pebbles;}
-    public void setPebbles(ArrayList<Integer> pebbles) {this.pebbles = pebbles;}
+    public void setPebbles(ArrayList<Integer> pebbles) {
+        int s = 0;
+        while(s <= pebbles.size()-1){
+            this.pebbles.add(pebbles.get(s));
+            s++;
+        }
+    }
 
     //get and set methods for the bag pairs of each bag
     public Bag getBagPair() {return bagPair;}

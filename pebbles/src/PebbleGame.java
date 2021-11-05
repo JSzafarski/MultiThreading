@@ -10,7 +10,6 @@ public class PebbleGame {
     public static void main(String[] args){//this can be confusing as its instance of a instance of pebble game that creates instance of players
         PebbleGame game = new PebbleGame();
         game.start_game();
-
     }
 
      Player[] playerList = new Player[100];
@@ -39,7 +38,7 @@ public class PebbleGame {
 
     public void start_game(){//if the under eneters e then the program must exit.
         int numPlayers;//number of players
-        ArrayList<Integer> pebbles = new ArrayList<Integer>();
+        ArrayList<Integer> pebblesFromFile = new ArrayList<Integer>();
         setBagPairs();
         Scanner Scanner1 = new Scanner(System.in);
         System.out.println("you will be asked to enter the number of players and then for the location");
@@ -66,27 +65,30 @@ public class PebbleGame {
                             break;//exit the loop
                         } else { //check if the input is valid using try catch block
                             try{
-                                pebbles.addAll(read_csv(file_input));//populates the pebbles temp array
-                                if(pebbles.size()<10){//if some files contains less than 10 pebbles each then throw error as its below spec
+                                int s= 0;
+                                while(s<=(read_csv(file_input)).size()-1){
+                                    //populates the pebbles temp array
+                                    pebblesFromFile.add(read_csv(file_input).get(s));
+                                    s++;
+                                }
+                                if(pebblesFromFile.size()<10){//if some files contains less than 10 pebbles each then throw error as its below spec
                                     throw new InvalidfileExeption("file number" + i + " has to have at least 10 pebbles");
                                 }else{
                                     switch (i) {//uses the for loop to identify which bag is being added to
                                         case 1 -> {
-                                            totalPebbles = totalPebbles + pebbles.size();
-                                            bagX.setPebbles(pebbles);
+                                            totalPebbles = totalPebbles + pebblesFromFile.size();
+                                            bagX.setPebbles(pebblesFromFile);
                                             }
                                         case 2 -> {
-                                            totalPebbles = totalPebbles + pebbles.size();
-                                            bagY.setPebbles(pebbles);
+                                            totalPebbles = totalPebbles + pebblesFromFile.size();
+                                            bagY.setPebbles(pebblesFromFile);
                                             }
                                         case 3 -> {
-                                            totalPebbles = totalPebbles + pebbles.size();
-                                            bagZ.setPebbles(pebbles);
-                                        }
-                                        default -> {
-                                            pebbles.clear();
+                                            totalPebbles = totalPebbles + pebblesFromFile.size();
+                                            bagZ.setPebbles(pebblesFromFile);
                                         }
                                     }
+                                    pebblesFromFile.clear();
                                 }
                             } catch (InvalidfileExeption e) {
                                 System.out.println(e.getMessage());
@@ -230,7 +232,7 @@ public class PebbleGame {
                     }
                 } else {//the drawPebble method was successful
                     if (JustDrawTen) {//creates a list of 10 pebbles
-                        TenPebbles[i] = bagX.drawPebble();
+                        TenPebbles[i] = bagY.drawPebble();
                     } else {//takes the drawn pebble and replaces a pebble in the player's hand which is discarded into the corresponding bag
                         bagY.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
                         thisPlayer.lastBagDrawn("Y");
@@ -265,7 +267,7 @@ public class PebbleGame {
                     }
                 } else {//the drawPebble method was successful
                     if (JustDrawTen) {//creates a list of 10 pebbles
-                        TenPebbles[i] = bagX.drawPebble();
+                        TenPebbles[i] = bagZ.drawPebble();
                     } else {//takes the drawn pebble and replaces a pebble in the player's hand which is then discarded into the corresponding bag
                         bagZ.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
                         thisPlayer.lastBagDrawn("Z");
@@ -288,10 +290,10 @@ public class PebbleGame {
     }
 
     public void RunPlayers(int numPlayers){
-        threadList = new Thread[numPlayers-1];
+        threadList = new Thread[numPlayers];
         //creates each player object and thread for the specified number of players
         PebbleGame DeafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
-        for(int i = 0; i <= numPlayers; i++){
+        for(int i = 0; i <= numPlayers-1; i++){
             //DeafultPebblegame.Players.add(DeafultPebblegame.new Player(1000+i));
             DeafultPebblegame.playerList[i]  = DeafultPebblegame.new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
             threadList[i] = new Playerthread(DeafultPebblegame.playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
@@ -315,7 +317,7 @@ public class PebbleGame {
         public int getTotalWeight() {return this.totalWeight;}
 
         public void GenerateRandomChoice(){
-            this.RandomBag = rand.nextInt(2);
+            this.RandomBag = rand.nextInt(3);
         }
 
         public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
@@ -333,7 +335,9 @@ public class PebbleGame {
         }
 
         public void setPebbles(int[] pebbles) {
-            this.pebbles = pebbles;
+            for (int i = 0;i<=9;i++){
+                this.pebbles[i] = pebbles[i];
+            }
         }
 
         public void updateWeight(int newPebble, int oldPebble){//true = add,false = remove

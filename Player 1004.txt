@@ -1,80 +1,2312 @@
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [52, 26, 22, 23, 39, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [52, 26, 22, 23, 39, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 26, 22, 23, 39, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 26, 22, 23, 39, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 26, 22, 23, 91, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 26, 22, 23, 91, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 26, 22, 23, 54, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 26, 22, 23, 54, 55, 79, 34, 83, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 26, 22, 23, 54, 55, 79, 34, 47, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 26, 22, 23, 54, 55, 79, 34, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 26, 22, 23, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 26, 22, 23, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 26, 97, 23, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 26, 97, 23, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 97, 23, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 97, 23, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 97, 3, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 97, 3, 54, 55, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 97, 3, 54, 89, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 97, 3, 54, 89, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 31, 97, 3, 54, 10, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 31, 97, 3, 54, 10, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 31, 2, 3, 54, 10, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 31, 2, 3, 54, 10, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 2, 3, 54, 73, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 2, 3, 54, 73, 79, 13, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 2, 3, 54, 73, 79, 10, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 2, 3, 54, 73, 79, 10, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 2, 43, 54, 73, 79, 10, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 2, 43, 54, 73, 79, 10, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 2, 43, 54, 73, 79, 71, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 2, 43, 54, 73, 79, 71, 47, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 31, 2, 43, 54, 73, 34, 71, 47, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 31, 2, 43, 54, 73, 34, 71, 47, 34]
-player 1004 has drawn a 0from bag X
-player 1004 hand is [86, 31, 2, 43, 54, 73, 34, 90, 47, 34]
-player 1004 has drawn a 0from bag A
-player 1004 hand is [86, 31, 2, 43, 54, 73, 34, 90, 47, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 78, 2, 43, 54, 73, 34, 90, 47, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 78, 2, 43, 54, 73, 34, 90, 47, 34]
-player 1004 has drawn a 0from bag Y
-player 1004 hand is [86, 50, 2, 43, 54, 73, 34, 90, 47, 34]
-player 1004 has drawn a 0from bag B
-player 1004 hand is [86, 50, 2, 43, 54, 73, 34, 90, 47, 34]
+player 1004 has drawn a 84 from bag Z
+player 1004 hand is [97, 4, 28, 83, 55, 38, 33, 69, 74, 93]
+player 1004 has discarded a 97 from bag C
+player 1004 hand is [84, 4, 28, 83, 55, 38, 33, 69, 74, 93]
+player 1004 has drawn a 65 from bag Y
+player 1004 hand is [84, 4, 28, 83, 55, 38, 33, 69, 74, 93]
+player 1004 has discarded a 69 from bag B
+player 1004 hand is [84, 4, 28, 83, 55, 38, 33, 65, 74, 93]
+player 1004 has drawn a 98 from bag Y
+player 1004 hand is [84, 4, 28, 83, 55, 38, 33, 65, 74, 93]
+player 1004 has discarded a 4 from bag B
+player 1004 hand is [84, 98, 28, 83, 55, 38, 33, 65, 74, 93]
+player 1004 has drawn a 17 from bag Y
+player 1004 hand is [84, 98, 28, 83, 55, 38, 33, 65, 74, 93]
+player 1004 has discarded a 65 from bag B
+player 1004 hand is [84, 98, 28, 83, 55, 38, 33, 17, 74, 93]
+player 1004 has drawn a 95 from bag Y
+player 1004 hand is [84, 98, 28, 83, 55, 38, 33, 17, 74, 93]
+player 1004 has discarded a 55 from bag B
+player 1004 hand is [84, 98, 28, 83, 95, 38, 33, 17, 74, 93]
+player 1004 has drawn a 34 from bag Y
+player 1004 hand is [84, 98, 28, 83, 95, 38, 33, 17, 74, 93]
+player 1004 has discarded a 98 from bag B
+player 1004 hand is [84, 34, 28, 83, 95, 38, 33, 17, 74, 93]
+player 1004 has drawn a 59 from bag Z
+player 1004 hand is [84, 34, 28, 83, 95, 38, 33, 17, 74, 93]
+player 1004 has discarded a 38 from bag C
+player 1004 hand is [84, 34, 28, 83, 95, 59, 33, 17, 74, 93]
+player 1004 has drawn a 6 from bag Y
+player 1004 hand is [84, 34, 28, 83, 95, 59, 33, 17, 74, 93]
+player 1004 has discarded a 83 from bag B
+player 1004 hand is [84, 34, 28, 6, 95, 59, 33, 17, 74, 93]
+player 1004 has drawn a 80 from bag Z
+player 1004 hand is [84, 34, 28, 6, 95, 59, 33, 17, 74, 93]
+player 1004 has discarded a 33 from bag C
+player 1004 hand is [84, 34, 28, 6, 95, 59, 80, 17, 74, 93]
+player 1004 has drawn a 24 from bag Z
+player 1004 hand is [84, 34, 28, 6, 95, 59, 80, 17, 74, 93]
+player 1004 has discarded a 74 from bag C
+player 1004 hand is [84, 34, 28, 6, 95, 59, 80, 17, 24, 93]
+player 1004 has drawn a 90 from bag Y
+player 1004 hand is [84, 34, 28, 6, 95, 59, 80, 17, 24, 93]
+player 1004 has discarded a 80 from bag B
+player 1004 hand is [84, 34, 28, 6, 95, 59, 90, 17, 24, 93]
+player 1004 has drawn a 55 from bag Z
+player 1004 hand is [84, 34, 28, 6, 95, 59, 90, 17, 24, 93]
+player 1004 has discarded a 84 from bag C
+player 1004 hand is [55, 34, 28, 6, 95, 59, 90, 17, 24, 93]
+player 1004 has drawn a 50 from bag X
+player 1004 hand is [55, 34, 28, 6, 95, 59, 90, 17, 24, 93]
+player 1004 has discarded a 17 from bag A
+player 1004 hand is [55, 34, 28, 6, 95, 59, 90, 50, 24, 93]
+player 1004 has drawn a 37 from bag Z
+player 1004 hand is [55, 34, 28, 6, 95, 59, 90, 50, 24, 93]
+player 1004 has discarded a 34 from bag C
+player 1004 hand is [55, 37, 28, 6, 95, 59, 90, 50, 24, 93]
+player 1004 has drawn a 75 from bag Y
+player 1004 hand is [55, 37, 28, 6, 95, 59, 90, 50, 24, 93]
+player 1004 has discarded a 6 from bag B
+player 1004 hand is [55, 37, 28, 75, 95, 59, 90, 50, 24, 93]
+player 1004 has drawn a 78 from bag Z
+player 1004 hand is [55, 37, 28, 75, 95, 59, 90, 50, 24, 93]
+player 1004 has discarded a 90 from bag C
+player 1004 hand is [55, 37, 28, 75, 95, 59, 78, 50, 24, 93]
+player 1004 has drawn a 11 from bag Z
+player 1004 hand is [55, 37, 28, 75, 95, 59, 78, 50, 24, 93]
+player 1004 has discarded a 78 from bag C
+player 1004 hand is [55, 37, 28, 75, 95, 59, 11, 50, 24, 93]
+player 1004 has drawn a 26 from bag Y
+player 1004 hand is [55, 37, 28, 75, 95, 59, 11, 50, 24, 93]
+player 1004 has discarded a 37 from bag B
+player 1004 hand is [55, 26, 28, 75, 95, 59, 11, 50, 24, 93]
+player 1004 has drawn a 61 from bag X
+player 1004 hand is [55, 26, 28, 75, 95, 59, 11, 50, 24, 93]
+player 1004 has discarded a 11 from bag A
+player 1004 hand is [55, 26, 28, 75, 95, 59, 61, 50, 24, 93]
+player 1004 has drawn a 74 from bag Z
+player 1004 hand is [55, 26, 28, 75, 95, 59, 61, 50, 24, 93]
+player 1004 has discarded a 55 from bag C
+player 1004 hand is [74, 26, 28, 75, 95, 59, 61, 50, 24, 93]
+player 1004 has drawn a 36 from bag Z
+player 1004 hand is [74, 26, 28, 75, 95, 59, 61, 50, 24, 93]
+player 1004 has discarded a 24 from bag C
+player 1004 hand is [74, 26, 28, 75, 95, 59, 61, 50, 36, 93]
+player 1004 has drawn a 51 from bag X
+player 1004 hand is [74, 26, 28, 75, 95, 59, 61, 50, 36, 93]
+player 1004 has discarded a 74 from bag A
+player 1004 hand is [51, 26, 28, 75, 95, 59, 61, 50, 36, 93]
+player 1004 has drawn a 93 from bag Y
+player 1004 hand is [51, 26, 28, 75, 95, 59, 61, 50, 36, 93]
+player 1004 has discarded a 59 from bag B
+player 1004 hand is [51, 26, 28, 75, 95, 93, 61, 50, 36, 93]
+player 1004 has drawn a 54 from bag X
+player 1004 hand is [51, 26, 28, 75, 95, 93, 61, 50, 36, 93]
+player 1004 has discarded a 36 from bag A
+player 1004 hand is [51, 26, 28, 75, 95, 93, 61, 50, 54, 93]
+player 1004 has drawn a 54 from bag Z
+player 1004 hand is [51, 26, 28, 75, 95, 93, 61, 50, 54, 93]
+player 1004 has discarded a 50 from bag C
+player 1004 hand is [51, 26, 28, 75, 95, 93, 61, 54, 54, 93]
+player 1004 has drawn a 96 from bag Z
+player 1004 hand is [51, 26, 28, 75, 95, 93, 61, 54, 54, 93]
+player 1004 has discarded a 26 from bag C
+player 1004 hand is [51, 96, 28, 75, 95, 93, 61, 54, 54, 93]
+player 1004 has drawn a 35 from bag Y
+player 1004 hand is [51, 96, 28, 75, 95, 93, 61, 54, 54, 93]
+player 1004 has discarded a 95 from bag B
+player 1004 hand is [51, 96, 28, 75, 35, 93, 61, 54, 54, 93]
+player 1004 has drawn a 16 from bag Y
+player 1004 hand is [51, 96, 28, 75, 35, 93, 61, 54, 54, 93]
+player 1004 has discarded a 96 from bag B
+player 1004 hand is [51, 16, 28, 75, 35, 93, 61, 54, 54, 93]
+player 1004 has drawn a 53 from bag X
+player 1004 hand is [51, 16, 28, 75, 35, 93, 61, 54, 54, 93]
+player 1004 has discarded a 61 from bag A
+player 1004 hand is [51, 16, 28, 75, 35, 93, 53, 54, 54, 93]
+player 1004 has drawn a 90 from bag Z
+player 1004 hand is [51, 16, 28, 75, 35, 93, 53, 54, 54, 93]
+player 1004 has discarded a 53 from bag C
+player 1004 hand is [51, 16, 28, 75, 35, 93, 90, 54, 54, 93]
+player 1004 has drawn a 49 from bag Z
+player 1004 hand is [51, 16, 28, 75, 35, 93, 90, 54, 54, 93]
+player 1004 has discarded a 90 from bag C
+player 1004 hand is [51, 16, 28, 75, 35, 93, 49, 54, 54, 93]
+player 1004 has drawn a 72 from bag X
+player 1004 hand is [51, 16, 28, 75, 35, 93, 49, 54, 54, 93]
+player 1004 has discarded a 75 from bag A
+player 1004 hand is [51, 16, 28, 72, 35, 93, 49, 54, 54, 93]
+player 1004 has drawn a 3 from bag Y
+player 1004 hand is [51, 16, 28, 72, 35, 93, 49, 54, 54, 93]
+player 1004 has discarded a 16 from bag B
+player 1004 hand is [51, 3, 28, 72, 35, 93, 49, 54, 54, 93]
+player 1004 has drawn a 97 from bag Z
+player 1004 hand is [51, 3, 28, 72, 35, 93, 49, 54, 54, 93]
+player 1004 has discarded a 35 from bag C
+player 1004 hand is [51, 3, 28, 72, 97, 93, 49, 54, 54, 93]
+player 1004 has drawn a 74 from bag Y
+player 1004 hand is [51, 3, 28, 72, 97, 93, 49, 54, 54, 93]
+player 1004 has discarded a 97 from bag B
+player 1004 hand is [51, 3, 28, 72, 74, 93, 49, 54, 54, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [51, 3, 28, 72, 74, 93, 49, 54, 54, 93]
+player 1004 has discarded a 54 from bag A
+player 1004 hand is [51, 3, 28, 72, 74, 93, 49, 54, 39, 93]
+player 1004 has drawn a 98 from bag Y
+player 1004 hand is [51, 3, 28, 72, 74, 93, 49, 54, 39, 93]
+player 1004 has discarded a 54 from bag B
+player 1004 hand is [51, 3, 28, 72, 74, 93, 49, 98, 39, 93]
+player 1004 has drawn a 63 from bag X
+player 1004 hand is [51, 3, 28, 72, 74, 93, 49, 98, 39, 93]
+player 1004 has discarded a 51 from bag A
+player 1004 hand is [63, 3, 28, 72, 74, 93, 49, 98, 39, 93]
+player 1004 has drawn a 13 from bag Z
+player 1004 hand is [63, 3, 28, 72, 74, 93, 49, 98, 39, 93]
+player 1004 has discarded a 49 from bag C
+player 1004 hand is [63, 3, 28, 72, 74, 93, 13, 98, 39, 93]
+player 1004 has drawn a 17 from bag X
+player 1004 hand is [63, 3, 28, 72, 74, 93, 13, 98, 39, 93]
+player 1004 has discarded a 28 from bag A
+player 1004 hand is [63, 3, 17, 72, 74, 93, 13, 98, 39, 93]
+player 1004 has drawn a 44 from bag Y
+player 1004 hand is [63, 3, 17, 72, 74, 93, 13, 98, 39, 93]
+player 1004 has discarded a 98 from bag B
+player 1004 hand is [63, 3, 17, 72, 74, 93, 13, 44, 39, 93]
+player 1004 has drawn a 26 from bag Y
+player 1004 hand is [63, 3, 17, 72, 74, 93, 13, 44, 39, 93]
+player 1004 has discarded a 3 from bag B
+player 1004 hand is [63, 26, 17, 72, 74, 93, 13, 44, 39, 93]
+player 1004 has drawn a 28 from bag Z
+player 1004 hand is [63, 26, 17, 72, 74, 93, 13, 44, 39, 93]
+player 1004 has discarded a 74 from bag C
+player 1004 hand is [63, 26, 17, 72, 28, 93, 13, 44, 39, 93]
+player 1004 has drawn a 35 from bag Z
+player 1004 hand is [63, 26, 17, 72, 28, 93, 13, 44, 39, 93]
+player 1004 has discarded a 63 from bag C
+player 1004 hand is [35, 26, 17, 72, 28, 93, 13, 44, 39, 93]
+player 1004 has drawn a 0 from bag Y
+player 1004 hand is [35, 26, 17, 72, 28, 93, 13, 44, 39, 93]
+player 1004 has discarded a 0 from bag B
+player 1004 hand is [35, 26, 17, 72, 28, 93, 13, 44, 39, 93]
+player 1004 has drawn a 55 from bag Z
+player 1004 hand is [35, 26, 17, 72, 28, 93, 13, 44, 39, 93]
+player 1004 has discarded a 93 from bag C
+player 1004 hand is [35, 26, 17, 72, 28, 55, 13, 44, 39, 93]
+player 1004 has drawn a 27 from bag X
+player 1004 hand is [35, 26, 17, 72, 28, 55, 13, 44, 39, 93]
+player 1004 has discarded a 26 from bag A
+player 1004 hand is [35, 27, 17, 72, 28, 55, 13, 44, 39, 93]
+player 1004 has drawn a 32 from bag Y
+player 1004 hand is [35, 27, 17, 72, 28, 55, 13, 44, 39, 93]
+player 1004 has discarded a 55 from bag B
+player 1004 hand is [35, 27, 17, 72, 28, 32, 13, 44, 39, 93]
+player 1004 has drawn a 16 from bag Y
+player 1004 hand is [35, 27, 17, 72, 28, 32, 13, 44, 39, 93]
+player 1004 has discarded a 72 from bag B
+player 1004 hand is [35, 27, 17, 16, 28, 32, 13, 44, 39, 93]
+player 1004 has drawn a 90 from bag Z
+player 1004 hand is [35, 27, 17, 16, 28, 32, 13, 44, 39, 93]
+player 1004 has discarded a 13 from bag C
+player 1004 hand is [35, 27, 17, 16, 28, 32, 90, 44, 39, 93]
+player 1004 has drawn a 61 from bag X
+player 1004 hand is [35, 27, 17, 16, 28, 32, 90, 44, 39, 93]
+player 1004 has discarded a 27 from bag A
+player 1004 hand is [35, 61, 17, 16, 28, 32, 90, 44, 39, 93]
+player 1004 has drawn a 64 from bag Z
+player 1004 hand is [35, 61, 17, 16, 28, 32, 90, 44, 39, 93]
+player 1004 has discarded a 16 from bag C
+player 1004 hand is [35, 61, 17, 64, 28, 32, 90, 44, 39, 93]
+player 1004 has drawn a 49 from bag Z
+player 1004 hand is [35, 61, 17, 64, 28, 32, 90, 44, 39, 93]
+player 1004 has discarded a 90 from bag C
+player 1004 hand is [35, 61, 17, 64, 28, 32, 49, 44, 39, 93]
+player 1004 has drawn a 58 from bag Y
+player 1004 hand is [35, 61, 17, 64, 28, 32, 49, 44, 39, 93]
+player 1004 has discarded a 64 from bag B
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 44, 39, 93]
+player 1004 has drawn a 38 from bag Y
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 44, 39, 93]
+player 1004 has discarded a 44 from bag B
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 38, 39, 93]
+player 1004 has drawn a 70 from bag Z
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 38, 39, 93]
+player 1004 has discarded a 38 from bag C
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 70, 39, 93]
+player 1004 has drawn a 79 from bag Z
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 70, 39, 93]
+player 1004 has discarded a 70 from bag C
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 79, 39, 93]
+player 1004 has drawn a 31 from bag Z
+player 1004 hand is [35, 61, 17, 58, 28, 32, 49, 79, 39, 93]
+player 1004 has discarded a 35 from bag C
+player 1004 hand is [31, 61, 17, 58, 28, 32, 49, 79, 39, 93]
+player 1004 has drawn a 85 from bag Y
+player 1004 hand is [31, 61, 17, 58, 28, 32, 49, 79, 39, 93]
+player 1004 has discarded a 79 from bag B
+player 1004 hand is [31, 61, 17, 58, 28, 32, 49, 85, 39, 93]
+player 1004 has drawn a 12 from bag Y
+player 1004 hand is [31, 61, 17, 58, 28, 32, 49, 85, 39, 93]
+player 1004 has discarded a 28 from bag B
+player 1004 hand is [31, 61, 17, 58, 12, 32, 49, 85, 39, 93]
+player 1004 has drawn a 40 from bag Y
+player 1004 hand is [31, 61, 17, 58, 12, 32, 49, 85, 39, 93]
+player 1004 has discarded a 61 from bag B
+player 1004 hand is [31, 40, 17, 58, 12, 32, 49, 85, 39, 93]
+player 1004 has drawn a 16 from bag Z
+player 1004 hand is [31, 40, 17, 58, 12, 32, 49, 85, 39, 93]
+player 1004 has discarded a 49 from bag C
+player 1004 hand is [31, 40, 17, 58, 12, 32, 16, 85, 39, 93]
+player 1004 has drawn a 57 from bag X
+player 1004 hand is [31, 40, 17, 58, 12, 32, 16, 85, 39, 93]
+player 1004 has discarded a 39 from bag A
+player 1004 hand is [31, 40, 17, 58, 12, 32, 16, 85, 57, 93]
+player 1004 has drawn a 95 from bag Z
+player 1004 hand is [31, 40, 17, 58, 12, 32, 16, 85, 57, 93]
+player 1004 has discarded a 31 from bag C
+player 1004 hand is [95, 40, 17, 58, 12, 32, 16, 85, 57, 93]
+player 1004 has drawn a 4 from bag Y
+player 1004 hand is [95, 40, 17, 58, 12, 32, 16, 85, 57, 93]
+player 1004 has discarded a 17 from bag B
+player 1004 hand is [95, 40, 4, 58, 12, 32, 16, 85, 57, 93]
+player 1004 has drawn a 82 from bag Z
+player 1004 hand is [95, 40, 4, 58, 12, 32, 16, 85, 57, 93]
+player 1004 has discarded a 32 from bag C
+player 1004 hand is [95, 40, 4, 58, 12, 82, 16, 85, 57, 93]
+player 1004 has drawn a 87 from bag Y
+player 1004 hand is [95, 40, 4, 58, 12, 82, 16, 85, 57, 93]
+player 1004 has discarded a 12 from bag B
+player 1004 hand is [95, 40, 4, 58, 87, 82, 16, 85, 57, 93]
+player 1004 has drawn a 5 from bag Y
+player 1004 hand is [95, 40, 4, 58, 87, 82, 16, 85, 57, 93]
+player 1004 has discarded a 82 from bag B
+player 1004 hand is [95, 40, 4, 58, 87, 5, 16, 85, 57, 93]
+player 1004 has drawn a 70 from bag Z
+player 1004 hand is [95, 40, 4, 58, 87, 5, 16, 85, 57, 93]
+player 1004 has discarded a 87 from bag C
+player 1004 hand is [95, 40, 4, 58, 70, 5, 16, 85, 57, 93]
+player 1004 has drawn a 88 from bag X
+player 1004 hand is [95, 40, 4, 58, 70, 5, 16, 85, 57, 93]
+player 1004 has discarded a 40 from bag A
+player 1004 hand is [95, 88, 4, 58, 70, 5, 16, 85, 57, 93]
+player 1004 has drawn a 9 from bag X
+player 1004 hand is [95, 88, 4, 58, 70, 5, 16, 85, 57, 93]
+player 1004 has discarded a 58 from bag A
+player 1004 hand is [95, 88, 4, 9, 70, 5, 16, 85, 57, 93]
+player 1004 has drawn a 99 from bag X
+player 1004 hand is [95, 88, 4, 9, 70, 5, 16, 85, 57, 93]
+player 1004 has discarded a 4 from bag A
+player 1004 hand is [95, 88, 99, 9, 70, 5, 16, 85, 57, 93]
+player 1004 has drawn a 76 from bag X
+player 1004 hand is [95, 88, 99, 9, 70, 5, 16, 85, 57, 93]
+player 1004 has discarded a 95 from bag A
+player 1004 hand is [76, 88, 99, 9, 70, 5, 16, 85, 57, 93]
+player 1004 has drawn a 6 from bag Y
+player 1004 hand is [76, 88, 99, 9, 70, 5, 16, 85, 57, 93]
+player 1004 has discarded a 16 from bag B
+player 1004 hand is [76, 88, 99, 9, 70, 5, 6, 85, 57, 93]
+player 1004 has drawn a 38 from bag Z
+player 1004 hand is [76, 88, 99, 9, 70, 5, 6, 85, 57, 93]
+player 1004 has discarded a 99 from bag C
+player 1004 hand is [76, 88, 38, 9, 70, 5, 6, 85, 57, 93]
+player 1004 has drawn a 75 from bag X
+player 1004 hand is [76, 88, 38, 9, 70, 5, 6, 85, 57, 93]
+player 1004 has discarded a 76 from bag A
+player 1004 hand is [75, 88, 38, 9, 70, 5, 6, 85, 57, 93]
+player 1004 has drawn a 95 from bag Y
+player 1004 hand is [75, 88, 38, 9, 70, 5, 6, 85, 57, 93]
+player 1004 has discarded a 6 from bag B
+player 1004 hand is [75, 88, 38, 9, 70, 5, 95, 85, 57, 93]
+player 1004 has drawn a 8 from bag Z
+player 1004 hand is [75, 88, 38, 9, 70, 5, 95, 85, 57, 93]
+player 1004 has discarded a 95 from bag C
+player 1004 hand is [75, 88, 38, 9, 70, 5, 8, 85, 57, 93]
+player 1004 has drawn a 91 from bag X
+player 1004 hand is [75, 88, 38, 9, 70, 5, 8, 85, 57, 93]
+player 1004 has discarded a 38 from bag A
+player 1004 hand is [75, 88, 91, 9, 70, 5, 8, 85, 57, 93]
+player 1004 has drawn a 92 from bag Y
+player 1004 hand is [75, 88, 91, 9, 70, 5, 8, 85, 57, 93]
+player 1004 has discarded a 85 from bag B
+player 1004 hand is [75, 88, 91, 9, 70, 5, 8, 92, 57, 93]
+player 1004 has drawn a 30 from bag Y
+player 1004 hand is [75, 88, 91, 9, 70, 5, 8, 92, 57, 93]
+player 1004 has discarded a 92 from bag B
+player 1004 hand is [75, 88, 91, 9, 70, 5, 8, 30, 57, 93]
+player 1004 has drawn a 36 from bag X
+player 1004 hand is [75, 88, 91, 9, 70, 5, 8, 30, 57, 93]
+player 1004 has discarded a 8 from bag A
+player 1004 hand is [75, 88, 91, 9, 70, 5, 36, 30, 57, 93]
+player 1004 has drawn a 81 from bag Z
+player 1004 hand is [75, 88, 91, 9, 70, 5, 36, 30, 57, 93]
+player 1004 has discarded a 5 from bag C
+player 1004 hand is [75, 88, 91, 9, 70, 81, 36, 30, 57, 93]
+player 1004 has drawn a 40 from bag Z
+player 1004 hand is [75, 88, 91, 9, 70, 81, 36, 30, 57, 93]
+player 1004 has discarded a 9 from bag C
+player 1004 hand is [75, 88, 91, 40, 70, 81, 36, 30, 57, 93]
+player 1004 has drawn a 74 from bag Z
+player 1004 hand is [75, 88, 91, 40, 70, 81, 36, 30, 57, 93]
+player 1004 has discarded a 88 from bag C
+player 1004 hand is [75, 74, 91, 40, 70, 81, 36, 30, 57, 93]
+player 1004 has drawn a 51 from bag X
+player 1004 hand is [75, 74, 91, 40, 70, 81, 36, 30, 57, 93]
+player 1004 has discarded a 75 from bag A
+player 1004 hand is [51, 74, 91, 40, 70, 81, 36, 30, 57, 93]
+player 1004 has drawn a 96 from bag X
+player 1004 hand is [51, 74, 91, 40, 70, 81, 36, 30, 57, 93]
+player 1004 has discarded a 30 from bag A
+player 1004 hand is [51, 74, 91, 40, 70, 81, 36, 96, 57, 93]
+player 1004 has drawn a 18 from bag X
+player 1004 hand is [51, 74, 91, 40, 70, 81, 36, 96, 57, 93]
+player 1004 has discarded a 40 from bag A
+player 1004 hand is [51, 74, 91, 18, 70, 81, 36, 96, 57, 93]
+player 1004 has drawn a 19 from bag X
+player 1004 hand is [51, 74, 91, 18, 70, 81, 36, 96, 57, 93]
+player 1004 has discarded a 91 from bag A
+player 1004 hand is [51, 74, 19, 18, 70, 81, 36, 96, 57, 93]
+player 1004 has drawn a 74 from bag X
+player 1004 hand is [51, 74, 19, 18, 70, 81, 36, 96, 57, 93]
+player 1004 has discarded a 18 from bag A
+player 1004 hand is [51, 74, 19, 74, 70, 81, 36, 96, 57, 93]
+player 1004 has drawn a 88 from bag X
+player 1004 hand is [51, 74, 19, 74, 70, 81, 36, 96, 57, 93]
+player 1004 has discarded a 74 from bag A
+player 1004 hand is [51, 88, 19, 74, 70, 81, 36, 96, 57, 93]
+player 1004 has drawn a 31 from bag Z
+player 1004 hand is [51, 88, 19, 74, 70, 81, 36, 96, 57, 93]
+player 1004 has discarded a 96 from bag C
+player 1004 hand is [51, 88, 19, 74, 70, 81, 36, 31, 57, 93]
+player 1004 has drawn a 63 from bag Y
+player 1004 hand is [51, 88, 19, 74, 70, 81, 36, 31, 57, 93]
+player 1004 has discarded a 19 from bag B
+player 1004 hand is [51, 88, 63, 74, 70, 81, 36, 31, 57, 93]
+player 1004 has drawn a 67 from bag X
+player 1004 hand is [51, 88, 63, 74, 70, 81, 36, 31, 57, 93]
+player 1004 has discarded a 81 from bag A
+player 1004 hand is [51, 88, 63, 74, 70, 67, 36, 31, 57, 93]
+player 1004 has drawn a 6 from bag Z
+player 1004 hand is [51, 88, 63, 74, 70, 67, 36, 31, 57, 93]
+player 1004 has discarded a 67 from bag C
+player 1004 hand is [51, 88, 63, 74, 70, 6, 36, 31, 57, 93]
+player 1004 has drawn a 30 from bag X
+player 1004 hand is [51, 88, 63, 74, 70, 6, 36, 31, 57, 93]
+player 1004 has discarded a 6 from bag A
+player 1004 hand is [51, 88, 63, 74, 70, 30, 36, 31, 57, 93]
+player 1004 has drawn a 55 from bag Y
+player 1004 hand is [51, 88, 63, 74, 70, 30, 36, 31, 57, 93]
+player 1004 has discarded a 57 from bag B
+player 1004 hand is [51, 88, 63, 74, 70, 30, 36, 31, 55, 93]
+player 1004 has drawn a 71 from bag Y
+player 1004 hand is [51, 88, 63, 74, 70, 30, 36, 31, 55, 93]
+player 1004 has discarded a 63 from bag B
+player 1004 hand is [51, 88, 71, 74, 70, 30, 36, 31, 55, 93]
+player 1004 has drawn a 92 from bag Y
+player 1004 hand is [51, 88, 71, 74, 70, 30, 36, 31, 55, 93]
+player 1004 has discarded a 36 from bag B
+player 1004 hand is [51, 88, 71, 74, 70, 30, 92, 31, 55, 93]
+player 1004 has drawn a 97 from bag Y
+player 1004 hand is [51, 88, 71, 74, 70, 30, 92, 31, 55, 93]
+player 1004 has discarded a 70 from bag B
+player 1004 hand is [51, 88, 71, 74, 97, 30, 92, 31, 55, 93]
+player 1004 has drawn a 85 from bag X
+player 1004 hand is [51, 88, 71, 74, 97, 30, 92, 31, 55, 93]
+player 1004 has discarded a 51 from bag A
+player 1004 hand is [85, 88, 71, 74, 97, 30, 92, 31, 55, 93]
+player 1004 has drawn a 28 from bag X
+player 1004 hand is [85, 88, 71, 74, 97, 30, 92, 31, 55, 93]
+player 1004 has discarded a 55 from bag A
+player 1004 hand is [85, 88, 71, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has drawn a 68 from bag Y
+player 1004 hand is [85, 88, 71, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has discarded a 71 from bag B
+player 1004 hand is [85, 88, 68, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has drawn a 77 from bag Z
+player 1004 hand is [85, 88, 68, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has discarded a 85 from bag C
+player 1004 hand is [77, 88, 68, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has drawn a 42 from bag X
+player 1004 hand is [77, 88, 68, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has discarded a 88 from bag A
+player 1004 hand is [77, 42, 68, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has drawn a 39 from bag Z
+player 1004 hand is [77, 42, 68, 74, 97, 30, 92, 31, 28, 93]
+player 1004 has discarded a 74 from bag C
+player 1004 hand is [77, 42, 68, 39, 97, 30, 92, 31, 28, 93]
+player 1004 has drawn a 86 from bag Y
+player 1004 hand is [77, 42, 68, 39, 97, 30, 92, 31, 28, 93]
+player 1004 has discarded a 30 from bag B
+player 1004 hand is [77, 42, 68, 39, 97, 86, 92, 31, 28, 93]
+player 1004 has drawn a 87 from bag Z
+player 1004 hand is [77, 42, 68, 39, 97, 86, 92, 31, 28, 93]
+player 1004 has discarded a 86 from bag C
+player 1004 hand is [77, 42, 68, 39, 97, 87, 92, 31, 28, 93]
+player 1004 has drawn a 47 from bag Z
+player 1004 hand is [77, 42, 68, 39, 97, 87, 92, 31, 28, 93]
+player 1004 has discarded a 42 from bag C
+player 1004 hand is [77, 47, 68, 39, 97, 87, 92, 31, 28, 93]
+player 1004 has drawn a 42 from bag X
+player 1004 hand is [77, 47, 68, 39, 97, 87, 92, 31, 28, 93]
+player 1004 has discarded a 68 from bag A
+player 1004 hand is [77, 47, 42, 39, 97, 87, 92, 31, 28, 93]
+player 1004 has drawn a 43 from bag Y
+player 1004 hand is [77, 47, 42, 39, 97, 87, 92, 31, 28, 93]
+player 1004 has discarded a 92 from bag B
+player 1004 hand is [77, 47, 42, 39, 97, 87, 43, 31, 28, 93]
+player 1004 has drawn a 14 from bag Y
+player 1004 hand is [77, 47, 42, 39, 97, 87, 43, 31, 28, 93]
+player 1004 has discarded a 28 from bag B
+player 1004 hand is [77, 47, 42, 39, 97, 87, 43, 31, 14, 93]
+player 1004 has drawn a 28 from bag Z
+player 1004 hand is [77, 47, 42, 39, 97, 87, 43, 31, 14, 93]
+player 1004 has discarded a 39 from bag C
+player 1004 hand is [77, 47, 42, 28, 97, 87, 43, 31, 14, 93]
+player 1004 has drawn a 29 from bag X
+player 1004 hand is [77, 47, 42, 28, 97, 87, 43, 31, 14, 93]
+player 1004 has discarded a 31 from bag A
+player 1004 hand is [77, 47, 42, 28, 97, 87, 43, 29, 14, 93]
+player 1004 has drawn a 89 from bag Y
+player 1004 hand is [77, 47, 42, 28, 97, 87, 43, 29, 14, 93]
+player 1004 has discarded a 28 from bag B
+player 1004 hand is [77, 47, 42, 89, 97, 87, 43, 29, 14, 93]
+player 1004 has drawn a 50 from bag X
+player 1004 hand is [77, 47, 42, 89, 97, 87, 43, 29, 14, 93]
+player 1004 has discarded a 89 from bag A
+player 1004 hand is [77, 47, 42, 50, 97, 87, 43, 29, 14, 93]
+player 1004 has drawn a 86 from bag Y
+player 1004 hand is [77, 47, 42, 50, 97, 87, 43, 29, 14, 93]
+player 1004 has discarded a 97 from bag B
+player 1004 hand is [77, 47, 42, 50, 86, 87, 43, 29, 14, 93]
+player 1004 has drawn a 73 from bag Z
+player 1004 hand is [77, 47, 42, 50, 86, 87, 43, 29, 14, 93]
+player 1004 has discarded a 47 from bag C
+player 1004 hand is [77, 73, 42, 50, 86, 87, 43, 29, 14, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [77, 73, 42, 50, 86, 87, 43, 29, 14, 93]
+player 1004 has discarded a 87 from bag A
+player 1004 hand is [77, 73, 42, 50, 86, 39, 43, 29, 14, 93]
+player 1004 has drawn a 90 from bag Y
+player 1004 hand is [77, 73, 42, 50, 86, 39, 43, 29, 14, 93]
+player 1004 has discarded a 42 from bag B
+player 1004 hand is [77, 73, 90, 50, 86, 39, 43, 29, 14, 93]
+player 1004 has drawn a 63 from bag X
+player 1004 hand is [77, 73, 90, 50, 86, 39, 43, 29, 14, 93]
+player 1004 has discarded a 77 from bag A
+player 1004 hand is [63, 73, 90, 50, 86, 39, 43, 29, 14, 93]
+player 1004 has drawn a 75 from bag X
+player 1004 hand is [63, 73, 90, 50, 86, 39, 43, 29, 14, 93]
+player 1004 has discarded a 39 from bag A
+player 1004 hand is [63, 73, 90, 50, 86, 75, 43, 29, 14, 93]
+player 1004 has drawn a 70 from bag X
+player 1004 hand is [63, 73, 90, 50, 86, 75, 43, 29, 14, 93]
+player 1004 has discarded a 50 from bag A
+player 1004 hand is [63, 73, 90, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has drawn a 13 from bag Y
+player 1004 hand is [63, 73, 90, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has discarded a 63 from bag B
+player 1004 hand is [13, 73, 90, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has drawn a 23 from bag X
+player 1004 hand is [13, 73, 90, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has discarded a 90 from bag A
+player 1004 hand is [13, 73, 23, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has drawn a 65 from bag Y
+player 1004 hand is [13, 73, 23, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has discarded a 13 from bag B
+player 1004 hand is [65, 73, 23, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has drawn a 32 from bag X
+player 1004 hand is [65, 73, 23, 70, 86, 75, 43, 29, 14, 93]
+player 1004 has discarded a 75 from bag A
+player 1004 hand is [65, 73, 23, 70, 86, 32, 43, 29, 14, 93]
+player 1004 has drawn a 5 from bag Y
+player 1004 hand is [65, 73, 23, 70, 86, 32, 43, 29, 14, 93]
+player 1004 has discarded a 29 from bag B
+player 1004 hand is [65, 73, 23, 70, 86, 32, 43, 5, 14, 93]
+player 1004 has drawn a 50 from bag X
+player 1004 hand is [65, 73, 23, 70, 86, 32, 43, 5, 14, 93]
+player 1004 has discarded a 65 from bag A
+player 1004 hand is [50, 73, 23, 70, 86, 32, 43, 5, 14, 93]
+player 1004 has drawn a 40 from bag Z
+player 1004 hand is [50, 73, 23, 70, 86, 32, 43, 5, 14, 93]
+player 1004 has discarded a 43 from bag C
+player 1004 hand is [50, 73, 23, 70, 86, 32, 40, 5, 14, 93]
+player 1004 has drawn a 49 from bag X
+player 1004 hand is [50, 73, 23, 70, 86, 32, 40, 5, 14, 93]
+player 1004 has discarded a 86 from bag A
+player 1004 hand is [50, 73, 23, 70, 49, 32, 40, 5, 14, 93]
+player 1004 has drawn a 31 from bag X
+player 1004 hand is [50, 73, 23, 70, 49, 32, 40, 5, 14, 93]
+player 1004 has discarded a 14 from bag A
+player 1004 hand is [50, 73, 23, 70, 49, 32, 40, 5, 31, 93]
+player 1004 has drawn a 43 from bag Y
+player 1004 hand is [50, 73, 23, 70, 49, 32, 40, 5, 31, 93]
+player 1004 has discarded a 50 from bag B
+player 1004 hand is [43, 73, 23, 70, 49, 32, 40, 5, 31, 93]
+player 1004 has drawn a 34 from bag Z
+player 1004 hand is [43, 73, 23, 70, 49, 32, 40, 5, 31, 93]
+player 1004 has discarded a 31 from bag C
+player 1004 hand is [43, 73, 23, 70, 49, 32, 40, 5, 34, 93]
+player 1004 has drawn a 82 from bag X
+player 1004 hand is [43, 73, 23, 70, 49, 32, 40, 5, 34, 93]
+player 1004 has discarded a 73 from bag A
+player 1004 hand is [43, 82, 23, 70, 49, 32, 40, 5, 34, 93]
+player 1004 has drawn a 72 from bag X
+player 1004 hand is [43, 82, 23, 70, 49, 32, 40, 5, 34, 93]
+player 1004 has discarded a 5 from bag A
+player 1004 hand is [43, 82, 23, 70, 49, 32, 40, 72, 34, 93]
+player 1004 has drawn a 67 from bag Y
+player 1004 hand is [43, 82, 23, 70, 49, 32, 40, 72, 34, 93]
+player 1004 has discarded a 72 from bag B
+player 1004 hand is [43, 82, 23, 70, 49, 32, 40, 67, 34, 93]
+player 1004 has drawn a 83 from bag Y
+player 1004 hand is [43, 82, 23, 70, 49, 32, 40, 67, 34, 93]
+player 1004 has discarded a 49 from bag B
+player 1004 hand is [43, 82, 23, 70, 83, 32, 40, 67, 34, 93]
+player 1004 has drawn a 23 from bag Z
+player 1004 hand is [43, 82, 23, 70, 83, 32, 40, 67, 34, 93]
+player 1004 has discarded a 43 from bag C
+player 1004 hand is [23, 82, 23, 70, 83, 32, 40, 67, 34, 93]
+player 1004 has drawn a 83 from bag X
+player 1004 hand is [23, 82, 23, 70, 83, 32, 40, 67, 34, 93]
+player 1004 has discarded a 34 from bag A
+player 1004 hand is [23, 82, 23, 70, 83, 32, 40, 67, 83, 93]
+player 1004 has drawn a 67 from bag X
+player 1004 hand is [23, 82, 23, 70, 83, 32, 40, 67, 83, 93]
+player 1004 has discarded a 23 from bag A
+player 1004 hand is [23, 82, 67, 70, 83, 32, 40, 67, 83, 93]
+player 1004 has drawn a 26 from bag Y
+player 1004 hand is [23, 82, 67, 70, 83, 32, 40, 67, 83, 93]
+player 1004 has discarded a 70 from bag B
+player 1004 hand is [23, 82, 67, 26, 83, 32, 40, 67, 83, 93]
+player 1004 has drawn a 0 from bag X
+player 1004 hand is [23, 82, 67, 26, 83, 32, 40, 67, 83, 93]
+player 1004 has discarded a 23 from bag A
+player 1004 hand is [0, 82, 67, 26, 83, 32, 40, 67, 83, 93]
+player 1004 has drawn a 80 from bag Z
+player 1004 hand is [0, 82, 67, 26, 83, 32, 40, 67, 83, 93]
+player 1004 has discarded a 67 from bag C
+player 1004 hand is [0, 82, 80, 26, 83, 32, 40, 67, 83, 93]
+player 1004 has drawn a 5 from bag X
+player 1004 hand is [0, 82, 80, 26, 83, 32, 40, 67, 83, 93]
+player 1004 has discarded a 32 from bag A
+player 1004 hand is [0, 82, 80, 26, 83, 5, 40, 67, 83, 93]
+player 1004 has drawn a 59 from bag Y
+player 1004 hand is [0, 82, 80, 26, 83, 5, 40, 67, 83, 93]
+player 1004 has discarded a 40 from bag B
+player 1004 hand is [0, 82, 80, 26, 83, 5, 59, 67, 83, 93]
+player 1004 has drawn a 37 from bag Y
+player 1004 hand is [0, 82, 80, 26, 83, 5, 59, 67, 83, 93]
+player 1004 has discarded a 82 from bag B
+player 1004 hand is [0, 37, 80, 26, 83, 5, 59, 67, 83, 93]
+player 1004 has drawn a 40 from bag X
+player 1004 hand is [0, 37, 80, 26, 83, 5, 59, 67, 83, 93]
+player 1004 has discarded a 67 from bag A
+player 1004 hand is [0, 37, 80, 26, 83, 5, 59, 40, 83, 93]
+player 1004 has drawn a 43 from bag Z
+player 1004 hand is [0, 37, 80, 26, 83, 5, 59, 40, 83, 93]
+player 1004 has discarded a 26 from bag C
+player 1004 hand is [0, 37, 80, 43, 83, 5, 59, 40, 83, 93]
+player 1004 has drawn a 37 from bag Z
+player 1004 hand is [0, 37, 80, 43, 83, 5, 59, 40, 83, 93]
+player 1004 has discarded a 83 from bag C
+player 1004 hand is [0, 37, 80, 43, 83, 5, 59, 40, 37, 93]
+player 1004 has drawn a 60 from bag X
+player 1004 hand is [0, 37, 80, 43, 83, 5, 59, 40, 37, 93]
+player 1004 has discarded a 37 from bag A
+player 1004 hand is [0, 37, 80, 43, 83, 5, 59, 40, 60, 93]
+player 1004 has drawn a 63 from bag Z
+player 1004 hand is [0, 37, 80, 43, 83, 5, 59, 40, 60, 93]
+player 1004 has discarded a 37 from bag C
+player 1004 hand is [0, 63, 80, 43, 83, 5, 59, 40, 60, 93]
+player 1004 has drawn a 66 from bag Y
+player 1004 hand is [0, 63, 80, 43, 83, 5, 59, 40, 60, 93]
+player 1004 has discarded a 43 from bag B
+player 1004 hand is [0, 63, 80, 66, 83, 5, 59, 40, 60, 93]
+player 1004 has drawn a 47 from bag X
+player 1004 hand is [0, 63, 80, 66, 83, 5, 59, 40, 60, 93]
+player 1004 has discarded a 60 from bag A
+player 1004 hand is [0, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has drawn a 93 from bag Y
+player 1004 hand is [0, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has discarded a 0 from bag B
+player 1004 hand is [93, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has drawn a 79 from bag Y
+player 1004 hand is [93, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has discarded a 93 from bag B
+player 1004 hand is [79, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has drawn a 33 from bag Z
+player 1004 hand is [79, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has discarded a 79 from bag C
+player 1004 hand is [33, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has drawn a 9 from bag Z
+player 1004 hand is [33, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has discarded a 33 from bag C
+player 1004 hand is [9, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has drawn a 54 from bag Z
+player 1004 hand is [9, 63, 80, 66, 83, 5, 59, 40, 47, 93]
+player 1004 has discarded a 59 from bag C
+player 1004 hand is [9, 63, 80, 66, 83, 5, 54, 40, 47, 93]
+player 1004 has drawn a 3 from bag Y
+player 1004 hand is [9, 63, 80, 66, 83, 5, 54, 40, 47, 93]
+player 1004 has discarded a 66 from bag B
+player 1004 hand is [9, 63, 80, 3, 83, 5, 54, 40, 47, 93]
+player 1004 has drawn a 70 from bag Z
+player 1004 hand is [9, 63, 80, 3, 83, 5, 54, 40, 47, 93]
+player 1004 has discarded a 40 from bag C
+player 1004 hand is [9, 63, 80, 3, 83, 5, 54, 70, 47, 93]
+player 1004 has drawn a 25 from bag Y
+player 1004 hand is [9, 63, 80, 3, 83, 5, 54, 70, 47, 93]
+player 1004 has discarded a 47 from bag B
+player 1004 hand is [9, 63, 80, 3, 83, 5, 54, 70, 25, 93]
+player 1004 has drawn a 0 from bag Z
+player 1004 hand is [9, 63, 80, 3, 83, 5, 54, 70, 25, 93]
+player 1004 has discarded a 63 from bag C
+player 1004 hand is [9, 0, 80, 3, 83, 5, 54, 70, 25, 93]
+player 1004 has drawn a 26 from bag Z
+player 1004 hand is [9, 0, 80, 3, 83, 5, 54, 70, 25, 93]
+player 1004 has discarded a 9 from bag C
+player 1004 hand is [26, 0, 80, 3, 83, 5, 54, 70, 25, 93]
+player 1004 has drawn a 74 from bag Z
+player 1004 hand is [26, 0, 80, 3, 83, 5, 54, 70, 25, 93]
+player 1004 has discarded a 83 from bag C
+player 1004 hand is [26, 0, 80, 3, 74, 5, 54, 70, 25, 93]
+player 1004 has drawn a 35 from bag Z
+player 1004 hand is [26, 0, 80, 3, 74, 5, 54, 70, 25, 93]
+player 1004 has discarded a 26 from bag C
+player 1004 hand is [35, 0, 80, 3, 74, 5, 54, 70, 25, 93]
+player 1004 has drawn a 24 from bag X
+player 1004 hand is [35, 0, 80, 3, 74, 5, 54, 70, 25, 93]
+player 1004 has discarded a 74 from bag A
+player 1004 hand is [35, 0, 80, 3, 24, 5, 54, 70, 25, 93]
+player 1004 has drawn a 84 from bag Y
+player 1004 hand is [35, 0, 80, 3, 24, 5, 54, 70, 25, 93]
+player 1004 has discarded a 24 from bag B
+player 1004 hand is [35, 0, 80, 3, 84, 5, 54, 70, 25, 93]
+player 1004 has drawn a 79 from bag Y
+player 1004 hand is [35, 0, 80, 3, 84, 5, 54, 70, 25, 93]
+player 1004 has discarded a 54 from bag B
+player 1004 hand is [35, 0, 80, 3, 84, 5, 79, 70, 25, 93]
+player 1004 has drawn a 46 from bag Y
+player 1004 hand is [35, 0, 80, 3, 84, 5, 79, 70, 25, 93]
+player 1004 has discarded a 0 from bag B
+player 1004 hand is [35, 46, 80, 3, 84, 5, 79, 70, 25, 93]
+player 1004 has drawn a 83 from bag Y
+player 1004 hand is [35, 46, 80, 3, 84, 5, 79, 70, 25, 93]
+player 1004 has discarded a 70 from bag B
+player 1004 hand is [35, 46, 80, 3, 84, 5, 79, 83, 25, 93]
+player 1004 has drawn a 50 from bag X
+player 1004 hand is [35, 46, 80, 3, 84, 5, 79, 83, 25, 93]
+player 1004 has discarded a 83 from bag A
+player 1004 hand is [35, 46, 80, 3, 84, 5, 79, 50, 25, 93]
+player 1004 has drawn a 11 from bag Y
+player 1004 hand is [35, 46, 80, 3, 84, 5, 79, 50, 25, 93]
+player 1004 has discarded a 35 from bag B
+player 1004 hand is [11, 46, 80, 3, 84, 5, 79, 50, 25, 93]
+player 1004 has drawn a 72 from bag X
+player 1004 hand is [11, 46, 80, 3, 84, 5, 79, 50, 25, 93]
+player 1004 has discarded a 11 from bag A
+player 1004 hand is [72, 46, 80, 3, 84, 5, 79, 50, 25, 93]
+player 1004 has drawn a 56 from bag Y
+player 1004 hand is [72, 46, 80, 3, 84, 5, 79, 50, 25, 93]
+player 1004 has discarded a 5 from bag B
+player 1004 hand is [72, 46, 80, 3, 84, 56, 79, 50, 25, 93]
+player 1004 has drawn a 16 from bag X
+player 1004 hand is [72, 46, 80, 3, 84, 56, 79, 50, 25, 93]
+player 1004 has discarded a 46 from bag A
+player 1004 hand is [72, 16, 80, 3, 84, 56, 79, 50, 25, 93]
+player 1004 has drawn a 38 from bag X
+player 1004 hand is [72, 16, 80, 3, 84, 56, 79, 50, 25, 93]
+player 1004 has discarded a 80 from bag A
+player 1004 hand is [72, 16, 38, 3, 84, 56, 79, 50, 25, 93]
+player 1004 has drawn a 40 from bag Z
+player 1004 hand is [72, 16, 38, 3, 84, 56, 79, 50, 25, 93]
+player 1004 has discarded a 3 from bag C
+player 1004 hand is [72, 16, 38, 40, 84, 56, 79, 50, 25, 93]
+player 1004 has drawn a 20 from bag X
+player 1004 hand is [72, 16, 38, 40, 84, 56, 79, 50, 25, 93]
+player 1004 has discarded a 25 from bag A
+player 1004 hand is [72, 16, 38, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has drawn a 0 from bag Y
+player 1004 hand is [72, 16, 38, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has discarded a 38 from bag B
+player 1004 hand is [72, 16, 0, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has drawn a 21 from bag Z
+player 1004 hand is [72, 16, 0, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has discarded a 0 from bag C
+player 1004 hand is [72, 16, 21, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has drawn a 80 from bag Z
+player 1004 hand is [72, 16, 21, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has discarded a 21 from bag C
+player 1004 hand is [72, 16, 80, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has drawn a 42 from bag Z
+player 1004 hand is [72, 16, 80, 40, 84, 56, 79, 50, 20, 93]
+player 1004 has discarded a 56 from bag C
+player 1004 hand is [72, 16, 80, 40, 84, 42, 79, 50, 20, 93]
+player 1004 has drawn a 9 from bag Z
+player 1004 hand is [72, 16, 80, 40, 84, 42, 79, 50, 20, 93]
+player 1004 has discarded a 16 from bag C
+player 1004 hand is [72, 9, 80, 40, 84, 42, 79, 50, 20, 93]
+player 1004 has drawn a 33 from bag Z
+player 1004 hand is [72, 9, 80, 40, 84, 42, 79, 50, 20, 93]
+player 1004 has discarded a 20 from bag C
+player 1004 hand is [72, 9, 80, 40, 84, 42, 79, 50, 33, 93]
+player 1004 has drawn a 54 from bag Y
+player 1004 hand is [72, 9, 80, 40, 84, 42, 79, 50, 33, 93]
+player 1004 has discarded a 9 from bag B
+player 1004 hand is [72, 54, 80, 40, 84, 42, 79, 50, 33, 93]
+player 1004 has drawn a 63 from bag Z
+player 1004 hand is [72, 54, 80, 40, 84, 42, 79, 50, 33, 93]
+player 1004 has discarded a 72 from bag C
+player 1004 hand is [63, 54, 80, 40, 84, 42, 79, 50, 33, 93]
+player 1004 has drawn a 39 from bag Y
+player 1004 hand is [63, 54, 80, 40, 84, 42, 79, 50, 33, 93]
+player 1004 has discarded a 42 from bag B
+player 1004 hand is [63, 54, 80, 40, 84, 39, 79, 50, 33, 93]
+player 1004 has drawn a 8 from bag Z
+player 1004 hand is [63, 54, 80, 40, 84, 39, 79, 50, 33, 93]
+player 1004 has discarded a 54 from bag C
+player 1004 hand is [63, 8, 80, 40, 84, 39, 79, 50, 33, 93]
+player 1004 has drawn a 68 from bag X
+player 1004 hand is [63, 8, 80, 40, 84, 39, 79, 50, 33, 93]
+player 1004 has discarded a 39 from bag A
+player 1004 hand is [63, 8, 80, 40, 84, 68, 79, 50, 33, 93]
+player 1004 has drawn a 84 from bag Y
+player 1004 hand is [63, 8, 80, 40, 84, 68, 79, 50, 33, 93]
+player 1004 has discarded a 40 from bag B
+player 1004 hand is [63, 8, 80, 84, 84, 68, 79, 50, 33, 93]
+player 1004 has drawn a 62 from bag X
+player 1004 hand is [63, 8, 80, 84, 84, 68, 79, 50, 33, 93]
+player 1004 has discarded a 68 from bag A
+player 1004 hand is [63, 8, 80, 84, 84, 62, 79, 50, 33, 93]
+player 1004 has drawn a 67 from bag X
+player 1004 hand is [63, 8, 80, 84, 84, 62, 79, 50, 33, 93]
+player 1004 has discarded a 84 from bag A
+player 1004 hand is [63, 8, 80, 67, 84, 62, 79, 50, 33, 93]
+player 1004 has drawn a 0 from bag Z
+player 1004 hand is [63, 8, 80, 67, 84, 62, 79, 50, 33, 93]
+player 1004 has discarded a 80 from bag C
+player 1004 hand is [63, 8, 0, 67, 84, 62, 79, 50, 33, 93]
+player 1004 has drawn a 66 from bag Z
+player 1004 hand is [63, 8, 0, 67, 84, 62, 79, 50, 33, 93]
+player 1004 has discarded a 33 from bag C
+player 1004 hand is [63, 8, 0, 67, 84, 62, 79, 50, 66, 93]
+player 1004 has drawn a 3 from bag X
+player 1004 hand is [63, 8, 0, 67, 84, 62, 79, 50, 66, 93]
+player 1004 has discarded a 8 from bag A
+player 1004 hand is [63, 3, 0, 67, 84, 62, 79, 50, 66, 93]
+player 1004 has drawn a 69 from bag Y
+player 1004 hand is [63, 3, 0, 67, 84, 62, 79, 50, 66, 93]
+player 1004 has discarded a 67 from bag B
+player 1004 hand is [63, 3, 0, 69, 84, 62, 79, 50, 66, 93]
+player 1004 has drawn a 77 from bag Z
+player 1004 hand is [63, 3, 0, 69, 84, 62, 79, 50, 66, 93]
+player 1004 has discarded a 79 from bag C
+player 1004 hand is [63, 3, 0, 69, 84, 62, 77, 50, 66, 93]
+player 1004 has drawn a 71 from bag X
+player 1004 hand is [63, 3, 0, 69, 84, 62, 77, 50, 66, 93]
+player 1004 has discarded a 84 from bag A
+player 1004 hand is [63, 3, 0, 69, 71, 62, 77, 50, 66, 93]
+player 1004 has drawn a 36 from bag X
+player 1004 hand is [63, 3, 0, 69, 71, 62, 77, 50, 66, 93]
+player 1004 has discarded a 66 from bag A
+player 1004 hand is [63, 3, 0, 69, 71, 62, 77, 50, 36, 93]
+player 1004 has drawn a 35 from bag Y
+player 1004 hand is [63, 3, 0, 69, 71, 62, 77, 50, 36, 93]
+player 1004 has discarded a 77 from bag B
+player 1004 hand is [63, 3, 0, 69, 71, 62, 35, 50, 36, 93]
+player 1004 has drawn a 18 from bag Y
+player 1004 hand is [63, 3, 0, 69, 71, 62, 35, 50, 36, 93]
+player 1004 has discarded a 71 from bag B
+player 1004 hand is [63, 3, 0, 69, 18, 62, 35, 50, 36, 93]
+player 1004 has drawn a 42 from bag Z
+player 1004 hand is [63, 3, 0, 69, 18, 62, 35, 50, 36, 93]
+player 1004 has discarded a 63 from bag C
+player 1004 hand is [42, 3, 0, 69, 18, 62, 35, 50, 36, 93]
+player 1004 has drawn a 85 from bag X
+player 1004 hand is [42, 3, 0, 69, 18, 62, 35, 50, 36, 93]
+player 1004 has discarded a 62 from bag A
+player 1004 hand is [42, 3, 0, 69, 18, 85, 35, 50, 36, 93]
+player 1004 has drawn a 79 from bag X
+player 1004 hand is [42, 3, 0, 69, 18, 85, 35, 50, 36, 93]
+player 1004 has discarded a 35 from bag A
+player 1004 hand is [42, 3, 0, 69, 18, 85, 79, 50, 36, 93]
+player 1004 has drawn a 16 from bag Z
+player 1004 hand is [42, 3, 0, 69, 18, 85, 79, 50, 36, 93]
+player 1004 has discarded a 50 from bag C
+player 1004 hand is [42, 3, 0, 69, 18, 85, 79, 16, 36, 93]
+player 1004 has drawn a 24 from bag Y
+player 1004 hand is [42, 3, 0, 69, 18, 85, 79, 16, 36, 93]
+player 1004 has discarded a 85 from bag B
+player 1004 hand is [42, 3, 0, 69, 18, 24, 79, 16, 36, 93]
+player 1004 has drawn a 21 from bag X
+player 1004 hand is [42, 3, 0, 69, 18, 24, 79, 16, 36, 93]
+player 1004 has discarded a 18 from bag A
+player 1004 hand is [42, 3, 0, 69, 21, 24, 79, 16, 36, 93]
+player 1004 has drawn a 59 from bag X
+player 1004 hand is [42, 3, 0, 69, 21, 24, 79, 16, 36, 93]
+player 1004 has discarded a 16 from bag A
+player 1004 hand is [42, 3, 0, 69, 21, 24, 79, 59, 36, 93]
+player 1004 has drawn a 20 from bag Y
+player 1004 hand is [42, 3, 0, 69, 21, 24, 79, 59, 36, 93]
+player 1004 has discarded a 0 from bag B
+player 1004 hand is [42, 3, 20, 69, 21, 24, 79, 59, 36, 93]
+player 1004 has drawn a 35 from bag Z
+player 1004 hand is [42, 3, 20, 69, 21, 24, 79, 59, 36, 93]
+player 1004 has discarded a 59 from bag C
+player 1004 hand is [42, 3, 20, 69, 21, 24, 79, 35, 36, 93]
+player 1004 has drawn a 51 from bag Y
+player 1004 hand is [42, 3, 20, 69, 21, 24, 79, 35, 36, 93]
+player 1004 has discarded a 36 from bag B
+player 1004 hand is [42, 3, 20, 69, 21, 24, 79, 35, 51, 93]
+player 1004 has drawn a 19 from bag Y
+player 1004 hand is [42, 3, 20, 69, 21, 24, 79, 35, 51, 93]
+player 1004 has discarded a 3 from bag B
+player 1004 hand is [42, 19, 20, 69, 21, 24, 79, 35, 51, 93]
+player 1004 has drawn a 99 from bag Y
+player 1004 hand is [42, 19, 20, 69, 21, 24, 79, 35, 51, 93]
+player 1004 has discarded a 19 from bag B
+player 1004 hand is [42, 99, 20, 69, 21, 24, 79, 35, 51, 93]
+player 1004 has drawn a 20 from bag Z
+player 1004 hand is [42, 99, 20, 69, 21, 24, 79, 35, 51, 93]
+player 1004 has discarded a 69 from bag C
+player 1004 hand is [42, 99, 20, 20, 21, 24, 79, 35, 51, 93]
+player 1004 has drawn a 49 from bag Y
+player 1004 hand is [42, 99, 20, 20, 21, 24, 79, 35, 51, 93]
+player 1004 has discarded a 35 from bag B
+player 1004 hand is [42, 99, 20, 20, 21, 24, 79, 49, 51, 93]
+player 1004 has drawn a 51 from bag Z
+player 1004 hand is [42, 99, 20, 20, 21, 24, 79, 49, 51, 93]
+player 1004 has discarded a 21 from bag C
+player 1004 hand is [42, 99, 20, 20, 51, 24, 79, 49, 51, 93]
+player 1004 has drawn a 97 from bag Z
+player 1004 hand is [42, 99, 20, 20, 51, 24, 79, 49, 51, 93]
+player 1004 has discarded a 79 from bag C
+player 1004 hand is [42, 99, 20, 20, 51, 24, 97, 49, 51, 93]
+player 1004 has drawn a 9 from bag Y
+player 1004 hand is [42, 99, 20, 20, 51, 24, 97, 49, 51, 93]
+player 1004 has discarded a 99 from bag B
+player 1004 hand is [42, 9, 20, 20, 51, 24, 97, 49, 51, 93]
+player 1004 has drawn a 74 from bag X
+player 1004 hand is [42, 9, 20, 20, 51, 24, 97, 49, 51, 93]
+player 1004 has discarded a 49 from bag A
+player 1004 hand is [42, 9, 20, 20, 51, 24, 97, 74, 51, 93]
+player 1004 has drawn a 80 from bag X
+player 1004 hand is [42, 9, 20, 20, 51, 24, 97, 74, 51, 93]
+player 1004 has discarded a 20 from bag A
+player 1004 hand is [42, 9, 80, 20, 51, 24, 97, 74, 51, 93]
+player 1004 has drawn a 81 from bag Y
+player 1004 hand is [42, 9, 80, 20, 51, 24, 97, 74, 51, 93]
+player 1004 has discarded a 20 from bag B
+player 1004 hand is [42, 9, 80, 81, 51, 24, 97, 74, 51, 93]
+player 1004 has drawn a 22 from bag X
+player 1004 hand is [42, 9, 80, 81, 51, 24, 97, 74, 51, 93]
+player 1004 has discarded a 9 from bag A
+player 1004 hand is [42, 22, 80, 81, 51, 24, 97, 74, 51, 93]
+player 1004 has drawn a 15 from bag X
+player 1004 hand is [42, 22, 80, 81, 51, 24, 97, 74, 51, 93]
+player 1004 has discarded a 24 from bag A
+player 1004 hand is [42, 22, 80, 81, 51, 15, 97, 74, 51, 93]
+player 1004 has drawn a 50 from bag Z
+player 1004 hand is [42, 22, 80, 81, 51, 15, 97, 74, 51, 93]
+player 1004 has discarded a 51 from bag C
+player 1004 hand is [42, 22, 80, 81, 51, 15, 97, 74, 50, 93]
+player 1004 has drawn a 7 from bag Y
+player 1004 hand is [42, 22, 80, 81, 51, 15, 97, 74, 50, 93]
+player 1004 has discarded a 22 from bag B
+player 1004 hand is [42, 7, 80, 81, 51, 15, 97, 74, 50, 93]
+player 1004 has drawn a 82 from bag X
+player 1004 hand is [42, 7, 80, 81, 51, 15, 97, 74, 50, 93]
+player 1004 has discarded a 15 from bag A
+player 1004 hand is [42, 7, 80, 81, 51, 82, 97, 74, 50, 93]
+player 1004 has drawn a 28 from bag Z
+player 1004 hand is [42, 7, 80, 81, 51, 82, 97, 74, 50, 93]
+player 1004 has discarded a 7 from bag C
+player 1004 hand is [42, 28, 80, 81, 51, 82, 97, 74, 50, 93]
+player 1004 has drawn a 61 from bag X
+player 1004 hand is [42, 28, 80, 81, 51, 82, 97, 74, 50, 93]
+player 1004 has discarded a 81 from bag A
+player 1004 hand is [42, 28, 80, 61, 51, 82, 97, 74, 50, 93]
+player 1004 has drawn a 33 from bag X
+player 1004 hand is [42, 28, 80, 61, 51, 82, 97, 74, 50, 93]
+player 1004 has discarded a 50 from bag A
+player 1004 hand is [42, 28, 80, 61, 51, 82, 97, 74, 33, 93]
+player 1004 has drawn a 14 from bag X
+player 1004 hand is [42, 28, 80, 61, 51, 82, 97, 74, 33, 93]
+player 1004 has discarded a 61 from bag A
+player 1004 hand is [42, 28, 80, 14, 51, 82, 97, 74, 33, 93]
+player 1004 has drawn a 46 from bag X
+player 1004 hand is [42, 28, 80, 14, 51, 82, 97, 74, 33, 93]
+player 1004 has discarded a 14 from bag A
+player 1004 hand is [42, 28, 80, 46, 51, 82, 97, 74, 33, 93]
+player 1004 has drawn a 65 from bag X
+player 1004 hand is [42, 28, 80, 46, 51, 82, 97, 74, 33, 93]
+player 1004 has discarded a 42 from bag A
+player 1004 hand is [65, 28, 80, 46, 51, 82, 97, 74, 33, 93]
+player 1004 has drawn a 60 from bag X
+player 1004 hand is [65, 28, 80, 46, 51, 82, 97, 74, 33, 93]
+player 1004 has discarded a 46 from bag A
+player 1004 hand is [65, 28, 80, 60, 51, 82, 97, 74, 33, 93]
+player 1004 has drawn a 66 from bag X
+player 1004 hand is [65, 28, 80, 60, 51, 82, 97, 74, 33, 93]
+player 1004 has discarded a 33 from bag A
+player 1004 hand is [65, 28, 80, 60, 51, 82, 97, 74, 66, 93]
+player 1004 has drawn a 27 from bag Z
+player 1004 hand is [65, 28, 80, 60, 51, 82, 97, 74, 66, 93]
+player 1004 has discarded a 60 from bag C
+player 1004 hand is [65, 28, 80, 27, 51, 82, 97, 74, 66, 93]
+player 1004 has drawn a 5 from bag Z
+player 1004 hand is [65, 28, 80, 27, 51, 82, 97, 74, 66, 93]
+player 1004 has discarded a 66 from bag C
+player 1004 hand is [65, 28, 80, 27, 51, 82, 97, 74, 5, 93]
+player 1004 has drawn a 98 from bag Z
+player 1004 hand is [65, 28, 80, 27, 51, 82, 97, 74, 5, 93]
+player 1004 has discarded a 74 from bag C
+player 1004 hand is [65, 28, 80, 27, 51, 82, 97, 98, 5, 93]
+player 1004 has drawn a 22 from bag Y
+player 1004 hand is [65, 28, 80, 27, 51, 82, 97, 98, 5, 93]
+player 1004 has discarded a 51 from bag B
+player 1004 hand is [65, 28, 80, 27, 22, 82, 97, 98, 5, 93]
+player 1004 has drawn a 4 from bag X
+player 1004 hand is [65, 28, 80, 27, 22, 82, 97, 98, 5, 93]
+player 1004 has discarded a 97 from bag A
+player 1004 hand is [65, 28, 80, 27, 22, 82, 4, 98, 5, 93]
+player 1004 has drawn a 66 from bag Y
+player 1004 hand is [65, 28, 80, 27, 22, 82, 4, 98, 5, 93]
+player 1004 has discarded a 4 from bag B
+player 1004 hand is [65, 28, 80, 27, 22, 82, 66, 98, 5, 93]
+player 1004 has drawn a 64 from bag X
+player 1004 hand is [65, 28, 80, 27, 22, 82, 66, 98, 5, 93]
+player 1004 has discarded a 22 from bag A
+player 1004 hand is [65, 28, 80, 27, 64, 82, 66, 98, 5, 93]
+player 1004 has drawn a 35 from bag X
+player 1004 hand is [65, 28, 80, 27, 64, 82, 66, 98, 5, 93]
+player 1004 has discarded a 64 from bag A
+player 1004 hand is [65, 28, 80, 27, 35, 82, 66, 98, 5, 93]
+player 1004 has drawn a 55 from bag Z
+player 1004 hand is [65, 28, 80, 27, 35, 82, 66, 98, 5, 93]
+player 1004 has discarded a 35 from bag C
+player 1004 hand is [65, 28, 80, 27, 55, 82, 66, 98, 5, 93]
+player 1004 has drawn a 76 from bag X
+player 1004 hand is [65, 28, 80, 27, 55, 82, 66, 98, 5, 93]
+player 1004 has discarded a 80 from bag A
+player 1004 hand is [65, 28, 76, 27, 55, 82, 66, 98, 5, 93]
+player 1004 has drawn a 30 from bag Z
+player 1004 hand is [65, 28, 76, 27, 55, 82, 66, 98, 5, 93]
+player 1004 has discarded a 82 from bag C
+player 1004 hand is [65, 28, 76, 27, 55, 30, 66, 98, 5, 93]
+player 1004 has drawn a 61 from bag Y
+player 1004 hand is [65, 28, 76, 27, 55, 30, 66, 98, 5, 93]
+player 1004 has discarded a 66 from bag B
+player 1004 hand is [65, 28, 76, 27, 55, 30, 61, 98, 5, 93]
+player 1004 has drawn a 85 from bag Y
+player 1004 hand is [65, 28, 76, 27, 55, 30, 61, 98, 5, 93]
+player 1004 has discarded a 98 from bag B
+player 1004 hand is [65, 28, 76, 27, 55, 30, 61, 85, 5, 93]
+player 1004 has drawn a 11 from bag Z
+player 1004 hand is [65, 28, 76, 27, 55, 30, 61, 85, 5, 93]
+player 1004 has discarded a 76 from bag C
+player 1004 hand is [65, 28, 11, 27, 55, 30, 61, 85, 5, 93]
+player 1004 has drawn a 17 from bag X
+player 1004 hand is [65, 28, 11, 27, 55, 30, 61, 85, 5, 93]
+player 1004 has discarded a 11 from bag A
+player 1004 hand is [65, 28, 17, 27, 55, 30, 61, 85, 5, 93]
+player 1004 has drawn a 76 from bag Z
+player 1004 hand is [65, 28, 17, 27, 55, 30, 61, 85, 5, 93]
+player 1004 has discarded a 27 from bag C
+player 1004 hand is [65, 28, 17, 76, 55, 30, 61, 85, 5, 93]
+player 1004 has drawn a 81 from bag X
+player 1004 hand is [65, 28, 17, 76, 55, 30, 61, 85, 5, 93]
+player 1004 has discarded a 85 from bag A
+player 1004 hand is [65, 28, 17, 76, 55, 30, 61, 81, 5, 93]
+player 1004 has drawn a 20 from bag Y
+player 1004 hand is [65, 28, 17, 76, 55, 30, 61, 81, 5, 93]
+player 1004 has discarded a 65 from bag B
+player 1004 hand is [20, 28, 17, 76, 55, 30, 61, 81, 5, 93]
+player 1004 has drawn a 92 from bag Z
+player 1004 hand is [20, 28, 17, 76, 55, 30, 61, 81, 5, 93]
+player 1004 has discarded a 55 from bag C
+player 1004 hand is [20, 28, 17, 76, 92, 30, 61, 81, 5, 93]
+player 1004 has drawn a 59 from bag Z
+player 1004 hand is [20, 28, 17, 76, 92, 30, 61, 81, 5, 93]
+player 1004 has discarded a 92 from bag C
+player 1004 hand is [20, 28, 17, 76, 59, 30, 61, 81, 5, 93]
+player 1004 has drawn a 36 from bag Y
+player 1004 hand is [20, 28, 17, 76, 59, 30, 61, 81, 5, 93]
+player 1004 has discarded a 81 from bag B
+player 1004 hand is [20, 28, 17, 76, 59, 30, 61, 36, 5, 93]
+player 1004 has drawn a 96 from bag Y
+player 1004 hand is [20, 28, 17, 76, 59, 30, 61, 36, 5, 93]
+player 1004 has discarded a 5 from bag B
+player 1004 hand is [20, 28, 17, 76, 59, 30, 61, 36, 96, 93]
+player 1004 has drawn a 37 from bag X
+player 1004 hand is [20, 28, 17, 76, 59, 30, 61, 36, 96, 93]
+player 1004 has discarded a 76 from bag A
+player 1004 hand is [20, 28, 17, 37, 59, 30, 61, 36, 96, 93]
+player 1004 has drawn a 9 from bag Y
+player 1004 hand is [20, 28, 17, 37, 59, 30, 61, 36, 96, 93]
+player 1004 has discarded a 37 from bag B
+player 1004 hand is [20, 28, 17, 9, 59, 30, 61, 36, 96, 93]
+player 1004 has drawn a 47 from bag X
+player 1004 hand is [20, 28, 17, 9, 59, 30, 61, 36, 96, 93]
+player 1004 has discarded a 20 from bag A
+player 1004 hand is [47, 28, 17, 9, 59, 30, 61, 36, 96, 93]
+player 1004 has drawn a 75 from bag Z
+player 1004 hand is [47, 28, 17, 9, 59, 30, 61, 36, 96, 93]
+player 1004 has discarded a 17 from bag C
+player 1004 hand is [47, 28, 75, 9, 59, 30, 61, 36, 96, 93]
+player 1004 has drawn a 79 from bag Z
+player 1004 hand is [47, 28, 75, 9, 59, 30, 61, 36, 96, 93]
+player 1004 has discarded a 96 from bag C
+player 1004 hand is [47, 28, 75, 9, 59, 30, 61, 36, 79, 93]
+player 1004 has drawn a 67 from bag X
+player 1004 hand is [47, 28, 75, 9, 59, 30, 61, 36, 79, 93]
+player 1004 has discarded a 59 from bag A
+player 1004 hand is [47, 28, 75, 9, 67, 30, 61, 36, 79, 93]
+player 1004 has drawn a 79 from bag X
+player 1004 hand is [47, 28, 75, 9, 67, 30, 61, 36, 79, 93]
+player 1004 has discarded a 61 from bag A
+player 1004 hand is [47, 28, 75, 9, 67, 30, 79, 36, 79, 93]
+player 1004 has drawn a 3 from bag Y
+player 1004 hand is [47, 28, 75, 9, 67, 30, 79, 36, 79, 93]
+player 1004 has discarded a 79 from bag B
+player 1004 hand is [47, 28, 75, 9, 67, 30, 3, 36, 79, 93]
+player 1004 has drawn a 21 from bag X
+player 1004 hand is [47, 28, 75, 9, 67, 30, 3, 36, 79, 93]
+player 1004 has discarded a 79 from bag A
+player 1004 hand is [47, 28, 75, 9, 67, 30, 3, 36, 21, 93]
+player 1004 has drawn a 88 from bag Z
+player 1004 hand is [47, 28, 75, 9, 67, 30, 3, 36, 21, 93]
+player 1004 has discarded a 3 from bag C
+player 1004 hand is [47, 28, 75, 9, 67, 30, 88, 36, 21, 93]
+player 1004 has drawn a 56 from bag X
+player 1004 hand is [47, 28, 75, 9, 67, 30, 88, 36, 21, 93]
+player 1004 has discarded a 21 from bag A
+player 1004 hand is [47, 28, 75, 9, 67, 30, 88, 36, 56, 93]
+player 1004 has drawn a 24 from bag Y
+player 1004 hand is [47, 28, 75, 9, 67, 30, 88, 36, 56, 93]
+player 1004 has discarded a 30 from bag B
+player 1004 hand is [47, 28, 75, 9, 67, 24, 88, 36, 56, 93]
+player 1004 has drawn a 77 from bag Z
+player 1004 hand is [47, 28, 75, 9, 67, 24, 88, 36, 56, 93]
+player 1004 has discarded a 28 from bag C
+player 1004 hand is [47, 77, 75, 9, 67, 24, 88, 36, 56, 93]
+player 1004 has drawn a 98 from bag Y
+player 1004 hand is [47, 77, 75, 9, 67, 24, 88, 36, 56, 93]
+player 1004 has discarded a 9 from bag B
+player 1004 hand is [47, 77, 75, 98, 67, 24, 88, 36, 56, 93]
+player 1004 has drawn a 33 from bag X
+player 1004 hand is [47, 77, 75, 98, 67, 24, 88, 36, 56, 93]
+player 1004 has discarded a 88 from bag A
+player 1004 hand is [47, 77, 75, 98, 67, 24, 33, 36, 56, 93]
+player 1004 has drawn a 16 from bag Y
+player 1004 hand is [47, 77, 75, 98, 67, 24, 33, 36, 56, 93]
+player 1004 has discarded a 36 from bag B
+player 1004 hand is [47, 77, 75, 98, 67, 24, 33, 16, 56, 93]
+player 1004 has drawn a 39 from bag Z
+player 1004 hand is [47, 77, 75, 98, 67, 24, 33, 16, 56, 93]
+player 1004 has discarded a 75 from bag C
+player 1004 hand is [47, 77, 39, 98, 67, 24, 33, 16, 56, 93]
+player 1004 has drawn a 76 from bag Y
+player 1004 hand is [47, 77, 39, 98, 67, 24, 33, 16, 56, 93]
+player 1004 has discarded a 16 from bag B
+player 1004 hand is [47, 77, 39, 98, 67, 24, 33, 76, 56, 93]
+player 1004 has drawn a 14 from bag X
+player 1004 hand is [47, 77, 39, 98, 67, 24, 33, 76, 56, 93]
+player 1004 has discarded a 33 from bag A
+player 1004 hand is [47, 77, 39, 98, 67, 24, 14, 76, 56, 93]
+player 1004 has drawn a 2 from bag Y
+player 1004 hand is [47, 77, 39, 98, 67, 24, 14, 76, 56, 93]
+player 1004 has discarded a 24 from bag B
+player 1004 hand is [47, 77, 39, 98, 67, 2, 14, 76, 56, 93]
+player 1004 has drawn a 83 from bag Z
+player 1004 hand is [47, 77, 39, 98, 67, 2, 14, 76, 56, 93]
+player 1004 has discarded a 56 from bag C
+player 1004 hand is [47, 77, 39, 98, 67, 2, 14, 76, 83, 93]
+player 1004 has drawn a 54 from bag X
+player 1004 hand is [47, 77, 39, 98, 67, 2, 14, 76, 83, 93]
+player 1004 has discarded a 2 from bag A
+player 1004 hand is [47, 77, 39, 98, 67, 54, 14, 76, 83, 93]
+player 1004 has drawn a 55 from bag Z
+player 1004 hand is [47, 77, 39, 98, 67, 54, 14, 76, 83, 93]
+player 1004 has discarded a 83 from bag C
+player 1004 hand is [47, 77, 39, 98, 67, 54, 14, 76, 55, 93]
+player 1004 has drawn a 75 from bag Z
+player 1004 hand is [47, 77, 39, 98, 67, 54, 14, 76, 55, 93]
+player 1004 has discarded a 77 from bag C
+player 1004 hand is [47, 75, 39, 98, 67, 54, 14, 76, 55, 93]
+player 1004 has drawn a 55 from bag X
+player 1004 hand is [47, 75, 39, 98, 67, 54, 14, 76, 55, 93]
+player 1004 has discarded a 54 from bag A
+player 1004 hand is [47, 75, 39, 98, 67, 55, 14, 76, 55, 93]
+player 1004 has drawn a 32 from bag Y
+player 1004 hand is [47, 75, 39, 98, 67, 55, 14, 76, 55, 93]
+player 1004 has discarded a 98 from bag B
+player 1004 hand is [47, 75, 39, 32, 67, 55, 14, 76, 55, 93]
+player 1004 has drawn a 21 from bag Z
+player 1004 hand is [47, 75, 39, 32, 67, 55, 14, 76, 55, 93]
+player 1004 has discarded a 32 from bag C
+player 1004 hand is [47, 75, 39, 21, 67, 55, 14, 76, 55, 93]
+player 1004 has drawn a 42 from bag X
+player 1004 hand is [47, 75, 39, 21, 67, 55, 14, 76, 55, 93]
+player 1004 has discarded a 21 from bag A
+player 1004 hand is [47, 75, 39, 42, 67, 55, 14, 76, 55, 93]
+player 1004 has drawn a 30 from bag X
+player 1004 hand is [47, 75, 39, 42, 67, 55, 14, 76, 55, 93]
+player 1004 has discarded a 76 from bag A
+player 1004 hand is [47, 75, 39, 42, 67, 55, 14, 30, 55, 93]
+player 1004 has drawn a 37 from bag Y
+player 1004 hand is [47, 75, 39, 42, 67, 55, 14, 30, 55, 93]
+player 1004 has discarded a 67 from bag B
+player 1004 hand is [47, 75, 39, 42, 37, 55, 14, 30, 55, 93]
+player 1004 has drawn a 61 from bag Z
+player 1004 hand is [47, 75, 39, 42, 37, 55, 14, 30, 55, 93]
+player 1004 has discarded a 55 from bag C
+player 1004 hand is [47, 75, 39, 42, 37, 61, 14, 30, 55, 93]
+player 1004 has drawn a 6 from bag Y
+player 1004 hand is [47, 75, 39, 42, 37, 61, 14, 30, 55, 93]
+player 1004 has discarded a 37 from bag B
+player 1004 hand is [47, 75, 39, 42, 6, 61, 14, 30, 55, 93]
+player 1004 has drawn a 98 from bag Y
+player 1004 hand is [47, 75, 39, 42, 6, 61, 14, 30, 55, 93]
+player 1004 has discarded a 30 from bag B
+player 1004 hand is [47, 75, 39, 42, 6, 61, 14, 98, 55, 93]
+player 1004 has drawn a 43 from bag X
+player 1004 hand is [47, 75, 39, 42, 6, 61, 14, 98, 55, 93]
+player 1004 has discarded a 75 from bag A
+player 1004 hand is [47, 43, 39, 42, 6, 61, 14, 98, 55, 93]
+player 1004 has drawn a 50 from bag Z
+player 1004 hand is [47, 43, 39, 42, 6, 61, 14, 98, 55, 93]
+player 1004 has discarded a 14 from bag C
+player 1004 hand is [47, 43, 39, 42, 6, 61, 50, 98, 55, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [47, 43, 39, 42, 6, 61, 50, 98, 55, 93]
+player 1004 has discarded a 55 from bag A
+player 1004 hand is [47, 43, 39, 42, 6, 61, 50, 98, 39, 93]
+player 1004 has drawn a 58 from bag X
+player 1004 hand is [47, 43, 39, 42, 6, 61, 50, 98, 39, 93]
+player 1004 has discarded a 50 from bag A
+player 1004 hand is [47, 43, 39, 42, 6, 61, 58, 98, 39, 93]
+player 1004 has drawn a 35 from bag Z
+player 1004 hand is [47, 43, 39, 42, 6, 61, 58, 98, 39, 93]
+player 1004 has discarded a 6 from bag C
+player 1004 hand is [47, 43, 39, 42, 35, 61, 58, 98, 39, 93]
+player 1004 has drawn a 15 from bag X
+player 1004 hand is [47, 43, 39, 42, 35, 61, 58, 98, 39, 93]
+player 1004 has discarded a 39 from bag A
+player 1004 hand is [47, 43, 39, 42, 35, 61, 58, 98, 15, 93]
+player 1004 has drawn a 4 from bag Y
+player 1004 hand is [47, 43, 39, 42, 35, 61, 58, 98, 15, 93]
+player 1004 has discarded a 61 from bag B
+player 1004 hand is [47, 43, 39, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has drawn a 80 from bag Y
+player 1004 hand is [47, 43, 39, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has discarded a 43 from bag B
+player 1004 hand is [47, 80, 39, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has drawn a 21 from bag X
+player 1004 hand is [47, 80, 39, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has discarded a 39 from bag A
+player 1004 hand is [47, 80, 21, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has drawn a 70 from bag Y
+player 1004 hand is [47, 80, 21, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has discarded a 21 from bag B
+player 1004 hand is [47, 80, 70, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has drawn a 56 from bag Z
+player 1004 hand is [47, 80, 70, 42, 35, 4, 58, 98, 15, 93]
+player 1004 has discarded a 35 from bag C
+player 1004 hand is [47, 80, 70, 42, 56, 4, 58, 98, 15, 93]
+player 1004 has drawn a 10 from bag Z
+player 1004 hand is [47, 80, 70, 42, 56, 4, 58, 98, 15, 93]
+player 1004 has discarded a 56 from bag C
+player 1004 hand is [47, 80, 70, 42, 10, 4, 58, 98, 15, 93]
+player 1004 has drawn a 47 from bag Y
+player 1004 hand is [47, 80, 70, 42, 10, 4, 58, 98, 15, 93]
+player 1004 has discarded a 98 from bag B
+player 1004 hand is [47, 80, 70, 42, 10, 4, 58, 47, 15, 93]
+player 1004 has drawn a 44 from bag X
+player 1004 hand is [47, 80, 70, 42, 10, 4, 58, 47, 15, 93]
+player 1004 has discarded a 10 from bag A
+player 1004 hand is [47, 80, 70, 42, 44, 4, 58, 47, 15, 93]
+player 1004 has drawn a 36 from bag Y
+player 1004 hand is [47, 80, 70, 42, 44, 4, 58, 47, 15, 93]
+player 1004 has discarded a 80 from bag B
+player 1004 hand is [47, 36, 70, 42, 44, 4, 58, 47, 15, 93]
+player 1004 has drawn a 59 from bag X
+player 1004 hand is [47, 36, 70, 42, 44, 4, 58, 47, 15, 93]
+player 1004 has discarded a 42 from bag A
+player 1004 hand is [47, 36, 70, 59, 44, 4, 58, 47, 15, 93]
+player 1004 has drawn a 38 from bag X
+player 1004 hand is [47, 36, 70, 59, 44, 4, 58, 47, 15, 93]
+player 1004 has discarded a 15 from bag A
+player 1004 hand is [47, 36, 70, 59, 44, 4, 58, 47, 38, 93]
+player 1004 has drawn a 64 from bag Z
+player 1004 hand is [47, 36, 70, 59, 44, 4, 58, 47, 38, 93]
+player 1004 has discarded a 44 from bag C
+player 1004 hand is [47, 36, 70, 59, 64, 4, 58, 47, 38, 93]
+player 1004 has drawn a 60 from bag Z
+player 1004 hand is [47, 36, 70, 59, 64, 4, 58, 47, 38, 93]
+player 1004 has discarded a 47 from bag C
+player 1004 hand is [47, 36, 70, 59, 64, 4, 58, 60, 38, 93]
+player 1004 has drawn a 18 from bag Z
+player 1004 hand is [47, 36, 70, 59, 64, 4, 58, 60, 38, 93]
+player 1004 has discarded a 59 from bag C
+player 1004 hand is [47, 36, 70, 18, 64, 4, 58, 60, 38, 93]
+player 1004 has drawn a 30 from bag Y
+player 1004 hand is [47, 36, 70, 18, 64, 4, 58, 60, 38, 93]
+player 1004 has discarded a 70 from bag B
+player 1004 hand is [47, 36, 30, 18, 64, 4, 58, 60, 38, 93]
+player 1004 has drawn a 32 from bag Y
+player 1004 hand is [47, 36, 30, 18, 64, 4, 58, 60, 38, 93]
+player 1004 has discarded a 18 from bag B
+player 1004 hand is [47, 36, 30, 32, 64, 4, 58, 60, 38, 93]
+player 1004 has drawn a 56 from bag X
+player 1004 hand is [47, 36, 30, 32, 64, 4, 58, 60, 38, 93]
+player 1004 has discarded a 36 from bag A
+player 1004 hand is [47, 56, 30, 32, 64, 4, 58, 60, 38, 93]
+player 1004 has drawn a 38 from bag X
+player 1004 hand is [47, 56, 30, 32, 64, 4, 58, 60, 38, 93]
+player 1004 has discarded a 4 from bag A
+player 1004 hand is [47, 56, 30, 32, 64, 38, 58, 60, 38, 93]
+player 1004 has drawn a 48 from bag Z
+player 1004 hand is [47, 56, 30, 32, 64, 38, 58, 60, 38, 93]
+player 1004 has discarded a 58 from bag C
+player 1004 hand is [47, 56, 30, 32, 64, 38, 48, 60, 38, 93]
+player 1004 has drawn a 9 from bag Z
+player 1004 hand is [47, 56, 30, 32, 64, 38, 48, 60, 38, 93]
+player 1004 has discarded a 60 from bag C
+player 1004 hand is [47, 56, 30, 32, 64, 38, 48, 9, 38, 93]
+player 1004 has drawn a 54 from bag X
+player 1004 hand is [47, 56, 30, 32, 64, 38, 48, 9, 38, 93]
+player 1004 has discarded a 38 from bag A
+player 1004 hand is [47, 56, 30, 32, 64, 38, 48, 9, 54, 93]
+player 1004 has drawn a 35 from bag Y
+player 1004 hand is [47, 56, 30, 32, 64, 38, 48, 9, 54, 93]
+player 1004 has discarded a 56 from bag B
+player 1004 hand is [47, 35, 30, 32, 64, 38, 48, 9, 54, 93]
+player 1004 has drawn a 19 from bag Y
+player 1004 hand is [47, 35, 30, 32, 64, 38, 48, 9, 54, 93]
+player 1004 has discarded a 54 from bag B
+player 1004 hand is [47, 35, 30, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has drawn a 24 from bag Y
+player 1004 hand is [47, 35, 30, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has discarded a 30 from bag B
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has drawn a 0 from bag X
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has discarded a 0 from bag A
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has drawn a 0 from bag Z
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has discarded a 0 from bag C
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has drawn a 58 from bag Z
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 9, 19, 93]
+player 1004 has discarded a 9 from bag C
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 58, 19, 93]
+player 1004 has drawn a 17 from bag X
+player 1004 hand is [47, 35, 24, 32, 64, 38, 48, 58, 19, 93]
+player 1004 has discarded a 35 from bag A
+player 1004 hand is [47, 17, 24, 32, 64, 38, 48, 58, 19, 93]
+player 1004 has drawn a 10 from bag Y
+player 1004 hand is [47, 17, 24, 32, 64, 38, 48, 58, 19, 93]
+player 1004 has discarded a 47 from bag B
+player 1004 hand is [10, 17, 24, 32, 64, 38, 48, 58, 19, 93]
+player 1004 has drawn a 77 from bag Z
+player 1004 hand is [10, 17, 24, 32, 64, 38, 48, 58, 19, 93]
+player 1004 has discarded a 38 from bag C
+player 1004 hand is [10, 17, 24, 32, 64, 77, 48, 58, 19, 93]
+player 1004 has drawn a 57 from bag Z
+player 1004 hand is [10, 17, 24, 32, 64, 77, 48, 58, 19, 93]
+player 1004 has discarded a 17 from bag C
+player 1004 hand is [10, 57, 24, 32, 64, 77, 48, 58, 19, 93]
+player 1004 has drawn a 62 from bag Z
+player 1004 hand is [10, 57, 24, 32, 64, 77, 48, 58, 19, 93]
+player 1004 has discarded a 58 from bag C
+player 1004 hand is [10, 57, 24, 32, 64, 77, 48, 62, 19, 93]
+player 1004 has drawn a 99 from bag X
+player 1004 hand is [10, 57, 24, 32, 64, 77, 48, 62, 19, 93]
+player 1004 has discarded a 24 from bag A
+player 1004 hand is [10, 57, 99, 32, 64, 77, 48, 62, 19, 93]
+player 1004 has drawn a 32 from bag Z
+player 1004 hand is [10, 57, 99, 32, 64, 77, 48, 62, 19, 93]
+player 1004 has discarded a 62 from bag C
+player 1004 hand is [10, 57, 99, 32, 64, 77, 48, 32, 19, 93]
+player 1004 has drawn a 79 from bag Z
+player 1004 hand is [10, 57, 99, 32, 64, 77, 48, 32, 19, 93]
+player 1004 has discarded a 99 from bag C
+player 1004 hand is [10, 57, 79, 32, 64, 77, 48, 32, 19, 93]
+player 1004 has drawn a 42 from bag X
+player 1004 hand is [10, 57, 79, 32, 64, 77, 48, 32, 19, 93]
+player 1004 has discarded a 32 from bag A
+player 1004 hand is [10, 57, 79, 32, 64, 77, 48, 42, 19, 93]
+player 1004 has drawn a 85 from bag Z
+player 1004 hand is [10, 57, 79, 32, 64, 77, 48, 42, 19, 93]
+player 1004 has discarded a 48 from bag C
+player 1004 hand is [10, 57, 79, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has drawn a 55 from bag Z
+player 1004 hand is [10, 57, 79, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has discarded a 10 from bag C
+player 1004 hand is [55, 57, 79, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has drawn a 6 from bag Z
+player 1004 hand is [55, 57, 79, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has discarded a 79 from bag C
+player 1004 hand is [55, 57, 6, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has drawn a 43 from bag Y
+player 1004 hand is [55, 57, 6, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has discarded a 57 from bag B
+player 1004 hand is [55, 43, 6, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has drawn a 9 from bag Z
+player 1004 hand is [55, 43, 6, 32, 64, 77, 85, 42, 19, 93]
+player 1004 has discarded a 77 from bag C
+player 1004 hand is [55, 43, 6, 32, 64, 9, 85, 42, 19, 93]
+player 1004 has drawn a 46 from bag X
+player 1004 hand is [55, 43, 6, 32, 64, 9, 85, 42, 19, 93]
+player 1004 has discarded a 19 from bag A
+player 1004 hand is [55, 43, 6, 32, 64, 9, 85, 42, 46, 93]
+player 1004 has drawn a 89 from bag X
+player 1004 hand is [55, 43, 6, 32, 64, 9, 85, 42, 46, 93]
+player 1004 has discarded a 85 from bag A
+player 1004 hand is [55, 43, 6, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has drawn a 17 from bag Z
+player 1004 hand is [55, 43, 6, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has discarded a 55 from bag C
+player 1004 hand is [17, 43, 6, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has drawn a 63 from bag X
+player 1004 hand is [17, 43, 6, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has discarded a 6 from bag A
+player 1004 hand is [17, 43, 63, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has drawn a 91 from bag X
+player 1004 hand is [17, 43, 63, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has discarded a 43 from bag A
+player 1004 hand is [17, 91, 63, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has drawn a 21 from bag X
+player 1004 hand is [17, 91, 63, 32, 64, 9, 89, 42, 46, 93]
+player 1004 has discarded a 9 from bag A
+player 1004 hand is [17, 91, 63, 32, 64, 21, 89, 42, 46, 93]
+player 1004 has drawn a 23 from bag Y
+player 1004 hand is [17, 91, 63, 32, 64, 21, 89, 42, 46, 93]
+player 1004 has discarded a 91 from bag B
+player 1004 hand is [17, 23, 63, 32, 64, 21, 89, 42, 46, 93]
+player 1004 has drawn a 13 from bag Z
+player 1004 hand is [17, 23, 63, 32, 64, 21, 89, 42, 46, 93]
+player 1004 has discarded a 32 from bag C
+player 1004 hand is [17, 23, 63, 13, 64, 21, 89, 42, 46, 93]
+player 1004 has drawn a 40 from bag Y
+player 1004 hand is [17, 23, 63, 13, 64, 21, 89, 42, 46, 93]
+player 1004 has discarded a 64 from bag B
+player 1004 hand is [17, 23, 63, 13, 40, 21, 89, 42, 46, 93]
+player 1004 has drawn a 96 from bag Y
+player 1004 hand is [17, 23, 63, 13, 40, 21, 89, 42, 46, 93]
+player 1004 has discarded a 46 from bag B
+player 1004 hand is [17, 23, 63, 13, 40, 21, 89, 42, 96, 93]
+player 1004 has drawn a 70 from bag X
+player 1004 hand is [17, 23, 63, 13, 40, 21, 89, 42, 96, 93]
+player 1004 has discarded a 40 from bag A
+player 1004 hand is [17, 23, 63, 13, 70, 21, 89, 42, 96, 93]
+player 1004 has drawn a 35 from bag X
+player 1004 hand is [17, 23, 63, 13, 70, 21, 89, 42, 96, 93]
+player 1004 has discarded a 89 from bag A
+player 1004 hand is [17, 23, 63, 13, 70, 21, 35, 42, 96, 93]
+player 1004 has drawn a 75 from bag X
+player 1004 hand is [17, 23, 63, 13, 70, 21, 35, 42, 96, 93]
+player 1004 has discarded a 42 from bag A
+player 1004 hand is [17, 23, 63, 13, 70, 21, 35, 75, 96, 93]
+player 1004 has drawn a 3 from bag X
+player 1004 hand is [17, 23, 63, 13, 70, 21, 35, 75, 96, 93]
+player 1004 has discarded a 13 from bag A
+player 1004 hand is [17, 23, 63, 3, 70, 21, 35, 75, 96, 93]
+player 1004 has drawn a 73 from bag Y
+player 1004 hand is [17, 23, 63, 3, 70, 21, 35, 75, 96, 93]
+player 1004 has discarded a 17 from bag B
+player 1004 hand is [73, 23, 63, 3, 70, 21, 35, 75, 96, 93]
+player 1004 has drawn a 60 from bag Z
+player 1004 hand is [73, 23, 63, 3, 70, 21, 35, 75, 96, 93]
+player 1004 has discarded a 70 from bag C
+player 1004 hand is [73, 23, 63, 3, 60, 21, 35, 75, 96, 93]
+player 1004 has drawn a 76 from bag X
+player 1004 hand is [73, 23, 63, 3, 60, 21, 35, 75, 96, 93]
+player 1004 has discarded a 21 from bag A
+player 1004 hand is [73, 23, 63, 3, 60, 76, 35, 75, 96, 93]
+player 1004 has drawn a 47 from bag Z
+player 1004 hand is [73, 23, 63, 3, 60, 76, 35, 75, 96, 93]
+player 1004 has discarded a 3 from bag C
+player 1004 hand is [73, 23, 63, 47, 60, 76, 35, 75, 96, 93]
+player 1004 has drawn a 58 from bag Z
+player 1004 hand is [73, 23, 63, 47, 60, 76, 35, 75, 96, 93]
+player 1004 has discarded a 23 from bag C
+player 1004 hand is [73, 58, 63, 47, 60, 76, 35, 75, 96, 93]
+player 1004 has drawn a 77 from bag Z
+player 1004 hand is [73, 58, 63, 47, 60, 76, 35, 75, 96, 93]
+player 1004 has discarded a 60 from bag C
+player 1004 hand is [73, 58, 63, 47, 77, 76, 35, 75, 96, 93]
+player 1004 has drawn a 37 from bag Y
+player 1004 hand is [73, 58, 63, 47, 77, 76, 35, 75, 96, 93]
+player 1004 has discarded a 58 from bag B
+player 1004 hand is [73, 37, 63, 47, 77, 76, 35, 75, 96, 93]
+player 1004 has drawn a 87 from bag Y
+player 1004 hand is [73, 37, 63, 47, 77, 76, 35, 75, 96, 93]
+player 1004 has discarded a 77 from bag B
+player 1004 hand is [73, 37, 63, 47, 87, 76, 35, 75, 96, 93]
+player 1004 has drawn a 88 from bag Y
+player 1004 hand is [73, 37, 63, 47, 87, 76, 35, 75, 96, 93]
+player 1004 has discarded a 76 from bag B
+player 1004 hand is [73, 37, 63, 47, 87, 88, 35, 75, 96, 93]
+player 1004 has drawn a 95 from bag Y
+player 1004 hand is [73, 37, 63, 47, 87, 88, 35, 75, 96, 93]
+player 1004 has discarded a 63 from bag B
+player 1004 hand is [73, 37, 95, 47, 87, 88, 35, 75, 96, 93]
+player 1004 has drawn a 91 from bag Z
+player 1004 hand is [73, 37, 95, 47, 87, 88, 35, 75, 96, 93]
+player 1004 has discarded a 96 from bag C
+player 1004 hand is [73, 37, 95, 47, 87, 88, 35, 75, 91, 93]
+player 1004 has drawn a 6 from bag Y
+player 1004 hand is [73, 37, 95, 47, 87, 88, 35, 75, 91, 93]
+player 1004 has discarded a 88 from bag B
+player 1004 hand is [73, 37, 95, 47, 87, 6, 35, 75, 91, 93]
+player 1004 has drawn a 31 from bag X
+player 1004 hand is [73, 37, 95, 47, 87, 6, 35, 75, 91, 93]
+player 1004 has discarded a 91 from bag A
+player 1004 hand is [73, 37, 95, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has drawn a 33 from bag Y
+player 1004 hand is [73, 37, 95, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has discarded a 37 from bag B
+player 1004 hand is [73, 33, 95, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has drawn a 38 from bag Z
+player 1004 hand is [73, 33, 95, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has discarded a 73 from bag C
+player 1004 hand is [38, 33, 95, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has drawn a 33 from bag X
+player 1004 hand is [38, 33, 95, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has discarded a 95 from bag A
+player 1004 hand is [38, 33, 33, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has drawn a 88 from bag X
+player 1004 hand is [38, 33, 33, 47, 87, 6, 35, 75, 31, 93]
+player 1004 has discarded a 47 from bag A
+player 1004 hand is [38, 33, 33, 88, 87, 6, 35, 75, 31, 93]
+player 1004 has drawn a 11 from bag X
+player 1004 hand is [38, 33, 33, 88, 87, 6, 35, 75, 31, 93]
+player 1004 has discarded a 88 from bag A
+player 1004 hand is [38, 33, 33, 11, 87, 6, 35, 75, 31, 93]
+player 1004 has drawn a 58 from bag Z
+player 1004 hand is [38, 33, 33, 11, 87, 6, 35, 75, 31, 93]
+player 1004 has discarded a 31 from bag C
+player 1004 hand is [38, 33, 33, 11, 87, 6, 35, 75, 58, 93]
+player 1004 has drawn a 28 from bag Z
+player 1004 hand is [38, 33, 33, 11, 87, 6, 35, 75, 58, 93]
+player 1004 has discarded a 6 from bag C
+player 1004 hand is [38, 33, 33, 11, 87, 28, 35, 75, 58, 93]
+player 1004 has drawn a 9 from bag Z
+player 1004 hand is [38, 33, 33, 11, 87, 28, 35, 75, 58, 93]
+player 1004 has discarded a 87 from bag C
+player 1004 hand is [38, 33, 33, 11, 9, 28, 35, 75, 58, 93]
+player 1004 has drawn a 2 from bag X
+player 1004 hand is [38, 33, 33, 11, 9, 28, 35, 75, 58, 93]
+player 1004 has discarded a 11 from bag A
+player 1004 hand is [38, 33, 33, 2, 9, 28, 35, 75, 58, 93]
+player 1004 has drawn a 53 from bag Y
+player 1004 hand is [38, 33, 33, 2, 9, 28, 35, 75, 58, 93]
+player 1004 has discarded a 33 from bag B
+player 1004 hand is [38, 53, 33, 2, 9, 28, 35, 75, 58, 93]
+player 1004 has drawn a 36 from bag X
+player 1004 hand is [38, 53, 33, 2, 9, 28, 35, 75, 58, 93]
+player 1004 has discarded a 35 from bag A
+player 1004 hand is [38, 53, 33, 2, 9, 28, 36, 75, 58, 93]
+player 1004 has drawn a 57 from bag Y
+player 1004 hand is [38, 53, 33, 2, 9, 28, 36, 75, 58, 93]
+player 1004 has discarded a 58 from bag B
+player 1004 hand is [38, 53, 33, 2, 9, 28, 36, 75, 57, 93]
+player 1004 has drawn a 50 from bag Y
+player 1004 hand is [38, 53, 33, 2, 9, 28, 36, 75, 57, 93]
+player 1004 has discarded a 9 from bag B
+player 1004 hand is [38, 53, 33, 2, 50, 28, 36, 75, 57, 93]
+player 1004 has drawn a 97 from bag Y
+player 1004 hand is [38, 53, 33, 2, 50, 28, 36, 75, 57, 93]
+player 1004 has discarded a 53 from bag B
+player 1004 hand is [38, 97, 33, 2, 50, 28, 36, 75, 57, 93]
+player 1004 has drawn a 1 from bag X
+player 1004 hand is [38, 97, 33, 2, 50, 28, 36, 75, 57, 93]
+player 1004 has discarded a 28 from bag A
+player 1004 hand is [38, 97, 33, 2, 50, 1, 36, 75, 57, 93]
+player 1004 has drawn a 11 from bag Z
+player 1004 hand is [38, 97, 33, 2, 50, 1, 36, 75, 57, 93]
+player 1004 has discarded a 36 from bag C
+player 1004 hand is [38, 97, 33, 2, 50, 1, 11, 75, 57, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [38, 97, 33, 2, 50, 1, 11, 75, 57, 93]
+player 1004 has discarded a 57 from bag A
+player 1004 hand is [38, 97, 33, 2, 50, 1, 11, 75, 39, 93]
+player 1004 has drawn a 96 from bag X
+player 1004 hand is [38, 97, 33, 2, 50, 1, 11, 75, 39, 93]
+player 1004 has discarded a 75 from bag A
+player 1004 hand is [38, 97, 33, 2, 50, 1, 11, 96, 39, 93]
+player 1004 has drawn a 23 from bag X
+player 1004 hand is [38, 97, 33, 2, 50, 1, 11, 96, 39, 93]
+player 1004 has discarded a 38 from bag A
+player 1004 hand is [23, 97, 33, 2, 50, 1, 11, 96, 39, 93]
+player 1004 has drawn a 29 from bag X
+player 1004 hand is [23, 97, 33, 2, 50, 1, 11, 96, 39, 93]
+player 1004 has discarded a 2 from bag A
+player 1004 hand is [23, 97, 33, 29, 50, 1, 11, 96, 39, 93]
+player 1004 has drawn a 61 from bag X
+player 1004 hand is [23, 97, 33, 29, 50, 1, 11, 96, 39, 93]
+player 1004 has discarded a 1 from bag A
+player 1004 hand is [23, 97, 33, 29, 50, 61, 11, 96, 39, 93]
+player 1004 has drawn a 9 from bag Z
+player 1004 hand is [23, 97, 33, 29, 50, 61, 11, 96, 39, 93]
+player 1004 has discarded a 97 from bag C
+player 1004 hand is [23, 9, 33, 29, 50, 61, 11, 96, 39, 93]
+player 1004 has drawn a 72 from bag Y
+player 1004 hand is [23, 9, 33, 29, 50, 61, 11, 96, 39, 93]
+player 1004 has discarded a 96 from bag B
+player 1004 hand is [23, 9, 33, 29, 50, 61, 11, 72, 39, 93]
+player 1004 has drawn a 82 from bag Y
+player 1004 hand is [23, 9, 33, 29, 50, 61, 11, 72, 39, 93]
+player 1004 has discarded a 50 from bag B
+player 1004 hand is [23, 9, 33, 29, 82, 61, 11, 72, 39, 93]
+player 1004 has drawn a 62 from bag Z
+player 1004 hand is [23, 9, 33, 29, 82, 61, 11, 72, 39, 93]
+player 1004 has discarded a 61 from bag C
+player 1004 hand is [23, 9, 33, 29, 82, 62, 11, 72, 39, 93]
+player 1004 has drawn a 17 from bag Z
+player 1004 hand is [23, 9, 33, 29, 82, 62, 11, 72, 39, 93]
+player 1004 has discarded a 62 from bag C
+player 1004 hand is [23, 9, 33, 29, 82, 17, 11, 72, 39, 93]
+player 1004 has drawn a 0 from bag Z
+player 1004 hand is [23, 9, 33, 29, 82, 17, 11, 72, 39, 93]
+player 1004 has discarded a 0 from bag C
+player 1004 hand is [23, 9, 33, 29, 82, 17, 11, 72, 39, 93]
+player 1004 has drawn a 66 from bag X
+player 1004 hand is [23, 9, 33, 29, 82, 17, 11, 72, 39, 93]
+player 1004 has discarded a 17 from bag A
+player 1004 hand is [23, 9, 33, 29, 82, 66, 11, 72, 39, 93]
+player 1004 has drawn a 37 from bag Y
+player 1004 hand is [23, 9, 33, 29, 82, 66, 11, 72, 39, 93]
+player 1004 has discarded a 33 from bag B
+player 1004 hand is [23, 9, 37, 29, 82, 66, 11, 72, 39, 93]
+player 1004 has drawn a 92 from bag Y
+player 1004 hand is [23, 9, 37, 29, 82, 66, 11, 72, 39, 93]
+player 1004 has discarded a 29 from bag B
+player 1004 hand is [23, 9, 37, 92, 82, 66, 11, 72, 39, 93]
+player 1004 has drawn a 25 from bag Z
+player 1004 hand is [23, 9, 37, 92, 82, 66, 11, 72, 39, 93]
+player 1004 has discarded a 39 from bag C
+player 1004 hand is [23, 9, 37, 92, 82, 66, 11, 72, 25, 93]
+player 1004 has drawn a 69 from bag X
+player 1004 hand is [23, 9, 37, 92, 82, 66, 11, 72, 25, 93]
+player 1004 has discarded a 82 from bag A
+player 1004 hand is [23, 9, 37, 92, 69, 66, 11, 72, 25, 93]
+player 1004 has drawn a 54 from bag Y
+player 1004 hand is [23, 9, 37, 92, 69, 66, 11, 72, 25, 93]
+player 1004 has discarded a 11 from bag B
+player 1004 hand is [23, 9, 37, 92, 69, 66, 54, 72, 25, 93]
+player 1004 has drawn a 81 from bag Y
+player 1004 hand is [23, 9, 37, 92, 69, 66, 54, 72, 25, 93]
+player 1004 has discarded a 72 from bag B
+player 1004 hand is [23, 9, 37, 92, 69, 66, 54, 81, 25, 93]
+player 1004 has drawn a 40 from bag Z
+player 1004 hand is [23, 9, 37, 92, 69, 66, 54, 81, 25, 93]
+player 1004 has discarded a 69 from bag C
+player 1004 hand is [23, 9, 37, 92, 40, 66, 54, 81, 25, 93]
+player 1004 has drawn a 11 from bag Y
+player 1004 hand is [23, 9, 37, 92, 40, 66, 54, 81, 25, 93]
+player 1004 has discarded a 92 from bag B
+player 1004 hand is [23, 9, 37, 11, 40, 66, 54, 81, 25, 93]
+player 1004 has drawn a 96 from bag Z
+player 1004 hand is [23, 9, 37, 11, 40, 66, 54, 81, 25, 93]
+player 1004 has discarded a 25 from bag C
+player 1004 hand is [23, 9, 37, 11, 40, 66, 54, 81, 96, 93]
+player 1004 has drawn a 64 from bag X
+player 1004 hand is [23, 9, 37, 11, 40, 66, 54, 81, 96, 93]
+player 1004 has discarded a 81 from bag A
+player 1004 hand is [23, 9, 37, 11, 40, 66, 54, 64, 96, 93]
+player 1004 has drawn a 21 from bag Z
+player 1004 hand is [23, 9, 37, 11, 40, 66, 54, 64, 96, 93]
+player 1004 has discarded a 11 from bag C
+player 1004 hand is [23, 9, 37, 21, 40, 66, 54, 64, 96, 93]
+player 1004 has drawn a 80 from bag X
+player 1004 hand is [23, 9, 37, 21, 40, 66, 54, 64, 96, 93]
+player 1004 has discarded a 40 from bag A
+player 1004 hand is [23, 9, 37, 21, 80, 66, 54, 64, 96, 93]
+player 1004 has drawn a 2 from bag Y
+player 1004 hand is [23, 9, 37, 21, 80, 66, 54, 64, 96, 93]
+player 1004 has discarded a 96 from bag B
+player 1004 hand is [23, 9, 37, 21, 80, 66, 54, 64, 2, 93]
+player 1004 has drawn a 3 from bag Z
+player 1004 hand is [23, 9, 37, 21, 80, 66, 54, 64, 2, 93]
+player 1004 has discarded a 64 from bag C
+player 1004 hand is [23, 9, 37, 21, 80, 66, 54, 3, 2, 93]
+player 1004 has drawn a 56 from bag Z
+player 1004 hand is [23, 9, 37, 21, 80, 66, 54, 3, 2, 93]
+player 1004 has discarded a 37 from bag C
+player 1004 hand is [23, 9, 56, 21, 80, 66, 54, 3, 2, 93]
+player 1004 has drawn a 61 from bag Z
+player 1004 hand is [23, 9, 56, 21, 80, 66, 54, 3, 2, 93]
+player 1004 has discarded a 23 from bag C
+player 1004 hand is [61, 9, 56, 21, 80, 66, 54, 3, 2, 93]
+player 1004 has drawn a 97 from bag Y
+player 1004 hand is [61, 9, 56, 21, 80, 66, 54, 3, 2, 93]
+player 1004 has discarded a 80 from bag B
+player 1004 hand is [61, 9, 56, 21, 97, 66, 54, 3, 2, 93]
+player 1004 has drawn a 39 from bag Z
+player 1004 hand is [61, 9, 56, 21, 97, 66, 54, 3, 2, 93]
+player 1004 has discarded a 9 from bag C
+player 1004 hand is [61, 39, 56, 21, 97, 66, 54, 3, 2, 93]
+player 1004 has drawn a 56 from bag Y
+player 1004 hand is [61, 39, 56, 21, 97, 66, 54, 3, 2, 93]
+player 1004 has discarded a 61 from bag B
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 3, 2, 93]
+player 1004 has drawn a 11 from bag X
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 3, 2, 93]
+player 1004 has discarded a 3 from bag A
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 11, 2, 93]
+player 1004 has drawn a 88 from bag X
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 11, 2, 93]
+player 1004 has discarded a 11 from bag A
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 88, 2, 93]
+player 1004 has drawn a 18 from bag Y
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 88, 2, 93]
+player 1004 has discarded a 2 from bag B
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 88, 18, 93]
+player 1004 has drawn a 59 from bag X
+player 1004 hand is [56, 39, 56, 21, 97, 66, 54, 88, 18, 93]
+player 1004 has discarded a 39 from bag A
+player 1004 hand is [56, 59, 56, 21, 97, 66, 54, 88, 18, 93]
+player 1004 has drawn a 30 from bag X
+player 1004 hand is [56, 59, 56, 21, 97, 66, 54, 88, 18, 93]
+player 1004 has discarded a 18 from bag A
+player 1004 hand is [56, 59, 56, 21, 97, 66, 54, 88, 30, 93]
+player 1004 has drawn a 30 from bag Y
+player 1004 hand is [56, 59, 56, 21, 97, 66, 54, 88, 30, 93]
+player 1004 has discarded a 97 from bag B
+player 1004 hand is [56, 59, 56, 21, 30, 66, 54, 88, 30, 93]
+player 1004 has drawn a 59 from bag X
+player 1004 hand is [56, 59, 56, 21, 30, 66, 54, 88, 30, 93]
+player 1004 has discarded a 30 from bag A
+player 1004 hand is [56, 59, 56, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has drawn a 76 from bag Z
+player 1004 hand is [56, 59, 56, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has discarded a 56 from bag C
+player 1004 hand is [56, 59, 76, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has drawn a 90 from bag X
+player 1004 hand is [56, 59, 76, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has discarded a 56 from bag A
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has drawn a 0 from bag Y
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has discarded a 0 from bag B
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has drawn a 56 from bag Z
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 88, 59, 93]
+player 1004 has discarded a 88 from bag C
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 56, 59, 93]
+player 1004 has drawn a 7 from bag X
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 56, 59, 93]
+player 1004 has discarded a 56 from bag A
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 7, 59, 93]
+player 1004 has drawn a 79 from bag Y
+player 1004 hand is [90, 59, 76, 21, 30, 66, 54, 7, 59, 93]
+player 1004 has discarded a 59 from bag B
+player 1004 hand is [90, 79, 76, 21, 30, 66, 54, 7, 59, 93]
+player 1004 has drawn a 16 from bag Y
+player 1004 hand is [90, 79, 76, 21, 30, 66, 54, 7, 59, 93]
+player 1004 has discarded a 66 from bag B
+player 1004 hand is [90, 79, 76, 21, 30, 16, 54, 7, 59, 93]
+player 1004 has drawn a 28 from bag Y
+player 1004 hand is [90, 79, 76, 21, 30, 16, 54, 7, 59, 93]
+player 1004 has discarded a 30 from bag B
+player 1004 hand is [90, 79, 76, 21, 28, 16, 54, 7, 59, 93]
+player 1004 has drawn a 3 from bag Z
+player 1004 hand is [90, 79, 76, 21, 28, 16, 54, 7, 59, 93]
+player 1004 has discarded a 54 from bag C
+player 1004 hand is [90, 79, 76, 21, 28, 16, 3, 7, 59, 93]
+player 1004 has drawn a 44 from bag X
+player 1004 hand is [90, 79, 76, 21, 28, 16, 3, 7, 59, 93]
+player 1004 has discarded a 16 from bag A
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 7, 59, 93]
+player 1004 has drawn a 72 from bag X
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 7, 59, 93]
+player 1004 has discarded a 7 from bag A
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 72, 59, 93]
+player 1004 has drawn a 94 from bag Z
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 72, 59, 93]
+player 1004 has discarded a 59 from bag C
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 72, 94, 93]
+player 1004 has drawn a 10 from bag X
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 72, 94, 93]
+player 1004 has discarded a 94 from bag A
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 72, 10, 93]
+player 1004 has drawn a 97 from bag Z
+player 1004 hand is [90, 79, 76, 21, 28, 44, 3, 72, 10, 93]
+player 1004 has discarded a 21 from bag C
+player 1004 hand is [90, 79, 76, 97, 28, 44, 3, 72, 10, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [90, 79, 76, 97, 28, 44, 3, 72, 10, 93]
+player 1004 has discarded a 90 from bag A
+player 1004 hand is [39, 79, 76, 97, 28, 44, 3, 72, 10, 93]
+player 1004 has drawn a 83 from bag X
+player 1004 hand is [39, 79, 76, 97, 28, 44, 3, 72, 10, 93]
+player 1004 has discarded a 28 from bag A
+player 1004 hand is [39, 79, 76, 97, 83, 44, 3, 72, 10, 93]
+player 1004 has drawn a 20 from bag Y
+player 1004 hand is [39, 79, 76, 97, 83, 44, 3, 72, 10, 93]
+player 1004 has discarded a 3 from bag B
+player 1004 hand is [39, 79, 76, 97, 83, 44, 20, 72, 10, 93]
+player 1004 has drawn a 96 from bag Z
+player 1004 hand is [39, 79, 76, 97, 83, 44, 20, 72, 10, 93]
+player 1004 has discarded a 39 from bag C
+player 1004 hand is [96, 79, 76, 97, 83, 44, 20, 72, 10, 93]
+player 1004 has drawn a 6 from bag X
+player 1004 hand is [96, 79, 76, 97, 83, 44, 20, 72, 10, 93]
+player 1004 has discarded a 76 from bag A
+player 1004 hand is [96, 79, 6, 97, 83, 44, 20, 72, 10, 93]
+player 1004 has drawn a 80 from bag Z
+player 1004 hand is [96, 79, 6, 97, 83, 44, 20, 72, 10, 93]
+player 1004 has discarded a 10 from bag C
+player 1004 hand is [96, 79, 6, 97, 83, 44, 20, 72, 80, 93]
+player 1004 has drawn a 26 from bag Z
+player 1004 hand is [96, 79, 6, 97, 83, 44, 20, 72, 80, 93]
+player 1004 has discarded a 97 from bag C
+player 1004 hand is [96, 79, 6, 26, 83, 44, 20, 72, 80, 93]
+player 1004 has drawn a 53 from bag Z
+player 1004 hand is [96, 79, 6, 26, 83, 44, 20, 72, 80, 93]
+player 1004 has discarded a 83 from bag C
+player 1004 hand is [96, 79, 6, 26, 53, 44, 20, 72, 80, 93]
+player 1004 has drawn a 91 from bag X
+player 1004 hand is [96, 79, 6, 26, 53, 44, 20, 72, 80, 93]
+player 1004 has discarded a 20 from bag A
+player 1004 hand is [96, 79, 6, 26, 53, 44, 91, 72, 80, 93]
+player 1004 has drawn a 25 from bag Z
+player 1004 hand is [96, 79, 6, 26, 53, 44, 91, 72, 80, 93]
+player 1004 has discarded a 80 from bag C
+player 1004 hand is [96, 79, 6, 26, 53, 44, 91, 72, 25, 93]
+player 1004 has drawn a 45 from bag X
+player 1004 hand is [96, 79, 6, 26, 53, 44, 91, 72, 25, 93]
+player 1004 has discarded a 96 from bag A
+player 1004 hand is [45, 79, 6, 26, 53, 44, 91, 72, 25, 93]
+player 1004 has drawn a 98 from bag X
+player 1004 hand is [45, 79, 6, 26, 53, 44, 91, 72, 25, 93]
+player 1004 has discarded a 53 from bag A
+player 1004 hand is [45, 79, 6, 26, 98, 44, 91, 72, 25, 93]
+player 1004 has drawn a 83 from bag X
+player 1004 hand is [45, 79, 6, 26, 98, 44, 91, 72, 25, 93]
+player 1004 has discarded a 6 from bag A
+player 1004 hand is [45, 79, 83, 26, 98, 44, 91, 72, 25, 93]
+player 1004 has drawn a 83 from bag X
+player 1004 hand is [45, 79, 83, 26, 98, 44, 91, 72, 25, 93]
+player 1004 has discarded a 91 from bag A
+player 1004 hand is [45, 79, 83, 26, 98, 44, 83, 72, 25, 93]
+player 1004 has drawn a 49 from bag Z
+player 1004 hand is [45, 79, 83, 26, 98, 44, 83, 72, 25, 93]
+player 1004 has discarded a 26 from bag C
+player 1004 hand is [45, 79, 83, 49, 98, 44, 83, 72, 25, 93]
+player 1004 has drawn a 19 from bag X
+player 1004 hand is [45, 79, 83, 49, 98, 44, 83, 72, 25, 93]
+player 1004 has discarded a 44 from bag A
+player 1004 hand is [45, 79, 83, 49, 98, 19, 83, 72, 25, 93]
+player 1004 has drawn a 23 from bag Z
+player 1004 hand is [45, 79, 83, 49, 98, 19, 83, 72, 25, 93]
+player 1004 has discarded a 83 from bag C
+player 1004 hand is [45, 79, 23, 49, 98, 19, 83, 72, 25, 93]
+player 1004 has drawn a 79 from bag Y
+player 1004 hand is [45, 79, 23, 49, 98, 19, 83, 72, 25, 93]
+player 1004 has discarded a 25 from bag B
+player 1004 hand is [45, 79, 23, 49, 98, 19, 83, 72, 79, 93]
+player 1004 has drawn a 37 from bag Z
+player 1004 hand is [45, 79, 23, 49, 98, 19, 83, 72, 79, 93]
+player 1004 has discarded a 49 from bag C
+player 1004 hand is [45, 79, 23, 37, 98, 19, 83, 72, 79, 93]
+player 1004 has drawn a 61 from bag X
+player 1004 hand is [45, 79, 23, 37, 98, 19, 83, 72, 79, 93]
+player 1004 has discarded a 79 from bag A
+player 1004 hand is [45, 61, 23, 37, 98, 19, 83, 72, 79, 93]
+player 1004 has drawn a 75 from bag X
+player 1004 hand is [45, 61, 23, 37, 98, 19, 83, 72, 79, 93]
+player 1004 has discarded a 98 from bag A
+player 1004 hand is [45, 61, 23, 37, 75, 19, 83, 72, 79, 93]
+player 1004 has drawn a 23 from bag Z
+player 1004 hand is [45, 61, 23, 37, 75, 19, 83, 72, 79, 93]
+player 1004 has discarded a 37 from bag C
+player 1004 hand is [45, 61, 23, 23, 75, 19, 83, 72, 79, 93]
+player 1004 has drawn a 55 from bag Y
+player 1004 hand is [45, 61, 23, 23, 75, 19, 83, 72, 79, 93]
+player 1004 has discarded a 61 from bag B
+player 1004 hand is [45, 55, 23, 23, 75, 19, 83, 72, 79, 93]
+player 1004 has drawn a 35 from bag Y
+player 1004 hand is [45, 55, 23, 23, 75, 19, 83, 72, 79, 93]
+player 1004 has discarded a 23 from bag B
+player 1004 hand is [45, 55, 23, 35, 75, 19, 83, 72, 79, 93]
+player 1004 has drawn a 3 from bag Y
+player 1004 hand is [45, 55, 23, 35, 75, 19, 83, 72, 79, 93]
+player 1004 has discarded a 75 from bag B
+player 1004 hand is [45, 55, 23, 35, 3, 19, 83, 72, 79, 93]
+player 1004 has drawn a 7 from bag Y
+player 1004 hand is [45, 55, 23, 35, 3, 19, 83, 72, 79, 93]
+player 1004 has discarded a 19 from bag B
+player 1004 hand is [45, 55, 23, 35, 3, 7, 83, 72, 79, 93]
+player 1004 has drawn a 95 from bag X
+player 1004 hand is [45, 55, 23, 35, 3, 7, 83, 72, 79, 93]
+player 1004 has discarded a 7 from bag A
+player 1004 hand is [45, 55, 23, 35, 3, 95, 83, 72, 79, 93]
+player 1004 has drawn a 36 from bag Y
+player 1004 hand is [45, 55, 23, 35, 3, 95, 83, 72, 79, 93]
+player 1004 has discarded a 72 from bag B
+player 1004 hand is [45, 55, 23, 35, 3, 95, 83, 36, 79, 93]
+player 1004 has drawn a 83 from bag Z
+player 1004 hand is [45, 55, 23, 35, 3, 95, 83, 36, 79, 93]
+player 1004 has discarded a 36 from bag C
+player 1004 hand is [45, 55, 23, 35, 3, 95, 83, 83, 79, 93]
+player 1004 has drawn a 82 from bag X
+player 1004 hand is [45, 55, 23, 35, 3, 95, 83, 83, 79, 93]
+player 1004 has discarded a 23 from bag A
+player 1004 hand is [45, 55, 82, 35, 3, 95, 83, 83, 79, 93]
+player 1004 has drawn a 71 from bag Z
+player 1004 hand is [45, 55, 82, 35, 3, 95, 83, 83, 79, 93]
+player 1004 has discarded a 82 from bag C
+player 1004 hand is [45, 55, 71, 35, 3, 95, 83, 83, 79, 93]
+player 1004 has drawn a 70 from bag Z
+player 1004 hand is [45, 55, 71, 35, 3, 95, 83, 83, 79, 93]
+player 1004 has discarded a 83 from bag C
+player 1004 hand is [45, 55, 71, 35, 3, 95, 70, 83, 79, 93]
+player 1004 has drawn a 58 from bag Y
+player 1004 hand is [45, 55, 71, 35, 3, 95, 70, 83, 79, 93]
+player 1004 has discarded a 70 from bag B
+player 1004 hand is [45, 55, 71, 35, 3, 95, 58, 83, 79, 93]
+player 1004 has drawn a 24 from bag X
+player 1004 hand is [45, 55, 71, 35, 3, 95, 58, 83, 79, 93]
+player 1004 has discarded a 79 from bag A
+player 1004 hand is [45, 55, 71, 35, 3, 95, 58, 83, 24, 93]
+player 1004 has drawn a 58 from bag Y
+player 1004 hand is [45, 55, 71, 35, 3, 95, 58, 83, 24, 93]
+player 1004 has discarded a 83 from bag B
+player 1004 hand is [45, 55, 71, 35, 3, 95, 58, 58, 24, 93]
+player 1004 has drawn a 93 from bag Z
+player 1004 hand is [45, 55, 71, 35, 3, 95, 58, 58, 24, 93]
+player 1004 has discarded a 35 from bag C
+player 1004 hand is [45, 55, 71, 93, 3, 95, 58, 58, 24, 93]
+player 1004 has drawn a 32 from bag Y
+player 1004 hand is [45, 55, 71, 93, 3, 95, 58, 58, 24, 93]
+player 1004 has discarded a 71 from bag B
+player 1004 hand is [45, 55, 32, 93, 3, 95, 58, 58, 24, 93]
+player 1004 has drawn a 81 from bag X
+player 1004 hand is [45, 55, 32, 93, 3, 95, 58, 58, 24, 93]
+player 1004 has discarded a 55 from bag A
+player 1004 hand is [45, 81, 32, 93, 3, 95, 58, 58, 24, 93]
+player 1004 has drawn a 84 from bag Z
+player 1004 hand is [45, 81, 32, 93, 3, 95, 58, 58, 24, 93]
+player 1004 has discarded a 95 from bag C
+player 1004 hand is [45, 81, 32, 93, 3, 84, 58, 58, 24, 93]
+player 1004 has drawn a 54 from bag Z
+player 1004 hand is [45, 81, 32, 93, 3, 84, 58, 58, 24, 93]
+player 1004 has discarded a 3 from bag C
+player 1004 hand is [45, 81, 32, 93, 54, 84, 58, 58, 24, 93]
+player 1004 has drawn a 37 from bag Z
+player 1004 hand is [45, 81, 32, 93, 54, 84, 58, 58, 24, 93]
+player 1004 has discarded a 58 from bag C
+player 1004 hand is [45, 81, 32, 93, 54, 84, 37, 58, 24, 93]
+player 1004 has drawn a 26 from bag Z
+player 1004 hand is [45, 81, 32, 93, 54, 84, 37, 58, 24, 93]
+player 1004 has discarded a 54 from bag C
+player 1004 hand is [45, 81, 32, 93, 26, 84, 37, 58, 24, 93]
+player 1004 has drawn a 67 from bag Z
+player 1004 hand is [45, 81, 32, 93, 26, 84, 37, 58, 24, 93]
+player 1004 has discarded a 58 from bag C
+player 1004 hand is [45, 81, 32, 93, 26, 84, 37, 67, 24, 93]
+player 1004 has drawn a 35 from bag X
+player 1004 hand is [45, 81, 32, 93, 26, 84, 37, 67, 24, 93]
+player 1004 has discarded a 45 from bag A
+player 1004 hand is [35, 81, 32, 93, 26, 84, 37, 67, 24, 93]
+player 1004 has drawn a 72 from bag X
+player 1004 hand is [35, 81, 32, 93, 26, 84, 37, 67, 24, 93]
+player 1004 has discarded a 37 from bag A
+player 1004 hand is [35, 81, 32, 93, 26, 84, 72, 67, 24, 93]
+player 1004 has drawn a 97 from bag X
+player 1004 hand is [35, 81, 32, 93, 26, 84, 72, 67, 24, 93]
+player 1004 has discarded a 35 from bag A
+player 1004 hand is [97, 81, 32, 93, 26, 84, 72, 67, 24, 93]
+player 1004 has drawn a 79 from bag Y
+player 1004 hand is [97, 81, 32, 93, 26, 84, 72, 67, 24, 93]
+player 1004 has discarded a 72 from bag B
+player 1004 hand is [97, 81, 32, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has drawn a 26 from bag Z
+player 1004 hand is [97, 81, 32, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has discarded a 32 from bag C
+player 1004 hand is [97, 81, 26, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [97, 81, 26, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has discarded a 81 from bag A
+player 1004 hand is [97, 39, 26, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has drawn a 28 from bag X
+player 1004 hand is [97, 39, 26, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has discarded a 97 from bag A
+player 1004 hand is [28, 39, 26, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has drawn a 95 from bag Y
+player 1004 hand is [28, 39, 26, 93, 26, 84, 79, 67, 24, 93]
+player 1004 has discarded a 79 from bag B
+player 1004 hand is [28, 39, 26, 93, 26, 84, 95, 67, 24, 93]
+player 1004 has drawn a 75 from bag Y
+player 1004 hand is [28, 39, 26, 93, 26, 84, 95, 67, 24, 93]
+player 1004 has discarded a 95 from bag B
+player 1004 hand is [28, 39, 26, 93, 26, 84, 75, 67, 24, 93]
+player 1004 has drawn a 47 from bag Y
+player 1004 hand is [28, 39, 26, 93, 26, 84, 75, 67, 24, 93]
+player 1004 has discarded a 26 from bag B
+player 1004 hand is [28, 39, 47, 93, 26, 84, 75, 67, 24, 93]
+player 1004 has drawn a 65 from bag Z
+player 1004 hand is [28, 39, 47, 93, 26, 84, 75, 67, 24, 93]
+player 1004 has discarded a 24 from bag C
+player 1004 hand is [28, 39, 47, 93, 26, 84, 75, 67, 65, 93]
+player 1004 has drawn a 27 from bag Z
+player 1004 hand is [28, 39, 47, 93, 26, 84, 75, 67, 65, 93]
+player 1004 has discarded a 93 from bag C
+player 1004 hand is [28, 39, 47, 27, 26, 84, 75, 67, 65, 93]
+player 1004 has drawn a 40 from bag X
+player 1004 hand is [28, 39, 47, 27, 26, 84, 75, 67, 65, 93]
+player 1004 has discarded a 84 from bag A
+player 1004 hand is [28, 39, 47, 27, 26, 40, 75, 67, 65, 93]
+player 1004 has drawn a 66 from bag X
+player 1004 hand is [28, 39, 47, 27, 26, 40, 75, 67, 65, 93]
+player 1004 has discarded a 27 from bag A
+player 1004 hand is [28, 39, 47, 66, 26, 40, 75, 67, 65, 93]
+player 1004 has drawn a 38 from bag Z
+player 1004 hand is [28, 39, 47, 66, 26, 40, 75, 67, 65, 93]
+player 1004 has discarded a 26 from bag C
+player 1004 hand is [28, 39, 47, 66, 38, 40, 75, 67, 65, 93]
+player 1004 has drawn a 83 from bag Y
+player 1004 hand is [28, 39, 47, 66, 38, 40, 75, 67, 65, 93]
+player 1004 has discarded a 38 from bag B
+player 1004 hand is [28, 39, 47, 66, 83, 40, 75, 67, 65, 93]
+player 1004 has drawn a 72 from bag Y
+player 1004 hand is [28, 39, 47, 66, 83, 40, 75, 67, 65, 93]
+player 1004 has discarded a 75 from bag B
+player 1004 hand is [28, 39, 47, 66, 83, 40, 72, 67, 65, 93]
+player 1004 has drawn a 63 from bag X
+player 1004 hand is [28, 39, 47, 66, 83, 40, 72, 67, 65, 93]
+player 1004 has discarded a 39 from bag A
+player 1004 hand is [28, 63, 47, 66, 83, 40, 72, 67, 65, 93]
+player 1004 has drawn a 91 from bag X
+player 1004 hand is [28, 63, 47, 66, 83, 40, 72, 67, 65, 93]
+player 1004 has discarded a 47 from bag A
+player 1004 hand is [28, 63, 91, 66, 83, 40, 72, 67, 65, 93]
+player 1004 has drawn a 42 from bag Z
+player 1004 hand is [28, 63, 91, 66, 83, 40, 72, 67, 65, 93]
+player 1004 has discarded a 83 from bag C
+player 1004 hand is [28, 63, 91, 66, 42, 40, 72, 67, 65, 93]
+player 1004 has drawn a 6 from bag X
+player 1004 hand is [28, 63, 91, 66, 42, 40, 72, 67, 65, 93]
+player 1004 has discarded a 65 from bag A
+player 1004 hand is [28, 63, 91, 66, 42, 40, 72, 67, 6, 93]
+player 1004 has drawn a 0 from bag X
+player 1004 hand is [28, 63, 91, 66, 42, 40, 72, 67, 6, 93]
+player 1004 has discarded a 72 from bag A
+player 1004 hand is [28, 63, 91, 66, 42, 40, 0, 67, 6, 93]
+player 1004 has drawn a 61 from bag Y
+player 1004 hand is [28, 63, 91, 66, 42, 40, 0, 67, 6, 93]
+player 1004 has discarded a 66 from bag B
+player 1004 hand is [28, 63, 91, 61, 42, 40, 0, 67, 6, 93]
+player 1004 has drawn a 16 from bag Y
+player 1004 hand is [28, 63, 91, 61, 42, 40, 0, 67, 6, 93]
+player 1004 has discarded a 0 from bag B
+player 1004 hand is [28, 63, 91, 61, 42, 40, 16, 67, 6, 93]
+player 1004 has drawn a 15 from bag Z
+player 1004 hand is [28, 63, 91, 61, 42, 40, 16, 67, 6, 93]
+player 1004 has discarded a 67 from bag C
+player 1004 hand is [28, 63, 91, 61, 42, 40, 16, 15, 6, 93]
+player 1004 has drawn a 38 from bag X
+player 1004 hand is [28, 63, 91, 61, 42, 40, 16, 15, 6, 93]
+player 1004 has discarded a 40 from bag A
+player 1004 hand is [28, 63, 91, 61, 42, 38, 16, 15, 6, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [28, 63, 91, 61, 42, 38, 16, 15, 6, 93]
+player 1004 has discarded a 42 from bag A
+player 1004 hand is [28, 63, 91, 61, 39, 38, 16, 15, 6, 93]
+player 1004 has drawn a 25 from bag X
+player 1004 hand is [28, 63, 91, 61, 39, 38, 16, 15, 6, 93]
+player 1004 has discarded a 63 from bag A
+player 1004 hand is [28, 25, 91, 61, 39, 38, 16, 15, 6, 93]
+player 1004 has drawn a 48 from bag Y
+player 1004 hand is [28, 25, 91, 61, 39, 38, 16, 15, 6, 93]
+player 1004 has discarded a 28 from bag B
+player 1004 hand is [48, 25, 91, 61, 39, 38, 16, 15, 6, 93]
+player 1004 has drawn a 31 from bag Y
+player 1004 hand is [48, 25, 91, 61, 39, 38, 16, 15, 6, 93]
+player 1004 has discarded a 61 from bag B
+player 1004 hand is [48, 25, 91, 31, 39, 38, 16, 15, 6, 93]
+player 1004 has drawn a 96 from bag X
+player 1004 hand is [48, 25, 91, 31, 39, 38, 16, 15, 6, 93]
+player 1004 has discarded a 16 from bag A
+player 1004 hand is [48, 25, 91, 31, 39, 38, 96, 15, 6, 93]
+player 1004 has drawn a 53 from bag X
+player 1004 hand is [48, 25, 91, 31, 39, 38, 96, 15, 6, 93]
+player 1004 has discarded a 38 from bag A
+player 1004 hand is [48, 25, 91, 31, 39, 53, 96, 15, 6, 93]
+player 1004 has drawn a 54 from bag Z
+player 1004 hand is [48, 25, 91, 31, 39, 53, 96, 15, 6, 93]
+player 1004 has discarded a 31 from bag C
+player 1004 hand is [48, 25, 91, 54, 39, 53, 96, 15, 6, 93]
+player 1004 has drawn a 97 from bag Y
+player 1004 hand is [48, 25, 91, 54, 39, 53, 96, 15, 6, 93]
+player 1004 has discarded a 96 from bag B
+player 1004 hand is [48, 25, 91, 54, 39, 53, 97, 15, 6, 93]
+player 1004 has drawn a 67 from bag Z
+player 1004 hand is [48, 25, 91, 54, 39, 53, 97, 15, 6, 93]
+player 1004 has discarded a 25 from bag C
+player 1004 hand is [48, 67, 91, 54, 39, 53, 97, 15, 6, 93]
+player 1004 has drawn a 7 from bag X
+player 1004 hand is [48, 67, 91, 54, 39, 53, 97, 15, 6, 93]
+player 1004 has discarded a 67 from bag A
+player 1004 hand is [48, 7, 91, 54, 39, 53, 97, 15, 6, 93]
+player 1004 has drawn a 29 from bag X
+player 1004 hand is [48, 7, 91, 54, 39, 53, 97, 15, 6, 93]
+player 1004 has discarded a 54 from bag A
+player 1004 hand is [48, 7, 91, 29, 39, 53, 97, 15, 6, 93]
+player 1004 has drawn a 57 from bag Y
+player 1004 hand is [48, 7, 91, 29, 39, 53, 97, 15, 6, 93]
+player 1004 has discarded a 7 from bag B
+player 1004 hand is [48, 57, 91, 29, 39, 53, 97, 15, 6, 93]
+player 1004 has drawn a 90 from bag X
+player 1004 hand is [48, 57, 91, 29, 39, 53, 97, 15, 6, 93]
+player 1004 has discarded a 15 from bag A
+player 1004 hand is [48, 57, 91, 29, 39, 53, 97, 90, 6, 93]
+player 1004 has drawn a 61 from bag X
+player 1004 hand is [48, 57, 91, 29, 39, 53, 97, 90, 6, 93]
+player 1004 has discarded a 29 from bag A
+player 1004 hand is [48, 57, 91, 61, 39, 53, 97, 90, 6, 93]
+player 1004 has drawn a 98 from bag Y
+player 1004 hand is [48, 57, 91, 61, 39, 53, 97, 90, 6, 93]
+player 1004 has discarded a 48 from bag B
+player 1004 hand is [98, 57, 91, 61, 39, 53, 97, 90, 6, 93]
+player 1004 has drawn a 31 from bag X
+player 1004 hand is [98, 57, 91, 61, 39, 53, 97, 90, 6, 93]
+player 1004 has discarded a 61 from bag A
+player 1004 hand is [98, 57, 91, 31, 39, 53, 97, 90, 6, 93]
+player 1004 has drawn a 99 from bag Y
+player 1004 hand is [98, 57, 91, 31, 39, 53, 97, 90, 6, 93]
+player 1004 has discarded a 98 from bag B
+player 1004 hand is [99, 57, 91, 31, 39, 53, 97, 90, 6, 93]
+player 1004 has drawn a 70 from bag Y
+player 1004 hand is [99, 57, 91, 31, 39, 53, 97, 90, 6, 93]
+player 1004 has discarded a 90 from bag B
+player 1004 hand is [99, 57, 91, 31, 39, 53, 97, 70, 6, 93]
+player 1004 has drawn a 83 from bag Z
+player 1004 hand is [99, 57, 91, 31, 39, 53, 97, 70, 6, 93]
+player 1004 has discarded a 91 from bag C
+player 1004 hand is [99, 57, 83, 31, 39, 53, 97, 70, 6, 93]
+player 1004 has drawn a 72 from bag Y
+player 1004 hand is [99, 57, 83, 31, 39, 53, 97, 70, 6, 93]
+player 1004 has discarded a 97 from bag B
+player 1004 hand is [99, 57, 83, 31, 39, 53, 72, 70, 6, 93]
+player 1004 has drawn a 29 from bag Z
+player 1004 hand is [99, 57, 83, 31, 39, 53, 72, 70, 6, 93]
+player 1004 has discarded a 31 from bag C
+player 1004 hand is [99, 57, 83, 29, 39, 53, 72, 70, 6, 93]
+player 1004 has drawn a 76 from bag X
+player 1004 hand is [99, 57, 83, 29, 39, 53, 72, 70, 6, 93]
+player 1004 has discarded a 6 from bag A
+player 1004 hand is [99, 57, 83, 29, 39, 53, 72, 70, 76, 93]
+player 1004 has drawn a 51 from bag X
+player 1004 hand is [99, 57, 83, 29, 39, 53, 72, 70, 76, 93]
+player 1004 has discarded a 76 from bag A
+player 1004 hand is [99, 57, 83, 29, 39, 53, 72, 70, 51, 93]
+player 1004 has drawn a 56 from bag X
+player 1004 hand is [99, 57, 83, 29, 39, 53, 72, 70, 51, 93]
+player 1004 has discarded a 83 from bag A
+player 1004 hand is [99, 57, 56, 29, 39, 53, 72, 70, 51, 93]
+player 1004 has drawn a 70 from bag Y
+player 1004 hand is [99, 57, 56, 29, 39, 53, 72, 70, 51, 93]
+player 1004 has discarded a 29 from bag B
+player 1004 hand is [99, 57, 56, 70, 39, 53, 72, 70, 51, 93]
+player 1004 has drawn a 20 from bag Z
+player 1004 hand is [99, 57, 56, 70, 39, 53, 72, 70, 51, 93]
+player 1004 has discarded a 72 from bag C
+player 1004 hand is [99, 57, 56, 70, 39, 53, 20, 70, 51, 93]
+player 1004 has drawn a 32 from bag Y
+player 1004 hand is [99, 57, 56, 70, 39, 53, 20, 70, 51, 93]
+player 1004 has discarded a 20 from bag B
+player 1004 hand is [99, 57, 56, 70, 39, 53, 32, 70, 51, 93]
+player 1004 has drawn a 66 from bag Z
+player 1004 hand is [99, 57, 56, 70, 39, 53, 32, 70, 51, 93]
+player 1004 has discarded a 51 from bag C
+player 1004 hand is [99, 57, 56, 70, 39, 53, 32, 70, 66, 93]
+player 1004 has drawn a 95 from bag Z
+player 1004 hand is [99, 57, 56, 70, 39, 53, 32, 70, 66, 93]
+player 1004 has discarded a 70 from bag C
+player 1004 hand is [99, 57, 56, 70, 39, 53, 32, 95, 66, 93]
+player 1004 has drawn a 82 from bag X
+player 1004 hand is [99, 57, 56, 70, 39, 53, 32, 95, 66, 93]
+player 1004 has discarded a 56 from bag A
+player 1004 hand is [99, 57, 82, 70, 39, 53, 32, 95, 66, 93]
+player 1004 has drawn a 63 from bag Y
+player 1004 hand is [99, 57, 82, 70, 39, 53, 32, 95, 66, 93]
+player 1004 has discarded a 95 from bag B
+player 1004 hand is [99, 57, 82, 70, 39, 53, 32, 63, 66, 93]
+player 1004 has drawn a 85 from bag Z
+player 1004 hand is [99, 57, 82, 70, 39, 53, 32, 63, 66, 93]
+player 1004 has discarded a 70 from bag C
+player 1004 hand is [99, 57, 82, 85, 39, 53, 32, 63, 66, 93]
+player 1004 has drawn a 7 from bag Y
+player 1004 hand is [99, 57, 82, 85, 39, 53, 32, 63, 66, 93]
+player 1004 has discarded a 82 from bag B
+player 1004 hand is [99, 57, 7, 85, 39, 53, 32, 63, 66, 93]
+player 1004 has drawn a 28 from bag Z
+player 1004 hand is [99, 57, 7, 85, 39, 53, 32, 63, 66, 93]
+player 1004 has discarded a 99 from bag C
+player 1004 hand is [28, 57, 7, 85, 39, 53, 32, 63, 66, 93]
+player 1004 has drawn a 92 from bag Z
+player 1004 hand is [28, 57, 7, 85, 39, 53, 32, 63, 66, 93]
+player 1004 has discarded a 66 from bag C
+player 1004 hand is [28, 57, 7, 85, 39, 53, 32, 63, 92, 93]
+player 1004 has drawn a 2 from bag Z
+player 1004 hand is [28, 57, 7, 85, 39, 53, 32, 63, 92, 93]
+player 1004 has discarded a 7 from bag C
+player 1004 hand is [28, 57, 2, 85, 39, 53, 32, 63, 92, 93]
+player 1004 has drawn a 84 from bag Z
+player 1004 hand is [28, 57, 2, 85, 39, 53, 32, 63, 92, 93]
+player 1004 has discarded a 85 from bag C
+player 1004 hand is [28, 57, 2, 84, 39, 53, 32, 63, 92, 93]
+player 1004 has drawn a 16 from bag Z
+player 1004 hand is [28, 57, 2, 84, 39, 53, 32, 63, 92, 93]
+player 1004 has discarded a 39 from bag C
+player 1004 hand is [28, 57, 2, 84, 16, 53, 32, 63, 92, 93]
+player 1004 has drawn a 55 from bag X
+player 1004 hand is [28, 57, 2, 84, 16, 53, 32, 63, 92, 93]
+player 1004 has discarded a 2 from bag A
+player 1004 hand is [28, 57, 55, 84, 16, 53, 32, 63, 92, 93]
+player 1004 has drawn a 26 from bag Y
+player 1004 hand is [28, 57, 55, 84, 16, 53, 32, 63, 92, 93]
+player 1004 has discarded a 84 from bag B
+player 1004 hand is [28, 57, 55, 26, 16, 53, 32, 63, 92, 93]
+player 1004 has drawn a 80 from bag X
+player 1004 hand is [28, 57, 55, 26, 16, 53, 32, 63, 92, 93]
+player 1004 has discarded a 92 from bag A
+player 1004 hand is [28, 57, 55, 26, 16, 53, 32, 63, 80, 93]
+player 1004 has drawn a 9 from bag X
+player 1004 hand is [28, 57, 55, 26, 16, 53, 32, 63, 80, 93]
+player 1004 has discarded a 55 from bag A
+player 1004 hand is [28, 57, 9, 26, 16, 53, 32, 63, 80, 93]
+player 1004 has drawn a 39 from bag Y
+player 1004 hand is [28, 57, 9, 26, 16, 53, 32, 63, 80, 93]
+player 1004 has discarded a 57 from bag B
+player 1004 hand is [28, 39, 9, 26, 16, 53, 32, 63, 80, 93]
+player 1004 has drawn a 87 from bag Z
+player 1004 hand is [28, 39, 9, 26, 16, 53, 32, 63, 80, 93]
+player 1004 has discarded a 80 from bag C
+player 1004 hand is [28, 39, 9, 26, 16, 53, 32, 63, 87, 93]
+player 1004 has drawn a 38 from bag Y
+player 1004 hand is [28, 39, 9, 26, 16, 53, 32, 63, 87, 93]
+player 1004 has discarded a 39 from bag B
+player 1004 hand is [28, 38, 9, 26, 16, 53, 32, 63, 87, 93]
+player 1004 has drawn a 65 from bag Y
+player 1004 hand is [28, 38, 9, 26, 16, 53, 32, 63, 87, 93]
+player 1004 has discarded a 38 from bag B
+player 1004 hand is [28, 65, 9, 26, 16, 53, 32, 63, 87, 93]
+player 1004 has drawn a 46 from bag Y
+player 1004 hand is [28, 65, 9, 26, 16, 53, 32, 63, 87, 93]
+player 1004 has discarded a 87 from bag B
+player 1004 hand is [28, 65, 9, 26, 16, 53, 32, 63, 46, 93]
+player 1004 has drawn a 25 from bag Z
+player 1004 hand is [28, 65, 9, 26, 16, 53, 32, 63, 46, 93]
+player 1004 has discarded a 28 from bag C
+player 1004 hand is [25, 65, 9, 26, 16, 53, 32, 63, 46, 93]
+player 1004 has drawn a 50 from bag X
+player 1004 hand is [25, 65, 9, 26, 16, 53, 32, 63, 46, 93]
+player 1004 has discarded a 32 from bag A
+player 1004 hand is [25, 65, 9, 26, 16, 53, 50, 63, 46, 93]
+player 1004 has drawn a 31 from bag Y
+player 1004 hand is [25, 65, 9, 26, 16, 53, 50, 63, 46, 93]
+player 1004 has discarded a 25 from bag B
+player 1004 hand is [31, 65, 9, 26, 16, 53, 50, 63, 46, 93]
+player 1004 has drawn a 88 from bag Y
+player 1004 hand is [31, 65, 9, 26, 16, 53, 50, 63, 46, 93]
+player 1004 has discarded a 53 from bag B
+player 1004 hand is [31, 65, 9, 26, 16, 88, 50, 63, 46, 93]
+player 1004 has drawn a 72 from bag Z
+player 1004 hand is [31, 65, 9, 26, 16, 88, 50, 63, 46, 93]
+player 1004 has discarded a 9 from bag C
+player 1004 hand is [31, 65, 72, 26, 16, 88, 50, 63, 46, 93]
+player 1004 has drawn a 55 from bag X
+player 1004 hand is [31, 65, 72, 26, 16, 88, 50, 63, 46, 93]
+player 1004 has discarded a 72 from bag A
+player 1004 hand is [31, 65, 55, 26, 16, 88, 50, 63, 46, 93]
+player 1004 has drawn a 58 from bag Z
+player 1004 hand is [31, 65, 55, 26, 16, 88, 50, 63, 46, 93]
+player 1004 has discarded a 50 from bag C
+player 1004 hand is [31, 65, 55, 26, 16, 88, 58, 63, 46, 93]
+player 1004 has drawn a 84 from bag Z
+player 1004 hand is [31, 65, 55, 26, 16, 88, 58, 63, 46, 93]
+player 1004 has discarded a 63 from bag C
+player 1004 hand is [31, 65, 55, 26, 16, 88, 58, 84, 46, 93]
+player 1004 has drawn a 39 from bag X
+player 1004 hand is [31, 65, 55, 26, 16, 88, 58, 84, 46, 93]
+player 1004 has discarded a 65 from bag A
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 84, 46, 93]
+player 1004 has drawn a 2 from bag Y
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 84, 46, 93]
+player 1004 has discarded a 46 from bag B
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 84, 2, 93]
+player 1004 has drawn a 51 from bag Z
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 84, 2, 93]
+player 1004 has discarded a 84 from bag C
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 51, 2, 93]
+player 1004 has drawn a 31 from bag Z
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 51, 2, 93]
+player 1004 has discarded a 51 from bag C
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 31, 2, 93]
+player 1004 has drawn a 20 from bag Z
+player 1004 hand is [31, 39, 55, 26, 16, 88, 58, 31, 2, 93]
+player 1004 has discarded a 26 from bag C
+player 1004 hand is [31, 39, 55, 20, 16, 88, 58, 31, 2, 93]
+player 1004 has drawn a 67 from bag Z
+player 1004 hand is [31, 39, 55, 20, 16, 88, 58, 31, 2, 93]
+player 1004 has discarded a 39 from bag C
+player 1004 hand is [31, 67, 55, 20, 16, 88, 58, 31, 2, 93]
+player 1004 has drawn a 37 from bag Z
+player 1004 hand is [31, 67, 55, 20, 16, 88, 58, 31, 2, 93]
+player 1004 has discarded a 20 from bag C
+player 1004 hand is [31, 67, 55, 37, 16, 88, 58, 31, 2, 93]
+player 1004 has drawn a 38 from bag Z
+player 1004 hand is [31, 67, 55, 37, 16, 88, 58, 31, 2, 93]
+player 1004 has discarded a 88 from bag C
+player 1004 hand is [31, 67, 55, 37, 16, 38, 58, 31, 2, 93]
+player 1004 has drawn a 0 from bag Z
+player 1004 hand is [31, 67, 55, 37, 16, 38, 58, 31, 2, 93]
+player 1004 has discarded a 0 from bag C
+player 1004 hand is [31, 67, 55, 37, 16, 38, 58, 31, 2, 93]
+player 1004 has drawn a 96 from bag Y
+player 1004 hand is [31, 67, 55, 37, 16, 38, 58, 31, 2, 93]
+player 1004 has discarded a 37 from bag B
+player 1004 hand is [31, 67, 55, 96, 16, 38, 58, 31, 2, 93]
+player 1004 has drawn a 82 from bag X
+player 1004 hand is [31, 67, 55, 96, 16, 38, 58, 31, 2, 93]
+player 1004 has discarded a 31 from bag A
+player 1004 hand is [31, 67, 55, 96, 16, 38, 58, 82, 2, 93]
+player 1004 has drawn a 79 from bag Y
+player 1004 hand is [31, 67, 55, 96, 16, 38, 58, 82, 2, 93]
+player 1004 has discarded a 67 from bag B
+player 1004 hand is [31, 79, 55, 96, 16, 38, 58, 82, 2, 93]
+player 1004 has drawn a 47 from bag X
+player 1004 hand is [31, 79, 55, 96, 16, 38, 58, 82, 2, 93]
+player 1004 has discarded a 96 from bag A
+player 1004 hand is [31, 79, 55, 47, 16, 38, 58, 82, 2, 93]
+player 1004 has drawn a 77 from bag X
+player 1004 hand is [31, 79, 55, 47, 16, 38, 58, 82, 2, 93]
+player 1004 has discarded a 38 from bag A
+player 1004 hand is [31, 79, 55, 47, 16, 77, 58, 82, 2, 93]
+player 1004 has drawn a 86 from bag Z
+player 1004 hand is [31, 79, 55, 47, 16, 77, 58, 82, 2, 93]
+player 1004 has discarded a 47 from bag C
+player 1004 hand is [31, 79, 55, 86, 16, 77, 58, 82, 2, 93]
+player 1004 has drawn a 87 from bag X
+player 1004 hand is [31, 79, 55, 86, 16, 77, 58, 82, 2, 93]
+player 1004 has discarded a 58 from bag A
+player 1004 hand is [31, 79, 55, 86, 16, 77, 87, 82, 2, 93]
+player 1004 has drawn a 33 from bag X
+player 1004 hand is [31, 79, 55, 86, 16, 77, 87, 82, 2, 93]
+player 1004 has discarded a 86 from bag A
+player 1004 hand is [31, 79, 55, 33, 16, 77, 87, 82, 2, 93]
+player 1004 has drawn a 66 from bag Z
+player 1004 hand is [31, 79, 55, 33, 16, 77, 87, 82, 2, 93]
+player 1004 has discarded a 33 from bag C
+player 1004 hand is [31, 79, 55, 66, 16, 77, 87, 82, 2, 93]
+player 1004 has drawn a 99 from bag Z
+player 1004 hand is [31, 79, 55, 66, 16, 77, 87, 82, 2, 93]
+player 1004 has discarded a 77 from bag C
+player 1004 hand is [31, 79, 55, 66, 16, 99, 87, 82, 2, 93]
+player 1004 has drawn a 49 from bag Y
+player 1004 hand is [31, 79, 55, 66, 16, 99, 87, 82, 2, 93]
+player 1004 has discarded a 2 from bag B
+player 1004 hand is [31, 79, 55, 66, 16, 99, 87, 82, 49, 93]
+player 1004 has drawn a 83 from bag Z
+player 1004 hand is [31, 79, 55, 66, 16, 99, 87, 82, 49, 93]
+player 1004 has discarded a 66 from bag C
+player 1004 hand is [31, 79, 55, 83, 16, 99, 87, 82, 49, 93]
+player 1004 has drawn a 61 from bag X
+player 1004 hand is [31, 79, 55, 83, 16, 99, 87, 82, 49, 93]
+player 1004 has discarded a 87 from bag A
+player 1004 hand is [31, 79, 55, 83, 16, 99, 61, 82, 49, 93]
