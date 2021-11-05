@@ -41,6 +41,13 @@ public class Playerthread extends Thread {
         while (!Won) {
             if (ThisPlayer.getTotalWeight() == 100){
                 Won = true;
+                try {
+                    assert WriteToPlayerFile != null;
+                    WriteToPlayerFile.write("player: "+ ThisPlayer.getPlayerID()+" Has won!"+ "\n");
+                    WriteToPlayerFile.flush();
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
                 System.out.println("player: "+ ThisPlayer.getPlayerID()+" Has won!");
                 break;
                 //have each thread if one stopped it did then stop all(maybe use a local variable in the Game class (boolean)

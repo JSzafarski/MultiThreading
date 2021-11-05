@@ -36,7 +36,7 @@ public class PebbleGame {
         bagC.setBagPair(bagZ);
     }
 
-    public void start_game(){//if the under eneters e then the program must exit.
+    public void start_game(){//if the under enters e then the program must exit.
         int numPlayers;//number of players
         ArrayList<Integer> pebblesFromFile = new ArrayList<Integer>();
         setBagPairs();
