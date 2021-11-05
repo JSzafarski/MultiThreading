@@ -128,7 +128,7 @@ public class PebbleGame {
                 y_axis++;
                 StringBuilder CurrentString = new StringBuilder();
                 while(x <= StringOfNumbers.length()-1) {//might need fixing
-                    if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",")){//fix
+                    if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",") || x <= StringOfNumbers.length()-1 ){//fix
                         if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
                             CurrentString.append(StringOfNumbers.charAt(x));
                         }else{
