@@ -123,14 +123,18 @@ public class PebbleGame {
             reader = new BufferedReader(new FileReader(filename));//grabs the text file specified
             //we may need to read  files and text and read accordingly(if statement)
             while((StringOfNumbers = reader.readLine()) != null){//this loop is going to be used to read a text file (each line)
-                //StringOfNumbers = reader.readLine();
                 int x = 0;
                 y_axis++;
                 StringBuilder CurrentString = new StringBuilder();
-                while(x <= StringOfNumbers.length()-1) {//might need fixing
-                    if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",") || x <= StringOfNumbers.length()-1 ){//fix
+                while(x <= StringOfNumbers.length()-1) {
+                    if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",") || !(x+1 > StringOfNumbers.length()-1)){
                         if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
-                            CurrentString.append(StringOfNumbers.charAt(x));
+                            if (x== StringOfNumbers.length()-1){//for the end of line
+                                CurrentString.append(StringOfNumbers.charAt(x));
+
+                            }else {
+                                CurrentString.append(StringOfNumbers.charAt(x));
+                            }
                         }else{
                             errorCount++;
                             ErrorString=ErrorString.concat("type error on line: " + x +" ," );
