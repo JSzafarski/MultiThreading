@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles/pebbles.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles/src/Playerthread.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Playerthread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,11 +36,15 @@
     <setting file="jar://$USER_HOME$/.jdks/openjdk-17/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="208XaYpVSPtEMwX0rOfOXM50V0j" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -81,6 +86,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

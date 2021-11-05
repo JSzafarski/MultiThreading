@@ -1,0 +1,1 @@
+player 1003 has drawn a 0from bag Xplayer 1003 hand is [83, 84, 68, 74, 41, 43, 13, 77, 90, 76]player 1003 has drawn a 0from bag Aplayer 1003 hand is [83, 84, 68, 74, 41, 43, 13, 77, 90, 76]

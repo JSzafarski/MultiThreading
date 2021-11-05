@@ -1,18 +1,23 @@
 import java.util.*;
-import java.io.File;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 
 //we need to counteract starvation
 public class PebbleGame {
 
-    public static void main(String[] args){//this can be confsuing as its instance of a instance of pebble game that creates instance of players
+    public static void main(String[] args){//this can be confusing as its instance of a instance of pebble game that creates instance of players
         PebbleGame game = new PebbleGame();
         game.start_game();
+
     }
 
-     Player[] playerList;
-     Thread[] threadList;
+    ArrayList<Player> Players = new ArrayList<>();
+    ArrayList<Thread> Threads = new ArrayList<>();
+
+    Player[] playerList = new Player[100];
+     Thread[] threadList = new Thread[100];
 
     //instantiating black bags
     static Bag bagX = new Bag("BLACK");
@@ -101,27 +106,29 @@ public class PebbleGame {
                     System.out.println("invalid input ,enter again!");//shows error
                 }
             } catch (NumberFormatException | IOException e) {
-                System.out.println(e.getMessage());//shows error
+                System.out.println("w");//fix
+                //shows error
             }
         }
     }
 
     public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
+        BufferedReader reader;
         String StringOfNumbers;
-        Scanner scanner;
         int errorCount = 0;
         int temporaryint  = 0;
-        String text = "";
+        int y_axis = 0;
         String ErrorString ="We have detected problems inside the file as follows: ";
         try {
-            File file = new File(filename); // java.io.File(source file with text)
-            scanner = new Scanner(file);    // java.util.Scanner
-            while(scanner.hasNextLine()){//this loop is going to be used to read a text file (each line)
-                StringOfNumbers = scanner.nextLine();
+            reader = new BufferedReader(new FileReader(filename));//grabs the text file specified
+            //we may need to read  files and text and read accordingly(if statement)
+            while((StringOfNumbers = reader.readLine()) != null){//this loop is going to be used to read a text file (each line)
+                //StringOfNumbers = reader.readLine();
                 int x = 0;
+                y_axis++;
                 StringBuilder CurrentString = new StringBuilder();
-                while(x < StringOfNumbers.length() + 1) {//might need fixing
+                while(x <= StringOfNumbers.length()-1) {//might need fixing
                     if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",")){//fix
                         if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
                             CurrentString.append(StringOfNumbers.charAt(x));
@@ -132,7 +139,7 @@ public class PebbleGame {
                         }
                     }else{
                         if(CurrentString.toString().equals("")){
-                            ErrorString=ErrorString.concat("empty entry on line: " + x +" ," );
+                            ErrorString=ErrorString.concat("empty entry on line: "+ y_axis +" and index: "+ x +" ," );
                             errorCount++;
                         }else{
                             temporaryint = Integer.parseInt(CurrentString.toString());
@@ -146,7 +153,7 @@ public class PebbleGame {
                         }
                         //save the number into an array and proceed gathering more numbers
                     }
-                    CurrentString.append(StringOfNumbers.charAt(x));
+                    //CurrentString.append(StringOfNumbers.charAt(x));
                     x++;
                 }
             }
@@ -154,6 +161,7 @@ public class PebbleGame {
                 //throw an exception
                 throw new InvalidfileExeption(ErrorString.concat("total errors:" + errorCount));
             }else{
+                System.out.println(pebbles);
                 return pebbles;
             }
         } catch (IOException e) {
@@ -176,7 +184,7 @@ public class PebbleGame {
         } else {
             NumberOfIterations = 1;
         }
-            for (int i = 1; i <= NumberOfIterations; i++) {
+            for (int i = 0; i <= NumberOfIterations-1; i++) {
                 replacementpebble = bagX.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty
                     bagX.refillBag();
@@ -197,7 +205,8 @@ public class PebbleGame {
                     }
                 }
             }
-            if(JustDrawTen){//sets the player's hand
+            if(JustDrawTen){
+                //sets the player's hand
                 thisPlayer.setPebbles(TenPebbles);
             }
     }
@@ -211,7 +220,7 @@ public class PebbleGame {
         } else {
             NumberOfIterations = 1;
         }
-            for (int i = 1; i <= NumberOfIterations; i++) {
+            for (int i = 0; i <= NumberOfIterations-1; i++) {
                 replacementpebble = bagY.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty
                     bagY.refillBag();
@@ -246,7 +255,7 @@ public class PebbleGame {
         } else {
             NumberOfIterations = 1;
         }
-            for (int i = 1; i <= NumberOfIterations; i++) {
+            for (int i = 0; i <= NumberOfIterations-1; i++) {
                 replacementpebble = bagZ.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty
                     bagZ.refillBag();
@@ -286,8 +295,9 @@ public class PebbleGame {
         threadList = new Thread[numPlayers-1];
         //creates each player object and thread for the specified number of players
         PebbleGame DeafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
-        for(int i = 0; i <= numPlayers-1; i++){
-            DeafultPebblegame.playerList[i] = new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
+        for(int i = 0; i <= numPlayers; i++){
+            //DeafultPebblegame.Players.add(DeafultPebblegame.new Player(1000+i));
+            DeafultPebblegame.playerList[i]  = DeafultPebblegame.new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
             threadList[i] = new Playerthread(DeafultPebblegame.playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
             threadList[i].start();//pass the whole
         }

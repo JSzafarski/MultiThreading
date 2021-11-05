@@ -65,7 +65,7 @@ public class Playerthread extends Thread {
             int OldPebble = 0;
             String LastBagDrawn = "";
             String LastBagDiscarded = "" ;
-            for (int i = 0 ;i<=10;i++){
+            for (int i = 0 ;i<=9;i++){
                 if(TempPebbleArray[i]!=ThisPlayer.getPebbles()[i]){
                     NewPebble = ThisPlayer.getPebbles()[i];
                     OldPebble = TempPebbleArray[i];

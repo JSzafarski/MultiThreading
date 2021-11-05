@@ -1,0 +1,1 @@
+player 1001 has drawn a 0from bag Yplayer 1001 hand is [40, 89, 46, 2, 67, 58, 33, 94, 26, 62]player 1001 has drawn a 0from bag Bplayer 1001 hand is [40, 89, 46, 2, 67, 58, 33, 94, 26, 62]

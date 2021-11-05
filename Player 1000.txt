@@ -1,0 +1,1 @@
+player 1000 has drawn a 0from bag Zplayer 1000 hand is [43, 95, 85, 72, 27, 20, 52, 7, 60, 92]player 1000 has drawn a 0from bag Cplayer 1000 hand is [43, 95, 85, 72, 27, 20, 52, 7, 60, 92]

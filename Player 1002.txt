@@ -1,0 +1,1 @@
+player 1002 has drawn a 0from bag Zplayer 1002 hand is [8, 38, 28, 64, 24, 44, 35, 96, 63, 48]player 1002 has drawn a 0from bag Cplayer 1002 hand is [8, 38, 28, 64, 24, 44, 35, 96, 63, 48]
