@@ -13,10 +13,7 @@ public class PebbleGame {
 
     }
 
-    ArrayList<Player> Players = new ArrayList<>();
-    ArrayList<Thread> Threads = new ArrayList<>();
-
-    Player[] playerList = new Player[100];
+     Player[] playerList = new Player[100];
      Thread[] threadList = new Thread[100];
 
     //instantiating black bags
@@ -161,7 +158,6 @@ public class PebbleGame {
                 //throw an exception
                 throw new InvalidfileExeption(ErrorString.concat("total errors:" + errorCount));
             }else{
-                System.out.println(pebbles);
                 return pebbles;
             }
         } catch (IOException e) {
@@ -313,10 +309,10 @@ public class PebbleGame {
         String LastBagDrawn;
 
         public int getRandomBag() {
-            return RandomBag;
+            return this.RandomBag;
         }
 
-        public int getTotalWeight() {return totalWeight;}
+        public int getTotalWeight() {return this.totalWeight;}
 
         public void GenerateRandomChoice(){
             this.RandomBag = rand.nextInt(2);
@@ -325,11 +321,11 @@ public class PebbleGame {
         public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
 
         public int getPlayerID() {
-            return playerID;
+            return this.playerID;
         }
 
         public int[] getPebbles() {
-            return pebbles;
+            return this.pebbles;
         }
 
         public void lastBagDrawn(String Bag){
@@ -365,7 +361,6 @@ public class PebbleGame {
                 totalWeight = totalWeight + i;
             }
             this.setTotalWeight(totalWeight);
-
         }
 
         public String getLastBagDrawn() {

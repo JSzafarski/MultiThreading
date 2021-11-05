@@ -41,6 +41,12 @@ public class Playerthread extends Thread {
         }
         while (!hasWon) {
 
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
             if (ThisPlayer.getTotalWeight() == 100){
                 hasWon = true;
                 System.out.println("player: "+ ThisPlayer.playerID+" has won");
@@ -85,7 +91,7 @@ public class Playerthread extends Thread {
             //output this into some texts files
             String String1=("player "+ThisPlayer.getPlayerID()+" has drawn a " + NewPebble + "from bag " + LastBagDrawn);
             String String2=("player "+ThisPlayer.getPlayerID()+" hand is "+ Arrays.toString(TempPebbleArray));
-            String String3=("player "+ThisPlayer.getPlayerID()+" has drawn a " + OldPebble + "from bag " + LastBagDiscarded);
+            String String3=("player "+ThisPlayer.getPlayerID()+" has discarded a " + OldPebble + "from bag " + LastBagDiscarded);
             String String4=("player "+ThisPlayer.getPlayerID()+" hand is "+ Arrays.toString(ThisPlayer.getPebbles()));
             try {
                 assert WriteToPlayerFile != null;
