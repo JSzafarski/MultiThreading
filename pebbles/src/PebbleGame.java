@@ -10,6 +10,8 @@ public class PebbleGame {
     /**
      * @author 690036000
      * @author 700040943
+     * fix reading zero in multiline txt file
+     * fix new line isses not reading numbers properly
      *
      */
 
@@ -387,7 +389,10 @@ public class PebbleGame {
             //DeafultPebblegame.Players.add(DeafultPebblegame.new Player(1000+i));
             DeafultPebblegame.playerList[i]  = DeafultPebblegame.new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
             threadList[i] = new Playerthread(DeafultPebblegame.playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
-            threadList[i].start();//pass the whole
+            //threadList[i].start();//pass the whole
+        }
+        for (Thread playerThread : threadList) {//second for loop created to start threads seperately from their creation with less overhead between each thread start (overhead involved in creating threads) in order to lessen starvation
+            playerThread.start();
         }
     }
 
@@ -453,7 +458,7 @@ public class PebbleGame {
         }
 
         //calculates the total weight of a player's hand
-        public void calculateTotalWeight(){
+        public void calculateTotalWeight(){//make private
             int totalWeight = 0;
             for (int i = 0;i<=9;i++){
                 totalWeight += this.pebbles[i] ;

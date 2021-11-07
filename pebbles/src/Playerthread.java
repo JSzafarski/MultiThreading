@@ -8,6 +8,7 @@ import java.io.FileWriter;
 
 public class Playerthread extends Thread {
     PebbleGame.Player ThisPlayer;//we need to pass instance eof player from game into thread
+    static boolean Won = false;
 
     public Playerthread(PebbleGame.Player PlayerfromGame) {
         ThisPlayer = PlayerfromGame;
@@ -31,7 +32,6 @@ public class Playerthread extends Thread {
         ThisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         PebbleGame.draw10(ThisPlayer);//draws first 10 pebbeles
         ThisPlayer.calculateTotalWeight();//determines the initial total weight of the pebbles
-        boolean Won = false;
         FileWriter WriteToPlayerFile = null;
         try {
             WriteToPlayerFile = new FileWriter("Player "+ThisPlayer.getPlayerID()+".txt");
