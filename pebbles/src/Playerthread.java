@@ -28,9 +28,9 @@ public class Playerthread extends Thread {
     @Override
     public void run() {//this will run each player
         CreateFile();//generate a text file for each player
-        ThisPlayer.calculateTotalWeight();
         ThisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         PebbleGame.draw10(ThisPlayer);//draws first 10 pebbeles
+        ThisPlayer.calculateTotalWeight();//determines the initial total weight of the pebbles
         boolean Won = false;
         FileWriter WriteToPlayerFile = null;
         try {

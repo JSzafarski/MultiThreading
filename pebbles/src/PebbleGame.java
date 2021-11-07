@@ -416,7 +416,7 @@ public class PebbleGame {
             }
         }
 
-        public void updateWeight(int newPebble, int oldPebble){//true = add,false = remove
+        public synchronized void updateWeight(int newPebble, int oldPebble){//true = add,false = remove
             this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
         }
 
@@ -437,9 +437,10 @@ public class PebbleGame {
         //calculates the total weight of a player's hand
         public void calculateTotalWeight(){
             int totalWeight = 0;
-            for (int i : this.getPebbles()) {
-                totalWeight = totalWeight + i;
+            for (int i = 0;i<=9;i++){
+                totalWeight += this.pebbles[i] ;
             }
+            System.out.println(totalWeight);
             this.setTotalWeight(totalWeight);
         }
 
