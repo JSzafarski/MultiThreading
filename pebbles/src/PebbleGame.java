@@ -6,8 +6,18 @@ import java.util.Random;
 
 //we need to counteract starvation
 public class PebbleGame {
+    /**
+     * @author 690036000
+     * @author 700040943
+     *
+     */
 
     public static void main(String[] args){//this can be confusing as its instance of a instance of pebble game that creates instance of players
+        /**
+         * This method creates an instance of the Pebble Game class where the instances of players will be instantiated
+         *
+         */
+
         PebbleGame game = new PebbleGame();
         game.start_game();
     }
@@ -28,6 +38,10 @@ public class PebbleGame {
 
     //method for setting bag pairs of bags
     public static void setBagPairs() {
+        /**
+         *This is a static method that links up the different bags into corresponding pairs to allow more organised transfer of pebbles when refilling the bag
+         *
+         */
         bagX.setBagPair(bagA);
         bagY.setBagPair(bagB);
         bagZ.setBagPair(bagC);
@@ -37,6 +51,11 @@ public class PebbleGame {
     }
 
     public void start_game(){//if the under enters e then the program must exit.
+        /**
+         *fetches user input of players and files necessary to populate the corresponding bags
+         * user is able to enter E or X at any time in the process to either exit the program or Start over
+         *
+         */
         int numPlayers;//number of players
         ArrayList<Integer> pebblesFromFile = new ArrayList<Integer>();
         setBagPairs();
@@ -48,41 +67,48 @@ public class PebbleGame {
         System.out.println("type: X to exit and start over or E to to exit the system completely");
         System.out.println("");
         while (true){//loops until use exits or enters correct information so the program can proceed
-            System.out.println("Please enter the number of players:");
-            String input = Scanner1.nextLine();
-            numPlayers = Integer.parseInt(input);
-            int totalPebbles = 0;
             try {
-                if (numPlayers > 0) {
-                    String file_input;
-                    for (int i = 1; i <= 3; i++) {
-                        System.out.println("Please enter location of bag number " + i + " to load:");
-                        file_input = Scanner1.nextLine();
-                        if (Objects.equals(file_input, "X")||(Objects.equals(file_input, "E"))){
-                            if((Objects.equals(file_input, "E"))){
-                                System.exit(0);
-                            }
-                            break;//exit the loop
-                        } else { //check if the input is valid using try catch block
-                            try{
-                                int s= 0;
-                                while(s<=(read_csv(file_input)).size()-1){
+                boolean exeption = false;
+                int totalPebbles = 0;
+                System.out.println("Please enter the number of players:");
+                String input = Scanner1.nextLine();
+                if (Objects.equals(input, "X")||(Objects.equals(input, "E"))){
+                    if((Objects.equals(input, "E"))){
+                        System.exit(0);
+                    }
+                }else {
+                    numPlayers = Integer.parseInt(input);
+                    if (numPlayers > 0) {
+                        String file_input;
+                        for (int i = 1; i <= 3; i++) {
+                            System.out.println("Please enter location of bag number " + i + " to load:");
+                            file_input = Scanner1.nextLine();
+                            if (Objects.equals(file_input, "X") || (Objects.equals(file_input, "E"))) {
+                                if ((Objects.equals(file_input, "E"))) {
+                                    System.exit(0);
+                                }
+                                exeption = true;
+                                break;//exit the loop
+                            } //check if the input is valid using try catch block
+                            try {
+                                int s = 0;
+                                while (s <= (read_csv(file_input)).size() - 1) {
                                     //populates the pebbles temp array
                                     pebblesFromFile.add(read_csv(file_input).get(s));
                                     s++;
                                 }
-                                if(pebblesFromFile.size()<10){//if some files contains less than 10 pebbles each then throw error as its below spec
+                                if (pebblesFromFile.size() < 10) {//if some files contains less than 10 pebbles each then throw error as its below spec
                                     throw new InvalidfileExeption("file number" + i + " has to have at least 10 pebbles");
-                                }else{
+                                } else {
                                     switch (i) {//uses the for loop to identify which bag is being added to
                                         case 1 -> {
                                             totalPebbles = totalPebbles + pebblesFromFile.size();
                                             bagX.setPebbles(pebblesFromFile);
-                                            }
+                                        }
                                         case 2 -> {
                                             totalPebbles = totalPebbles + pebblesFromFile.size();
                                             bagY.setPebbles(pebblesFromFile);
-                                            }
+                                        }
                                         case 3 -> {
                                             totalPebbles = totalPebbles + pebblesFromFile.size();
                                             bagZ.setPebbles(pebblesFromFile);
@@ -90,28 +116,36 @@ public class PebbleGame {
                                     }
                                     pebblesFromFile.clear();
                                 }
-                            } catch (InvalidfileExeption e) {
+                            } catch (InvalidfileExeption | IOException e) {
+                                exeption = true;
                                 System.out.println(e.getMessage());
+                                break;
                             }
                         }
-                    }
-                    if (totalPebbles < calculate_minPebbles(numPlayers)) {//not enough total pebbles to execute the game
-                        System.out.println("there is not enough pebbles in total form each csv file,please increase that amount");
+                        if(!exeption){
+                            if (totalPebbles < calculate_minPebbles(numPlayers)) {//not enough total pebbles to execute the game
+                                System.out.println("there is not enough pebbles in total from each csv file,please increase that amount");
+                            } else {
+                                RunPlayers(numPlayers);//creates players for the game to execute
+                                break;//all conditions have been met so the program my proceed
+                            }
+                        }
                     } else {
-                        RunPlayers(numPlayers);//creates players for the game to execute
-                        break;//all conditions have been met so the program my proceed
+                        throw new NumberFormatException("Negative value");
                     }
-                } else {
-                    System.out.println("invalid input ,enter again!");//shows error
                 }
-            } catch (NumberFormatException | IOException e) {
-                System.out.println("w");//fix
+            } catch (NumberFormatException   e) {
+                System.out.println("input invalid ; reason: " + e.getMessage());//fix
                 //shows error
             }
         }
     }
 
     public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
+        /**
+         *
+         *
+         */
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         BufferedReader reader;
         String StringOfNumbers;
@@ -127,13 +161,24 @@ public class PebbleGame {
                 y_axis++;
                 StringBuilder CurrentString = new StringBuilder();
                 while(x <= StringOfNumbers.length()-1) {
-                    if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",") || !(x+1 > StringOfNumbers.length()-1)){
+                    if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",") || (x == StringOfNumbers.length()-1)){
                         if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
-                            if (x== StringOfNumbers.length()-1){//for the end of line
-                                CurrentString.append(StringOfNumbers.charAt(x));
-
-                            }else {
-                                CurrentString.append(StringOfNumbers.charAt(x));
+                            CurrentString.append(StringOfNumbers.charAt(x));
+                            if(x == StringOfNumbers.length()-1){
+                                if(CurrentString.toString().equals("")){
+                                    ErrorString=ErrorString.concat("empty entry on line: "+ y_axis +" and index: "+ x +" ," );
+                                    errorCount++;
+                                }else{
+                                    temporaryint = Integer.parseInt(CurrentString.toString());
+                                    if(temporaryint>0){
+                                        pebbles.add(temporaryint);//adds the item to the list
+                                    }else{
+                                        ErrorString=ErrorString.concat("range error on line : " + x +" ," );
+                                        errorCount++;
+                                    }
+                                    CurrentString.setLength(0);
+                                }
+                                break;
                             }
                         }else{
                             errorCount++;
@@ -172,12 +217,20 @@ public class PebbleGame {
     }
 
     public static int calculate_minPebbles(int players){
+        /**
+         *
+         *
+         */
         return 11*players;
     }
 
     //add a queue for threads to avoid starvation.(or idk something to avoid starvation issues)
 
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
+        /**
+         *
+         *
+         */
         int replacementpebble = -1;
         int NumberOfIterations = 0;
         int[] TenPebbles = new int[10];
@@ -214,6 +267,10 @@ public class PebbleGame {
     }
 
     public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean JustDrawTen){
+        /**
+         *
+         *
+         */
         int replacementpebble = -1;
         int NumberOfIterations = 0;
         int[] TenPebbles = new int[10];
@@ -248,6 +305,10 @@ public class PebbleGame {
             }
     }
     public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean JustDrawTen){
+        /**
+         *
+         *
+         */
         int replacementpebble = -1;
         int NumberOfIterations = 0;
         int[] TenPebbles = new int[10];
@@ -284,6 +345,10 @@ public class PebbleGame {
     }
 
     public static synchronized void draw10(Player thisPlayer){//method fills a player's hand
+        /**
+         *
+         *
+         */
         if(thisPlayer.RandomBag==1){//draw 10 from bag X
             PebbleGame.drawAndDiscardFromBagX(thisPlayer,true);
         }else if(thisPlayer.RandomBag==2){//draw 10 from bag Y
@@ -294,6 +359,10 @@ public class PebbleGame {
     }
 
     public void RunPlayers(int numPlayers){
+        /**
+         *
+         *
+         */
         threadList = new Thread[numPlayers];
         //creates each player object and thread for the specified number of players
         PebbleGame DeafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
@@ -306,7 +375,10 @@ public class PebbleGame {
     }
 
      class Player {
-
+         /**
+          *
+          *
+          */
         int RandomBag;
         int  playerID;
         int[] pebbles = new int[10];

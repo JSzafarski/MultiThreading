@@ -4,5 +4,19 @@ public class PebblesTestClass {
     //make sure threading works
     //make sure outputs work
     //ect.....
+//    assert (result - a == b)
+//            assert (result - a == b)
+//            assert (result - a == b)
+//            assert (result - a == b)assert (result - a == b)
+//            assert (result - a == b)
+//            assert (result - a == b)
+//            assert (result - a == b)
+//            assert (result - a == b)
+//            assert (result - a == b)assert (result - a == b)
+
+
+
+
+
 
 }
