@@ -54,7 +54,7 @@ public class PebbleGame {
     public void start_game(){//if the under enters e then the program must exit.
         /**
          *fetches user input of players and files necessary to populate the corresponding bags
-         * user is able to enter E or X at any time in the process to either exit the program or Start over
+         *user is able to enter E or X at any time in the process to either exit the program or Start over
          *
          */
         int numPlayers;//number of players
@@ -156,6 +156,7 @@ public class PebbleGame {
         int y_axis = 0;
         String ErrorString ="We have detected problems inside the file as follows: ";
         try {
+
 //            if (filename.){ to check file type and we will use open csv libary
 //
 //            }else if(){
@@ -163,6 +164,7 @@ public class PebbleGame {
 //            }else{
 //                throw new IOException("file extension not recognised");
 //            }
+
             reader = new BufferedReader(new FileReader(filename));//grabs the text file specified
             //we may need to read  files and text and read accordingly(if statement)
             while((StringOfNumbers = reader.readLine()) != null){//this loop is going to be used to read a text file (each line)
@@ -227,7 +229,7 @@ public class PebbleGame {
 
     public static int calculate_minPebbles(int players){
         /**
-         *determines the miniumum number of pebbbles required for the game to run error free
+         *determines the minimum number of pebbles required for the game to run error free
          *
          */
         return 11*players;
@@ -237,7 +239,9 @@ public class PebbleGame {
 
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean JustDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
         /**
-         *
+         *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+         *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
+         *This class is for picking and discarding  a pebble from bag X and bag A respectively.
          *
          */
         int replacementpebble = -1;
@@ -277,7 +281,9 @@ public class PebbleGame {
 
     public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean JustDrawTen){
         /**
-         *
+         *This class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+         *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
+         *This class is for picking and discarding  a pebble from bag Y and bag B respectively.
          *
          */
         int replacementpebble = -1;
@@ -315,7 +321,9 @@ public class PebbleGame {
     }
     public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean JustDrawTen){
         /**
-         *
+         *This class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+         *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
+         *This class is for picking and discarding  a pebble from bag Z and bag C respectively.
          *
          */
         int replacementpebble = -1;
