@@ -9,10 +9,9 @@
       <change beforePath="$PROJECT_DIR$/Player 1003.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Player 1003.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player 1004.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Player 1004.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player 1005.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Player 1005.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player 1006.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Player 1006.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player 1006.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Player 1007.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/Playerthread.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Playerthread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/pebbles/src/PebbleGame.java</url>
-          <line>52</line>
+          <line>53</line>
           <properties class="PebbleGame" method="start_game">
             <option name="EMULATED" value="true" />
           </properties>
@@ -112,7 +111,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/pebbles/src/PebbleGame.java</url>
-          <line>141</line>
+          <line>143</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

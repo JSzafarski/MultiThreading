@@ -3,6 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
+//import com.opencsv.CSVReader;
 
 //we need to counteract starvation
 public class PebbleGame {
@@ -83,6 +84,7 @@ public class PebbleGame {
                         for (int i = 1; i <= 3; i++) {
                             System.out.println("Please enter location of bag number " + i + " to load:");
                             file_input = Scanner1.nextLine();
+                            //determine the file extension
                             if (Objects.equals(file_input, "X") || (Objects.equals(file_input, "E"))) {
                                 if ((Objects.equals(file_input, "E"))) {
                                     System.exit(0);
@@ -143,8 +145,8 @@ public class PebbleGame {
 
     public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
         /**
-         *ADD
-         *
+         *Accepts csv or txt files to read player data
+         *returns an array list of the whole file that is being read
          */
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         BufferedReader reader;
@@ -154,6 +156,13 @@ public class PebbleGame {
         int y_axis = 0;
         String ErrorString ="We have detected problems inside the file as follows: ";
         try {
+//            if (filename.){ to check file type and we will use open csv libary
+//
+//            }else if(){
+//
+//            }else{
+//                throw new IOException("file extension not recognised");
+//            }
             reader = new BufferedReader(new FileReader(filename));//grabs the text file specified
             //we may need to read  files and text and read accordingly(if statement)
             while((StringOfNumbers = reader.readLine()) != null){//this loop is going to be used to read a text file (each line)
@@ -218,7 +227,7 @@ public class PebbleGame {
 
     public static int calculate_minPebbles(int players){
         /**
-         *
+         *determines the miniumum number of pebbbles required for the game to run error free
          *
          */
         return 11*players;
@@ -418,6 +427,7 @@ public class PebbleGame {
 
         public synchronized void updateWeight(int newPebble, int oldPebble){//true = add,false = remove
             this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
+            //much more effecicnt than iterating the whole array each time its time complxity is 0(1) instead of O(K)
         }
 
         public Player(int playerID) {
