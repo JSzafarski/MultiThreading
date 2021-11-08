@@ -20,7 +20,7 @@ public class Playerthread extends Thread {
            if(playerFile.createNewFile()){
                System.out.println("INFO: File created! for player :"+thisPlayer.getPlayerID());
            }else{
-               System.out.println("INFO: File does already exist for player(We will override the file) : "+ThisPlayer.getPlayerID());
+               System.out.println("INFO: File does already exist for player(We will override the file) : "+thisPlayer.getPlayerID());
            }
         } catch(IOException e) {
             System.out.println(e.getMessage());
@@ -93,9 +93,9 @@ public class Playerthread extends Thread {
             }
             //output this into some texts files
             String string1=("player "+thisPlayer.getPlayerID()+" has drawn a " + newPebble + " from bag " + lastBagDrawn);
-            String string2=("player "+thisPlayer.getPlayerID()+" hand is "+ Arrays.toString(TempPebbleArray));
+            String string2=("player "+thisPlayer.getPlayerID()+" hand is "+ Arrays.toString(TempPebbleArray).replace("[","").replace("]",""));
             String string3=("player "+thisPlayer.getPlayerID()+" has discarded a " + oldPebble + " from bag " + lastBagDiscarded);
-            String string4=("player "+thisPlayer.getPlayerID()+" hand is "+ Arrays.toString(thisPlayer.getPebbles()));
+            String string4=("player "+thisPlayer.getPlayerID()+" hand is "+ Arrays.toString(thisPlayer.getPebbles()).replace("[","").replace("]",""));
             try {
                 assert writeToPlayerFile != null;
                 writeToPlayerFile.write(string1 + "\n");

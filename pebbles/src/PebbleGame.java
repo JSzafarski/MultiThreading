@@ -177,7 +177,7 @@ public class PebbleGame {
                                         if (temporaryInt > 0) {
                                             pebbles.add(temporaryInt);//adds the item to the list
                                         } else {
-                                            errorString = errorString.concat("range error on line : " + x + " ,");
+                                            errorString = errorString.concat("range error on line : " + positionInArray + " ,");
                                             errorCount++;
                                         }
                                     }
@@ -198,19 +198,19 @@ public class PebbleGame {
                             }
                             if(!legalSpaceFormat){
                                 errorCount++;
-                                errorString=errorString.concat("Invalid spacing on line: "+ y_axis +" and index: "+ x +" ,");
+                                errorString=errorString.concat("Invalid spacing on line: "+ y_axis +" and index: "+ positionInArray +" ,");
                             }
                         }
                     }else{
                         if(currentString.toString().equals("")){
-                            errorString=errorString.concat("empty entry on line: "+ y_axis +" and index: "+ x +" ," );
+                            errorString=errorString.concat("empty entry on line: "+ y_axis +" and index: "+ positionInArray +" ," );
                             errorCount++;
                         }else{
                             temporaryInt = Integer.parseInt(currentString.toString());
                             if(temporaryInt>0){
                                 pebbles.add(temporaryInt);//adds the item to the list
                             }else{
-                                errorString=errorString.concat("range error on line : " + x +" ," );
+                                errorString=errorString.concat("range error on line : " + positionInArray +" ," );
                                 errorCount++;
                             }
                             currentString.setLength(0);
