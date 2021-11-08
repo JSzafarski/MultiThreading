@@ -163,7 +163,6 @@ public class PebbleGame {
             StringBuilder CurrentString = new StringBuilder();
             while((StringOfNumbers = reader.readLine()) != null){//this loop is going to be used to read a text file (each line)
                 int x = 0;
-                y_axis++;
                 while(x <= StringOfNumbers.length()-1) {
                     if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",") || (x == StringOfNumbers.length()-1)){
                         if(!String.valueOf(StringOfNumbers.charAt(x)).equals(" ")){
@@ -222,6 +221,7 @@ public class PebbleGame {
                     //CurrentString.append(StringOfNumbers.charAt(x));
                     x++;
                 }
+                y_axis++;
             }
             if(errorCount>0){
                 throw new InvalidfileExeption(ErrorString.concat("total errors:" + errorCount));
