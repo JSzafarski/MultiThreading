@@ -3,15 +3,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
-//import com.opencsv.CSVReader;
 
 //we need to counteract starvation
 public class PebbleGame {
     /**
      * @author 690036000
      * @author 700040943
-     * fix reading zero in multiline txt file
-     * fix new line isses not reading numbers properly
      *
      */
 
@@ -52,6 +49,7 @@ public class PebbleGame {
         bagB.setBagPair(bagY);
         bagC.setBagPair(bagZ);
     }
+
 
     public void start_game(){//if the under enters e then the program must exit.
         /**
@@ -149,54 +147,61 @@ public class PebbleGame {
         /**
          *Accepts csv or txt files to read player data
          *returns an array list of the whole file that is being read
+         * minimum length of file has to be 27 for it to contain 10 items(mini-max)
          */
         ArrayList<Integer> pebbles = new ArrayList<Integer>();
         BufferedReader reader;
         String StringOfNumbers;
         int errorCount = 0;
         int temporaryint  = 0;
+
         int y_axis = 0;
         String ErrorString ="We have detected problems inside the file as follows: ";
         try {
-
-//            if (filename.){ to check file type and we will use open csv libary
-//
-//            }else if(){
-//
-//            }else{
-//                throw new IOException("file extension not recognised");
-//            }
-
             reader = new BufferedReader(new FileReader(filename));//grabs the text file specified
             //we may need to read  files and text and read accordingly(if statement)
+            StringBuilder CurrentString = new StringBuilder();
             while((StringOfNumbers = reader.readLine()) != null){//this loop is going to be used to read a text file (each line)
                 int x = 0;
                 y_axis++;
-                StringBuilder CurrentString = new StringBuilder();
                 while(x <= StringOfNumbers.length()-1) {
                     if(!String.valueOf(StringOfNumbers.charAt(x)).equals(",") || (x == StringOfNumbers.length()-1)){
-                        if(Character.isDigit(StringOfNumbers.charAt(x))){//check if it's a digit
-                            CurrentString.append(StringOfNumbers.charAt(x));
-                            if(x == StringOfNumbers.length()-1){
-                                if(CurrentString.toString().equals("")){
-                                    ErrorString=ErrorString.concat("empty entry on line: "+ y_axis +" and index: "+ x +" ," );
-                                    errorCount++;
-                                }else{
-                                    temporaryint = Integer.parseInt(CurrentString.toString());
-                                    if(temporaryint>0){
-                                        pebbles.add(temporaryint);//adds the item to the list
-                                    }else{
-                                        ErrorString=ErrorString.concat("range error on line : " + x +" ," );
+                        if(!String.valueOf(StringOfNumbers.charAt(x)).equals(" ")){
+                            if (Character.isDigit(StringOfNumbers.charAt(x))) {//check if it's a digit
+                                CurrentString.append(StringOfNumbers.charAt(x));
+                                if (x == StringOfNumbers.length() - 1) {
+                                    if (CurrentString.toString().equals("")) {
+                                        ErrorString = ErrorString.concat("empty entry on line: " + y_axis + " and index: " + x + " ,");
                                         errorCount++;
+                                    } else {
+                                        temporaryint = Integer.parseInt(CurrentString.toString());
+                                        if (temporaryint > 0) {
+                                            pebbles.add(temporaryint);//adds the item to the list
+                                        } else {
+                                            ErrorString = ErrorString.concat("range error on line : " + x + " ,");
+                                            errorCount++;
+                                        }
+                                        //CurrentString.setLength(0);
                                     }
-                                    CurrentString.setLength(0);
+                                    break;
                                 }
-                                break;
+                            }else{
+                                errorCount++;
+                                ErrorString = ErrorString.concat("type error on line: " + x + " ,");
                             }
                         }else{
-                            errorCount++;
-                            ErrorString=ErrorString.concat("type error on line: " + x +" ," );
-                            //throw error as it's not a character
+                            boolean LegalSpaceFormat = true;
+                            if(x-1>0 && x+1<StringOfNumbers.length()-1) {//check if the space resides in the legal boundary in the csv file
+                                if (!Character.isDigit(StringOfNumbers.charAt(x + 1)) && !String.valueOf(StringOfNumbers.charAt(x - 1)).equals(",")) {
+                                    LegalSpaceFormat = false;
+                                }
+                            }else{
+                                LegalSpaceFormat = false;
+                            }
+                            if(!LegalSpaceFormat){
+                                errorCount++;
+                                ErrorString=ErrorString.concat("Invalid spacing on line: "+ y_axis +" and index: "+ x +" ,");
+                            }
                         }
                     }else{
                         if(CurrentString.toString().equals("")){
@@ -219,7 +224,6 @@ public class PebbleGame {
                 }
             }
             if(errorCount>0){
-                //throw an exception
                 throw new InvalidfileExeption(ErrorString.concat("total errors:" + errorCount));
             }else{
                 return pebbles;
@@ -391,6 +395,7 @@ public class PebbleGame {
             threadList[i] = new Playerthread(DeafultPebblegame.playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
             //threadList[i].start();//pass the whole
         }
+        System.out.println("Running the game please check output files after a player/s win...");
         for (Thread playerThread : threadList) {//second for loop created to start threads seperately from their creation with less overhead between each thread start (overhead involved in creating threads) in order to lessen starvation
             playerThread.start();
         }
@@ -438,7 +443,7 @@ public class PebbleGame {
             }
         }
 
-        public synchronized void updateWeight(int newPebble, int oldPebble){//true = add,false = remove
+        private  void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
             this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
             //much more effecicnt than iterating the whole array each time its time complxity is 0(1) instead of O(K)
         }
@@ -463,7 +468,6 @@ public class PebbleGame {
             for (int i = 0;i<=9;i++){
                 totalWeight += this.pebbles[i] ;
             }
-            System.out.println(totalWeight);
             this.setTotalWeight(totalWeight);
         }
 

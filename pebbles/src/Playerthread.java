@@ -18,9 +18,9 @@ public class Playerthread extends Thread {
         try {
             File PlayerFile = new File("Player "+ThisPlayer.getPlayerID()+".txt");
            if(PlayerFile.createNewFile()){
-               System.out.println("File created! for player :"+ThisPlayer.getPlayerID());
+               System.out.println("INFO: File created! for player :"+ThisPlayer.getPlayerID());
            }else{
-               System.out.println("File does already exist for player : "+ThisPlayer.getPlayerID());
+               System.out.println("INFO: File does already exist for player(We will override the file) : "+ThisPlayer.getPlayerID());
            }
         } catch(IOException e) {
             System.out.println(e.getMessage());
@@ -28,6 +28,7 @@ public class Playerthread extends Thread {
     }
     @Override
     public void run() {//this will run each player
+        System.out.println("INFO: Starting Player: "+ThisPlayer.getPlayerID()+"...");
         CreateFile();//generate a text file for each player
         ThisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         PebbleGame.draw10(ThisPlayer);//draws first 10 pebbeles
@@ -48,7 +49,7 @@ public class Playerthread extends Thread {
                 } catch (IOException e) {
                     System.out.println(e.getMessage());
                 }
-                System.out.println("player: "+ ThisPlayer.getPlayerID()+" Has won!");
+                System.out.println("INFO: player: "+ ThisPlayer.getPlayerID()+" Has won!");
                 break;
                 //have each thread if one stopped it did then stop all(maybe use a local variable in the Game class (boolean)
             }
@@ -101,10 +102,11 @@ public class Playerthread extends Thread {
                 WriteToPlayerFile.write(String2+ "\n");
                 WriteToPlayerFile.write(String3+ "\n");
                 WriteToPlayerFile.write(String4+ "\n");
-                System.out.println(String1);
-                System.out.println(String2);
-                System.out.println(String3);
-                System.out.println(String4);
+
+                System.out.println("INFO: "+String1);
+                System.out.println("INFO: "+String2);
+                System.out.println("INFO: "+String3);
+                System.out.println("INFO: "+String4);
                 WriteToPlayerFile.flush();
             } catch (IOException e) {
                 System.out.println(e.getMessage());
