@@ -22,11 +22,11 @@ public class PebblesTest{
         assertEquals(playerID,testPlayer.getPlayerID());//compares test input vs what the return method gives
     }
     @Test
-    public void testSetGetPebbles(int[] pebbles){
+    public void testSetGetPebbles(int[] testpebbles){
         PebbleGame testPebbleGme = new PebbleGame();
         PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
-        testPlayer.setPebbles(pebbles);
-        assertEquals(pebbles,testPlayer.getPebbles());
+        testPlayer.setPebbles(testpebbles);
+        assertEquals(testpebbles,testPlayer.getPebbles());
     }
     @Test
     public void testgenerateRandomChoiceandgetRandomBag(){
@@ -34,7 +34,7 @@ public class PebblesTest{
         PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
         testPlayer.generateRandomChoice();
         int choice = testPlayer.getRandomBag();
-        assertEquals(0,choice);
+        assertEquals(0,choice);//need to make sure this is done
     }
 
     @Test
@@ -53,7 +53,21 @@ public class PebblesTest{
         assertEquals(testPlayer.getTotalWeight(),expectedWeight);
     }
     @Test
-    public void testreplacePebble(int replacement_pebble){//should replace a pebble from the array and place the replacement pebble inside the array
+    public void testreplacePebble(int replacement_pebble,int[] testpebbles){//should replace a pebble from the array and place the replacement pebble inside the array
+        PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        //we need to check where the output pebble has been replaced by the replacamant pebble
+        testPlayer.setPebbles(testpebbles);
+        int testweight = testPlayer.getTotalWeight();
+        int testdiscardpebble = testPlayer.replacePebble(replacement_pebble);
+        //we want to check ifa tthe position of the previous discard peeble exisits the new replacamane tpebble
+        for(int x = 0;x<=9;x++){
+            if (testPlayer.getPebbles()[x] == replacement_pebble){
+                assertEquals(testdiscardpebble,testpebbles[x]);//checks if the correct pebble has been replaced at the correct position int the array
+                assertEquals(testweight,testPlayer.getTotalWeight()-testdiscardpebble+replacement_pebble);//check if updated weight is what it should be.
+                break;
+            }
+        }
 
     }
 
