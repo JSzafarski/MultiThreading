@@ -32,7 +32,6 @@ public class Playerthread extends Thread {
         CreateFile();//generate a text file for each player
         thisPlayer.generateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         PebbleGame.draw10(thisPlayer);//draws first 10 pebbeles
-        thisPlayer.calculateTotalWeight();//determines the initial total weight of the pebbles
         FileWriter writeToPlayerFile = null;
         try {
             writeToPlayerFile = new FileWriter("Player "+thisPlayer.getPlayerID()+".txt");

@@ -3,6 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.After;
 import org.junit.AfterClass;
+import org.junit.experimental.theories.suppliers.TestedOn;
 import static org.junit.Assert.*;
 
 
@@ -36,46 +37,35 @@ public class PebblesTest{
         assertEquals(0,choice);
     }
 
+    @Test
+    public void testlastBagDrawnAndgetLastBagDrawn(String testBag){
+        PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        testPlayer.setLastBagDrawn(testBag);
+        assertEquals(testBag,testPlayer.getLastBagDrawn());
+
+    }
+    @Test
+    public void testcalculateTotalWeight(int[] testpebbles,int expectedWeight){
+        PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        testPlayer.setPebbles(testpebbles);
+        assertEquals(testPlayer.getTotalWeight(),expectedWeight);
+    }
+    @Test
+    public void testreplacePebble(int replacement_pebble){//should replace a pebble from the array and place the replacement pebble inside the array
+
+    }
 
 
-            //         public int getRandomBag() {
-            //            return this.randomBag;
-            //        }
-            //
-            //        public int getTotalWeight() {return this.totalWeight;}
-            //
-            //        public void GenerateRandomChoice(){
-            //            this.randomBag = rand.nextInt(3);
-            //        }
-            //
-            //        public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
-            //
-            //        public int getPlayerID() {
-            //            return this.playerID;
-            //        }
-            //
-            //        public int[] getPebbles() {
-            //            return this.pebbles;
-            //        }
-            //
-            //        public void lastBagDrawn(String Bag){
-            //            this.lastBagDrawn = Bag;
-            //        }
-            //
-            //        public void setPebbles(int[] pebbles) {
-            //            for (int i = 0;i<=9;i++){
-            //                this.pebbles[i] = pebbles[i];
-            //            }
-            //        }
-            //
-            //        private  void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
+
+
+
+            //        private void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
             //            this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
             //            //much more effecicnt than iterating the whole array each time its time complxity is 0(1) instead of O(K)
             //        }
             //
-            //        public Player(int playerID) {
-            //            this.playerID = playerID;
-            //        }
             //
             //        //takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
             //
@@ -86,18 +76,53 @@ public class PebblesTest{
             //            this.updateWeight(replacementPebble, discardPebble);
             //            return discardPebble;
             //        }
-            //
-            //        //calculates the total weight of a player's hand
-            //        public void calculateTotalWeight(){//make private
-            //            int totalWeight = 0;
-            //            for (int i = 0;i<=9;i++){
-            //                totalWeight += this.pebbles[i] ;
-            //            }
-            //            this.setTotalWeight(totalWeight);
-            //        }
-            //
-            //        public String getLastBagDrawn() {
-            //            return lastBagDrawn;
-            //        }
+
+
+
+            //private ArrayList<Integer> getPebbles() {return this.pebbles;}
+    //    public void setPebbles(ArrayList<Integer> pebbles) {
+    //        int s = 0;
+    //        while(s <= pebbles.size()-1){
+    //            this.pebbles.add(pebbles.get(s));
+    //            s++;
+    //        }
+    //    }
+    //
+    //    //get and set methods for the bag pairs of each bag
+    //    public Bag getBagPair() {return bagPair;}
+    //    public void setBagPair(Bag bagPair) {this.bagPair = bagPair;}//not sure if this will work
+    //
+    //    //get and set methods for the bag colours of each bag
+    //    //    public String getBagColour() {return bagColour;}
+    //    //    public void setBagColour(String bagColour) {this.bagColour = bagColour;}
+    //
+    //    //draw pebble from a chosen bag method
+    //    public int drawPebble() {
+    //        if (this.getPebbles().size() == 0) {
+    //            //return -1 if empty list
+    //            return -1;
+    //        } else {
+    //            //else generate a random index for the list used to randomly select a pebble from the list
+    //            int index = rand.nextInt(this.getPebbles().size());
+    //            int pebbleWeight = this.getPebbles().get(index);
+    //            //remove the pebble from the list
+    //            this.getPebbles().remove(index);
+    //            //return the weight of the selected pebble
+    //            return pebbleWeight;
+    //        }
+    //    }
+    //
+    //    //method for discarding pebble into selected bag from a selected player
+    //    public void discardPebble(int replacementPebble) {
+    //        this.getPebbles().add(replacementPebble);
+    //    }
+    //
+    //    //method to empty a white bag into an empty black bag
+    //    public void refillBag() {
+    //        this.setPebbles(this.getBagPair().getPebbles());
+    //        this.getBagPair().getPebbles().clear();
+    //    }
+
+
 
 }

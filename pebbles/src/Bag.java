@@ -4,14 +4,11 @@ import java.util.Random;
 public class Bag {
 
     Random rand = new Random();
-    ArrayList<Integer> pebbles = new ArrayList<Integer>();
-    Bag bagPair;
-    String bagColour;
-
-    Bag(String bagColour) {this.bagColour = bagColour;}
+    private ArrayList<Integer> pebbles = new ArrayList<Integer>();
+    private Bag bagPair;
 
     //get and set methods for the list of pebbles in the bags
-    public ArrayList<Integer> getPebbles() {return this.pebbles;}
+    private ArrayList<Integer> getPebbles() {return this.pebbles;}
     public void setPebbles(ArrayList<Integer> pebbles) {
         int s = 0;
         while(s <= pebbles.size()-1){
@@ -54,8 +51,4 @@ public class Bag {
         this.setPebbles(this.getBagPair().getPebbles());
         this.getBagPair().getPebbles().clear();
     }
-
-
-
-
 }

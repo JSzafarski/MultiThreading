@@ -26,15 +26,15 @@ public class PebbleGame {
      Thread[] threadList = new Thread[100];
 
     //instantiating black bags
-    static Bag bagX = new Bag("BLACK");
-    static Bag bagY = new Bag("BLACK");
-    static Bag bagZ = new Bag("BLACK");
+    static Bag bagX = new Bag();//black bags
+    static Bag bagY = new Bag();
+    static Bag bagZ = new Bag();
 
     //instantiating white bags
 
-    static Bag bagA = new Bag("WHITE");
-    static Bag bagB = new Bag("WHITE");
-    static Bag bagC = new Bag("WHITE");
+    static Bag bagA = new Bag();//white bags
+    static Bag bagB = new Bag();
+    static Bag bagC = new Bag();
 
     //method for setting bag pairs of bags
     public static void setBagPairs() {
@@ -261,7 +261,7 @@ public class PebbleGame {
                 replacementpebble = bagX.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty
                     bagX.refillBag();
-                    thisPlayer.GenerateRandomChoice();//randomly selects a new bag to draw from
+                    thisPlayer.generateRandomChoice();//randomly selects a new bag to draw from
                     if(thisPlayer.getRandomBag()==0){//attempt to draw from bag X
                         PebbleGame.drawAndDiscardFromBagX(thisPlayer,false);
                     }else if(thisPlayer.getRandomBag()==1){//attempt to draw from bag Y
@@ -274,7 +274,7 @@ public class PebbleGame {
                         tenPebbles[i] = bagX.drawPebble();
                     } else {//takes the drawn pebble and replaces a pebble in the player's hand which is discarded into the corresponding bag
                         bagX.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
-                        thisPlayer.lastBagDrawn("X");
+                        thisPlayer.setLastBagDrawn("X");
                     }
                 }
             }
@@ -303,7 +303,7 @@ public class PebbleGame {
                 replacementpebble = bagY.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty
                     bagY.refillBag();
-                    thisPlayer.GenerateRandomChoice();//randomly selects a new bag to draw from
+                    thisPlayer.generateRandomChoice();//randomly selects a new bag to draw from
                     if(thisPlayer.getRandomBag()==0){//attempt to draw from bag X
                         PebbleGame.drawAndDiscardFromBagX(thisPlayer,false);
                     }else if(thisPlayer.getRandomBag()==1){//attempt to draw from bag Y
@@ -316,7 +316,7 @@ public class PebbleGame {
                         tenPebbles[i] = bagY.drawPebble();
                     } else {//takes the drawn pebble and replaces a pebble in the player's hand which is discarded into the corresponding bag
                         bagY.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
-                        thisPlayer.lastBagDrawn("Y");
+                        thisPlayer.setLastBagDrawn("Y");
                     }
                 }
             }
@@ -344,7 +344,7 @@ public class PebbleGame {
                 replacementpebble = bagZ.drawPebble();
                 if (replacementpebble == -1) {//when bag is empty
                     bagZ.refillBag();
-                    thisPlayer.GenerateRandomChoice();//randomly selects a new bag to draw from
+                    thisPlayer.generateRandomChoice();//randomly selects a new bag to draw from
                     if(thisPlayer.getRandomBag()==0){//attempt to draw from bag X
                         drawAndDiscardFromBagX(thisPlayer,false);
                     }else if(thisPlayer.getRandomBag()==1){//attempt to draw from bag Y
@@ -357,7 +357,7 @@ public class PebbleGame {
                         tenPebbles[i] = bagZ.drawPebble();
                     } else {//takes the drawn pebble and replaces a pebble in the player's hand which is then discarded into the corresponding bag
                         bagZ.getBagPair().discardPebble(thisPlayer.replacePebble(replacementpebble));
-                        thisPlayer.lastBagDrawn("Z");
+                        thisPlayer.setLastBagDrawn("Z");
                     }
                 }
             }
@@ -403,12 +403,12 @@ public class PebbleGame {
           *
           *
           */
-        int randomBag;
-        int  playerID;
-        int[] pebbles = new int[10];
+        private int randomBag;
+        private int  playerID;
+        private int[] pebbles = new int[10];
         Random rand = new Random();
-        int totalWeight;
-        String lastBagDrawn;
+        private int totalWeight;
+        private String lastBagDrawn;
 
         public int getRandomBag() {
             return this.randomBag;
@@ -420,7 +420,7 @@ public class PebbleGame {
             this.randomBag = rand.nextInt(3);
         }
 
-        public void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
+        private void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
 
         public int getPlayerID() {
             return this.playerID;
@@ -430,7 +430,7 @@ public class PebbleGame {
             return this.pebbles;
         }
 
-        public void lastBagDrawn(String Bag){
+        public void setLastBagDrawn(String Bag){
             this.lastBagDrawn = Bag;
         }
 
@@ -438,11 +438,12 @@ public class PebbleGame {
             for (int i = 0;i<=9;i++){
                 this.pebbles[i] = pebbles[i];
             }
+            this.calculateTotalWeight();
         }
 
         private  void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
             this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
-            //much more effecicnt than iterating the whole array each time its time complxity is 0(1) instead of O(K)
+            //much more efficient than iterating the whole array each time ; its time complexity is 0(1) instead of O(K)
         }
 
         public Player(int playerID) {
@@ -460,7 +461,7 @@ public class PebbleGame {
         }
 
         //calculates the total weight of a player's hand
-        public void calculateTotalWeight(){//make private
+        private void calculateTotalWeight(){//make private
             int totalWeight = 0;
             for (int i = 0;i<=9;i++){
                 totalWeight += this.pebbles[i] ;
