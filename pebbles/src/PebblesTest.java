@@ -1,8 +1,5 @@
-import org.junit.BeforeClass;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.After;
-import org.junit.AfterClass;
+import org.hamcrest.CoreMatchers;
+import org.junit.*;
 import org.junit.experimental.theories.suppliers.TestedOn;
 import java.util.*;
 
@@ -74,6 +71,8 @@ public class PebblesTest{
         }
     }
     //testing bag class
+
+    //udr jsvs reflrction for private stuff
     @Test
     public void testgetBagPair(Bag testBagPair){
         Bag testBag = new Bag();
@@ -85,11 +84,33 @@ public class PebblesTest{
         Bag testBag = new Bag();
         testBag.setPebbles(testPebbles);
         ArrayList<Integer> testList = new ArrayList<>();
-        assertEquals(testPebbles,);
+        for(int x=0;x<testPebbles.size()-1;x++){
+            testList.add(testBag.drawPebble());
+        }
+        Assert.assertEquals(testPebbles,testList);//checks if the both lists contain same items
     }
 
     @Test
-    public void testdiscardPebble(){
+    public void testdiscardPebble(int testreplacementPebble,ArrayList<Integer> testPebbles){
+        //count how many times this item was before discard into the bag and after and it should be n+1;
+        Bag testBag = new Bag();
+        testBag.setPebbles(testPebbles);
+        int testItemCount = 0;
+        boolean finished = false;
+        while (finished){
+            int testPebble = testBag.drawPebble();
+            if(testPebble==-1){
+                finished = true;
+            }else{
+                if(testPebble == testreplacementPebble){
+                    testItemCount++;
+                }
+            }
+        }
+        testBag.discardPebble(testreplacementPebble);
+        //finish this offf!
+
+
 
     }
 
@@ -130,7 +151,7 @@ public class PebblesTest{
 
     //testing the Pebbles test class methods
 
-    
+
 
 
 
