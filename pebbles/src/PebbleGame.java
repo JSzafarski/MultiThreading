@@ -18,12 +18,17 @@ public class PebbleGame {
          *
          */
 
-        PebbleGame game = new PebbleGame();
-        game.start_game();
+        //PebbleGame game = new PebbleGame();
+        //game.start_game();
+        getPebbleGame().start_game();
     }
+    //singelton
+    private static PebbleGame pebbleGame = new PebbleGame();
+    private PebbleGame(){}
+    public static synchronized PebbleGame getPebbleGame(){return pebbleGame;}
 
-     Player[] playerList = new Player[100];
-     Thread[] threadList = new Thread[100];
+    static Player[] playerList = new Player[100];
+    static Thread[] threadList = new Thread[100];
 
     //instantiating black bags
     static Bag bagX = new Bag();//black bags
@@ -387,10 +392,10 @@ public class PebbleGame {
          */
         threadList = new Thread[numPlayers];
         //creates each player object and thread for the specified number of players
-        PebbleGame deafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
+        //PebbleGame deafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
         for(int i = 0; i <= numPlayers-1; i++){
-            deafultPebblegame.playerList[i]  = deafultPebblegame.new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
-            threadList[i] = new Playerthread(deafultPebblegame.playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
+            playerList[i]  = getPebbleGame().new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
+            threadList[i] = new Playerthread(playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
         }
         System.out.println("Running the game please check output files after a player/s win...");
         for (Thread playerThread : threadList) {//second for loop created to start threads seperately from their creation with less overhead between each thread start (overhead involved in creating threads) in order to lessen starvation

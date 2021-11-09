@@ -18,21 +18,21 @@ public class PebblesTest{
     //testing the player class
     @Test
     public void testgetPlayerID(int playerID){
-        PebbleGame testPebbleGme = new PebbleGame();
-        PebbleGame.Player testPlayer = testPebbleGme.new Player(playerID);
+        //PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(playerID);
         assertEquals(playerID,testPlayer.getPlayerID());//compares test input vs what the return method gives
     }
     @Test
     public void testSetGetPebbles(int[] testpebbles){
-        PebbleGame testPebbleGme = new PebbleGame();
-        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        //PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
         testPlayer.setPebbles(testpebbles);
         assertEquals(testpebbles,testPlayer.getPebbles());
     }
     @Test
     public void testgenerateRandomChoiceandgetRandomBag(){
-        PebbleGame testPebbleGme = new PebbleGame();
-        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        //PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
         testPlayer.generateRandomChoice();
         int choice = testPlayer.getRandomBag();
         assertEquals(0,choice);//need to make sure this is done
@@ -40,23 +40,23 @@ public class PebblesTest{
 
     @Test
     public void testlastBagDrawnAndgetLastBagDrawn(String testBag){
-        PebbleGame testPebbleGme = new PebbleGame();
-        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        //PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
         testPlayer.setLastBagDrawn(testBag);
         assertEquals(testBag,testPlayer.getLastBagDrawn());
 
     }
     @Test
     public void testcalculateTotalWeight(int[] testpebbles,int expectedWeight){
-        PebbleGame testPebbleGme = new PebbleGame();
-        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        //PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
         testPlayer.setPebbles(testpebbles);
         assertEquals(testPlayer.getTotalWeight(),expectedWeight);
     }
     @Test
     public void testreplacePebble(int replacement_pebble,int[] testpebbles){//should replace a pebble from the array and place the replacement pebble inside the array
-        PebbleGame testPebbleGme = new PebbleGame();
-        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        //PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
         //we need to check where the output pebble has been replaced by the replacement pebble
         testPlayer.setPebbles(testpebbles);
         int testweight = testPlayer.getTotalWeight();
