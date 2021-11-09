@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Player 1000.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Player 1001.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Player 1002.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Player 1003.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/Playerthread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/Playerthread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/PebblesTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebblesTestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/Playerthread.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Playerthread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles/src/PebblesTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
