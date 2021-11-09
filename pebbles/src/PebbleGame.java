@@ -416,7 +416,7 @@ public class PebbleGame {
 
         public int getTotalWeight() {return this.totalWeight;}
 
-        public void GenerateRandomChoice(){
+        public void generateRandomChoice(){
             this.randomBag = rand.nextInt(3);
         }
 

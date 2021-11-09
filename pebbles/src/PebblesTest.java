@@ -1,33 +1,44 @@
+import org.junit.BeforeClass;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.After;
+import org.junit.AfterClass;
+import static org.junit.Assert.*;
+
+
 public class PebblesTest{
-    import org.junit.BeforeClass;
-    import org.junit.Before;
-    import org.junit.Test;
-    import org.junit.After;
-    import org.junit.AfterClass;
-    import static org.junit.Assert.*;
 
-
-    //assert (result - a == b)
     /**
-     *
+     *This class does all unit tests on each method of the whole pebble game app.
      *
      *
      */
+    //testing the player class
+    @Test
+    public void testgetPlayerID(int playerID){
+        PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = testPebbleGme.new Player(playerID);
+        assertEquals(playerID,testPlayer.getPlayerID());//compares test input vs what the return method gives
+    }
+    @Test
+    public void testSetGetPebbles(int[] pebbles){
+        PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        testPlayer.setPebbles(pebbles);
+        assertEquals(pebbles,testPlayer.getPebbles());
+    }
+    @Test
+    public void testgenerateRandomChoiceandgetRandomBag(){
+        PebbleGame testPebbleGme = new PebbleGame();
+        PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
+        testPlayer.generateRandomChoice();
+        int choice = testPlayer.getRandomBag();
+        assertEquals(0,choice);
+    }
 
 
-        public static boolean testPlayer(int player_id, int[] testArray) {//player name ,player persona info
-            int testsFailed = 0;
-            PebbleGame testPebblegame = new PebbleGame();
-            PebbleGame.Player testPlayer = testPebblegame.new Player(player_id);
-            @Test
-            try {
-                assertSame(testPlayer.getPlayerID() == player_id);
-            } catch (AssertionError info) {
-                testsFailed++;
-            }
 
-
-            //public int getRandomBag() {
+            //         public int getRandomBag() {
             //            return this.randomBag;
             //        }
             //
@@ -88,16 +99,5 @@ public class PebblesTest{
             //        public String getLastBagDrawn() {
             //            return lastBagDrawn;
             //        }
-            if (testsFailed > 0) {
-                return true;
-            }
-        }
-
-
-
-
-
-
-
 
 }

@@ -30,7 +30,7 @@ public class Playerthread extends Thread {
     public void run() {//this will run each player
         System.out.println("INFO: Starting Player: "+ thisPlayer.getPlayerID() + "...");
         CreateFile();//generate a text file for each player
-        thisPlayer.GenerateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
+        thisPlayer.generateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         PebbleGame.draw10(thisPlayer);//draws first 10 pebbeles
         thisPlayer.calculateTotalWeight();//determines the initial total weight of the pebbles
         FileWriter writeToPlayerFile = null;
@@ -62,7 +62,7 @@ public class Playerthread extends Thread {
             for (int i = 0;i<=9;i++) {
                 TempPebbleArray[i] = thisPlayer.getPebbles()[i];
             }
-            thisPlayer.GenerateRandomChoice();
+            thisPlayer.generateRandomChoice();
             if(thisPlayer.getRandomBag()==0){//then go to X
                 PebbleGame.drawAndDiscardFromBagX(thisPlayer,false);
             }else if(thisPlayer.getRandomBag()==1){//GO TO Y
