@@ -133,7 +133,7 @@ public class PebbleGame {
                             if (totalPebbles < calculate_minPebbles(numPlayers)) {//not enough total pebbles to execute the game
                                 System.out.println("there is not enough pebbles in total from each csv file,please increase that amount");
                             } else {
-                                RunPlayers(numPlayers);//creates players for the game to execute
+                                runPlayers(numPlayers);//creates players for the game to execute
                                 break;//all conditions have been met so the program my proceed
                             }
                         }
@@ -377,15 +377,15 @@ public class PebbleGame {
          *
          */
         if(thisPlayer.getRandomBag()==1){//draw 10 from bag X
-            PebbleGame.drawAndDiscardFromBagX(thisPlayer,true);
+            drawAndDiscardFromBagX(thisPlayer,true);
         }else if(thisPlayer.getRandomBag()==2){//draw 10 from bag Y
-            PebbleGame.drawAndDiscardFromBagY(thisPlayer,true);
+            drawAndDiscardFromBagY(thisPlayer,true);
         }else{//draw 10 from bag Z
-            PebbleGame.drawAndDiscardFromBagZ(thisPlayer,true);
+            drawAndDiscardFromBagZ(thisPlayer,true);
         }
     }
 
-    public void RunPlayers(int numPlayers){
+    public void runPlayers(int numPlayers){
         /**
          *
          *
@@ -395,7 +395,7 @@ public class PebbleGame {
         //PebbleGame deafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
         for(int i = 0; i <= numPlayers-1; i++){
             playerList[i]  = getPebbleGame().new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
-            threadList[i] = new Playerthread(playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
+            threadList[i] = new PlayerThread(playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
         }
         System.out.println("Running the game please check output files after a player/s win...");
         for (Thread playerThread : threadList) {//second for loop created to start threads seperately from their creation with less overhead between each thread start (overhead involved in creating threads) in order to lessen starvation

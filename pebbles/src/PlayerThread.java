@@ -6,11 +6,11 @@ import java.io.File;
 import java.io.IOException;
 import java.io.FileWriter;
 
-public class Playerthread extends Thread {
+public class PlayerThread extends Thread {
     PebbleGame.Player thisPlayer;//we need to pass instance eof player from game into thread
     static boolean wonGame = false;
 
-    public Playerthread(PebbleGame.Player playerfromGame) {
+    public PlayerThread(PebbleGame.Player playerfromGame) {
         thisPlayer = playerfromGame;
     }//passes instance eof player into the thread
 
