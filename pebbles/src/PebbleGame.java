@@ -79,7 +79,7 @@ public class PebbleGame {
                     }
                 }else {
                     numPlayers = Integer.parseInt(input);
-                    if (numPlayers > 0) {
+                    if (numPlayers > 1 && numPlayers <=100) {
                         String file_input;
                         for (int i = 1; i <= 3; i++) {
                             System.out.println("Please enter location of bag number " + i + " to load:");
@@ -133,7 +133,7 @@ public class PebbleGame {
                             }
                         }
                     } else {
-                        throw new NumberFormatException("Negative value");
+                        throw new NumberFormatException("player value out of range :(2-100)");
                     }
                 }
             } catch (NumberFormatException  e) {

@@ -4,6 +4,9 @@ import org.junit.Test;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.experimental.theories.suppliers.TestedOn;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 
@@ -12,7 +15,7 @@ public class PebblesTest{
     /**
      *This class does all unit tests on each method of the whole pebble game app.
      *
-     *
+     *make it count errors idk??
      */
     //testing the player class
     @Test
@@ -56,11 +59,11 @@ public class PebblesTest{
     public void testreplacePebble(int replacement_pebble,int[] testpebbles){//should replace a pebble from the array and place the replacement pebble inside the array
         PebbleGame testPebbleGme = new PebbleGame();
         PebbleGame.Player testPlayer = testPebbleGme.new Player(1);
-        //we need to check where the output pebble has been replaced by the replacamant pebble
+        //we need to check where the output pebble has been replaced by the replacement pebble
         testPlayer.setPebbles(testpebbles);
         int testweight = testPlayer.getTotalWeight();
         int testdiscardpebble = testPlayer.replacePebble(replacement_pebble);
-        //we want to check ifa tthe position of the previous discard peeble exisits the new replacamane tpebble
+        //we want to check if at the position of the previous discard pebble exists the new replacement pebble
         for(int x = 0;x<=9;x++){
             if (testPlayer.getPebbles()[x] == replacement_pebble){
                 assertEquals(testdiscardpebble,testpebbles[x]);//checks if the correct pebble has been replaced at the correct position int the array
@@ -68,32 +71,21 @@ public class PebblesTest{
                 break;
             }
         }
+    }
+    //testing bag class
+    @Test
+    public void testgetBagPair(Bag testBagPair){
+        Bag testBag = new Bag();
+        testBag.setBagPair(testBagPair);
+        assertSame(testBagPair,testBag.getBagPair());
+    }
+    @Test
+    public void testsetPebblesdrawPebble(ArrayList<Integer> testPebbles){
+        Bag testBag = new Bag();
+        testBag.setPebbles(testPebbles);
 
     }
 
-
-
-
-
-            //        private void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
-            //            this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
-            //            //much more effecicnt than iterating the whole array each time its time complxity is 0(1) instead of O(K)
-            //        }
-            //
-            //
-            //        //takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
-            //
-            //        public int replacePebble(int replacementPebble) {
-            //            int index = rand.nextInt(this.getPebbles().length-1);
-            //            int discardPebble = this.getPebbles()[index];
-            //            this.getPebbles()[index] = replacementPebble;
-            //            this.updateWeight(replacementPebble, discardPebble);
-            //            return discardPebble;
-            //        }
-
-
-
-            //private ArrayList<Integer> getPebbles() {return this.pebbles;}
     //    public void setPebbles(ArrayList<Integer> pebbles) {
     //        int s = 0;
     //        while(s <= pebbles.size()-1){
@@ -102,9 +94,7 @@ public class PebblesTest{
     //        }
     //    }
     //
-    //    //get and set methods for the bag pairs of each bag
-    //    public Bag getBagPair() {return bagPair;}
-    //    public void setBagPair(Bag bagPair) {this.bagPair = bagPair;}//not sure if this will work
+
     //
     //    //get and set methods for the bag colours of each bag
     //    //    public String getBagColour() {return bagColour;}
