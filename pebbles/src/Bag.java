@@ -7,8 +7,8 @@ public class Bag {
     private ArrayList<Integer> pebbles = new ArrayList<Integer>();
     private Bag bagPair;
 
-    //get and set methods for the list of pebbles in the bags
-    private ArrayList<Integer> getPebbles() {return this.pebbles;}
+    public ArrayList<Integer> getPebbles() {return this.pebbles;}
+
     public void setPebbles(ArrayList<Integer> pebbles) {
         int pebblePos = 0;
         while(pebblePos <= pebbles.size()-1){
@@ -20,10 +20,6 @@ public class Bag {
     //get and set methods for the bag pairs of each bag
     public Bag getBagPair() {return bagPair;}
     public void setBagPair(Bag bagPair) {this.bagPair = bagPair;}
-
-    //get and set methods for the bag colours of each bag
-    //    public String getBagColour() {return bagColour;}
-    //    public void setBagColour(String bagColour) {this.bagColour = bagColour;}
 
     //draw pebble from a chosen bag method
     public int drawPebble() {
