@@ -4,6 +4,7 @@ import org.junit.Test;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.experimental.theories.suppliers.TestedOn;
+import java.util.*;
 
 import java.util.ArrayList;
 
@@ -83,24 +84,22 @@ public class PebblesTest{
     public void testsetPebblesdrawPebble(ArrayList<Integer> testPebbles){
         Bag testBag = new Bag();
         testBag.setPebbles(testPebbles);
+        ArrayList<Integer> testList = new ArrayList<>();
+        assertEquals(testPebbles,);
+    }
+
+    @Test
+    public void testdiscardPebble(){
 
     }
 
-    //    public void setPebbles(ArrayList<Integer> pebbles) {
-    //        int s = 0;
-    //        while(s <= pebbles.size()-1){
-    //            this.pebbles.add(pebbles.get(s));
-    //            s++;
-    //        }
-    //    }
-    //
+    @Test
+    public void testrefillBag(){
 
-    //
-    //    //get and set methods for the bag colours of each bag
-    //    //    public String getBagColour() {return bagColour;}
-    //    //    public void setBagColour(String bagColour) {this.bagColour = bagColour;}
-    //
-    //    //draw pebble from a chosen bag method
+    }
+
+
+
     //    public int drawPebble() {
     //        if (this.getPebbles().size() == 0) {
     //            //return -1 if empty list
@@ -126,6 +125,12 @@ public class PebblesTest{
     //        this.setPebbles(this.getBagPair().getPebbles());
     //        this.getBagPair().getPebbles().clear();
     //    }
+
+    //testing the thread class
+
+    //testing the Pebbles test class methods
+
+    
 
 
 
