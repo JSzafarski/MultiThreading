@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pebbles/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/Bag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebblesTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" afterDir="false" />
     </list>
@@ -57,7 +52,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
   <component name="RunManager">
     <configuration name="PebbleGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

@@ -207,11 +207,51 @@ public class PebblesTest{
 
     @Test
     public void testdrawAndDiscardFromBagY(){
+        ArrayList<Integer> testPebbles = new ArrayList<>();
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+
+        PebbleGame.bagY.setPebbles(testPebbles);
+        PebbleGame.setBagPairs();
+        PebbleGame testGame = new PebbleGame();//creates an instance of pebble game
+        PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbble game
+        testplayer.setPebbles(new int[]{1, 2, 3, 4, 5, 6,7,8,9,10});
+        PebbleGame.drawAndDiscardFromBagY(testplayer,false);//assert just draw twn and assert picking one pebble
+        //check if player removed a pebble
+        //check if the players discard pebbel is in bag A and chck if player took a pebble form bag x
 
     }
 
     @Test
     public void testdrawAndDiscardFromBagZ(){
+        ArrayList<Integer> testPebbles = new ArrayList<>();
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+
+        PebbleGame.bagZ.setPebbles(testPebbles);
+        PebbleGame.setBagPairs();
+        PebbleGame testGame = new PebbleGame();//creates an instance of pebble game
+        PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbble game
+        testplayer.setPebbles(new int[]{1, 2, 3, 4, 5, 6,7,8,9,10});
+        PebbleGame.drawAndDiscardFromBagZ(testplayer,false);//assert just draw twn and assert picking one pebble
+        //check if player removed a pebble
+        //check if the players discard pebbel is in bag A and chck if player took a pebble form bag x
 
     }
 

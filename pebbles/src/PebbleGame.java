@@ -4,26 +4,25 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 
-//we need to counteract starvation
+
 public class PebbleGame {
     /**
-     * @author 690036000
-     * @author 700040943
+     *
      *
      */
-    public static PebbleGame pebbleGame = new PebbleGame();
+
+    public static PebbleGame pebbleGame = new PebbleGame();//creates a static instance of PebbleGame
     public PebbleGame(){}
     public static synchronized PebbleGame getPebbleGame(){return pebbleGame;}
     //singleton declaration of the pebbleGame class instance required to run the program
 
-    public static void main(String[] args){//this can be confusing as its instance of a instance of pebble game that creates instance of players
+    public static void main(String[] args){
         /**
          * This method creates an instance of the Pebble Game class where the instances of players will be instantiated
-         *
          */
-        getPebbleGame().start_game();
+        getPebbleGame().start_game();//calls the method start_game() to proceed with execution
     }
-
+    //insulating arrays responsible for storing players and the threads corresponding to each player
     static Player[] playerList = new Player[100];
     static Thread[] threadList = new Thread[100];
 
@@ -41,8 +40,8 @@ public class PebbleGame {
     //method for setting bag pairs of bags
     public static void setBagPairs() {
         /**
-         *This is a static method that links up the different bags into corresponding pairs to allow more organised transfer of pebbles when refilling the bag
-         *
+         *This is a static method that links up the different bags into corresponding pairs.
+         *This allows more organised transfer of pebbles when refilling the bag
          */
         bagX.setBagPair(bagA);
         bagY.setBagPair(bagB);
@@ -61,7 +60,7 @@ public class PebbleGame {
          */
         int numPlayers;//number of players
         ArrayList<Integer> pebblesFromFile = new ArrayList<Integer>();
-        setBagPairs();
+        setBagPairs();//calls a method that manages the corresponding bag pairs for example bag an is paired with bag z
         Scanner Scanner1 = new Scanner(System.in);
         System.out.println("you will be asked to enter the number of players and then for the location");
         System.out.println("of three files in turn containing comma separated integer values for the pebble weights.");
@@ -69,41 +68,41 @@ public class PebbleGame {
         System.out.println("the game will then be simulated,and output written to file in the directory.");
         System.out.println("type: X to exit and start over or E to to exit the system completely");
         System.out.println("");
-        while (true){//loops until use exits or enters correct information so the program can proceed
+        while (true){//this is the most outer loop which repeats until the user exits or no errors occur
             try {
-                boolean exeption = false;
-                int totalPebbles = 0;
+                boolean exeption = false;//for passing information to a conditional that some errors have occurred
+                int totalPebbles = 0;//this value gets updated to the sum of pebbles found in all 3 files
                 System.out.println("Please enter the number of players:");
-                String input = Scanner1.nextLine();
+                String input = Scanner1.nextLine();//uses the imported java scanner to read console input from the user
                 if (Objects.equals(input, "X")||(Objects.equals(input, "E"))){
+                    //those are the only characters that can help the user exit/restart the program from scratch
                     if((Objects.equals(input, "E"))){
-                        System.exit(0);
+                        System.exit(0);//exits the application fully
                     }
-                }else {
-                    numPlayers = Integer.parseInt(input);
-                    if (numPlayers > 1 && numPlayers <=100) {
+                }else{
+                    numPlayers = Integer.parseInt(input);//attempts to convert the input to an integer which can throw exception so its enclosed ina try/catch block
+                    if (numPlayers > 1 && numPlayers <=100) {//verify range of players
                         String file_input;
-                        for (int i = 1; i <= 3; i++) {
+                        for (int i = 1; i <= 3; i++) {//will iterate 3 time since we have 3 bags to populate
                             System.out.println("Please enter location of bag number " + i + " to load:");
-                            file_input = Scanner1.nextLine();
-                            //determine the file extension
+                            file_input = Scanner1.nextLine();//this time it scans for file name that the user provides in console
                             if (Objects.equals(file_input, "X") || (Objects.equals(file_input, "E"))) {
                                 if ((Objects.equals(file_input, "E"))) {
                                     System.exit(0);
                                 }
                                 exeption = true;
                                 break;//exit the loop
-                            } //check if the input is valid using try catch block
+                            }
                             try {
                                 int csvArrayPos = 0;
-                                while (csvArrayPos <= (read_csv(file_input)).size() - 1) {
+                                while (csvArrayPos <= (read_csv(file_input)).size() - 1) {//reads the scv or text file
                                     //populates the pebbles temp array
                                     pebblesFromFile.add(read_csv(file_input).get(csvArrayPos));
                                     csvArrayPos++;
                                 }
                                 if (pebblesFromFile.size() < 10) {//if some files contains less than 10 pebbles each then throw error as its below spec
                                     throw new InvalidfileExeption("file number" + i + " has to have at least 10 pebbles");
-                                } else {
+                                } else {//uses a switch to populate each bag for each iteration
                                     switch (i) {//uses the for loop to identify which bag is being added to
                                         case 1 -> {
                                             totalPebbles = totalPebbles + pebblesFromFile.size();
@@ -130,8 +129,8 @@ public class PebbleGame {
                             if (totalPebbles < calculate_minPebbles(numPlayers)) {//not enough total pebbles to execute the game
                                 System.out.println("there is not enough pebbles in total from each csv file,please increase that amount");
                             } else {
-                                runPlayers(numPlayers);//creates players for the game to execute
-                                break;//all conditions have been met so the program my proceed
+                                runPlayers(numPlayers);//creates players for the game to execute(the execution may proceed as no issues have been found)
+                                break;
                             }
                         }
                     } else {
@@ -139,46 +138,46 @@ public class PebbleGame {
                     }
                 }
             } catch (NumberFormatException  e) {
-                System.out.println("input invalid ; reason: " + e.getMessage());//fix
+                System.out.println("input invalid ; reason: " + e.getMessage());
                 //shows error
             }
         }
     }
 
-    public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {//validate file name when calling the method
+    public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {
         /**
          *Accepts csv or txt files to read player data
          *returns an array list of the whole file that is being read
-         * minimum length of file has to be 27 for it to contain 10 items(mini-max)
+         *minimum length of file has to be 27 for it to contain 10 items(mini-max)
          */
-        ArrayList<Integer> pebbles = new ArrayList<Integer>();
+
+        ArrayList<Integer> pebbles = new ArrayList<Integer>();//array list that will store the pebbles read from the file
         BufferedReader reader;
         String stringOfNumbers;
-        int errorCount = 0;
+        int errorCount = 0;//helps the user resolve issues when errors arise
         int temporaryInt;
-
-        int y_axis = 0;
+        int y_axis = 0;//helps the user resolve issues when errors arise
         String errorString ="We have detected problems inside the file as follows: ";
         try {
             reader = new BufferedReader(new FileReader(filename));//grabs the text file specified
-            //we may need to read  files and text and read accordingly(if statement)
             StringBuilder currentString = new StringBuilder();
             while((stringOfNumbers = reader.readLine()) != null){//this loop is going to be used to read a text file (each line)
-                int positionInArray = 0;
-                while(positionInArray <= stringOfNumbers.length()-1) {
+                int positionInArray = 0;//used to move along the x-axis of the file so alon the line of text
+                while(positionInArray <= stringOfNumbers.length()-1) {//loops until the ned of line is reached
                     if(!String.valueOf(stringOfNumbers.charAt(positionInArray)).equals(",") || (positionInArray == stringOfNumbers.length()-1)){
-                        if(!String.valueOf(stringOfNumbers.charAt(positionInArray)).equals(" ")){
+                        //comma separates each number so if its hit then we know we have finished reading current number between two commas
+                        if(!String.valueOf(stringOfNumbers.charAt(positionInArray)).equals(" ")){//spaces are allowed in csv files between the first comma and the next integer
                             if (Character.isDigit(stringOfNumbers.charAt(positionInArray))) {//check if it's a digit
-                                currentString.append(stringOfNumbers.charAt(positionInArray));
+                                currentString.append(stringOfNumbers.charAt(positionInArray));//concatenates the integers together by treating them like strings initially
                                 if (positionInArray == stringOfNumbers.length() - 1) {
                                     if (currentString.toString().equals("")) {
                                         errorString = errorString.concat("empty entry on line: " + y_axis + " and index: " + positionInArray + " ,");
                                         errorCount++;
                                     } else {
-                                        temporaryInt = Integer.parseInt(currentString.toString());
-                                        if (temporaryInt > 0) {
+                                        temporaryInt = Integer.parseInt(currentString.toString());//converts the string of integers to the integer type
+                                        if (temporaryInt > 0) {//has to be a positive value
                                             pebbles.add(temporaryInt);//adds the item to the list
-                                        } else {
+                                        } else {//throws type error
                                             errorString = errorString.concat("range error on line : " + positionInArray + " ,");
                                             errorCount++;
                                         }
@@ -187,12 +186,12 @@ public class PebbleGame {
                                 }
                             }else{
                                 errorCount++;
-                                errorString = errorString.concat("type error on line: " + positionInArray + " ,");
+                                errorString = errorString.concat("type error on line: " + positionInArray + " ,");//helps the user fix issues within the file
                             }
                         }else{
                             boolean legalSpaceFormat = true;
-                            if(positionInArray-1>0 && positionInArray+1<stringOfNumbers.length()-1) {//check if the space resides in the legal boundary in the csv file
-                                if (!Character.isDigit(stringOfNumbers.charAt(positionInArray + 1)) && !String.valueOf(stringOfNumbers.charAt(positionInArray - 1)).equals(",")) {
+                            if(positionInArray-1>0 && positionInArray+1<stringOfNumbers.length()-1) {//check if the space resides in the legal boundaries in the csv file
+                                if (!Character.isDigit(stringOfNumbers.charAt(positionInArray + 1)) && !String.valueOf(stringOfNumbers.charAt(positionInArray - 1)).equals(",")){
                                     legalSpaceFormat = false;
                                 }
                             }else{
@@ -236,14 +235,15 @@ public class PebbleGame {
     public static int calculate_minPebbles(int players){
         /**
          *determines the minimum number of pebbles required for the game to run error free
-         *
+         * @param players : passes a player amount
+         * @
          */
-        return 11*players;
+        return 11*players;//needs at least 11 time the players to avoid mathematical problems with the game
     }
 
-    //add a queue for threads to avoid starvation.(or idk something to avoid starvation issues)
 
-    public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//method that draws a pebble and then discards the pebble into the next bag in the discard queue will also refill a bag if found to be empty
+
+    public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//the 3 bag methods are very similar except that they access different bags.
         /**
          *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
@@ -253,16 +253,18 @@ public class PebbleGame {
         int replacementpebble = -1;
         int numberOfIterations = 0;
         int[] tenPebbles = new int[10];
-        if (justDrawTen) {
+        if (justDrawTen) {//check if just 10 pebbles want to be drawn from the bag or a draw discard action is to be performed
             numberOfIterations = 10;
         } else {
             numberOfIterations = 1;
         }
             for (int i = 0; i <= numberOfIterations-1; i++) {
-                replacementpebble = bagX.drawPebble();
+                //iterates the amount depending on the amount pebbles to be taken out so 1 or 10
+                replacementpebble = bagX.drawPebble();//takes a pebble out bag X
                 if (replacementpebble == -1) {//when bag is empty
-                    bagX.refillBag();
+                    bagX.refillBag();//refills the bag instantly
                     thisPlayer.generateRandomChoice();//randomly selects a new bag to draw from
+                    //calls the bag methods until a pebble is drawn successfully
                     if(thisPlayer.getRandomBag()==0){//attempt to draw from bag X
                         PebbleGame.drawAndDiscardFromBagX(thisPlayer,false);
                     }else if(thisPlayer.getRandomBag()==1){//attempt to draw from bag Y
@@ -305,6 +307,7 @@ public class PebbleGame {
                 if (replacementpebble == -1) {//when bag is empty
                     bagY.refillBag();
                     thisPlayer.generateRandomChoice();//randomly selects a new bag to draw from
+                    //calls the bag methods until a pebble is drawn successfully
                     if(thisPlayer.getRandomBag()==0){//attempt to draw from bag X
                         PebbleGame.drawAndDiscardFromBagX(thisPlayer,false);
                     }else if(thisPlayer.getRandomBag()==1){//attempt to draw from bag Y
@@ -346,6 +349,7 @@ public class PebbleGame {
                 if (replacementpebble == -1) {//when bag is empty
                     bagZ.refillBag();
                     thisPlayer.generateRandomChoice();//randomly selects a new bag to draw from
+                    //calls the bag methods until a pebble is drawn successfully
                     if(thisPlayer.getRandomBag()==0){//attempt to draw from bag X
                         drawAndDiscardFromBagX(thisPlayer,false);
                     }else if(thisPlayer.getRandomBag()==1){//attempt to draw from bag Y
@@ -386,14 +390,15 @@ public class PebbleGame {
          *
          *
          */
-        threadList = new Thread[numPlayers];
         //creates each player object and thread for the specified number of players
+        threadList = new Thread[numPlayers];//threads are created depending on the number of player the user has chosen
         for(int i = 0; i <= numPlayers-1; i++){
-            playerList[i]  = getPebbleGame().new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
-            threadList[i] = new PlayerThread(playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread
+            playerList[i]  = getPebbleGame().new Player(1000+i);//create an instance eof a player in the instance of the pebble game class
+            threadList[i] = new PlayerThread(playerList[i]);//pass the instance of the pebbles game class containing the instance of the player into the thread
         }
-        System.out.println("Running the game please check output files after a player/s win...");
-        for (Thread playerThread : threadList) {//second for loop created to start threads seperately from their creation with less overhead between each thread start (overhead involved in creating threads) in order to lessen starvation
+        System.out.println("Running the game please check output files after a player/s win...");//informs the user
+        for (Thread playerThread : threadList) {
+            //second for loop created to start threads separately from their creation with less overhead between each thread start (overhead involved in creating threads) in order to lessen starvation
             playerThread.start();
         }
     }
@@ -434,7 +439,7 @@ public class PebbleGame {
             this.lastBagDrawn = Bag;
         }
 
-        public void setPebbles(int[] pebbles) {
+        public void setPebbles(int[] pebbles) {//populates the array representing players hand with the items of array passed to that player
             for (int i = 0;i<=9;i++){
                 this.pebbles[i] = pebbles[i];
             }
@@ -450,18 +455,15 @@ public class PebbleGame {
             this.playerID = playerID;
         }
 
-        //takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
-
-        public int replacePebble(int replacementPebble) {
-            int index = rand.nextInt(this.getPebbles().length-1);
+        public int replacePebble(int replacementPebble) {//takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
+            int index = rand.nextInt(this.getPebbles().length-1);//random value
             int discardPebble = this.getPebbles()[index];
             this.getPebbles()[index] = replacementPebble;
             this.updateWeight(replacementPebble, discardPebble);
-            return discardPebble;
+            return discardPebble;//return the pebble a player chose to discard into a white bag
         }
 
-        //calculates the total weight of a player's hand
-        private void calculateTotalWeight(){//make private
+        private void calculateTotalWeight(){//calculates the total weight of a player's hand
             int totalWeight = 0;
             for (int i = 0;i<=9;i++){
                 totalWeight += this.pebbles[i] ;

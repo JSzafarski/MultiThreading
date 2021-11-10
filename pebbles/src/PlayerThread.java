@@ -7,14 +7,23 @@ import java.io.IOException;
 import java.io.FileWriter;
 
 public class PlayerThread extends Thread {
+    /**
+     *
+     */
     PebbleGame.Player thisPlayer;//we need to pass instance eof player from game into thread
     static boolean wonGame = false;
 
     public PlayerThread(PebbleGame.Player playerfromGame) {
+        /**
+         *
+         */
         thisPlayer = playerfromGame;
     }//passes instance eof player into the thread
 
     public void CreateFile() {
+        /**
+         *
+         */
         try {
             File playerFile = new File("Player "+thisPlayer.getPlayerID()+".txt");
            if(playerFile.createNewFile()){
@@ -28,6 +37,9 @@ public class PlayerThread extends Thread {
     }
     @Override
     public void run() {//this will run each player
+        /**
+         *
+         */
         System.out.println("INFO: Starting Player: "+ thisPlayer.getPlayerID() + "...");
         CreateFile();//generate a text file for each player
         thisPlayer.generateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
