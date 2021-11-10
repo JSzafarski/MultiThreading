@@ -2,6 +2,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Bag {
+    /**
+     *
+     */
 
     Random rand = new Random();
     private ArrayList<Integer> pebbles = new ArrayList<Integer>();
@@ -10,6 +13,9 @@ public class Bag {
     public ArrayList<Integer> getPebbles() {return this.pebbles;}
 
     public void setPebbles(ArrayList<Integer> pebbles) {
+        /**
+         *
+         */
         int pebblePos = 0;
         while(pebblePos <= pebbles.size()-1){
             this.pebbles.add(pebbles.get(pebblePos));
@@ -23,6 +29,9 @@ public class Bag {
 
     //draw pebble from a chosen bag method
     public int drawPebble() {
+        /**
+         *
+         */
         if (this.getPebbles().size() == 0) {
             //return -1 if empty list
             return -1;
@@ -39,11 +48,17 @@ public class Bag {
 
     //method for discarding pebble into selected bag from a selected player
     public void discardPebble(int replacementPebble) {
+        /**
+         *
+         */
         this.getPebbles().add(replacementPebble);
     }
 
     //method to empty a white bag into an empty black bag
     public void refillBag() {
+        /**
+         *
+         */
         this.setPebbles(this.getBagPair().getPebbles());
         this.getBagPair().getPebbles().clear();
     }

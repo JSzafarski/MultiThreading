@@ -10,8 +10,8 @@ public class PlayerThread extends Thread {
     /**
      *
      */
-    PebbleGame.Player thisPlayer;//we need to pass instance eof player from game into thread
-    static boolean wonGame = false;
+    PebbleGame.Player thisPlayer;
+    static boolean wonGame = false;//static as we want to share this between all player threads since once player winning stops the game for all other players/threads
 
     public PlayerThread(PebbleGame.Player playerfromGame) {
         /**
@@ -43,14 +43,15 @@ public class PlayerThread extends Thread {
         System.out.println("INFO: Starting Player: "+ thisPlayer.getPlayerID() + "...");
         CreateFile();//generate a text file for each player
         thisPlayer.generateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
-        PebbleGame.draw10(thisPlayer);//draws first 10 pebbeles
+        PebbleGame.draw10(thisPlayer);//draws first 10 pebbles
         FileWriter writeToPlayerFile = null;
         try {
             writeToPlayerFile = new FileWriter("Player "+thisPlayer.getPlayerID()+".txt");
-        } catch (IOException e) {
+            //initialises a file write for a txt file and names the file based on the players id
+        } catch (IOException e) {//catches issues
             System.out.println(e.getMessage());
         }
-        while (!wonGame) {
+        while (!wonGame) {//iterates until player wins o their hand of pebbles is a sum equal to 100
             if (thisPlayer.getTotalWeight() == 100){
                 wonGame = true;
                 try {
@@ -68,10 +69,10 @@ public class PlayerThread extends Thread {
             //player chooses a black bag at random
             //player selects a pebble and if its empty then the player chooses another random back that's refilled
             //cycle repeats until a winner is announced
-            //compare two arrays before and after to see what pebble has been discarded and drawn!
+            //compare two arrays before and after to see what pebble has been discarded and drawn
             int[] TempPebbleArray = new int[10];
             for (int i = 0;i<=9;i++) {
-                TempPebbleArray[i] = thisPlayer.getPebbles()[i];
+                TempPebbleArray[i] = thisPlayer.getPebbles()[i];//array used to compare changes in players array after draw discard atomic action
             }
             thisPlayer.generateRandomChoice();
             if(thisPlayer.getRandomBag()==0){//then go to X
@@ -87,12 +88,12 @@ public class PlayerThread extends Thread {
             String lastBagDiscarded = "" ;
             for (int i = 0 ;i<=9;i++){
                 if(TempPebbleArray[i]!=thisPlayer.getPebbles()[i]){
-                    newPebble = thisPlayer.getPebbles()[i];
-                    oldPebble = TempPebbleArray[i];
+                    newPebble = thisPlayer.getPebbles()[i];//used for outputting what pebble was discarded
+                    oldPebble = TempPebbleArray[i];//used for outputting what pebble was drawn
                     break;//as there can only be one change in the array in a given iteration.
                 }
             }
-            if(Objects.equals(thisPlayer.getLastBagDrawn(), "X")){
+            if(Objects.equals(thisPlayer.getLastBagDrawn(), "X")){//checks which pag pair was used for the draw discard action
                 lastBagDrawn = "X";
                 lastBagDiscarded = "A";
             }else if(Objects.equals(thisPlayer.getLastBagDrawn(), "Y")){
@@ -102,7 +103,7 @@ public class PlayerThread extends Thread {
                 lastBagDrawn = "Z";
                 lastBagDiscarded = "C";
             }
-            //output this into some texts files
+            //outputs necessary data into  texts files
             String string1=("player "+thisPlayer.getPlayerID()+" has drawn a " + newPebble + " from bag " + lastBagDrawn);
             String string2=("player "+thisPlayer.getPlayerID()+" hand is "+ Arrays.toString(TempPebbleArray).replace("[","").replace("]",""));
             String string3=("player "+thisPlayer.getPlayerID()+" has discarded a " + oldPebble + " from bag " + lastBagDiscarded);
@@ -119,7 +120,7 @@ public class PlayerThread extends Thread {
                 System.out.println("INFO: "+string3);
                 System.out.println("INFO: "+string4);
                 writeToPlayerFile.flush();
-            } catch (IOException e) {
+            } catch (IOException e) {//errors caught here
                 System.out.println(e.getMessage());
             }
         }
