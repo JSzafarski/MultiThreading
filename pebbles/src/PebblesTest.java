@@ -267,7 +267,6 @@ public class PebblesTest{
                 break;
             }
         }
-
     }
 
     @Test
@@ -330,6 +329,7 @@ public class PebblesTest{
     @Test
     public void testdraw10(){
         ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10));
+        int[] arrtestPebbles = new int[]{1, 2, 3, 4, 5, 6,7,8,9,10};//equal to the arraylist pebbles
         boolean found = false;
         int pebbleRepalced = 0;
         int pebbleDiscarded = 0;
@@ -345,29 +345,25 @@ public class PebblesTest{
             if(PebbleGame.bagX.drawPebble()!=-1){//check if its empty after the drawing
                 fail();
             }else{
-
-                //assert the player has the 10 pebbles in it's array
+                assertSame(testplayer.getPebbles(),arrtestPebbles);
+                //assert the player has the 10 pebbles in its array
             }
         }else if(Objects.equals(testplayer.getLastBagDrawn(), "Y")){
             if(PebbleGame.bagY.drawPebble()!=-1){//check if its empty after the drawing
                 fail();
             }else{
-                int[] pebblearray = new int[testPebbles.size()];
-                pebblearray = testPebbles.toArray();
-                assertSame(testplayer.getPebbles(),);
-                //assert the player has the 10 pebbles in it's array
+                assertSame(testplayer.getPebbles(),arrtestPebbles);
+                //assert the player has the 10 pebbles in its array
             }
         }else{//Z
             if(PebbleGame.bagZ.drawPebble()!=-1){//check if its empty after the drawing
                 fail();
             }else{
-                //assert the player has the 10 pebbles in it's array
+                assertSame(testplayer.getPebbles(),arrtestPebbles);
+                //assert the player has the 10 pebbles in its array
             }
         }
-
-
     }
-
     //testing the PlayerThread Class methods
 //    @Test
 //    public testCreateFile(){
@@ -378,6 +374,5 @@ public class PebblesTest{
 //    public testrun(){
 //
 //    }
-
-
+    
 }
