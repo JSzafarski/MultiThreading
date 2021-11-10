@@ -5,27 +5,31 @@ import java.util.Objects;
 import java.io.File;
 import java.io.IOException;
 import java.io.FileWriter;
-
+/**
+ * @since v1.6
+ * This is a class where the actual threads are run
+ * The method instances all individually create a file based on the player id and output the player pebble choices in those txt files
+ *
+ */
 public class PlayerThread extends Thread {
-    /**
-     *
-     */
-    PebbleGame.Player thisPlayer;
+    PebbleGame.Player thisPlayer;//declares a player instance which will be assigned with the instance that's passed into each thread
     static boolean wonGame = false;//static as we want to share this between all player threads since once player winning stops the game for all other players/threads
 
     public PlayerThread(PebbleGame.Player playerfromGame) {
         /**
-         *
+         * @since V1.8
+         * @param playerfromGame ,used to pass an instance of a player into the thread instance to represent that player
          */
-        thisPlayer = playerfromGame;
-    }//passes instance eof player into the thread
+        thisPlayer = playerfromGame;//sets the link between player instance and thread instance
+    }//passes instance of player into the thread
 
     public void CreateFile() {
         /**
-         *
+         * creates a file for that particular player as it need to write player choices into that txt file so the threads can be later traced in the txt file
+         * @since V1.8
          */
         try {
-            File playerFile = new File("Player "+thisPlayer.getPlayerID()+".txt");
+            File playerFile = new File("Player "+thisPlayer.getPlayerID()+".txt");//file named after each player's ID
            if(playerFile.createNewFile()){
                System.out.println("INFO: File created! for player :"+thisPlayer.getPlayerID());
            }else{
@@ -115,7 +119,7 @@ public class PlayerThread extends Thread {
             String string4=("player "+thisPlayer.getPlayerID()+" hand is "+ Arrays.toString(thisPlayer.getPebbles()).replace("[","").replace("]",""));
             try {
                 assert writeToPlayerFile != null;
-                writeToPlayerFile.write(string1 + "\n");
+                writeToPlayerFile.write(string1 + "\n");//Write outputs into the test file to describe player actions and pebble array state
                 writeToPlayerFile.write(string2+ "\n");
                 writeToPlayerFile.write(string3+ "\n");
                 writeToPlayerFile.write(string4+ "\n");
