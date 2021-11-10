@@ -162,7 +162,7 @@ public class PebbleGame {
          *@return Returns an Integer array list of all the pebble weights that where read from the csv/txt file provided
          *@param  Receives a txt file in the form of a String which it then located and reads
          *@throws IOException since the may be issues finding/parsing the file
-         * @throws InvalidfileExeption as there may be issues within the file structure that need to be addressed by the user to run correctly
+         *@throws InvalidfileExeption as there may be issues within the file structure that need to be addressed by the user to run correctly
          */
         ArrayList<Integer> pebbles = new ArrayList<Integer>();//array list that will store the pebbles read from the file
         BufferedReader reader;
@@ -260,13 +260,15 @@ public class PebbleGame {
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//the 3 bag methods are very similar except that they access different bags.
         /**
          *@since v1.8
+         * This method handles player draw and discard actions for the BagX and BagA respectively
+         * the actions are preformed on static bag objects that also reside within this class (above)
          *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
          *This class is for picking and discarding  a pebble from bag X and bag A respectively.
          *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
          * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
-         * @param 
-         * @param
+         * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
+         * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
          */
         int replacementpebble = -1;
         int numberOfIterations = 0;
@@ -307,11 +309,16 @@ public class PebbleGame {
 
     public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean justDrawTen){
         /**
-         * @since
-         *This class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+         *@since v1.8
+         * This method handles player draw and discard actions for the BagY and BagB respectively
+         * the actions are preformed on static bag objects that also reside within this class (above)
+         *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
-         *This class is for picking and discarding  a pebble from bag Y and bag B respectively.
-         *
+         *This class is for picking and discarding  a pebble from bag X and bag A respectively.
+         *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
+         * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
+         * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
+         * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
          */
         int replacementpebble = -1;
         int numberOfIterations = 0;
@@ -349,11 +356,16 @@ public class PebbleGame {
     }
     public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean justDrawTen){
         /**
-         * @since
-         *This class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+         *@since v1.8
+         * This method handles player draw and discard actions for the BagZ and Bag C respectively
+         * the actions are preformed on static bag objects that also reside within this class (above)
+         *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
-         *This class is for picking and discarding  a pebble from bag Z and bag C respectively.
-         *
+         *This class is for picking and discarding  a pebble from bag X and bag A respectively.
+         *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
+         * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
+         * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
+         * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
          */
         int replacementpebble = -1;
         int numberOfIterations = 0;
@@ -393,8 +405,9 @@ public class PebbleGame {
 
     public static synchronized void draw10(Player thisPlayer){//method fills a player's hand
         /**
-         *@since
-         *
+         *@since V1.7
+         *@param thisPlayer ,The player object is passed into this method, and it then checks players random bag
+         *       then it calls the corresponding one of the 3 draw/discard bag methods to pick first 10 pebbles
          */
         if(thisPlayer.getRandomBag()==1){//draw 10 from bag X
             drawAndDiscardFromBagX(thisPlayer,true);
@@ -407,8 +420,10 @@ public class PebbleGame {
 
     public void runPlayers(int numPlayers){
         /**
-         *@since
-         *
+         * this method created thread objects hich contain the run() methods and each thread is paired to a player instance by passing it into a thread
+         * playerThread.start() is in another loop to reduce the overhead since by the time some players get to play the game we can get winning threads
+         *@since v1.9
+         *@param numPlayers is the number of player that the user has previous entered which will help to define the amount of threads too
          */
         //creates each player object and thread for the specified number of players
         threadList = new Thread[numPlayers];//threads are created depending on the number of player the user has chosen

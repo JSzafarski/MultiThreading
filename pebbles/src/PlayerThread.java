@@ -77,10 +77,15 @@ public class PlayerThread extends Thread {
             thisPlayer.generateRandomChoice();
             if(thisPlayer.getRandomBag()==0){//then go to X
                 PebbleGame.drawAndDiscardFromBagX(thisPlayer,false);
+                Thread.yield();//allows other threads to have more chance at choosing a bag
+                //after each a bag is picked by the thread suspend the execution to help other threads access the bag
+                //is a way to tell the JVM that the current thread has paused its execution and the JVM can allow other threads to use the CPU and other resources.
             }else if(thisPlayer.getRandomBag()==1){//GO TO Y
                 PebbleGame.drawAndDiscardFromBagY(thisPlayer,false);
+                Thread.yield();//allows other threads to have more chance at choosing a bag
             }else{//GO TO Z
                 PebbleGame.drawAndDiscardFromBagZ(thisPlayer,false);
+                Thread.yield();//allows other threads to have more chance at choosing a bag
             }
             int newPebble = 0;
             int oldPebble = 0;
