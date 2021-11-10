@@ -11,21 +11,18 @@ public class PebbleGame {
      * @author 700040943
      *
      */
+    public static PebbleGame pebbleGame = new PebbleGame();
+    public PebbleGame(){}
+    public static synchronized PebbleGame getPebbleGame(){return pebbleGame;}
+    //singleton declaration of the pebbleGame class instance required to run the program
 
     public static void main(String[] args){//this can be confusing as its instance of a instance of pebble game that creates instance of players
         /**
          * This method creates an instance of the Pebble Game class where the instances of players will be instantiated
          *
          */
-
-        //PebbleGame game = new PebbleGame();
-        //game.start_game();
         getPebbleGame().start_game();
     }
-    //singelton
-    private static PebbleGame pebbleGame = new PebbleGame();
-    private PebbleGame(){}
-    public static synchronized PebbleGame getPebbleGame(){return pebbleGame;}
 
     static Player[] playerList = new Player[100];
     static Thread[] threadList = new Thread[100];
@@ -222,7 +219,6 @@ public class PebbleGame {
                         }
                         //save the number into an array and proceed gathering more numbers
                     }
-                    //CurrentString.append(StringOfNumbers.charAt(x));
                     positionInArray++;
                 }
                 y_axis++;
@@ -392,7 +388,6 @@ public class PebbleGame {
          */
         threadList = new Thread[numPlayers];
         //creates each player object and thread for the specified number of players
-        //PebbleGame deafultPebblegame = new PebbleGame();//create a instance of a pebblegame class
         for(int i = 0; i <= numPlayers-1; i++){
             playerList[i]  = getPebbleGame().new Player(1000+i);//create a instanc eof a player in the instance of the pebbel game class
             threadList[i] = new PlayerThread(playerList[i]);//pass the instance of the pebblegame game class countaining the instance eof the player into the thread

@@ -3,6 +3,8 @@ import org.junit.*;
 import org.junit.experimental.theories.suppliers.TestedOn;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.io.IOException;
 import java.util.*;
 import java.util.ArrayList;
 import static org.junit.Assert.*;
@@ -58,7 +60,7 @@ public class PebblesTest{
     @Test
     public void testreplacePebble(){//should replace a pebble from the array and place the replacement pebble inside the array
         int replacement_pebble = 69;
-        int[] testpebbles = new int[]{1,2,3,4,5,6,,7,8,9,1,10,122,};
+        int[] testpebbles = new int[]{1,2,3,4,5,6,7,8,9,1,10,122};
         PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
         //we need to check where the output pebble has been replaced by the replacement pebble
         testPlayer.setPebbles(testpebbles);
@@ -114,8 +116,6 @@ public class PebblesTest{
         testPebbles.add(32);
         Bag testBag = new Bag();
         testBag.setPebbles(testPebbles);
-        int testItemCount1 = 0;
-        int testItemCount2 = 0;
         boolean finished = false;
         while (finished){//empties the bag so its empty
             int testPebble = testBag.drawPebble();
@@ -139,11 +139,82 @@ public class PebblesTest{
         Bag bagA = new Bag();
         bagA.setPebbles(testPebbles);
         bagX.setBagPair(bagA);
-        assertEquals(testPebbles,bagX.refillBag().getPebbles());
+        bagX.refillBag();
+        assertEquals(testPebbles,bagX.getPebbles());
     }
+
     //testing the thread class
 
-    //testing the Pebbles test class methods
+    //testing the PebbleGame
+    @Test
+    public void testsetBagPairs(){
+        PebbleGame.setBagPairs();
+        assertSame(PebbleGame.bagX,PebbleGame.bagA);
+        assertSame(PebbleGame.bagY,PebbleGame.bagB);
+        assertSame(PebbleGame.bagZ,PebbleGame.bagC);
+    }
+
+    @Test
+    public void testread_csv() throws InvalidfileExeption, IOException {
+        //verify exeptions
+        String testfile  = "test.txt";
+        ArrayList<Integer> testPebbles = new ArrayList<>();
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        assertSame(testPebbles,PebbleGame.pebbleGame.read_csv(testfile));
+    }
+
+    @Test
+    public void testcalculate_minPebbles(){
+        int testPlayercount = 10;
+        assertEquals(11*testPlayercount,PebbleGame.calculate_minPebbles(10));
+    }
+
+    @Test
+    public void testdrawAndDiscardFromBagX(){
+        ArrayList<Integer> testPebbles = new ArrayList<>();
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(10);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+        testPebbles.add(5);
+
+        PebbleGame.bagX.setPebbles(testPebbles);
+        PebbleGame.setBagPairs();
+        PebbleGame testGame = new PebbleGame();//creates an instance of pebble game
+        PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbble game
+        testplayer.setPebbles(new int[]{1, 2, 3, 4, 5, 6,7,8,9,10});
+        PebbleGame.drawAndDiscardFromBagX(testplayer,false);//assert just draw twn and assert picking one pebble
+        //check if player removed a pebble
+        //check if the players discard pebbel is in bag A and chck if player took a pebble form bag x
+
+
+
+    }
+
+    @Test
+    public void testdrawAndDiscardFromBagY(){
+
+    }
+
+    @Test
+    public void testdrawAndDiscardFromBagZ(){
+
+    }
+
 
 
 

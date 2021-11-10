@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Player 1000.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Player 1001.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Player 1002.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Player 1003.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Player 1004.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pebbles/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pebbles/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/Bag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebblesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/PebblesTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/Playerthread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/Playerthread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Bag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame$Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebbleGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pebbles/PebblesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
