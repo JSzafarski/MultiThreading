@@ -60,6 +60,7 @@ public class PebbleGame {
 
 
     public void start_game(){//if the under enters e then the program must exit.
+        //not tested by junit4
         /**
          * @since v1.0
          *Fetches user input of players and files necessary to populate the corresponding bags
@@ -419,7 +420,7 @@ public class PebbleGame {
         }
     }
 
-    public void runPlayers(int numPlayers){
+    public void runPlayers(int numPlayers){//not tested by junit4
         /**
          *This method created thread objects which contain the run() methods and each thread is paired to a player instance by passing it into a thread
          *playerThread.start() is in another loop to reduce the overhead since by the time some players get to play the game we can get winning threads

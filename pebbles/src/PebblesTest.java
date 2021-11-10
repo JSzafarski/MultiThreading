@@ -254,6 +254,10 @@ public class PebblesTest{
         //check if the players discard pebbel is in bag A and chck if player took a pebble form bag x
 
     }
+    @Test
+    public void testdraw10(){
+
+    }
 
 
 
