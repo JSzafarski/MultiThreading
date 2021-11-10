@@ -4,16 +4,17 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 
+/**
+ * This is the main class that Joins all other classes together to run the pebbles game successfully.
+ * It contains the main run method so the gamer is able to execute upon startup of the java program.
+ * its non-static as it has to contain an inner player class within therefore only certain methods are static.
+ * it creates a singleton instance of itself to run correctly which is shown below.
+ * @since v1.0
+ * @author 690036000
+ * @author
+ */
 
 public class PebbleGame {
-    /**
-     * @since
-     * @author
-     * @author
-     *
-     * this is the mina place where the program is run from
-     *
-     */
 
     public static PebbleGame pebbleGame = new PebbleGame();//creates a static instance of PebbleGame
     public PebbleGame(){}
@@ -22,8 +23,9 @@ public class PebbleGame {
 
     public static void main(String[] args){
         /**
-         * @since
+         * @since v1.1
          * This method creates an instance of the Pebble Game class where the instances of players will be instantiated
+         * This will execute upon startup to get things going.
          */
         getPebbleGame().start_game();//calls the method start_game() to proceed with execution
     }
@@ -37,7 +39,6 @@ public class PebbleGame {
     static Bag bagZ = new Bag();
 
     //instantiating white bags
-
     static Bag bagA = new Bag();//white bags
     static Bag bagB = new Bag();
     static Bag bagC = new Bag();
@@ -45,11 +46,11 @@ public class PebbleGame {
     //method for setting bag pairs of bags
     public static void setBagPairs() {
         /**
-         * @since
+         * @since v1.0
          *This is a static method that links up the different bags into corresponding pairs.
-         *This allows more organised transfer of pebbles when refilling the bag
+         *This allows more organised transfer of pebbles when refilling the bag.
          */
-        bagX.setBagPair(bagA);
+        bagX.setBagPair(bagA);//Allows player to discard the pebble into correct bags
         bagY.setBagPair(bagB);
         bagZ.setBagPair(bagC);
         bagA.setBagPair(bagX);
@@ -60,10 +61,11 @@ public class PebbleGame {
 
     public void start_game(){//if the under enters e then the program must exit.
         /**
-         * @since
-         *fetches user input of players and files necessary to populate the corresponding bags
-         *user is able to enter E or X at any time in the process to either exit the program or Start over
-         *
+         * @since v1.0
+         *Fetches user input of players and files necessary to populate the corresponding bags
+         *User is able to enter E or X at any time in the process to either exit the program or Start over
+         *Uses console input.
+         * doesn't contain parameters or return values as this is uses inputs and outputs of functions within itself
          */
         int numPlayers;//number of players
         ArrayList<Integer> pebblesFromFile = new ArrayList<Integer>();
@@ -126,7 +128,7 @@ public class PebbleGame {
                                     }
                                     pebblesFromFile.clear();
                                 }
-                            } catch (InvalidfileExeption | IOException e) {
+                            } catch (InvalidfileExeption | IOException e) {//catches posible exeptions related to file reading
                                 exeption = true;
                                 System.out.println(e.getMessage());
                                 break;
@@ -153,13 +155,15 @@ public class PebbleGame {
 
     public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {
         /**
-         * @since
-         *
+         *@since v1.0
          *Accepts csv or txt files to read player data
          *returns an array list of the whole file that is being read
          *minimum length of file has to be 27 for it to contain 10 items(mini-max)
+         *@return Returns an Integer array list of all the pebble weights that where read from the csv/txt file provided
+         *@param  Receives a txt file in the form of a String which it then located and reads
+         *@throws IOException since the may be issues finding/parsing the file
+         * @throws InvalidfileExeption as there may be issues within the file structure that need to be addressed by the user to run correctly
          */
-
         ArrayList<Integer> pebbles = new ArrayList<Integer>();//array list that will store the pebbles read from the file
         BufferedReader reader;
         String stringOfNumbers;
@@ -243,10 +247,10 @@ public class PebbleGame {
 
     public static int calculate_minPebbles(int players){
         /**
-         * @since
+         * @since v1.1
          *determines the minimum number of pebbles required for the game to run error free
          * @param players : passes a player amount
-         * @
+         * @return a int value of the minimum number of pebbles required for the players
          */
         return 11*players;//needs at least 11 time the players to avoid mathematical problems with the game
     }
@@ -255,11 +259,14 @@ public class PebbleGame {
 
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//the 3 bag methods are very similar except that they access different bags.
         /**
-         * @since
+         *@since v1.8
          *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
          *This class is for picking and discarding  a pebble from bag X and bag A respectively.
-         *
+         *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
+         * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
+         * @param 
+         * @param
          */
         int replacementpebble = -1;
         int numberOfIterations = 0;
