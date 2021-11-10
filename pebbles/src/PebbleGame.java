@@ -11,7 +11,7 @@ import java.util.Random;
  * it creates a singleton instance of itself to run correctly which is shown below.
  * @since v1.0
  * @author 690036000
- * @author
+ * @author 700040943
  */
 
 public class PebbleGame {

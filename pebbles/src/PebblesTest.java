@@ -13,108 +13,112 @@ import static org.junit.Assert.*;
 //@After is run after each test is executed
 //@before class runs this first thing in the code
 
+/**
+ * @author 690036000
+ * @author 700040943
+ * @since v1.0
+ *This class does all unit tests on each method of the whole pebble game app.
+ */
 @RunWith(JUnit4.class)
 public class PebblesTest{
-    /**
-     * @author 690036000
-     * @author ........
-     * @since v1.0
-     *This class does all unit tests on each method of the whole pebble game app.
-     *
-     *make it count errors idk??
-     */
+
     //testing the player class
     @Test
     public void testgetPlayerID(){
-        int playerID = 1000;
+        int playerID = 1000;//any player id is possible to be chosen as long as it's an integer
         PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(playerID);
         assertEquals(playerID,testPlayer.getPlayerID());//compares test input vs what the return method gives
     }
+
     @Test
     public void testSetGetPebbles(){
-        int[] testpebbles = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] testpebbles = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};//a pebble array is chosen to populate players hand
         PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
-        testPlayer.setPebbles(testpebbles);
-        assertEquals(testpebbles,testPlayer.getPebbles());
+        testPlayer.setPebbles(testpebbles);//pebble array setter in player class
+        assertEquals(testpebbles,testPlayer.getPebbles());//compares if both arrays are the same (which they should be),also test if the getter works
     }
+
     @Test
     public void testgenerateRandomChoiceandgetRandomBag(){
-        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
-        testPlayer.generateRandomChoice();
-        int choice = testPlayer.getRandomBag();
-        assertEquals(0,choice);//need to make sure this is done
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);//creates a player object
+        testPlayer.generateRandomChoice();//generates a random choice which will be used to pick a random bag from with either bag X,Y,Z
+        int choice = testPlayer.getRandomBag();//getter method for getting the random choice from the player instance
+        if(!(choice == 0 || choice == 1 || choice == 2)){
+            fail();//if the value is not on of those 3 options then the test fails
+        }else{
+            assertTrue(true);//this signifies that the method has worked correctly
+        }
     }
 
     @Test
     public void testlastBagDrawnAndgetLastBagDrawn(){
-        String testBag ="A";
-        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
-        testPlayer.setLastBagDrawn(testBag);
-        assertEquals(testBag,testPlayer.getLastBagDrawn());
+        String testBag ="A";//choose a letter (the choice isn't too significant here)
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);//creating a player object
+        testPlayer.setLastBagDrawn(testBag);//setting last bag drawn
+        assertEquals(testBag,testPlayer.getLastBagDrawn());//checking if the getter works and returns the expected result
 
     }
+
     @Test
     public void testcalculateTotalWeight(){
-        int[] testpebbles = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int expectedWeight =55;
-        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
-        testPlayer.setPebbles(testpebbles);
-        assertEquals(testPlayer.getTotalWeight(),expectedWeight);
+        int[] testpebbles = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};//array used for testing purposes
+        int expectedWeight = 55;//this is just a sum of the pebbles in the array above
+        PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);//player instance being made
+        testPlayer.setPebbles(testpebbles);//sets the array into player hand(array)
+        assertEquals(testPlayer.getTotalWeight(),expectedWeight);//checks if 1) calculatetotalpebbles() works and 2) getter works
     }
+
     @Test
     public void testreplacePebble(){//should replace a pebble from the array and place the replacement pebble inside the array
-        int replacement_pebble = 69;
-        int[] testpebbles = new int[]{1,2,3,4,5,6,7,8,9,1,10,122};
+        boolean found = false;
+        int replacement_pebble = 69;//pebble that will be replacing another pebble in the player array
+        int[] testpebbles = new int[]{1,2,3,4,5,6,7,8,9,1,10,90};//a example pebble array that will be assigned to player
         PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);
         //we need to check where the output pebble has been replaced by the replacement pebble
-        testPlayer.setPebbles(testpebbles);
-        int testweight = testPlayer.getTotalWeight();
-        int testdiscardpebble = testPlayer.replacePebble(replacement_pebble);
+        testPlayer.setPebbles(testpebbles);//sets the array as players current hand
+        int testweight = testPlayer.getTotalWeight(); //the total weight of the testpebbles array
+        int testdiscardpebble = testPlayer.replacePebble(replacement_pebble);//replaces a pebble for the pebble of value 69
         //we want to check if at the position of the previous discard pebble exists the new replacement pebble
         for(int x = 0;x<=9;x++){
             if (testPlayer.getPebbles()[x] == replacement_pebble){
                 assertEquals(testdiscardpebble,testpebbles[x]);//checks if the correct pebble has been replaced at the correct position int the array
                 assertEquals(testweight,testPlayer.getTotalWeight()-testdiscardpebble+replacement_pebble);//check if updated weight is what it should be.
+                found = true;
                 break;
             }
         }
+        if(!found){
+            fail();//if replacement pebble is not found then the test fails as its against the expectation
+        }
     }
+
     //testing bag class
 
     @Test
     public void testgetBagPair(){
-        Bag testBagPair =new Bag();
-        Bag testBag = new Bag();
-        testBag.setBagPair(testBagPair);
-        assertSame(testBagPair,testBag.getBagPair());
+        Bag testBagPair = new Bag();//creates a bag pair object
+        Bag testBag = new Bag();//creates a bag object so it can be manipulated
+        testBag.setBagPair(testBagPair);//sets the link between two bags
+        assertSame(testBagPair,testBag.getBagPair());//checks if getting the bag pair of testBag is the same as testBagPair
     }
+
     @Test
-    public void testsetPebblesdrawPebble(){
-        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10);
+    public void testsetPebblesdrawPebble(){//checks if pebbles can be set and drawn prom a particular bag object correctly
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10));
         Bag testBag = new Bag();
         testBag.setPebbles(testPebbles);
-        ArrayList<Integer> testList = new ArrayList<>();
         for(int x=0;x<testPebbles.size()-1;x++){
-            testList.add(testBag.drawPebble());
+            boolean value = testPebbles.contains(testBag.drawPebble());//checks if all the items that are randomly selected from a bag are all in the original list that was passed into the bag in the first place
+            assertTrue(value);//if one of the items is incorrect then assert false will fail the test
         }
-        Assert.assertEquals(testPebbles,testList);//checks if the both lists contain same items
     }
 
     @Test
     public void testdiscardPebble(){
-        int testreplacementPebble = 66;
-        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(44, 24, 29, 32));
+        int testreplacementPebble = 66;//replacement pebble that usually come from the player
         Bag testBag = new Bag();
-        testBag.setPebbles(testPebbles);
-        boolean finished = false;
-        while (finished){//empties the bag so its empty
-            int testPebble = testBag.drawPebble();
-            if(testPebble==-1){
-                finished = true;
-            }
-        }
         testBag.discardPebble(testreplacementPebble);//adds the replacement pebble
-        assertEquals(testreplacementPebble,testBag.drawPebble());
+        assertEquals(testreplacementPebble,testBag.drawPebble());//singe only one pebble was placed it should be the pebble that gets drawn out when drawPebble is called
         //should return the replacement pebble as it was the only pebble in the bag after it's been emptied
     }
 
@@ -128,8 +132,6 @@ public class PebblesTest{
         bagX.refillBag();
         assertEquals(testPebbles,bagX.getPebbles());
     }
-
-    //testing the thread class
 
     //testing the PebbleGame
     @Test
@@ -374,5 +376,5 @@ public class PebblesTest{
 //    public testrun(){
 //
 //    }
-    
+
 }

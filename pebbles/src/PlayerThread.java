@@ -9,7 +9,8 @@ import java.io.FileWriter;
  * @since v1.6
  * This is a class where the actual threads are run
  * The method instances all individually create a file based on the player id and output the player pebble choices in those txt files
- *
+ * @author 690036000
+ * @author 700040943
  */
 public class PlayerThread extends Thread {
     PebbleGame.Player thisPlayer;//declares a player instance which will be assigned with the instance that's passed into each thread

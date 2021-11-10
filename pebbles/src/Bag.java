@@ -1,12 +1,12 @@
 import java.util.ArrayList;
 import java.util.Random;
-
+/**
+ * This class allows us to create multiple bag instances for each bag colour and letter
+ * @since v1.0
+ * @author 690036000
+ * @author 700040943
+ */
 public class Bag {
-    /**
-     * This class allows us to create multiple bag instances for each bag colour and letter
-     * @since v1.0
-     */
-
     Random rand = new Random();
     private ArrayList<Integer> pebbles = new ArrayList<Integer>();
     private Bag bagPair;
