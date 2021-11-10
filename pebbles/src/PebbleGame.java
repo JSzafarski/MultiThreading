@@ -7,7 +7,11 @@ import java.util.Random;
 
 public class PebbleGame {
     /**
+     * @since
+     * @author
+     * @author
      *
+     * this is the mina place where the program is run from
      *
      */
 
@@ -18,6 +22,7 @@ public class PebbleGame {
 
     public static void main(String[] args){
         /**
+         * @since
          * This method creates an instance of the Pebble Game class where the instances of players will be instantiated
          */
         getPebbleGame().start_game();//calls the method start_game() to proceed with execution
@@ -40,6 +45,7 @@ public class PebbleGame {
     //method for setting bag pairs of bags
     public static void setBagPairs() {
         /**
+         * @since
          *This is a static method that links up the different bags into corresponding pairs.
          *This allows more organised transfer of pebbles when refilling the bag
          */
@@ -54,6 +60,7 @@ public class PebbleGame {
 
     public void start_game(){//if the under enters e then the program must exit.
         /**
+         * @since
          *fetches user input of players and files necessary to populate the corresponding bags
          *user is able to enter E or X at any time in the process to either exit the program or Start over
          *
@@ -146,6 +153,8 @@ public class PebbleGame {
 
     public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {
         /**
+         * @since
+         *
          *Accepts csv or txt files to read player data
          *returns an array list of the whole file that is being read
          *minimum length of file has to be 27 for it to contain 10 items(mini-max)
@@ -234,6 +243,7 @@ public class PebbleGame {
 
     public static int calculate_minPebbles(int players){
         /**
+         * @since
          *determines the minimum number of pebbles required for the game to run error free
          * @param players : passes a player amount
          * @
@@ -245,6 +255,7 @@ public class PebbleGame {
 
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//the 3 bag methods are very similar except that they access different bags.
         /**
+         * @since
          *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
          *This class is for picking and discarding  a pebble from bag X and bag A respectively.
@@ -289,6 +300,7 @@ public class PebbleGame {
 
     public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean justDrawTen){
         /**
+         * @since
          *This class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
          *This class is for picking and discarding  a pebble from bag Y and bag B respectively.
@@ -330,6 +342,7 @@ public class PebbleGame {
     }
     public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean justDrawTen){
         /**
+         * @since
          *This class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
          *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
          *This class is for picking and discarding  a pebble from bag Z and bag C respectively.
@@ -373,7 +386,7 @@ public class PebbleGame {
 
     public static synchronized void draw10(Player thisPlayer){//method fills a player's hand
         /**
-         *
+         *@since
          *
          */
         if(thisPlayer.getRandomBag()==1){//draw 10 from bag X
@@ -387,7 +400,7 @@ public class PebbleGame {
 
     public void runPlayers(int numPlayers){
         /**
-         *
+         *@since
          *
          */
         //creates each player object and thread for the specified number of players
@@ -405,7 +418,7 @@ public class PebbleGame {
 
      class Player {
          /**
-          *
+          *@since
           *
           */
         private int randomBag;

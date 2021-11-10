@@ -17,7 +17,7 @@ public class Bag {
          *
          */
         int pebblePos = 0;
-        while(pebblePos <= pebbles.size()-1){
+        while(pebblePos <= pebbles.size()-1){//populates the bag with pebbles
             this.pebbles.add(pebbles.get(pebblePos));
             pebblePos++;
         }
