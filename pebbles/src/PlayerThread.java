@@ -23,7 +23,7 @@ public class PlayerThread extends Thread {
         thisPlayer = playerfromGame;//sets the link between player instance and thread instance
     }//passes instance of player into the thread
 
-    public void createFile() {
+    public void createFile(){
         /**
          * creates a file for that particular player as it need to write player choices into that txt file so the threads can be later traced in the txt file
          * @since V1.8

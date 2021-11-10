@@ -11,10 +11,14 @@ import static org.junit.Assert.*;
 
 //@before runs before each test
 //@After is run after each test is executed
+//@before class runs this first thing in the code
 
 @RunWith(JUnit4.class)
 public class PebblesTest{
     /**
+     * @author 690036000
+     * @author ........
+     * @since v1.0
      *This class does all unit tests on each method of the whole pebble game app.
      *
      *make it count errors idk??
@@ -86,17 +90,7 @@ public class PebblesTest{
     }
     @Test
     public void testsetPebblesdrawPebble(){
-        ArrayList<Integer> testPebbles = new ArrayList<>();
-        testPebbles.add(1);
-        testPebbles.add(2);
-        testPebbles.add(3);
-        testPebbles.add(4);
-        testPebbles.add(5);
-        testPebbles.add(6);
-        testPebbles.add(7);
-        testPebbles.add(8);
-        testPebbles.add(9);
-        testPebbles.add(10);
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10);
         Bag testBag = new Bag();
         testBag.setPebbles(testPebbles);
         ArrayList<Integer> testList = new ArrayList<>();
@@ -109,11 +103,7 @@ public class PebblesTest{
     @Test
     public void testdiscardPebble(){
         int testreplacementPebble = 66;
-        ArrayList<Integer> testPebbles = new ArrayList<>();
-        testPebbles.add(44);
-        testPebbles.add(24);
-        testPebbles.add(29);
-        testPebbles.add(32);
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(44, 24, 29, 32));
         Bag testBag = new Bag();
         testBag.setPebbles(testPebbles);
         boolean finished = false;
@@ -130,11 +120,7 @@ public class PebblesTest{
 
     @Test
     public void testrefillBag(){
-        ArrayList<Integer> testPebbles = new ArrayList<>();
-        testPebbles.add(44);
-        testPebbles.add(24);
-        testPebbles.add(29);
-        testPebbles.add(32);
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(44, 24, 29, 32));
         Bag bagX = new Bag();
         Bag bagA = new Bag();
         bagA.setPebbles(testPebbles);
@@ -157,19 +143,9 @@ public class PebblesTest{
     @Test
     public void testread_csv() throws InvalidfileExeption, IOException {
         //verify exeptions
-        String testfile  = "test.txt";
-        ArrayList<Integer> testPebbles = new ArrayList<>();
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        assertSame(testPebbles,PebbleGame.pebbleGame.read_csv(testfile));
+        String testfile  = "test.txt";//create the file increase it doesn't exist
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10,11));
+        assertSame(testPebbles,PebbleGame.pebbleGame.read_csv(testfile));//assert this is the same and handle exceptions later
     }
 
     @Test
@@ -179,97 +155,229 @@ public class PebblesTest{
     }
 
     @Test
-    public void testdrawAndDiscardFromBagX(){
-        ArrayList<Integer> testPebbles = new ArrayList<>();
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-
+    public void testdrawAndDiscardFromBagX(){//bagX
+        //the data set for the array lists must be all unique for every index to avoid repetitions otherwise the testing inst conclusive
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10,11));
+        int[] testArray = new int[]{11, 12, 13, 14, 15, 16,17,18,19,20};//data chosen is important
+        boolean found = false;
+        int pebbleRepalced = 0;
+        int pebbleDiscarded = 0;
+        int changeCount = 0;//used to count how many changes have been made in the array
+        PebbleGame.setBagPairs();
         PebbleGame.bagX.setPebbles(testPebbles);
-        PebbleGame.setBagPairs();
         PebbleGame testGame = new PebbleGame();//creates an instance of pebble game
         PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbble game
-        testplayer.setPebbles(new int[]{1, 2, 3, 4, 5, 6,7,8,9,10});
+        testplayer.setPebbles(testArray);
         PebbleGame.drawAndDiscardFromBagX(testplayer,false);//assert just draw twn and assert picking one pebble
-        //check if player removed a pebble
-        //check if the players discard pebbel is in bag A and chck if player took a pebble form bag x
-
-
-
+        for(int i = 0 ;i<=9;i++) {
+            //iterate over the player array and compare changes in original array vs the new player array
+            if (testplayer.getPebbles()[i] != testArray[i]) {
+                pebbleRepalced = testplayer.getPebbles()[i];//pebble that was take from bagX (BLACK BAG)
+                pebbleDiscarded = testArray[i];//Pebble that was put into bag A (WHITE BAG)
+                changeCount++;
+                found = true;
+                //if the position at the two array is different then we found the
+            }
+        }
+        if (!found){
+            fail();
+            //test failed
+        }
+        if(changeCount>1){
+            fail();
+            //test failed as there should be only one change for every draw/discard action
+        }
+        //checks if the players discard pebble is in bag A and check if player took a pebble form bag x
+        assertEquals(pebbleDiscarded,PebbleGame.bagX.getBagPair().drawPebble());//check if the pebble discarded is the same as the pebble in the white bag
+        //check if we can find the pebble draw in th original bag z array, but now it's not in the bagX
+        //checks if the players drawn  pebble used to exist in the bagX before the drawing of pebble
+        found = false;//boolean is this time used in a different check
+        for(int j = 0 ;j<=testPebbles.size()-1;j++){//checks if player removed a pebble
+            if(pebbleRepalced==testPebbles.get(j)){
+                found = true;
+                break;
+            }
+        }
+        if(!found){
+            fail();
+        }
+       while(true){
+           int pebbleFromBagX = PebbleGame.bagX.drawPebble();
+           if(pebbleFromBagX == -1){
+               break;
+           }else if(pebbleFromBagX == pebbleRepalced){//if the pebble is still inside the bag then the test failed
+               fail();
+               break;
+           }
+       }
     }
 
     @Test
-    public void testdrawAndDiscardFromBagY(){
-        ArrayList<Integer> testPebbles = new ArrayList<>();
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-
+    public void testdrawAndDiscardFromBagY(){//bagY
+        //the data set for the array lists must be all unique for every index to avoid repetitions otherwise the testing inst conclusive
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10,11));
+        int[] testArray = new int[]{11, 12, 13, 14, 15, 16,17,18,19,20};//data chosen is important
+        boolean found = false;
+        int pebbleRepalced = 0;
+        int pebbleDiscarded = 0;
+        int changeCount = 0;//used to count how many changes have been made in the array
+        PebbleGame.setBagPairs();
         PebbleGame.bagY.setPebbles(testPebbles);
-        PebbleGame.setBagPairs();
         PebbleGame testGame = new PebbleGame();//creates an instance of pebble game
-        PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbble game
-        testplayer.setPebbles(new int[]{1, 2, 3, 4, 5, 6,7,8,9,10});
+        PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbleGame
+        testplayer.setPebbles(testArray);
         PebbleGame.drawAndDiscardFromBagY(testplayer,false);//assert just draw twn and assert picking one pebble
-        //check if player removed a pebble
-        //check if the players discard pebbel is in bag A and chck if player took a pebble form bag x
+        for(int i = 0 ;i<=9;i++) {
+            //iterate over the player array and compare changes in original array vs the new player array
+            if (testplayer.getPebbles()[i] != testArray[i]) {
+                pebbleRepalced = testplayer.getPebbles()[i];//pebble that was take from bagY (BLACK BAG)
+                pebbleDiscarded = testArray[i];//Pebble that was put into bag B (WHITE BAG)
+                changeCount++;
+                found = true;
+            }
+        }
+        if (!found){
+            fail();
+            //test failed
+        }
+        if(changeCount>1){
+            fail();
+            //test failed as there should be only one change for every draw/discard action
+        }
+        //checks if the players discard pebble is in bag A and check if player took a pebble form bagY
+        assertEquals(pebbleDiscarded,PebbleGame.bagY.getBagPair().drawPebble());//check if the pebble discarded is the same as the pebble in the white bag
+        //check if we can find the pebble draw in th original bagY array, but now it's not in the bagY
+        //checks if the players drawn  pebble used to exist in the bagX before the drawing of pebble
+        found = false;//boolean is this time used in a different check
+        for(int j = 0 ;j<=testPebbles.size()-1;j++){//checks if player removed a pebble
+            if(pebbleRepalced==testPebbles.get(j)){
+                found = true;
+                break;
+            }
+        }
+        if(!found){
+            fail();
+        }
+        while(true){
+            int pebbleFromBagX = PebbleGame.bagY.drawPebble();
+            if(pebbleFromBagX == -1){
+                break;
+            }else if(pebbleFromBagX == pebbleRepalced){//if the pebble is still inside the bag then the test failed
+                fail();
+                break;
+            }
+        }
 
     }
 
     @Test
-    public void testdrawAndDiscardFromBagZ(){
-        ArrayList<Integer> testPebbles = new ArrayList<>();
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(10);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-        testPebbles.add(5);
-
-        PebbleGame.bagZ.setPebbles(testPebbles);
+    public void testdrawAndDiscardFromBagZ(){//bagZ
+        //the data set for the array lists must be all unique for every index to avoid repetitions otherwise the testing inst conclusive
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10,11));
+        int[] testArray = new int[]{11, 12, 13, 14, 15, 16,17,18,19,20};//data chosen is important
+        boolean found = false;
+        int pebbleRepalced = 0;
+        int pebbleDiscarded = 0;
+        int changeCount = 0;//used to count how many changes have been made in the array
         PebbleGame.setBagPairs();
+        PebbleGame.bagZ.setPebbles(testPebbles);
         PebbleGame testGame = new PebbleGame();//creates an instance of pebble game
         PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbble game
-        testplayer.setPebbles(new int[]{1, 2, 3, 4, 5, 6,7,8,9,10});
+        testplayer.setPebbles(testArray);
         PebbleGame.drawAndDiscardFromBagZ(testplayer,false);//assert just draw twn and assert picking one pebble
-        //check if player removed a pebble
-        //check if the players discard pebbel is in bag A and chck if player took a pebble form bag x
-
+        for(int i = 0 ;i<=9;i++) {
+            //iterate over the player array and compare changes in original array vs the new player array
+            if (testplayer.getPebbles()[i] != testArray[i]) {
+                pebbleRepalced = testplayer.getPebbles()[i];//pebble that was take from bagZ (BLACK BAG)
+                pebbleDiscarded = testArray[i];//Pebble that was put into bag C (WHITE BAG)
+                changeCount++;
+                found = true;
+            }
+        }
+        if (!found){
+            fail();
+            //test failed
+        }
+        if(changeCount>1){
+            fail();
+            //test failed as there should be only one change for every draw/discard action
+        }
+        //checks if the players discard pebble is in bag A and check if player took a pebble form bagZ
+        assertEquals(pebbleDiscarded,PebbleGame.bagZ.getBagPair().drawPebble());//check if the pebble discarded is the same as the pebble in the white bag
+        //check if we can find the pebble draw in th original bag z array, but now it's not in the bagZ
+        //checks if the players drawn  pebble used to exist in the bagX before the drawing of pebble
+        found = false;//boolean is this time used in a different check
+        for(int j = 0 ;j<=testPebbles.size()-1;j++){//checks if player removed a pebble
+            if(pebbleRepalced==testPebbles.get(j)){
+                found = true;
+                break;
+            }
+        }
+        if(!found){
+            fail();
+        }
+        while(true){
+            int pebbleFromBagX = PebbleGame.bagZ.drawPebble();
+            if(pebbleFromBagX == -1){
+                break;
+            }else if(pebbleFromBagX == pebbleRepalced){//if the pebble is still inside the bag then the test failed
+                fail();
+                break;
+            }
+        }
     }
+
     @Test
     public void testdraw10(){
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10));
+        boolean found = false;
+        int pebbleRepalced = 0;
+        int pebbleDiscarded = 0;
+        int changeCount = 0;//used to count how many changes have been made in the array
+        PebbleGame.setBagPairs();
+        PebbleGame.bagX.setPebbles(testPebbles);
+        PebbleGame.bagY.setPebbles(testPebbles);
+        PebbleGame.bagZ.setPebbles(testPebbles);
+        PebbleGame testGame = new PebbleGame();//creates an instance of pebble game
+        PebbleGame.Player testplayer = testGame.new Player(1000);//creates an instance of player in pebbble game
+        PebbleGame.draw10(testplayer);
+        if(Objects.equals(testplayer.getLastBagDrawn(), "X")){
+            if(PebbleGame.bagX.drawPebble()!=-1){//check if its empty after the drawing
+                fail();
+            }else{
+
+                //assert the player has the 10 pebbles in it's array
+            }
+        }else if(Objects.equals(testplayer.getLastBagDrawn(), "Y")){
+            if(PebbleGame.bagY.drawPebble()!=-1){//check if its empty after the drawing
+                fail();
+            }else{
+                int[] pebblearray = new int[testPebbles.size()];
+                pebblearray = testPebbles.toArray();
+                assertSame(testplayer.getPebbles(),);
+                //assert the player has the 10 pebbles in it's array
+            }
+        }else{//Z
+            if(PebbleGame.bagZ.drawPebble()!=-1){//check if its empty after the drawing
+                fail();
+            }else{
+                //assert the player has the 10 pebbles in it's array
+            }
+        }
+
 
     }
 
     //testing the PlayerThread Class methods
+//    @Test
+//    public testCreateFile(){
+//
+//    }
+//
+//    @Test
+//    public testrun(){
+//
+//    }
 
-    @Test
-    public testCreateFile(){
 
-    }
-
-    @Test
-    public testrun(){
-
-    }
-
-    
 }
