@@ -258,7 +258,7 @@ public class PebbleGame {
 
 
 
-    public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//the 3 bag methods are very similar except that they access different bags.
+    public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//the 3 bag methods are very similar except that they access different bags(thread safe)
         /**
          *@since v1.8
          * This method handles player draw and discard actions for the BagX and BagA respectively
@@ -308,7 +308,7 @@ public class PebbleGame {
             }
     }
 
-    public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean justDrawTen){
+    public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean justDrawTen){//thread safe method
         /**
          *@since v1.8
          * This method handles player draw and discard actions for the BagY and BagB respectively
@@ -355,7 +355,7 @@ public class PebbleGame {
                 thisPlayer.setPebbles(tenPebbles);
             }
     }
-    public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean justDrawTen){
+    public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean justDrawTen){//thread safe method
         /**
          *@since v1.8
          * This method handles player draw and discard actions for the BagZ and Bag C respectively
