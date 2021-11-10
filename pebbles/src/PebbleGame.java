@@ -444,6 +444,7 @@ public class PebbleGame {
           *This is a nested class which is an inner class, and it's a non-static nested class.
           *Allows to an instance of the player within the PebbleGame class.
           *uses getters and setters to access private class variables.
+          *It used to be a separate class, but we have integrated it as an inner class as the specification requires this
           *@since V2.0
           */
         private int randomBag;
@@ -454,46 +455,96 @@ public class PebbleGame {
         private String lastBagDrawn;
 
         public int getRandomBag() {
+            /**
+             * @since v2.0
+             * @return int which is the corresponding random bag the player has picked at a given point in time
+             */
             return this.randomBag;
         }
 
-        public int getTotalWeight() {return this.totalWeight;}
+        public int getTotalWeight() {
+            /**
+             * @since v2.0
+             * @return int which is the total weight of the players pebbles hand
+             */
+            return this.totalWeight;}
 
         public void generateRandomChoice(){
+            /**
+             * @since v2.0
+             * //generates a random integer value from 0-2 which is interpreted as either bagX,Y,Z
+             * @retun int random value
+             */
             this.randomBag = rand.nextInt(3);
         }
 
-        private void setTotalWeight(int totalWeight) {this.totalWeight = totalWeight;}
+        private void setTotalWeight(int totalWeight){
+            /**
+             * @since v2.0
+             * @param totalWeight take the total calculated weight of the player hand and stores it in a private variable
+             */
+            this.totalWeight = totalWeight;
+        }
 
         public int getPlayerID() {
+            /**
+             * @since v2.0
+             * @return int ,returns integer value representing the ID of each player instance
+             */
             return this.playerID;
         }
 
         public int[] getPebbles() {
+            /**
+             * @since v2.0
+             * @return int[],an array of pebbles that stores the 10 pebbles representing the players hand
+             */
             return this.pebbles;
         }
 
         public void setLastBagDrawn(String Bag){
+            /**
+             * @since v2.0
+             * @param Bag is a string that represent the bag letter which was the last bag the player picked which is used in the file outputs to keep track of the game
+             */
             this.lastBagDrawn = Bag;
         }
 
         public void setPebbles(int[] pebbles) {//populates the array representing players hand with the items of array passed to that player
-            for (int i = 0;i<=9;i++){
+            /**
+             * @since v2.0
+             * @param pebbles is the pebble array for initially setting up the 10 pebbles
+             */
+            for (int i = 0;i<=9;i++){//iterates throughout the array as since assignment would result in by reference assignment not by value.
                 this.pebbles[i] = pebbles[i];
             }
             this.calculateTotalWeight();
         }
 
-        private  void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
+        private void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
+            /**
+             * @since v2.0
+             * @param newPebble ,is an integer that tells the method which pebble has been ust picked up
+             * @param oldPebble ,is an integer that tells the method which pebble has been discarded
+             */
             this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
             //much more efficient than iterating the whole array each time ; its time complexity is 0(1) instead of O(K)
         }
 
         public Player(int playerID) {
+            /**
+             * @since v2.0
+             * @param playerID ,is an intger that is used for constructing the instance eof the player class
+             */
             this.playerID = playerID;
         }
 
         public int replacePebble(int replacementPebble) {//takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
+            /**
+             * @since v2.0
+             * @param replacementPebble ,is an int that hold the pebble weight hat the player just had picked up
+             * @return int ,which is a discard pebble that the user discarded atomically
+             */
             int index = rand.nextInt(this.getPebbles().length-1);//random value
             int discardPebble = this.getPebbles()[index];
             this.getPebbles()[index] = replacementPebble;
@@ -502,14 +553,22 @@ public class PebbleGame {
         }
 
         private void calculateTotalWeight(){//calculates the total weight of a player's hand
+            /**
+             * @since v2.0
+             * used at the start of instantiating the player when the player is given 10 initial pebbles
+             */
             int totalWeight = 0;
-            for (int i = 0;i<=9;i++){
+            for (int i = 0;i<=9;i++){//iterates over the array and makes a cumulative sum ,this is only used once as then we use the efficient method updateWeight()
                 totalWeight += this.pebbles[i] ;
             }
             this.setTotalWeight(totalWeight);
         }
 
         public String getLastBagDrawn() {
+            /**
+             * @since v2.0
+             * stores the bag which has been last drawn for file output purposes
+             */
             return lastBagDrawn;
         }
 
