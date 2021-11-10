@@ -102,6 +102,7 @@ public class PebbleGame {
                                 exeption = true;
                                 break;//exit the loop
                             }
+                            System.out.println("Reading file...");//help the user be patient and not thin the program has crashed since large file take time to process
                             try {
                                 int csvArrayPos = 0;
                                 while (csvArrayPos <= (read_csv(file_input)).size() - 1) {//reads the scv or text file
@@ -420,8 +421,8 @@ public class PebbleGame {
 
     public void runPlayers(int numPlayers){
         /**
-         * this method created thread objects hich contain the run() methods and each thread is paired to a player instance by passing it into a thread
-         * playerThread.start() is in another loop to reduce the overhead since by the time some players get to play the game we can get winning threads
+         *This method created thread objects which contain the run() methods and each thread is paired to a player instance by passing it into a thread
+         *playerThread.start() is in another loop to reduce the overhead since by the time some players get to play the game we can get winning threads
          *@since v1.9
          *@param numPlayers is the number of player that the user has previous entered which will help to define the amount of threads too
          */
@@ -440,8 +441,10 @@ public class PebbleGame {
 
      class Player {
          /**
-          *@since
-          *
+          *This is a nested class which is an inner class, and it's a non-static nested class.
+          *Allows to an instance of the player within the PebbleGame class.
+          *uses getters and setters to access private class variables.
+          *@since V2.0
           */
         private int randomBag;
         private int  playerID;
