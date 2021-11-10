@@ -42,7 +42,8 @@ public class PlayerThread extends Thread {
     @Override
     public void run() {//this will run each player
         /**
-         *
+         *This method executes each thread
+         * @since V1.8
          */
         System.out.println("INFO: Starting Player: "+ thisPlayer.getPlayerID() + "...");
         CreateFile();//generate a text file for each player
@@ -91,6 +92,7 @@ public class PlayerThread extends Thread {
                 PebbleGame.drawAndDiscardFromBagZ(thisPlayer,false);
                 Thread.yield();//allows other threads to have more chance at choosing a bag
             }
+            //initialises the necessary variables used to display player states in the output text files
             int newPebble = 0;
             int oldPebble = 0;
             String lastBagDrawn = "";
