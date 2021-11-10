@@ -23,7 +23,7 @@ public class PlayerThread extends Thread {
         thisPlayer = playerfromGame;//sets the link between player instance and thread instance
     }//passes instance of player into the thread
 
-    public void CreateFile() {
+    public void createFile() {
         /**
          * creates a file for that particular player as it need to write player choices into that txt file so the threads can be later traced in the txt file
          * @since V1.8
@@ -46,7 +46,7 @@ public class PlayerThread extends Thread {
          * @since V1.8
          */
         System.out.println("INFO: Starting Player: "+ thisPlayer.getPlayerID() + "...");
-        CreateFile();//generate a text file for each player
+        createFile();//generate a text file for each player
         thisPlayer.generateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from
         PebbleGame.draw10(thisPlayer);//draws first 10 pebbles
         FileWriter writeToPlayerFile = null;

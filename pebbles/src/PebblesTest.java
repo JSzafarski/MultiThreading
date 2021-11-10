@@ -259,9 +259,17 @@ public class PebblesTest{
 
     }
 
+    //testing the PlayerThread Class methods
 
+    @Test
+    public testCreateFile(){
 
+    }
 
+    @Test
+    public testrun(){
 
+    }
 
+    
 }
