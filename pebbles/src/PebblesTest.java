@@ -33,6 +33,8 @@ public class PebblesTest{
         if(error) {//if this boolean is flagged true then it means the current test method failed the test
             errorMsg.add(errorPhrase);//adds test error summaries if they do happen
             error = false;//resets it for next methods as they may not result in a failed run
+        }else{
+            testsPassed++; //since this is sun after each test when the recent test passed then we increment the number of tests passed
         }
     }
 
@@ -120,8 +122,9 @@ public class PebblesTest{
         //we want to check if at the position of the previous discard pebble exists the new replacement pebble
         for(int x = 0;x<=9;x++){
             if (testPlayer.getPebbles()[x] == replacement_pebble){
-                assertEquals(testdiscardpebble,testpebbles[x]);//checks if the correct pebble has been replaced at the correct position int the array
-                assertEquals(testweight,testPlayer.getTotalWeight()-testdiscardpebble+replacement_pebble);//check if updated weight is what it should be.
+                assertEquals(testdiscardpebble,testpebbles[x]);//checks if the correct pebble has been replaced at the correct position in the array
+                testweight = testweight - testdiscardpebble + replacement_pebble;//the mathematical calculation of new weight based on draw/discards of pebbles
+                assertEquals(testweight,testPlayer.getTotalWeight());//check if updated weight is what it should be.
                 found = true;
                 break;
             }
@@ -324,7 +327,12 @@ public class PebblesTest{
            if(pebbleFromBagX == -1){
                break;
            }else if(pebbleFromBagX == pebbleRepalced){//if the pebble is still inside the bag then the test failed
-               fail();
+               try {
+                   fail();
+               }catch (AssertionError e){
+                   error = true;
+                   errorPhrase += e +" at testdrawAndDiscardFromBagY";
+               }
                break;
            }
        }
@@ -565,7 +573,7 @@ public class PebblesTest{
 
     @AfterClass//runs after all @Test classes have run
     public static void testSummary(){//run after all @Test have been run successfully
-        System.out.println("tests passed: "+testsPassed+" tests failed: "+(testsRun-testsPassed));
+        System.out.println("tests passed: "+(testsPassed)+" tests failed: "+(testsRun-testsPassed));
         if(testsRun-testsPassed<testsRun){//if there were fails then output the array that displays those errors
             System.out.println(errorMsg);
         }

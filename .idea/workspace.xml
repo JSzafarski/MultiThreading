@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pebbles/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/Bag.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
