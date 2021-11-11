@@ -23,14 +23,20 @@ import static org.junit.Assert.*;
 public class PebblesTest{
     static int testsPassed = 0; // used to count how many tests have been passed.
     static int testsRun = 0;
+    static String errorPhrase;
+    static boolean error = false;
+    static ArrayList<String> errorMsg = new ArrayList<String>();
 
     @Before
     public void testsCounter(){//counts how many tests have been executed(its run before each @Test method
         testsRun++;
     }
-    @Before
+    @After//run after each test method and added error messages in case they occur
     public void testErrorSummary(){
-        //adds test error summaries if they do happen
+        if(error) {//if this boolean is flagged true then it means the current test method failed the test
+            errorMsg.add(errorPhrase);//adds test error summaries if they do happen
+            error = false;//resets it for next methods as they may not result in a failed run
+        }
     }
 
     //testing the player class
@@ -389,19 +395,12 @@ public class PebblesTest{
         }
     }
 
-    @AfterClass
+    @AfterClass//runs after all @Test classes have run
     public static void testSummary(){//run after all @Test have been run successfully
         System.out.println("tests passed: "+testsPassed+" tests failed: "+(testsRun-testsPassed));
+        if(testsRun-testsPassed<testsRun){//if there were fails then output the array that displays those errors
+            System.out.println(errorMsg);
+        }
     }
-    //testing the PlayerThread Class methods
-//    @Test
-//    public testCreateFile(){
-//
-//    }
-//
-//    @Test
-//    public testrun(){
-//
-//    }
 
 }
