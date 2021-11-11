@@ -24,10 +24,18 @@ public class PebblesTest{
     static boolean error = false;
     static ArrayList<String> errorMsg = new ArrayList<String>();
 
+    /**
+     * @since v1.0
+     *This runs the code before each test method is executed
+     */
     @Before
     public void testsCounter(){//counts how many tests have been executed(its run before each @Test method
         testsRun++;
     }
+    /**
+     * @since v1.0
+     *This runs the code after each test method is executed
+     */
     @After//run after each test method and added error messages in case they occur
     public void testErrorSummary(){
         if(error) {//if this boolean is flagged true then it means the current test method failed the test
@@ -37,7 +45,10 @@ public class PebblesTest{
             testsPassed++; //since this is sun after each test when the recent test passed then we increment the number of tests passed
         }
     }
-
+    /**
+     *
+     *
+     */
     //testing the player class
     @Test
     public void testgetPlayerID(){
@@ -51,7 +62,10 @@ public class PebblesTest{
         }
 
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testSetGetPebbles(){
         int[] testpebbles = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};//a pebble array is chosen to populate players hand
@@ -64,7 +78,10 @@ public class PebblesTest{
             errorPhrase = e +" at testSetGetPebbles";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testgenerateRandomChoiceandgetRandomBag(){
         PebbleGame.Player testPlayer = PebbleGame.getPebbleGame().new Player(1);//creates a player object
@@ -81,7 +98,10 @@ public class PebblesTest{
             assertTrue(true);//this signifies that the method has worked correctly
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testlastBagDrawnAndgetLastBagDrawn(){
         String testBag ="A";//choose a letter (the choice isn't too significant here)
@@ -94,7 +114,10 @@ public class PebblesTest{
             errorPhrase = e +" at testlastBagDrawnAndgetLastBagDrawn";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testcalculateTotalWeight(){
         int[] testpebbles = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};//array used for testing purposes
@@ -108,7 +131,10 @@ public class PebblesTest{
             errorPhrase = e +" at testcalculateTotalWeight";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testreplacePebble(){//should replace a pebble from the array and place the replacement pebble inside the array
         boolean found = false;
@@ -140,7 +166,10 @@ public class PebblesTest{
     }
 
     //testing bag class
-
+    /**
+     *
+     *
+     */
     @Test
     public void testgetBagPair(){
         Bag testBagPair = new Bag();//creates a bag pair object
@@ -153,7 +182,10 @@ public class PebblesTest{
             errorPhrase = e +" at testgetBagPair";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testsetPebblesdrawPebble(){//checks if pebbles can be set and drawn prom a particular bag object correctly
         ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10));
@@ -170,7 +202,10 @@ public class PebblesTest{
             }
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testdiscardPebble(){
         int testreplacementPebble = 66;//replacement pebble that usually come from the player
@@ -184,7 +219,10 @@ public class PebblesTest{
             errorPhrase = e +" at testdiscardPebble";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testrefillBag(){//tests if the black bag get refilled from it white bag pair correctly
         ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(44, 24, 29, 32));
@@ -200,7 +238,10 @@ public class PebblesTest{
             errorPhrase = e +" at testrefillBag";
         }
     }
-
+    /**
+     *
+     *
+     */
     //testing the PebbleGame
     @Test
     public void testsetBagPairs(){
@@ -214,7 +255,10 @@ public class PebblesTest{
             errorPhrase = e +" at testsetBagPairs";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testread_csv(){
         //verify exeptions
@@ -244,7 +288,10 @@ public class PebblesTest{
             errorPhrase = e +" at testread_csv";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testcalculate_minPebbles(){//checks if the function for getting minimum number of players required for the game is correctly working
         int testPlayercount = 10;
@@ -255,7 +302,10 @@ public class PebblesTest{
             errorPhrase = e +" at testcalculate_minPebbles";
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testdrawAndDiscardFromBagX(){//bagX
         //the data set for the array lists must be all unique for every index to avoid repetitions otherwise the testing inst conclusive
@@ -337,7 +387,10 @@ public class PebblesTest{
            }
        }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testdrawAndDiscardFromBagY(){//bagY
         //the data set for the array lists must be all unique for every index to avoid repetitions otherwise the testing inst conclusive
@@ -419,7 +472,10 @@ public class PebblesTest{
             }
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testdrawAndDiscardFromBagZ(){//bagZ
         //the data set for the array lists must be all unique for every index to avoid repetitions otherwise the testing inst conclusive
@@ -501,7 +557,10 @@ public class PebblesTest{
             }
         }
     }
-
+    /**
+     *
+     *
+     */
     @Test
     public void testdraw10(){
         ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10));
@@ -570,7 +629,10 @@ public class PebblesTest{
             }
         }
     }
-
+    /**
+     *
+     *
+     */
     @AfterClass//runs after all @Test classes have run
     public static void testSummary(){//run after all @Test have been run successfully
         System.out.println("tests passed: "+(testsPassed)+" tests failed: "+(testsRun-testsPassed));
@@ -578,5 +640,4 @@ public class PebblesTest{
             System.out.println(errorMsg);
         }
     }
-
 }

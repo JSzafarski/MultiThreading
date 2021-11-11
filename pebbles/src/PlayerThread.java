@@ -15,20 +15,18 @@ import java.io.FileWriter;
 public class PlayerThread extends Thread {
     PebbleGame.Player thisPlayer;//declares a player instance which will be assigned with the instance that's passed into each thread
     static boolean wonGame = false;//static as we want to share this between all player threads since once player winning stops the game for all other players/threads
-
+    /**
+     * @since V1.8
+     * @param playerfromGame ,used to pass an instance of a player into the thread instance to represent that player
+     */
     public PlayerThread(PebbleGame.Player playerfromGame) {
-        /**
-         * @since V1.8
-         * @param playerfromGame ,used to pass an instance of a player into the thread instance to represent that player
-         */
         thisPlayer = playerfromGame;//sets the link between player instance and thread instance
     }//passes instance of player into the thread
-
+    /**
+     * creates a file for that particular player as it need to write player choices into that txt file so the threads can be later traced in the txt file
+     * @since V1.8
+     */
     public void createFile(){
-        /**
-         * creates a file for that particular player as it need to write player choices into that txt file so the threads can be later traced in the txt file
-         * @since V1.8
-         */
         try {
             File playerFile = new File("Player "+thisPlayer.getPlayerID()+".txt");//file named after each player's ID
            if(playerFile.createNewFile()){
@@ -40,12 +38,12 @@ public class PlayerThread extends Thread {
             System.out.println(e.getMessage());
         }
     }
+    /**
+     *This method executes each thread
+     * @since V1.8
+     */
     @Override
     public void run() {//this will run each player
-        /**
-         *This method executes each thread
-         * @since V1.8
-         */
         System.out.println("INFO: Starting Player: "+ thisPlayer.getPlayerID() + "...");
         createFile();//generate a text file for each player
         thisPlayer.generateRandomChoice();//randomly the bag from which 10 pebbles will be chosen from

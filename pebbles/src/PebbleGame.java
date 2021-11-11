@@ -20,13 +20,12 @@ public class PebbleGame {
     public PebbleGame(){}
     public static synchronized PebbleGame getPebbleGame(){return pebbleGame;}
     //singleton declaration of the pebbleGame class instance required to run the program
-
+    /**
+     * @since v1.1
+     * This method creates an instance of the Pebble Game class where the instances of players will be instantiated
+     * This will execute upon startup to get things going.
+     */
     public static void main(String[] args){
-        /**
-         * @since v1.1
-         * This method creates an instance of the Pebble Game class where the instances of players will be instantiated
-         * This will execute upon startup to get things going.
-         */
         getPebbleGame().start_game();//calls the method start_game() to proceed with execution
     }
     //insulating arrays responsible for storing players and the threads corresponding to each player
@@ -42,14 +41,13 @@ public class PebbleGame {
     static Bag bagA = new Bag();//white bags
     static Bag bagB = new Bag();
     static Bag bagC = new Bag();
-
+    /**
+     * @since v1.0
+     *This is a static method that links up the different bags into corresponding pairs.
+     *This allows more organised transfer of pebbles when refilling the bag.
+     */
     //method for setting bag pairs of bags
     public static void setBagPairs() {
-        /**
-         * @since v1.0
-         *This is a static method that links up the different bags into corresponding pairs.
-         *This allows more organised transfer of pebbles when refilling the bag.
-         */
         bagX.setBagPair(bagA);//Allows player to discard the pebble into correct bags
         bagY.setBagPair(bagB);
         bagZ.setBagPair(bagC);
@@ -58,16 +56,14 @@ public class PebbleGame {
         bagC.setBagPair(bagZ);
     }
 
-
+    /**
+     * @since v1.0
+     *Fetches user input of players and files necessary to populate the corresponding bags
+     *User is able to enter E or X at any time in the process to either exit the program or Start over
+     *Uses console input.
+     * doesn't contain parameters or return values as this is uses inputs and outputs of functions within itself
+     */
     public void start_game(){//if the under enters e then the program must exit.
-        //not tested by junit4
-        /**
-         * @since v1.0
-         *Fetches user input of players and files necessary to populate the corresponding bags
-         *User is able to enter E or X at any time in the process to either exit the program or Start over
-         *Uses console input.
-         * doesn't contain parameters or return values as this is uses inputs and outputs of functions within itself
-         */
         int numPlayers;//number of players
         ArrayList<Integer> pebblesFromFile = new ArrayList<Integer>();
         setBagPairs();//calls a method that manages the corresponding bag pairs for example bag an is paired with bag z
@@ -154,18 +150,17 @@ public class PebbleGame {
             }
         }
     }
-
+    /**
+     *@since v1.0
+     *Accepts csv or txt files to read player data
+     *returns an array list of the whole file that is being read
+     *minimum length of file has to be 27 for it to contain 10 items(mini-max)
+     *@return Returns an Integer array list of all the pebble weights that where read from the csv/txt file provided
+     *@param  Receives a txt file in the form of a String which it then located and reads
+     *@throws IOException since the may be issues finding/parsing the file
+     *@throws InvalidfileExeption as there may be issues within the file structure that need to be addressed by the user to run correctly
+     */
     public ArrayList<Integer> read_csv (String filename) throws IOException,InvalidfileExeption {
-        /**
-         *@since v1.0
-         *Accepts csv or txt files to read player data
-         *returns an array list of the whole file that is being read
-         *minimum length of file has to be 27 for it to contain 10 items(mini-max)
-         *@return Returns an Integer array list of all the pebble weights that where read from the csv/txt file provided
-         *@param  Receives a txt file in the form of a String which it then located and reads
-         *@throws IOException since the may be issues finding/parsing the file
-         *@throws InvalidfileExeption as there may be issues within the file structure that need to be addressed by the user to run correctly
-         */
         ArrayList<Integer> pebbles = new ArrayList<Integer>();//array list that will store the pebbles read from the file
         BufferedReader reader;
         String stringOfNumbers;
@@ -246,32 +241,30 @@ public class PebbleGame {
             throw new InvalidfileExeption("We Could not find the file and : " + e);
         }
     }
-
+    /**
+     * @since v1.1
+     *determines the minimum number of pebbles required for the game to run error free
+     * @param players : passes a player amount
+     * @return a int value of the minimum number of pebbles required for the players
+     */
     public static int calculate_minPebbles(int players){
-        /**
-         * @since v1.1
-         *determines the minimum number of pebbles required for the game to run error free
-         * @param players : passes a player amount
-         * @return a int value of the minimum number of pebbles required for the players
-         */
         return 11*players;//needs at least 11 time the players to avoid mathematical problems with the game
     }
 
 
-
+    /**
+     *@since v1.8
+     * This method handles player draw and discard actions for the BagX and BagA respectively
+     * the actions are preformed on static bag objects that also reside within this class (above)
+     *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+     *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
+     *This class is for picking and discarding  a pebble from bag X and bag A respectively.
+     *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
+     * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
+     * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
+     * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
+     */
     public static synchronized void drawAndDiscardFromBagX(Player thisPlayer, boolean justDrawTen) {//the 3 bag methods are very similar except that they access different bags(thread safe)
-        /**
-         *@since v1.8
-         * This method handles player draw and discard actions for the BagX and BagA respectively
-         * the actions are preformed on static bag objects that also reside within this class (above)
-         *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
-         *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
-         *This class is for picking and discarding  a pebble from bag X and bag A respectively.
-         *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
-         * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
-         * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
-         * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
-         */
         int replacementpebble = -1;
         int numberOfIterations = 0;
         int[] tenPebbles = new int[10];
@@ -308,20 +301,19 @@ public class PebbleGame {
                 thisPlayer.setPebbles(tenPebbles);
             }
     }
-
+    /**
+     *@since v1.8
+     * This method handles player draw and discard actions for the BagY and BagB respectively
+     * the actions are preformed on static bag objects that also reside within this class (above)
+     *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+     *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
+     *This class is for picking and discarding  a pebble from bag X and bag A respectively.
+     *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
+     * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
+     * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
+     * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
+     */
     public static synchronized void drawAndDiscardFromBagY(Player thisPlayer, boolean justDrawTen){//thread safe method
-        /**
-         *@since v1.8
-         * This method handles player draw and discard actions for the BagY and BagB respectively
-         * the actions are preformed on static bag objects that also reside within this class (above)
-         *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
-         *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
-         *This class is for picking and discarding  a pebble from bag X and bag A respectively.
-         *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
-         * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
-         * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
-         * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
-         */
         int replacementpebble = -1;
         int numberOfIterations = 0;
         int[] tenPebbles = new int[10];
@@ -356,19 +348,19 @@ public class PebbleGame {
                 thisPlayer.setPebbles(tenPebbles);
             }
     }
+    /**
+     *@since v1.8
+     * This method handles player draw and discard actions for the BagZ and Bag C respectively
+     * the actions are preformed on static bag objects that also reside within this class (above)
+     *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
+     *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
+     *This class is for picking and discarding  a pebble from bag X and bag A respectively.
+     *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
+     * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
+     * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
+     * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
+     */
     public static synchronized void drawAndDiscardFromBagZ(Player thisPlayer, boolean justDrawTen){//thread safe method
-        /**
-         *@since v1.8
-         * This method handles player draw and discard actions for the BagZ and Bag C respectively
-         * the actions are preformed on static bag objects that also reside within this class (above)
-         *this class preforms atomic actions where it draws and discards a pebble and draws a pebble simultaneously
-         *If a bag is empty then the bag is refilled and player chooses another randoms bag which can tun out to be the same bag as originally
-         *This class is for picking and discarding  a pebble from bag X and bag A respectively.
-         *We have split the 3 bag drawAndDiscardFromBag methods after v1.8 since we wanted to improve the efficient of the program and eliminate the need for atomic integers
-         * now we have each method for each bag synchronised so its up to 3x faster as before we had a single method with all 3 bag which was less efficient
-         * @param thisPlayer of Player type is a player passed into the method which allows the method to access that players methods so pebble discarding and drawing can take place
-         * @param justDrawTen ,boolean which tell the method if the player wants to pick first 10 pebbles which only happens at the start of the game
-         */
         int replacementpebble = -1;
         int numberOfIterations = 0;
         int[] tenPebbles = new int[10];
@@ -404,13 +396,12 @@ public class PebbleGame {
                 thisPlayer.setPebbles(tenPebbles);
             }
     }
-
+    /**
+     *@since V1.7
+     *@param thisPlayer ,The player object is passed into this method, and it then checks players random bag
+     *       then it calls the corresponding one of the 3 draw/discard bag methods to pick first 10 pebbles
+     */
     public static synchronized void draw10(Player thisPlayer){//method fills a player's hand
-        /**
-         *@since V1.7
-         *@param thisPlayer ,The player object is passed into this method, and it then checks players random bag
-         *       then it calls the corresponding one of the 3 draw/discard bag methods to pick first 10 pebbles
-         */
         if(thisPlayer.getRandomBag()==1){//draw 10 from bag X
             drawAndDiscardFromBagX(thisPlayer,true);
         }else if(thisPlayer.getRandomBag()==2){//draw 10 from bag Y
@@ -419,14 +410,13 @@ public class PebbleGame {
             drawAndDiscardFromBagZ(thisPlayer,true);
         }
     }
-
+    /**
+     *This method created thread objects which contain the run() methods and each thread is paired to a player instance by passing it into a thread
+     *playerThread.start() is in another loop to reduce the overhead since by the time some players get to play the game we can get winning threads
+     *@since v1.9
+     *@param numPlayers is the number of player that the user has previous entered which will help to define the amount of threads too
+     */
     public void runPlayers(int numPlayers){//not tested by junit4
-        /**
-         *This method created thread objects which contain the run() methods and each thread is paired to a player instance by passing it into a thread
-         *playerThread.start() is in another loop to reduce the overhead since by the time some players get to play the game we can get winning threads
-         *@since v1.9
-         *@param numPlayers is the number of player that the user has previous entered which will help to define the amount of threads too
-         */
         //creates each player object and thread for the specified number of players
         threadList = new Thread[numPlayers];//threads are created depending on the number of player the user has chosen
         for(int i = 0; i <= numPlayers-1; i++){
@@ -439,137 +429,123 @@ public class PebbleGame {
             playerThread.start();
         }
     }
-
+    /**
+     *This is a nested class which is an inner class, and it's a non-static nested class.
+     *Allows to an instance of the player within the PebbleGame class.
+     *uses getters and setters to access private class variables.
+     *It used to be a separate class, but we have integrated it as an inner class as the specification requires this
+     *@since V2.0
+     */
      class Player {
-         /**
-          *This is a nested class which is an inner class, and it's a non-static nested class.
-          *Allows to an instance of the player within the PebbleGame class.
-          *uses getters and setters to access private class variables.
-          *It used to be a separate class, but we have integrated it as an inner class as the specification requires this
-          *@since V2.0
-          */
         private int randomBag;
         private int  playerID;
         private int[] pebbles = new int[10];
         Random rand = new Random();
         private int totalWeight;
         private String lastBagDrawn;
-
+        /**
+         * @since v2.0
+         * @return int which is the corresponding random bag the player has picked at a given point in time
+         */
         public int getRandomBag() {
-            /**
-             * @since v2.0
-             * @return int which is the corresponding random bag the player has picked at a given point in time
-             */
             return this.randomBag;
         }
-
+        /**
+         * @since v2.0
+         * @return int which is the total weight of the players pebbles hand
+         */
         public int getTotalWeight() {
-            /**
-             * @since v2.0
-             * @return int which is the total weight of the players pebbles hand
-             */
             return this.totalWeight;}
-
+        /**
+         * @since v2.0
+         * //generates a random integer value from 0-2 which is interpreted as either bagX,Y,Z
+         * @retun int random value
+         */
         public void generateRandomChoice(){
-            /**
-             * @since v2.0
-             * //generates a random integer value from 0-2 which is interpreted as either bagX,Y,Z
-             * @retun int random value
-             */
             this.randomBag = rand.nextInt(3);
         }
-
+        /**
+         * @since v2.0
+         * @param totalWeight take the total calculated weight of the player hand and stores it in a private variable
+         */
         private void setTotalWeight(int totalWeight){
-            /**
-             * @since v2.0
-             * @param totalWeight take the total calculated weight of the player hand and stores it in a private variable
-             */
             this.totalWeight = totalWeight;
         }
-
+        /**
+         * @since v2.0
+         * @return int ,returns integer value representing the ID of each player instance
+         */
         public int getPlayerID() {
-            /**
-             * @since v2.0
-             * @return int ,returns integer value representing the ID of each player instance
-             */
             return this.playerID;
         }
-
+        /**
+         * @since v2.0
+         * @return int[],an array of pebbles that stores the 10 pebbles representing the players hand
+         */
         public int[] getPebbles() {
-            /**
-             * @since v2.0
-             * @return int[],an array of pebbles that stores the 10 pebbles representing the players hand
-             */
             return this.pebbles;
         }
-
+        /**
+         * @since v2.0
+         * @param Bag is a string that represent the bag letter which was the last bag the player picked which is used in the file outputs to keep track of the game
+         */
         public void setLastBagDrawn(String Bag){
-            /**
-             * @since v2.0
-             * @param Bag is a string that represent the bag letter which was the last bag the player picked which is used in the file outputs to keep track of the game
-             */
             this.lastBagDrawn = Bag;
         }
-
+        /**
+         * @since v2.0
+         * @param pebbles is the pebble array for initially setting up the 10 pebbles
+         */
         public void setPebbles(int[] pebbles) {//populates the array representing players hand with the items of array passed to that player
-            /**
-             * @since v2.0
-             * @param pebbles is the pebble array for initially setting up the 10 pebbles
-             */
             for (int i = 0;i<=9;i++){//iterates throughout the array as since assignment would result in by reference assignment not by value.
                 this.pebbles[i] = pebbles[i];
             }
             this.calculateTotalWeight();
         }
-
+        /**
+         * @since v2.0
+         * @param newPebble ,is an integer that tells the method which pebble has been ust picked up
+         * @param oldPebble ,is an integer that tells the method which pebble has been discarded
+         */
         private void updateWeight(int newPebble, int oldPebble){//private as it only used by the player during run-time
-            /**
-             * @since v2.0
-             * @param newPebble ,is an integer that tells the method which pebble has been ust picked up
-             * @param oldPebble ,is an integer that tells the method which pebble has been discarded
-             */
             this.setTotalWeight(this.getTotalWeight() - oldPebble + newPebble);
             //much more efficient than iterating the whole array each time ; its time complexity is 0(1) instead of O(K)
         }
-
+        /**
+         * @since v2.0
+         * @param playerID ,is an intger that is used for constructing the instance eof the player class
+         */
         public Player(int playerID) {
-            /**
-             * @since v2.0
-             * @param playerID ,is an intger that is used for constructing the instance eof the player class
-             */
             this.playerID = playerID;
         }
-
+        /**
+         * @since v2.0
+         * @param replacementPebble ,is an int that hold the pebble weight hat the player just had picked up
+         * @return int ,which is a discard pebble that the user discarded atomically
+         */
         public int replacePebble(int replacementPebble) {//takes a new pebble randomly adds it to the players hand in place of another pebble and returns the old pebble
-            /**
-             * @since v2.0
-             * @param replacementPebble ,is an int that hold the pebble weight hat the player just had picked up
-             * @return int ,which is a discard pebble that the user discarded atomically
-             */
             int index = rand.nextInt(this.getPebbles().length-1);//random value
             int discardPebble = this.getPebbles()[index];
             this.getPebbles()[index] = replacementPebble;
             this.updateWeight(replacementPebble, discardPebble);
             return discardPebble;//return the pebble a player chose to discard into a white bag
         }
-
+        /**
+         * @since v2.0
+         * used at the start of instantiating the player when the player is given 10 initial pebbles
+         */
         private void calculateTotalWeight(){//calculates the total weight of a player's hand
-            /**
-             * @since v2.0
-             * used at the start of instantiating the player when the player is given 10 initial pebbles
-             */
             int totalWeight = 0;
             for (int i = 0;i<=9;i++){//iterates over the array and makes a cumulative sum ,this is only used once as then we use the efficient method updateWeight()
                 totalWeight += this.pebbles[i] ;
             }
             this.setTotalWeight(totalWeight);
         }
-
+        /**
+         * @since v2.0
+         * stores the bag which has been last drawn for file output purposes
+         */
         public String getLastBagDrawn() {
-            /**
-             * @since v2.0
-             * stores the bag which has been last drawn for file output purposes
-             */
             return lastBagDrawn;
         }
 
