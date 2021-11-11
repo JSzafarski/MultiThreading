@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pebbles/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pebbles/Bag.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PebblesTest">
     <configuration name="PebbleGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PebbleGame" />
       <module name="pebbles" />
@@ -61,8 +62,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PebblesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pebbles" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PebblesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PebblesTest.testdraw10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pebbles" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PebblesTest" />
+      <option name="METHOD_NAME" value="testdraw10" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PebblesTest" />
+        <item itemvalue="JUnit.PebblesTest.testdraw10" />
         <item itemvalue="Application.PebbleGame" />
       </list>
     </recent_temporary>

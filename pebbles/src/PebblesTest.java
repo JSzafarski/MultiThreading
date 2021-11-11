@@ -282,7 +282,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
             //test failed
         }
@@ -291,7 +291,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
             //test failed as there should be only one change for every draw/discard action
         }
@@ -300,7 +300,7 @@ public class PebblesTest{
             assertEquals(pebbleDiscarded, PebbleGame.bagX.getBagPair().drawPebble());//check if the pebble discarded is the same as the pebble in the white bag
         }catch(AssertionError e){
             error = true;
-            errorPhrase = e +" at testdrawAndDiscardFromBagY";
+            errorPhrase += e +" at testdrawAndDiscardFromBagY";
         }
         //check if we can find the pebble draw in th original bag z array, but now it's not in the bagX
         //checks if the players drawn  pebble used to exist in the bagX before the drawing of pebble
@@ -316,7 +316,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
         }
        while(true){
@@ -359,7 +359,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
             //test failed
         }
@@ -368,16 +368,16 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
             //test failed as there should be only one change for every draw/discard action
         }
         //checks if the players discard pebble is in bag A and check if player took a pebble form bagY
         try {
             assertEquals(pebbleDiscarded, PebbleGame.bagY.getBagPair().drawPebble());//check if the pebble discarded is the same as the pebble in the white bag
-        }catch(){
-            rror = true;
-            errorPhrase = e +" at testdrawAndDiscardFromBagY";
+        }catch(AssertionError e){
+            error = true;
+            errorPhrase += e +" at testdrawAndDiscardFromBagY";
         }
         //check if we can find the pebble draw in th original bagY array, but now it's not in the bagY
         //checks if the players drawn  pebble used to exist in the bagX before the drawing of pebble
@@ -393,7 +393,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
         }
         while(true){
@@ -405,7 +405,7 @@ public class PebblesTest{
                     fail();
                 }catch (AssertionError e){
                     error = true;
-                    errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                    errorPhrase += e +" at testdrawAndDiscardFromBagY";
                 }
                 break;
             }
@@ -441,7 +441,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
             //test failed
         }
@@ -450,7 +450,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
             //test failed as there should be only one change for every draw/discard action
         }
@@ -459,7 +459,7 @@ public class PebblesTest{
             assertEquals(pebbleDiscarded, PebbleGame.bagZ.getBagPair().drawPebble());//check if the pebble discarded is the same as the pebble in the white bag
         }catch(AssertionError e){
             error = true;
-            errorPhrase = e +" at testdrawAndDiscardFromBagY";
+            errorPhrase += e +" at testdrawAndDiscardFromBagY";
         }
         //check if we can find the pebble draw in th original bag z array, but now it's not in the bagZ
         //checks if the players drawn  pebble used to exist in the bagX before the drawing of pebble
@@ -475,7 +475,7 @@ public class PebblesTest{
                 fail();
             }catch (AssertionError e){
                 error = true;
-                errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                errorPhrase += e +" at testdrawAndDiscardFromBagY";
             }
         }
         while(true){
@@ -487,7 +487,7 @@ public class PebblesTest{
                     fail();
                 }catch (AssertionError e){
                     error = true;
-                    errorPhrase = e +" at testdrawAndDiscardFromBagY";
+                    errorPhrase += e +" at testdrawAndDiscardFromBagY";
                 }
                 break;
             }
@@ -515,14 +515,14 @@ public class PebblesTest{
                     fail();
                 }catch (AssertionError e){
                     error = true;
-                    errorPhrase = e +" at  testdraw10";
+                    errorPhrase += e +" at  testdraw10";
                 }
             }else{
                 try {
                     assertSame(testplayer.getPebbles(), arrtestPebbles);
                 }catch(AssertionError e){
                     error = true;
-                    errorPhrase = e +" at  testdraw10";
+                    errorPhrase += e +" at  testdraw10";
                 }
                 //assert the player has the 10 pebbles in its array
             }
@@ -532,14 +532,14 @@ public class PebblesTest{
                     fail();
                 }catch (AssertionError e){
                     error = true;
-                    errorPhrase = e +" at  testdraw10";
+                    errorPhrase += e +" at  testdraw10";
                 }
             }else{
                 try {
                     assertSame(testplayer.getPebbles(), arrtestPebbles);
                 }catch(AssertionError e){
                     error = true;
-                    errorPhrase = e +" at  testdraw10";
+                    errorPhrase += e +" at  testdraw10";
                 }
                 //assert the player has the 10 pebbles in its array
             }
@@ -549,14 +549,14 @@ public class PebblesTest{
                     fail();
                 }catch (AssertionError e){
                     error = true;
-                    errorPhrase = e +" at  testdraw10";
+                    errorPhrase += e +" at  testdraw10";
                 }
             }else{
                 try {
                     assertSame(testplayer.getPebbles(), arrtestPebbles);
                 }catch(AssertionError e){
                     error = true;
-                    errorPhrase = e +" at  testdraw10";
+                    errorPhrase += e +" at  testdraw10";
                 }
                 //assert the player has the 10 pebbles in its array
             }
