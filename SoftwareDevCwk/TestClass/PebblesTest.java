@@ -40,6 +40,10 @@ public class PebblesTest{
             testsPassed++; //since this is sun after each test when the recent test passed then we increment the number of tests passed
         }
     }
+    @After
+    public void reseterror(){
+        error=false;
+    }
     //testing the player class
     @Test
     public void testgetPlayerID(){
@@ -221,9 +225,9 @@ public class PebblesTest{
     public void testread_csv(){
         //verify exeptions
         String testfile  = "test.txt";//create the file increase it doesn't exist
-        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10,11));
+        ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(10, 10, 10, 10, 10, 5, 5, 5, 5, 5));
         try {
-            assertSame(testPebbles, PebbleGame.pebbleGame.read_csv(testfile));//assert this is the same and handle exceptions later
+            Assert.assertEquals(testPebbles, PebbleGame.pebbleGame.read_csv(testfile));//assert this is the same and handle exceptions later
         }catch(InvalidfileExeption | java.io.IOException IOException){//if an exception is thrown then the assertion is false and the test fails.
             try {
                 fail();
