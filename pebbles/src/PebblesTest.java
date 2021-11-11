@@ -21,6 +21,23 @@ import static org.junit.Assert.*;
  */
 @RunWith(JUnit4.class)
 public class PebblesTest{
+    static int testsPassed = 0; // used to count how many tests have been passed.
+    static int testsRun = 0;
+    static String errorPhrase;
+    static boolean error = false;
+    static ArrayList<String> errorMsg = new ArrayList<String>();
+
+    @Before
+    public void testsCounter(){//counts how many tests have been executed(its run before each @Test method
+        testsRun++;
+    }
+    @After//run after each test method and added error messages in case they occur
+    public void testErrorSummary(){
+        if(error) {//if this boolean is flagged true then it means the current test method failed the test
+            errorMsg.add(errorPhrase);//adds test error summaries if they do happen
+            error = false;//resets it for next methods as they may not result in a failed run
+        }
+    }
 
     //testing the player class
     @Test
@@ -118,26 +135,26 @@ public class PebblesTest{
         int testreplacementPebble = 66;//replacement pebble that usually come from the player
         Bag testBag = new Bag();
         testBag.discardPebble(testreplacementPebble);//adds the replacement pebble
-        assertEquals(testreplacementPebble,testBag.drawPebble());//singe only one pebble was placed it should be the pebble that gets drawn out when drawPebble is called
+        assertEquals(testreplacementPebble,testBag.drawPebble());//since only one pebble was placed it should be the pebble that gets drawn out when drawPebble is called
         //should return the replacement pebble as it was the only pebble in the bag after it's been emptied
     }
 
     @Test
-    public void testrefillBag(){
+    public void testrefillBag(){//tests if the black bag get refilled from it white bag pair correctly
         ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(44, 24, 29, 32));
         Bag bagX = new Bag();
         Bag bagA = new Bag();
         bagA.setPebbles(testPebbles);
         bagX.setBagPair(bagA);
         bagX.refillBag();
-        assertEquals(testPebbles,bagX.getPebbles());
+        assertEquals(testPebbles,bagX.getPebbles());//compares if the array list from bagA was correctly passed into bagX
     }
 
     //testing the PebbleGame
     @Test
     public void testsetBagPairs(){
         PebbleGame.setBagPairs();
-        assertSame(PebbleGame.bagX,PebbleGame.bagA);
+        assertSame(PebbleGame.bagX,PebbleGame.bagA);//Checks if the objects are the same since bag object is passed by reference into another bag object
         assertSame(PebbleGame.bagY,PebbleGame.bagB);
         assertSame(PebbleGame.bagZ,PebbleGame.bagC);
     }
@@ -147,13 +164,25 @@ public class PebblesTest{
         //verify exeptions
         String testfile  = "test.txt";//create the file increase it doesn't exist
         ArrayList<Integer> testPebbles = new ArrayList<>(Arrays. asList(1, 2, 3, 4, 5, 6,7,8,9,10,11));
-        assertSame(testPebbles,PebbleGame.pebbleGame.read_csv(testfile));//assert this is the same and handle exceptions later
+        try {
+            assertSame(testPebbles, PebbleGame.pebbleGame.read_csv(testfile));//assert this is the same and handle exceptions later
+        }catch(InvalidfileExeption  IOException ){//if an exception is thrown then the assertion is false and the test fails.
+            fail();
+        }
+        //tests for invalid file
+        boolean passed = fale;
+        try {
+            PebbleGame.pebbleGame.read_csv("incorrectfile.blah");//assert this is the same and handle exceptions later
+        }catch(InvalidfileExeption  IOException ){//if an exception is thrown then the assertion is false and the test fails.
+            passed=true;//if an exception is thrown then that's correct
+        }
+        assertTrue(passed);
     }
 
     @Test
-    public void testcalculate_minPebbles(){
+    public void testcalculate_minPebbles(){//checks if the function for getting minimum number of players required for the game is correctly working
         int testPlayercount = 10;
-        assertEquals(11*testPlayercount,PebbleGame.calculate_minPebbles(10));
+        assertEquals(11*testPlayercount,PebbleGame.calculate_minPebbles(10));//player number *11 is the number of pebbles as the spec recommended
     }
 
     @Test
@@ -178,7 +207,6 @@ public class PebblesTest{
                 pebbleDiscarded = testArray[i];//Pebble that was put into bag A (WHITE BAG)
                 changeCount++;
                 found = true;
-                //if the position at the two array is different then we found the
             }
         }
         if (!found){
@@ -366,15 +394,13 @@ public class PebblesTest{
             }
         }
     }
-    //testing the PlayerThread Class methods
-//    @Test
-//    public testCreateFile(){
-//
-//    }
-//
-//    @Test
-//    public testrun(){
-//
-//    }
+
+    @AfterClass//runs after all @Test classes have run
+    public static void testSummary(){//run after all @Test have been run successfully
+        System.out.println("tests passed: "+testsPassed+" tests failed: "+(testsRun-testsPassed));
+        if(testsRun-testsPassed<testsRun){//if there were fails then output the array that displays those errors
+            System.out.println(errorMsg);
+        }
+    }
 
 }

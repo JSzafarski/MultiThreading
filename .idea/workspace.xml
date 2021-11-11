@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bc4e5e5-26bf-4564-b2cd-ce91acfba62e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player 1000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player 1001.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player 1003.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player 1004.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player 1005.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/Bag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/InvalidfileExeption.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/InvalidfileExeption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebbleGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PebblesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pebbles/src/PlayerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/pebbles/src/PlayerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
